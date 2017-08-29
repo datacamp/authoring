@@ -1,0 +1,45 @@
+---
+
+Edit the contents of `my_files/file.txt` to read `Hello World`, save it, and commit it to the `git` repo with a commit message `add greeting`.
+
+```yaml
+type: ConsoleExercise
+xp: 100
+key: asd89a00a
+```
+
+`@sample_code`
+
+__Terminal__
+
+```{sh default = TRUE, submit = TRUE}
+
+```
+
+__file1.txt__
+
+```{text dir = "my_files", open = True}
+This file will be open when the exercise is initialized.
+
+Hello ___
+```
+
+__file2.txt__
+
+```{text dir = "my_files"}
+This file will NOT be open when the exercise is initialized.
+```
+
+`@solution`
+
+__Terminal__
+
+```{sh}
+git commit -m my_files/file1.txt
+```
+
+
+```{r dir = "my_files"}
+
+```
+
