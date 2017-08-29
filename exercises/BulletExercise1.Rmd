@@ -1,58 +1,73 @@
---- type:BulletExercise lang:r xp:150 key:79e232200d
+---
 
 ## Building a plot!
 
-*** =pre_exercise_code
+```yaml
+type: BulletExercise 
+lang: r 
+xp: 150 
+key: 79e232200d
+```
+
+`@pre_exercise_code`
 
 ```{r}
 library(ggplot2)
 ```
 
-*** =sample_code
+`@sample_code`
 
 ```{r}
 ggplot(mtcars, aes(x = mpg, y = wt))
 ```
 
-*** =type1:NormalExercise
-*** =xp1: 30
-*** =key1: 1db0bdc483
+***
+
+```yaml
+type: NormalExercise
+xp: 30
+key: 1db0bdc483
+```
 
 
-*** =instructions1
+`@instructions`
 
 Use `geom_point` to add a scatterplot
 
-*** =hint1
+`@hint`
 
 Submit the query!
 
-*** =solution1
+`@solution`
 
 ```{r}
 ggplot(mtcars, aes(x = mpg, y = wt)) +
   geom_point()
 ```
 
-*** =sct1
+`@sct`
 
 ```{r}
 # Test if user added geom_point
 ```
 
-*** =type2:NormalExercise
-*** =key2: 555a6267d7
-*** =xp2: 30
+***
 
-*** =instructions2
+```yaml
+type: NormalExercise
+key: 555a6267d7
+xp: 30
+```
+
+`@instructions`
 
 Use `geom_smooth` with `method` set to `lm` to add a regression line
 
-*** =hint2
+`@hint`
 
 Submit the query!
 
-*** =solution2
+`@solution`
 
 ```{r}
 ggplot(mtcars, aes(x = mpg, y = wt)) +
@@ -60,7 +75,7 @@ ggplot(mtcars, aes(x = mpg, y = wt)) +
   geom_smooth(method = 'lm')
 ```
 
-*** =sct2
+`@sct`
 
 ```{r}
 # Test if the user added a geom_smooth with method = 'lm'
