@@ -28,7 +28,7 @@ To change the title, change the value that comes after "title: " in my_document.
 
 `@sample_code`
 
-`@@ my_document.Rmd`
+`@@my_document.Rmd`
 
 ```{rmd}
 ---
@@ -87,7 +87,7 @@ ul {
 
 `@solution`
 
-`@@ solution.Rmd`
+`@@solution.Rmd`
 
 ```{rmd}
 ---
