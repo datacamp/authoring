@@ -1,0 +1,96 @@
+--- type:TabExercise lang:r xp:100 key:dbbca81c55
+
+## Advanced Group By Exercises
+
+By now you've learned the fundamentals of `dplyr`: the five data manipulation verbs and the additional `group_by()` function to discover interesting group-wise statistics. This exercise brings together these concepts and provides you with an opportunity to combine them to answer some interesting questions.
+
+Let us suppose we want to find the most visited destination for each carrier. Before reading ahead, please spend a couple of minutes thinking about how you might go about solving this exercise using dplyr.
+
+As this is the first time you are combining multiple dplyr concepts, we have broken this exercise down into smaller steps. Each step will allow you to focus on a specific concept.
+
+*** =pre_exercise_code
+
+```{r}
+library(dplyr)
+library(hflights)
+```
+
+*** =sample_code
+
+```{r}
+hflights %>%
+  
+```
+
+
+*** =type1:NormalExercise 
+*** =key1: 421e55e2ec
+*** =xp1: 30
+
+*** =instructions1
+
+Compute for every carrier, the aggregate number of visits to each destination.
+
+*** =solution1
+
+```{r}
+hflights %>% 
+  group_by(UniqueCarrier, Dest) %>%
+  summarise(n = n())
+```
+
+*** =sct1
+
+```{r}
+# Test ...
+```
+
+
+*** =type2:NormalExercise 
+*** =key2: 6eb56c5f40
+*** =xp2: 30
+
+*** =instructions2
+
+Rank the aggregate number of visits for every carrier.
+
+*** =solution2
+
+```{r}
+hflights %>% 
+  group_by(UniqueCarrier, Dest) %>%
+  summarise(n = n()) %>%
+  mutate(rank = rank(desc(n)))
+```
+
+*** =sct2
+
+```{r}
+# Test ...
+```
+
+
+*** =type3:NormalExercise 
+*** =key3: be3d94b96c
+*** =xp3: 30
+
+*** =instructions3
+
+Filter the results to only return the top ranked destination for every carrier.
+
+*** =solution3
+
+```{r}
+hflights %>% 
+  group_by(UniqueCarrier, Dest) %>%
+  summarise(n = n()) %>%
+  mutate(rank = rank(desc(n))) %>%
+  filter(rank == 1)
+```
+
+*** =sct3
+
+```{r}
+# Test ...
+```
+
