@@ -1,5 +1,3 @@
----
-
 ## The R Markdown Exercise interface
 
 ```yaml
