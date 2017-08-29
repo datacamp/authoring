@@ -1,6 +1,13 @@
---- type:TabExercise lang:r xp:100 key:dbbca81c55
+---
 
 ## Advanced Group By Exercises
+
+```yaml
+type: TabExercise 
+lang: r 
+xp: 100 
+key: dbbca81c55
+```
 
 By now you've learned the fundamentals of `dplyr`: the five data manipulation verbs and the additional `group_by()` function to discover interesting group-wise statistics. This exercise brings together these concepts and provides you with an opportunity to combine them to answer some interesting questions.
 
@@ -8,30 +15,33 @@ Let us suppose we want to find the most visited destination for each carrier. Be
 
 As this is the first time you are combining multiple dplyr concepts, we have broken this exercise down into smaller steps. Each step will allow you to focus on a specific concept.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 
 ```{r}
 library(dplyr)
 library(hflights)
 ```
 
-*** =sample_code
+`@sample_code`
 
 ```{r}
 hflights %>%
   
 ```
 
+***
 
-*** =type1:NormalExercise 
-*** =key1: 421e55e2ec
-*** =xp1: 30
+```yaml
+type: NormalExercise 
+key: 421e55e2ec
+xp: 30
+```
 
-*** =instructions1
+`@instructions`
 
 Compute for every carrier, the aggregate number of visits to each destination.
 
-*** =solution1
+`@solution`
 
 ```{r}
 hflights %>% 
@@ -39,22 +49,25 @@ hflights %>%
   summarise(n = n())
 ```
 
-*** =sct1
+`@sct`
 
 ```{r}
 # Test ...
 ```
 
+***
 
-*** =type2:NormalExercise 
-*** =key2: 6eb56c5f40
-*** =xp2: 30
+```yaml
+type: NormalExercise 
+key: 6eb56c5f40
+xp: 30
+```
 
-*** =instructions2
+`@instructions`
 
 Rank the aggregate number of visits for every carrier.
 
-*** =solution2
+`@solution`
 
 ```{r}
 hflights %>% 
@@ -63,22 +76,25 @@ hflights %>%
   mutate(rank = rank(desc(n)))
 ```
 
-*** =sct2
+`@sct`
 
 ```{r}
 # Test ...
 ```
 
+***
 
-*** =type3:NormalExercise 
-*** =key3: be3d94b96c
-*** =xp3: 30
+```yaml
+type: NormalExercise 
+key: be3d94b96c
+xp: 30
+```
 
-*** =instructions3
+`@instructions`
 
 Filter the results to only return the top ranked destination for every carrier.
 
-*** =solution3
+`@solution`
 
 ```{r}
 hflights %>% 
@@ -88,9 +104,8 @@ hflights %>%
   filter(rank == 1)
 ```
 
-*** =sct3
+`@sct`
 
 ```{r}
 # Test ...
 ```
-
