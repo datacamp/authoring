@@ -1,6 +1,14 @@
---- type:MultipleChoiceExercise lang:r xp:50 skills:1 key:85a048589eae0c6e73818902f3aef29a92eeefb0
+---
 
 ## Function scoping
+
+```yaml
+type: MultipleChoiceExercise 
+lang: r 
+xp: 50 
+skills: 1 
+key: 85a048589eae0c6e73818902f3aef29a92eeefb0
+```
 
 An issue that Filip did not discuss in the video is function scoping. It implies that variables that are defined inside a function are not accessible outside that function. Try running the following code and see if you understand the results:
   
@@ -27,17 +35,17 @@ dice1 + dice2
 }
 ```
 
-*** =instructions
+`@instructions`
 
 - Executing `two_dice()` causes an error.
 - Executing `res <- two_dice()` makes the contents of `dice1` and `dice2` available outside the function.
 - Whatever the way of calling the `two_dice()` function, R won't have access to `dice1` and `dice2` outside the function.
 
-*** =hint
+`@hint`
 
 - The function `two_dice()` doesn't take any input. Calling it with an argument will generate an error.
 
-*** =pre_exercise_code
+`@pre_exercise_code`
 
 ```{r}
 two_dice <- function() {
@@ -48,7 +56,7 @@ dice1 + dice2
 }
 ```
 
-*** =sct
+`@sct`
 
 ```{r}
 msg1 <- "Calling `two_dice()` doesn't throw an error; feel free to try it out in the console. Try again."
