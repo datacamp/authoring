@@ -1,0 +1,65 @@
+---
+
+This is an introductory exercise for Shiny
+
+```yaml
+type: ShinyExercise
+xp: 100
+key: asdf8234asd0
+```
+
+`@instructions`
+
+Build an awesome app!
+
+`@sample_code`
+
+`@@run.R`
+
+```{r default = TRUE, submit = TRUE}
+runApp(appDir = '.')
+```
+
+`@@ui.R`
+
+```{r open = TRUE}
+library(shiny)
+shinyUI(bootstrapPage(
+  textInput('username', ''), ___('_____')
+))
+```
+
+`@@server.R`
+
+```{r open = TRUE}
+library(shiny)
+shinyServer(function(input, output){
+  output$greeting <- _____({paste('Hello', input$____)})
+})
+```
+
+`@solution`
+
+`@@run.R`
+
+```{r}
+runApp(appDir = '.')
+```
+
+`@@ui.R`
+
+```{r}
+library(shiny)
+shinyUI(bootstrapPage(
+  textInput('username', ''), textOutput('greeting')
+))
+```
+
+`@@server.R`
+
+```{r}
+library(shiny)
+shinyServer(function(input, output){
+  output$greeting <- renderText({paste('Hello', input$username)})
+})
+```
