@@ -1,6 +1,13 @@
---- type:MarkdownExercise xp:100 skills:1,5 key:3c547b4e1b
+---
 
 ## The R Markdown Exercise interface
+
+```yaml
+type: MarkdownExercise 
+xp: 100 
+skills: 1,5 
+key: 3c547b4e1b
+```
 
 For this course, DataCamp has developed a new kind of interface that looks like the R Markdown pane in RStudio. You have a space (my_document.Rmd) to write R Markdown documents, as well as the buttons to compile the R Markdown document. To keep things simple, we'll stick with making html and pdf documents, although it is also possible to create Microsoft Word documents with R Markdown.
 
@@ -11,20 +18,21 @@ To give you a taste of the things you'll learn in this course, we've prepared tw
 - my_document.Rmd containing the actual R Markdown code;
 - faded.css, a supplementary file that brands your report.
 
-*** =instructions
+`@instructions`
 
 - Change the title of the Markdown Document from "Ozone" to "Hello R Markdown".
 - Click the "Knit HTML" button to see the compiled version of your sample code.
 
-*** =hint
+`@hint`
 
 To change the title, change the value that comes after "title: " in my_document.Rmd on the right. Then, submit your work by clicking the "Knit HTML" button.
 
 
-*** =sample_code
+`@sample_code`
 
-{{{my_document.Rmd}}}
+`@@ my_document.Rmd`
 
+```{rmd}
 ---
 title: "Ozone"
 output:
@@ -32,7 +40,7 @@ output:
     css: faded.css
 ---
 
-## Data
+Data
 
 The `atmos` data set resides in the `nasaweather` package of the *R* programming language. It contains a collection of atmospheric variables measured between 1995 and 2000 on a grid of 576 coordinates in the western hemisphere. The data set comes from the [2006 ASA Data Expo](http://stat-computing.org/dataexpo/2006/).
 
@@ -57,10 +65,11 @@ example_kelvin <- 282.15
 ```
 
 For example, `r example_kelvin` degrees Kelvin corresponds to `r example_kelvin - 273.15` degrees Celsius.
+```
 
+`@@ faded.css`
 
-{{{faded.css}}}
-
+```{css}
 h1{
   color: white;
   padding: 10px;
@@ -75,12 +84,14 @@ ul {
   padding: 0.5em;
   background-color: #eaeff3
 }
+```
 
 
-*** =solution
+`@solution`
 
-{{{solution.Rmd}}}
+`@@ solution.Rmd`
 
+```{rmd}
 ---
 title: "Hello R Markdown"
 output:
@@ -113,10 +124,11 @@ example_kelvin <- 282.15
 ```
 
 For example, `r example_kelvin` degrees Kelvin corresponds to `r example_kelvin - 273.15` degrees Celsius.
+```
 
+`@@ faded.css`
 
-{{{faded.css}}}
-
+```{css}
 h1{
   color: white;
   padding: 10px;
@@ -131,9 +143,10 @@ ul {
   padding: 0.5em;
   background-color: #eaeff3
 }
+```
 
 
-*** =sct
+`@sct`
 
 ```{r}
 test_error()
