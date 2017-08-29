@@ -10,13 +10,13 @@ key: asd89a00a
 
 `@sample_code`
 
-__Terminal__
+`@@Terminal`
 
 ```{sh default = TRUE, submit = TRUE}
 
 ```
 
-__file1.txt__
+`@@file1.txt`
 
 ```{text dir = "my_files", open = True}
 This file will be open when the exercise is initialized.
@@ -24,7 +24,7 @@ This file will be open when the exercise is initialized.
 Hello ___
 ```
 
-__file2.txt__
+`@@file2.txt`
 
 ```{text dir = "my_files"}
 This file will NOT be open when the exercise is initialized.
@@ -32,7 +32,7 @@ This file will NOT be open when the exercise is initialized.
 
 `@solution`
 
-__Terminal__
+`@@Terminal`
 
 ```{sh}
 git commit -m my_files/file1.txt
