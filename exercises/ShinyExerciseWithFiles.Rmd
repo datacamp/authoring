@@ -17,13 +17,13 @@ Build an awesome app!
 
 `@@run.R`
 
-```{r default = TRUE, submit = TRUE}
+```{r attr = 'default,submit,locked'}
 runApp(appDir = '.')
 ```
 
 `@@ui.R`
 
-```{r open = TRUE}
+```{r attr = 'open'}
 library(shiny)
 shinyUI(bootstrapPage(
   textInput('username', ''), ___('_____')
@@ -32,7 +32,7 @@ shinyUI(bootstrapPage(
 
 `@@server.R`
 
-```{r open = TRUE}
+```{r attr = 'open'}
 library(shiny)
 shinyServer(function(input, output){
   output$greeting <- _____({paste('Hello', input$____)})
