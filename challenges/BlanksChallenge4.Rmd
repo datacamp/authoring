@@ -1,0 +1,39 @@
+## Use map safely
+
+```yaml
+type: BlanksChallenge 
+key: 139trAKoveqgy
+```
+
+`@code`
+
+```{r}
+# blanks: [{from: [fun1, fun2, fun3, var3]}, choose: 4]
+library(purrr)
+costs <- list(
+  {{ var1 }},
+  {{ var2 }}
+)
+
+absolute_value <- {{ fun1 }}(abs)
+{{ fun3 }}({{ var3 }}, {{ fun2 }})
+```
+
+`@setup`
+
+```{r}
+gen_var1 <- function(){
+  sprintf("c(item_a = %s, item_b = %s)", sample(-100:100, 1), sample(-100:100, 1))
+}
+# cat(gen_var1())
+```
+
+`@variables`
+
+```{yaml}
+var1: "!expr gen_var1"
+var3: costs
+fun1: safely
+fun2: absolute_value
+fun3: map
+```

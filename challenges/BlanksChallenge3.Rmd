@@ -1,0 +1,37 @@
+## Functions - 3
+
+```yaml
+type: BlanksChallenge 
+key: 110ISEdgzw3U04e8k8yG2kmCQw5GrH3T3QT
+```
+
+`@code`
+
+```{r}
+# 1. Template 1
+# blanks: [{from: [var3, var2], choose: 1}]
+y <- {{var1}}
+new_round <- function({{ %var2 }}, {{ var3 }}) {
+    round({{ var2 }}, digits)
+}
+c(new_round(y), new_round(y, {{ var4 }}))
+
+# 2. Template 2
+# blanks: [{from: [var2, var5], choose: 1}]
+y <- {{ var4 }}
+n_add <- function({{ %var2 }}, {{ var5 }}) { 
+    {{ var2 }} + n
+}
+c(n_add(y), n_add(y, {{ var6 }}))
+```
+
+`@variables`
+
+```{yaml}
+var1: "!expr function(){runif(1, 1, 10)}"
+var2: "!expr letters"
+var3: "digits = 1"
+var4: "!expr function(){2:10}"
+var5: 'n = 2'
+var6: "!expr function(){2:10}"
+```

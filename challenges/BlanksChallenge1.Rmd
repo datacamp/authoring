@@ -1,0 +1,37 @@
+## Find the mean, sum, and sd of a vector - 1
+ 
+```yaml
+type: BlanksChallenge 
+key: 110lenIQXafbWbyQNcraHeAwCuB64UJ8DVD 
+difficulty: 1
+```
+
+`@pre_challange_code`
+
+```{r}
+shared <- sample(3, 1)
+funs <- c('mean', 'sum', 'sd')
+comments <- c(
+  "Find the average",
+  "Add all elements",
+  "Find the standard deviation"
+)
+```
+
+`@code`
+
+```{r}
+{{ var0 }} <- {{ var1 }}
+# {{ comment }}
+{{ fun }}(x)
+```
+
+`@variables`
+
+```{yaml}
+var1: "!expr generate_numeric_vector(10:100, 3)"
+var0: [x, y, z]
+fun: "!expr funs[shared]"
+comment: "!expr comments[shared]"
+blanks: fun
+```
