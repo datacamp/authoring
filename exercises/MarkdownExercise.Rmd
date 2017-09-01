@@ -30,7 +30,7 @@ To change the title, change the value that comes after "title: " in my_document.
 
 `@@my_document.Rmd`
 
-```{rmd}
+```{rmd attr = 'default,submit'}
 ---
 title: "Ozone"
 output:
@@ -65,9 +65,9 @@ example_kelvin <- 282.15
 For example, `r example_kelvin` degrees Kelvin corresponds to `r example_kelvin - 273.15` degrees Celsius.
 ```
 
-`@@ faded.css`
+`@@faded.css`
 
-```{css}
+```{css attr = 'open,locked'}
 h1{
   color: white;
   padding: 10px;
@@ -124,7 +124,7 @@ example_kelvin <- 282.15
 For example, `r example_kelvin` degrees Kelvin corresponds to `r example_kelvin - 273.15` degrees Celsius.
 ```
 
-`@@ faded.css`
+`@@faded.css`
 
 ```{css}
 h1{
