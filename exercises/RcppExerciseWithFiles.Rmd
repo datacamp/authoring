@@ -8,18 +8,18 @@ xp: 100
 key: asdfa83432
 ```
 
-`@sample_cod`
+`@sample_code`
 
-`@@script.R default submit`
+`@@script.R`
 
-```{r}
+```{r attr = 'submit,locked'}
 sourceCpp("./script.cpp")
 ```
 
 
-`@@script.cpp open`
+`@@script.cpp`
 
-```{cpp}
+```{cpp attr = 'default,open'}
 #include <Rcpp.h>
 
 // [[Rcpp::export]]
