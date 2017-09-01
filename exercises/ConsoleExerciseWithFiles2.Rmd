@@ -1,0 +1,63 @@
+## Console Exercise with Files
+
+```yaml
+type: ConsoleExercise
+xp: 100
+key: asd89a00a
+```
+
+Write a script like this:
+
+```sh
+cut -d , -f 1 $@ | grep -v Date | sort | uniq | sort -n
+```
+
+`@instructions`
+
+- Write a script to do ...
+- Save it as `./count-dates.sh`
+- Change permissions using `chmod u+x ./count-dates`
+- Run it with `./count-dates data/*.csv`.
+
+
+`@sample_code`
+
+`@@Terminal`
+
+```{sh attr = "default,submit,open"}
+
+```
+
+`@@count-dates.sh`
+
+```{text attr = "open"}
+
+```
+
+`@@data/a.csv`
+
+```{csv attr = "locked"}
+a,b,c
+1,2,3
+```
+
+`@@data/b.csv`
+
+```{csv attr = "locked"}
+a,b,c
+1,2,3
+```
+
+`@solution`
+
+`@@Terminal`
+
+```{sh}
+./count-dates data/*.csv
+```
+
+`@@count-dates.sh`
+
+```{text}
+cut -d , -f 1 $@ | grep -v Date | sort | uniq | sort -n
+```
