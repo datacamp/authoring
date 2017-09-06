@@ -11,48 +11,56 @@ This is an introductory exercise for Shiny
 
 `@instructions`
 
-Build an awesome app!
+Build an awesome app by completing `ui.R` and `server.R` !
+
+`@pre_exercise_code`
+
+```{r}
+library(shiny)
+```
+
+`@submit_answer`
+
+```{r}
+runApp(appDir = ".")
+```
+
 
 `@sample_code`
 
-`@@run.R`
-
-```{r attr = 'default,submit,locked'}
-runApp(appDir = '.')
-```
-
 `@@ui.R`
 
-```{r attr = 'open'}
+```{r open = TRUE}
 library(shiny)
 shinyUI(bootstrapPage(
-  textInput('username', ''), ___('_____')
+  textInput('username', 'Enter your name'), ___('_____')
 ))
 ```
 
 `@@server.R`
 
-```{r attr = 'open'}
+```{r open = TRUE}
 library(shiny)
 shinyServer(function(input, output){
   output$greeting <- _____({paste('Hello', input$____)})
 })
 ```
 
-`@solution`
-
-`@@run.R`
+`@@global.R`
 
 ```{r}
-runApp(appDir = '.')
+# Define some global variables/functions for use in ui and server
 ```
+
+`@solution`
+
 
 `@@ui.R`
 
 ```{r}
 library(shiny)
 shinyUI(bootstrapPage(
-  textInput('username', ''), textOutput('greeting')
+  textInput('username', 'Enter your name'), textOutput('greeting')
 ))
 ```
 
@@ -64,3 +72,16 @@ shinyServer(function(input, output){
   output$greeting <- renderText({paste('Hello', input$username)})
 })
 ```
+
+`@@global.R`
+
+```{r}
+# Define some global variables/functions for use in ui and server
+```
+
+`@sct`
+
+```{r}
+# Test the submission
+```
+
