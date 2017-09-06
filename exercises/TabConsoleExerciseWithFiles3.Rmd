@@ -1,0 +1,94 @@
+## Committing Files
+
+
+```yaml
+type: TabConsoleExercise
+xp: 100
+key: asd89a00a
+```
+
+In this exercise, you will practice how to edit the contents of a file and commit it to the repo.
+
+
+`@sample_code`
+
+`@@Terminal`
+
+```{sh}
+
+```
+
+`@@file1.txt`
+
+```{text dir = "my_files", open = TRUE, focus = TRUE}
+This file will be open when the exercise is initialized.
+
+Hello ___
+```
+
+`@@file2.txt`
+
+```{text dir = "my_files"}
+This file will NOT be open when the exercise is initialized.
+```
+
+***
+
+### Edit the file
+
+```yaml
+type: ConsoleExercise
+xp: 100
+key: f9adsfasd0
+```
+
+`@instructions`
+
+Edit the contents of `my_files/file.txt` to read `Hello World`.
+
+`@submit_answer`
+
+```{python}
+# Add script that needs to be run when the user submits this subexercise
+# This script needs to read the contents of `my_files/file.txt` and allow its contents to be tested by the SCT framework. This might require extending the testing framework
+```
+
+`@solution`
+
+`@@file1.txt`
+
+```{text dir = "my_files"}
+This file will be open when the exercise is initialized.
+
+Hello World
+```
+
+`@sct`
+
+```{python}
+# Test if the user has added Hello World.
+```
+
+
+***
+
+### Commit the file
+
+`@instructions`
+
+Commit the file to the repo with the message `add greeting`.
+
+`@solution`
+
+`@@Terminal`
+
+```{sh}
+git commit -m my_files/file1.txt
+```
+
+`@sct`
+
+```{python}
+# Test if the user has committed the file to the repo with the correct message.
+```
+
