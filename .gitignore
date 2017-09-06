@@ -35,4 +35,5 @@ vignettes/*.pdf
 
 # Temporary files created by the OS
 .DS_Store
+.ipynb_checkpoints
 
