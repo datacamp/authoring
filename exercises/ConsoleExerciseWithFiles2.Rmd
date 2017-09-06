@@ -14,36 +14,35 @@ cut -d , -f 1 $@ | grep -v Date | sort | uniq | sort -n
 
 `@instructions`
 
-- Write a script to do ...
-- Save it as `./count-dates.sh`
+- Update `./count-dates.sh` to do ...
 - Change permissions using `chmod u+x ./count-dates`
-- Run it with `./count-dates data/*.csv`.
+- Run the script as `./count-dates data/*.csv`.
 
 
 `@sample_code`
 
 `@@Terminal`
 
-```{sh attr = "default,submit,open"}
+```{sh}
 
 ```
 
 `@@count-dates.sh`
 
-```{text attr = "open"}
+```{text open = TRUE}
 
 ```
 
 `@@data/a.csv`
 
-```{csv attr = "locked"}
+```{csv locked = TRUE, open = TRUE}
 a,b,c
 1,2,3
 ```
 
 `@@data/b.csv`
 
-```{csv attr = "locked"}
+```{csv locked = TRUE}
 a,b,c
 1,2,3
 ```
