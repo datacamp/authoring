@@ -30,7 +30,7 @@ runApp(appDir = ".")
 
 `@@ui.R`
 
-```{r open = TRUE}
+```{r open = TRUE, focus = TRUE}
 library(shiny)
 shinyUI(bootstrapPage(
   textInput('username', 'Enter your name'), ___('_____')
