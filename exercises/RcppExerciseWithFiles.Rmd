@@ -8,18 +8,17 @@ xp: 100
 key: asdfa83432
 ```
 
-`@sample_code`
+`@submit_answer`
 
-`@@script.R`
-
-```{r attr = 'submit,locked'}
+```{r}
 sourceCpp("./script.cpp")
 ```
 
+`@sample_code`
 
 `@@script.cpp`
 
-```{cpp attr = 'default,open'}
+```{cpp open = TRUE}
 #include <Rcpp.h>
 
 // [[Rcpp::export]]
@@ -35,12 +34,6 @@ fibonacci(___)
 ```
 
 `@solution`
-
-`@@script.R`
-
-```{r}
-sourceCpp("./script.cpp")
-```
 
 
 `@@script.cpp`
