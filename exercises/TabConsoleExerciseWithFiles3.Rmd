@@ -18,17 +18,17 @@ In this exercise, you will practice how to edit the contents of a file and commi
 
 ```
 
-`@@file1.txt`
+`@@files/file1.txt`
 
-```{text dir = "my_files", open = TRUE, focus = TRUE}
+```{text open = TRUE, focus = TRUE, delete = FALSE, rename = FALSE}
 This file will be open when the exercise is initialized.
 
 Hello ___
 ```
 
-`@@file2.txt`
+`@@files/file2.txt`
 
-```{text dir = "my_files"}
+```{text}
 This file will NOT be open when the exercise is initialized.
 ```
 
@@ -37,27 +37,20 @@ This file will NOT be open when the exercise is initialized.
 ### Edit the file
 
 ```yaml
-type: ConsoleExercise
-xp: 100
+type: FileExercise
+xp: 30
 key: f9adsfasd0
 ```
 
 `@instructions`
 
-Edit the contents of `my_files/file.txt` to read `Hello World`.
-
-`@submit_answer`
-
-```{python}
-# Add script that needs to be run when the user submits this subexercise
-# This script needs to read the contents of `my_files/file.txt` and allow its contents to be tested by the SCT framework. This might require extending the testing framework
-```
+Edit the contents of `files/file1.txt` to read `Hello World`.
 
 `@solution`
 
-`@@file1.txt`
+`@@files/file1.txt`
 
-```{text dir = "my_files"}
+```{text}
 This file will be open when the exercise is initialized.
 
 Hello World
@@ -73,6 +66,12 @@ Hello World
 ***
 
 ### Commit the file
+
+```yaml
+type: ConsoleExericse
+xp: 30
+key: ysadfa8233
+```
 
 `@instructions`
 
