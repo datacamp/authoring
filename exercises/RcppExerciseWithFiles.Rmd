@@ -3,15 +3,9 @@
 This is an Rcpp exercise that can be run as a `NormalExercise` that takes advantage of the File Browser support.
 
 ```yaml
-type: NormalExercise
+type: RcppExercise
 xp: 100
 key: asdfa83432
-```
-
-`@submit_answer`
-
-```{r}
-sourceCpp("./script.cpp")
 ```
 
 `@sample_code`
