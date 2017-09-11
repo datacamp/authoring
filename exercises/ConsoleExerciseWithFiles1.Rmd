@@ -23,17 +23,17 @@ In this exercise, you will practice how to edit the contents of a file and commi
 
 ```
 
-`@@file1.txt`
+`@@files/file1.txt`
 
-```{text dir = "my_files", open = TRUE, focus = TRUE}
+```{text open = TRUE, focus = TRUE, delete = FALSE}
 This file will be open when the exercise is initialized.
 
 Hello ___
 ```
 
-`@@file2.txt`
+`@@files/file2.txt`
 
-```{text dir = "my_files"}
+```{text}
 This file will NOT be open when the exercise is initialized.
 ```
 
@@ -45,8 +45,16 @@ This file will NOT be open when the exercise is initialized.
 git commit -m my_files/file1.txt
 ```
 
+`@@files/file1.txt`
 
-```{r dir = "my_files"}
+```{text open = TRUE, focus = TRUE, delete = FALSE}
+This file will be open when the exercise is initialized.
 
+Hello World
 ```
 
+`@@files/file2.txt`
+
+```{text}
+This file will NOT be open when the exercise is initialized.
+```
