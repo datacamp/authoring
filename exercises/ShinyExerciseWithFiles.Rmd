@@ -19,13 +19,6 @@ Build an awesome app by completing `ui.R` and `server.R` !
 library(shiny)
 ```
 
-`@submit_answer`
-
-```{r}
-runApp(appDir = ".")
-```
-
-
 `@sample_code`
 
 `@@ui.R`
