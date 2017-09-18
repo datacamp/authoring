@@ -39,3 +39,6 @@ vignettes/*.pdf
 .nbgrader.log
 
 
+# NPM Related
+node_modules
+_book
