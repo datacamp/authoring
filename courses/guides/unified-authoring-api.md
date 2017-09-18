@@ -1,6 +1,6 @@
 # Unified Authoring format
 
-The unified authoring format provides a consistent set of markdown extensions to author content in datacamp.
+The basic objective of the unified authoring format is to come up with a simple, unified API to document all forms of content in DataCamp. The unified format defines a generic document structure that consists of metadata, sections, sub-sections, content blocks, and sub-blocks, that allows authoring of different types of content like exercises, challenges, projects, etc. in a consistent way. The format is optimized to be simple enough, yet flexible, and render well on github and other media.
 
 ## Metadata
 
