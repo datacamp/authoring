@@ -1,0 +1,13 @@
+{
+    "plugins": ["codetabs", "prism", "-highlight", "bootstrap-callout"],
+    "pluginsConfig": {
+        "prism": {
+          "css": [
+            "prismjs/themes/prism-tomorrow.css"
+          ]
+        }
+      },
+      "pdf": {
+          "fontFamily": "Lato"
+      }
+}
