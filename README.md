@@ -17,7 +17,11 @@ npm install gitbook-cli -g
 __Clone Docs Repo__
 
 ```sh
+# for ssh
 git clone git@github.com:datacamp/authoring.git
+
+# for https
+git clone https://github.com/datacamp/authoring.git
 ```
 
 __Install Gitbook Plugins__
