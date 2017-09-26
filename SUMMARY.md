@@ -23,7 +23,7 @@
    - [Datasets](courses/datasets.md)
    - [Index](courses/indx.md)
    - [Requirements](courses/requirements.md)
-   - [Slides](coures/slides.md)
+   - [Slides](courses/slides.md)
    - [Scripts](courses/scripts.md) 
    - [Guides](courses/guides/README.md)
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
