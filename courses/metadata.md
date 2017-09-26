@@ -1,4 +1,4 @@
-# Course Metadata
+# Metadata
 
 All general information concerning the course is contained in the YAML-formatted `course.yml` file. You can update the `course.yml` at all times by simply committing your changes to the GitHub repository and the DataCamp course will be updated accordingly
 
