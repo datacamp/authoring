@@ -1,6 +1,6 @@
-## Challenges
+# Challenges
 
-Coding up challenges is pretty similar to coding up normal exercises. This time, however, there is no course-chapter-exercise concept. Instead, challenges are simply grouped in pools. All challenges have to specified as markdown files in the `challenges/` folder. You can choose the names of the markdown files, the number of challenges per file, and how to structure the challenges.
+Coding up challenges is pretty similar to coding up a course. This time, however, there is no course-chapter-exercise concept. Instead, challenges are simply grouped in pools. All challenges have to specified as markdown files in the `challenges/` folder. You can choose the names of the markdown files, the number of challenges per file, and how to structure the challenges.
 
 Challenges use a simple directory structure.
 
