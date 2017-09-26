@@ -3,8 +3,8 @@
 `TabExercise` and `BulletExercise` allow an exercise to be presented as a series of smaller sub-exercises, which make them easier to attempt and solve. There are three key differences between the two exercises types as indicated in the table below.
 
 
-| Criterion    | Bullet          |  Tab             |
-| -------------|:----------------|:-----------------|
+|Criterion    | Bullet          |  Tab             |
+|:-------------|:----------------|:-----------------|
 | Concepts     | Homogenous      | Heterogenous     |
 | Relationship | Independent     | Dependent        |
 | Length       | Short (1 Line)  | Long (> 2 lines) |
@@ -26,10 +26,10 @@ __Example 1: Selecting MULTIPLE Columns__
 
 In this exercise, we want the learner to learn how to select multiple columns from a table. It involves a single concept and so we should use a `BulletExercise`.
 
-Get the title of every film from the films table.
-Get the title and release_year for every film..
-Get the release year and country for every film.
-Get all columns from the films table.
+- Get the title of every film from the films table.
+- Get the title and release_year for every film..
+- Get the release year and country for every film.
+- Get all columns from the films table.
 
 __Example 2: Select, filter and order!__
 
