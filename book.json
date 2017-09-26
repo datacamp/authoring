@@ -1,11 +1,12 @@
 {
-    "plugins": ["codetabs", "prism", "-highlight", "bootstrap-callout"],
+    "plugins": [
+      "codetabs", 
+      "bootstrap-callout",
+      "collapsible-menu",
+      "theme-vuejs"
+    ],
     "pluginsConfig": {
-        "prism": {
-          "css": [
-            "prismjs/themes/prism-tomorrow.css"
-          ]
-        }
+      
       },
       "pdf": {
           "fontFamily": "Lato"
