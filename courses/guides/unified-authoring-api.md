@@ -12,7 +12,7 @@ The basic objective of the unified authoring format is to come up with a simple,
     description : "In this chapter, you will take your first steps with R."
     ---
 
-## Sections and Subsections
+## Sections
 
 > Every document consists of sections and subsections delimited by separators, `---` and `***`.
 
