@@ -5,11 +5,11 @@
 A `TabExercise`, similar to a [`BulletExercise`](bullet-exercise.md), allows an exercise to be presented as a series of smaller sub-exercises, which make them easier to attempt and solve. They are best suited when the solution to an exercise involves bringing together multiple concepts that are related.
 
 1. [Tab Exercise in SQL](examples/md/sql/TabExercise.md)
-2. [Tab Exercise in R](examples/md/sql/TabExercise.md)
+2. [Tab Exercise in R](examples/md/r/TabExercise.md)
 3. [Tab Exercise in Python](examples/md/python/TabExercise.md)
 
 
-Please read [this article](../guides/tab-vs.bullet-exercices.md) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
+Please read [this article](../guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
 
 ## Authoring
 
