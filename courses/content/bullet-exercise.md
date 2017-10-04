@@ -7,10 +7,10 @@ A `BulletExercise`, similar to a [`TabExercise`](tab-exercise.md), allows an exe
 __Examples__
 
 1. [Bullet Exercise in SQL](examples/md/sql/BulletExercise.md)
-2. [Bullet Exercise in R](examples/md/sql/BulletExercise.md)
+2. [Bullet Exercise in R](examples/md/r/BulletExercise.md)
 3. [Bullet Exercise in Python](examples/md/python/BulletExercise.md)
 
-Please read [this article](../guides/tab-vs.bullet-exercices.md) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
+Please read [this article](../guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
 
 ## Bullet Console Exercise
 
