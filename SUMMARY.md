@@ -36,6 +36,11 @@
       - [Blanks Challenge](challenges/content/blanks-challenge.md)
    - [Review Mode]()
    - [FAQs](challenges/FAQs.md)
+* [Projects](projects/README.md)
+   - [Vision](projects/projects-vision.md)
+   - [Metadata](projects/projects-metadata.md)
+   - [Content](projects/projects-authoring.md)
+   - [USP](projects/projects-usp.md)
 
 
 
