@@ -1,4 +1,5 @@
 docker build . -t teach-documentation
 docker run \
-  -v "$PWD/_book/":/app/ \
+  -v "$PWD/":/app/ \
+  -e RELEASE=$1 \
   teach-documentation
