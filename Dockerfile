@@ -10,8 +10,7 @@ RUN chmod 700 /root/.ssh/id_rsa
 RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 RUN eval "$(ssh-agent -s)" && ssh-add /root/.ssh/id_rsa
 
-COPY package.json .
-RUN npm install --production=false
+RUN npm install gitbook-cli -g
 RUN gitbook build
 
 COPY . /app
