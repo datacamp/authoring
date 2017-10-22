@@ -8,8 +8,6 @@ LABEL maintainer="goran@datacamp.com"
 
 ARG NODE_ENV
 
-WORKDIR ./
-
 # ADD id_rsa /root/.ssh/id_rsa
 # RUN chmod 700 /root/.ssh/id_rsa
 # RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
@@ -18,8 +16,8 @@ WORKDIR ./
 RUN npm install gitbook-cli -g
 CMD gitbook build 
 
-# RUN mkdir /app
-# COPY ./_book/* /app/
+RUN mkdir /app
+WORKDIR ./_book
 
-WORKDIR _book
 RUN rm -f Dockerfile Jenkinsfile
+COPY ./* /app/

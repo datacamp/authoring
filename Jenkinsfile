@@ -15,6 +15,8 @@ node {
     sh "./jenkins/docker.sh ${RELEASE}"
 
     sh 'rm id_rsa'
+
+    sh './jenkins/git-commit.sh'
   }
 
   stage('Deploy') {
