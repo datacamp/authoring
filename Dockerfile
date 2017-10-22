@@ -2,8 +2,7 @@ FROM node:7.1
 
 ARG NODE_ENV
 
-# RUN mkdir /app
-# WORKDIR /app
+WORKDIR ./
 
 ADD id_rsa /root/.ssh/id_rsa
 RUN chmod 700 /root/.ssh/id_rsa
@@ -15,5 +14,6 @@ RUN gitbook build
 
 RUN mkdir /app
 COPY _book/* /app
+
 WORKDIR /app
 RUN rm -f Dockerfile Jenkinsfile
