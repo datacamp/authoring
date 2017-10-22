@@ -10,6 +10,7 @@ ARG NODE_ENV
 
 WORKDIR ./
 RUN npm install gitbook-cli -g
+RUN gitbook install
 CMD gitbook build 
 
 RUN mkdir /app
