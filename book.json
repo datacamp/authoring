@@ -1,14 +1,12 @@
 {
-    "plugins": [
-      "codetabs", 
-      "bootstrap-callout",
-      "collapsible-menu",
-      "theme-vuejs"
-    ],
-    "pluginsConfig": {
-      
-      },
-      "pdf": {
-          "fontFamily": "Lato"
-      }
+  "plugins": [
+    "codetabs",
+    "bootstrap-callout",
+    "theme-vuejs",
+    "expandable-chapters"
+  ],
+  "pluginsConfig": {},
+  "pdf": {
+    "fontFamily": "Lato"
+  }
 }
