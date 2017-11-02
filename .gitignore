@@ -38,6 +38,11 @@ vignettes/*.pdf
 .ipynb_checkpoints
 .nbgrader.log
 
-
 # NPM Related
 node_modules
+
+# Build directory
+_book
+
+# Editor files
+*~
