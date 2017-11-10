@@ -15,6 +15,4 @@ CMD gitbook install && gitbook build
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
-RUN rm /app/_book/Jenkinsfile
-RUN rm /app/_book/Dockerfile
 
