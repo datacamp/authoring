@@ -2,7 +2,8 @@
   "plugins": [
     "codetabs",
     "bootstrap-callout",
-    "expandable-chapters"
+    "expandable-chapters",
+    "hints"
   ],
   "pluginsConfig": {},
   "pdf": {
