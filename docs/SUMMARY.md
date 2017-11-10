@@ -1,10 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-* [Welcome](welcome.md)
-* [Getting Started](getting-started.md)
-
----
 
 ## Authoring
 

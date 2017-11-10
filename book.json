@@ -7,5 +7,6 @@
   "pluginsConfig": {},
   "pdf": {
     "fontFamily": "Lato"
-  }
+  },
+  "root": "docs/"
 }

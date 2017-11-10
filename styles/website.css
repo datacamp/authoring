@@ -4,3 +4,7 @@
     font-family: Lato;
     letter-spacing: 0px;
 }
+
+table.no-border td {
+    border: none;
+}
