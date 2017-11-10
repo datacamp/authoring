@@ -2,7 +2,6 @@
   "plugins": [
     "codetabs",
     "bootstrap-callout",
-    "theme-vuejs",
     "expandable-chapters"
   ],
   "pluginsConfig": {},
