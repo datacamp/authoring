@@ -20,7 +20,9 @@ Challenges are different to courses as the sole purpose is to question student's
 
 ![Introduction to R challenges](images/challenges/challenges-screen.png)
 
-Feeling ready to create challenges yet? __[Start now](challenges/README.md)__
+{% hint style='info' %}
+_Challenges are going to be available soon, meanwhile you can read the [documentation](challenges/README.md)_
+{% endhint %}
 
 ### Projects
 Seems your students are performing well completing all your courses and challenges. The newest addition to the Datacamp learning portfolio is Projects.
@@ -29,4 +31,6 @@ The purpose of projects is to allow students to apply their knowledge by resolvi
 
 ![Start a project](images/projects/projects-screen.png)
 
-Feeling ready to create a project yet? __[Start now](projects/README.md)__
+{% hint style='info' %}
+_Projects are going to be available soon, meanwhile you can read the [documentation](projects/README.md)_
+{% endhint %}
