@@ -1,8 +1,11 @@
 # Summary
 
-* [Introduction](README.md)
+## Introduction
 
-## Authoring
+* [Welcome](README.md)
+* [Prerequisites](welcome/prerequisites.md)
+
+## Creating content
 
 * [Courses](courses/README.md)
    - [Metadata](courses/metadata.md)
