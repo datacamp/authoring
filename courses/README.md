@@ -1,5 +1,7 @@
 ## Courses
 
+If you are designing a new course, please start with [this guide](design.md) and then replace the `README.md` of your course repository with [this template](template.md) and fill it in.
+
 Courses use a simple directory structure.
 
 ```text

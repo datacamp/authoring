@@ -35,6 +35,3 @@ __Serve Site__
 ```sh
 gitbook serve
 ```
-
-
-
