@@ -9,6 +9,7 @@
 ## Authoring
 
 * [Courses](courses/README.md)
+   - [Design](courses/design.md)
    - [Metadata](courses/metadata.md)
    - [Content](courses/content/README.md)
      - [Video Exercise](courses/content/video-exercise.md)
