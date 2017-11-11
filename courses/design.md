@@ -336,10 +336,10 @@ Uses:
 
 In this stage,
 you put the exercises in a logical order
-then derive a point-form outline for the entire course from them.
+then derive a point-form course outline for the entire course from them.
 This is also when you will consolidate the datasets your formative assessments have used.
 
-Checkin: an instructional sequence and dataset summary.
+Checkin: a course outline and dataset summary.
 
 Note:
 
@@ -385,7 +385,7 @@ The datasets are:
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 5: Course outline
+## Step 5: Course overview
 
 You can now summarize everything you have created
 by writing a high-level course overview that consists of:
