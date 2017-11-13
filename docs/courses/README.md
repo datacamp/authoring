@@ -18,9 +18,8 @@ The information which is required is the `name` of the course and technology bei
 
 Once ready click the "Create" button.
 
-{% hint style='info' %}
-Creating the course can take a few moments.
-{% endhint %}
+> #### info::NOTE
+> Creating the course can take a few moments.
 
 Once the course has been created your Dashboard should contain recently created course:
 
