@@ -2,7 +2,8 @@
   "plugins": [
     "codetabs",
     "bootstrap-callout",
-    "expandable-chapters"
+    "expandable-chapters",
+    "advanced-emoji"
   ],
   "pluginsConfig": {},
   "pdf": {
