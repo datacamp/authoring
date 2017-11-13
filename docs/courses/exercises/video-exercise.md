@@ -4,7 +4,8 @@
 
 `VideoExercise` features an instructional video. The finished video shows the instructor explaining concepts with slides that are rendered in the background. The video files are uploaded to Vimeo and the embed link is added to the video exercise.
 
-It is usual to start a course with a `VideoExercise`.
+It is usual to start a course with a `VideoExercise`.  
+`VideoExercise` is typically only part of premium courses that require a subscription.
 
 ## Authoring
 
