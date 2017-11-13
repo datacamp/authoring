@@ -146,3 +146,5 @@ pip3 install dccpu==0.3.7
 ```
 
 This file is only present when the technology of a course is `SQL` or `Python`
+
+**[Next: Learn about exercises](exercises/README.md)**
