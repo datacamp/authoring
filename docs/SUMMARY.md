@@ -35,6 +35,9 @@
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
 
+## Teach interface
+
+* [Dashboard](interface/dashboard.md)
 
 
 
