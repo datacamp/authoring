@@ -53,6 +53,25 @@ This file contains the general information about your course being:
 | `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          |
 | `datasets`             | YAML key value combinations that explicitely define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is __IGNORE__, the dataset won't be shown on the course page.|
 
+##### prerequisites
+As previously mentioned prerequisites contain a list of course id's which are the prerequisite for the course. An example on how to specify those in the `course.yml` is:
+
+```yaml
+prerequisites:
+  - 58 # Introduction to R
+  - 672 # Intermediate R 
+```
+
+##### datasets
+As previously mentioned datasets is a list of datasets used in the course. All the datasets are going to be visible on the course page (page which is seend by students) unless you ignore the files which shouldn't be visible. You can ignore files in the `course.yml` by using `__IGNORE__` as follows:
+
+```yaml
+datasets:
+  some_data.RData: Super nice dataset
+  some_image.jpg: Some image
+  r_script_i_need.R: __IGNORE__ # This file won't be shown on the course page
+```
+
 ### `chapter(1-n).Rmd`
 As you may have noticed there could be many chapter files depending on how much you add by using the Teach Editor.  
 An example would be a course with 5 chapters, in such case the folder structure would contain 5 files:
