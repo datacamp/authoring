@@ -8,6 +8,7 @@
 ## Creating content
 
 * [Courses](courses/README.md)
+   - [Data structure](courses/data-structure.md)
    - [Metadata](courses/metadata.md)
    - [Content](courses/content/README.md)
      - [Video Exercise](courses/content/video-exercise.md)

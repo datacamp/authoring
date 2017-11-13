@@ -1,33 +1,35 @@
-## Courses
+# Courses
 
-Courses use a simple directory structure.
+Course consists of series of videos, slides and different types of exercises. The goal of each course is to provide lectures along with hands on code or learning by doing.
 
-```text
-|- README.md
-|- course.yml*
-|- chapter1.md*
-|- datasets
-|- index.md
-|- requirements.r
-|- requirements.sh
-|- scripts
-|  |- ch1_1_script.md
-|  |- ch1_2_script.md
-|- slides
-|  |- ch1_1_slides.md
-|  |- ch1_2_slides.md
-```
+## Creating courses
 
-An overview of what each of this does is:
+In order to start creating courses make sure you are signed in your [Datacamp](https://www.datacamp.com) account.
 
-| File/Folder         | Description                                                              |
-|:--------------------|:-------------------------------------------------------------------------|
-| `README.md`         | A readme file with a list of resources more explanation to get started.  |
-| `course.yml*`       | (__required__) A yaml file with course metadata                          |
-| `chapter1.md*`      | (__required__) A markdown file with chapter metadata and exercises.      |
-| `datasets`          |                                                                          |
-| `index.md`          |                                                                          |
-| `requirements.sh`   |                                                                          |
-| `scripts/`          |                                                                          |
-| `slides/`           |                                                                          |
+Once signed in be sure to open the [Datacamp for Teachers](https://www.datacamp.com/teach).
+![Datacamp for Teachers - Dashboard](../images/courses/teach-dashboard.png)
+_Datacamp for Teachers - Dashboard_
 
+In order to create a new course click on "Add Course +" button, following dialog should appear:
+![Datacamp for Teachers - Dashboard](../images/courses/teach-dashboard-add-course.png)
+_Datacamp for Teachers - Create Course dialog_
+
+The information which is required is the `name` of the course and technology being `R`, `Python` or `SQL`. Specify a nice name for your first course such as `best-course` (_name must be lowercase with dashes instead of spaces_) and select the technology which suits you the best.
+
+Once ready click the "Create" button.
+
+{% hint style='info' %}
+Creating the course can take a few moments.
+{% endhint %}
+
+Once the course has been created your Dashboard should contain recently created course:
+
+![Datacamp for Teachers - Dashboard](../images/courses/teach-dashboard-course-list.png)
+_Datacamp for Teachers - Course dashboard_
+
+### So what just happened?
+__Congratulations! You just created your first course!__  
+Following actually happened behind the scenes after you have clicked "Create" button:
+
+1. DataCamp has created a course populated with scaffolded exercises and information
+2. The course has been pushed (uploaded) to your Github account in a repository named `best-course` (_check the next section for explanation on course data structure_)
