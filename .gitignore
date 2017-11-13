@@ -41,8 +41,5 @@ vignettes/*.pdf
 # NPM Related
 node_modules
 
-# Build directory
-_book
-
 # Editor files
 *~
