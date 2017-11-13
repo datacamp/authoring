@@ -3,7 +3,7 @@
 ## Introduction
 
 * [Welcome](README.md)
-* [Prerequisites](welcome/prerequisites.md)
+* [Getting started](welcome/getting-started.md)
 
 ## Creating content
 

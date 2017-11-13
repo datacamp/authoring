@@ -1,4 +1,4 @@
-# Prerequisites
+# Getting started
 
 In order to start creating courses, challenges and projects on DataCamp platform you need to fulfill following prerequisites:
 
