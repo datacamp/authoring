@@ -4,14 +4,7 @@ As we have learned when examining the [course data structure](../data-structure.
 
 The three most commonly used exercise types are:
 
-<!-- __VideoExercise__ 
-
-A tutorial video, explaining concepts and code that will be used in the exercises that follow. VideoExercises are typically only part of premium courses that require a subscription.
-
-__NormalExercise__
-
-An interactive exercise, where the student is expected to submit code based on the assignment and instructions provided. The student’s submission is compared to the ideal solution with DataCamp’s autograder and appropriate feedback is generated.
-
+<!--
 __MultipleChoiceExercise__
 
  Provides the student with a set of possible answers. Based on the exercise information and the instruction, the student is expected to select one (and only one) answer. During a multiple choice exercise, the user can still experiment in the R console.
@@ -34,6 +27,7 @@ A full list of all exercise types supported by the platform is provided below. -
 
 https://github.com/datacamp/campus-app/wiki/Exercise-Types
 
-
+> #### info::Note
+> Each exercise contains the format which should be used in order to create them. It's always reccomended to use the `Version 2` of the authoring format.
 
 
