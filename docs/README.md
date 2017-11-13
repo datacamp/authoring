@@ -30,6 +30,5 @@ The purpose of projects is to allow students to apply their knowledge by resolvi
 
 ![Start a project](images/projects/projects-screen.png)
 
-{% hint style='info' %}
-_Projects are going to be available soon, meanwhile you can read the [documentation](projects/README.md)_
-{% endhint %}
+> #### info::NOTE
+> _Projects are going to be available soon, meanwhile you can read the [documentation](projects/README.md)_
