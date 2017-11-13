@@ -80,10 +80,38 @@ datasets:
 > to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab. 
 
 ### `chapter(1-n).Rmd` / `chapter(1-n).md`
-As you may have noticed there could be many chapter files depending on how much you add by using the Teach Editor.  
+The content of a course is organized into chapters, each of which consists of one or more exercises.  
+
+Similar to the `course.yml`, every chapter files start with a YAML header containing information about the chapter:
+
+```yaml
+---
+title    : Introdution to Basics
+title_meta: Chapter 1
+description: In this chapter, you will take your first steps with R.
+---
+```
+
+#### Chapter fields
+
+Each chapter file contains general information about the chapter in YAML format such as:
+
+| Field        | Explanation                                                                                                                          |
+|--------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| title        | Title of the chapter                                                                                                                 |
+| description  | Description of the chapter                                                                                                           |
+| free_preview | If it's a paying course, whether this chapter is a free preview (typically the first chapter of a premium course is a free preview). |
+| attachments  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                            |
+
+###### attachments
+You can specify attachments for the chapter, currently only used to specify the slides for the chapter by using the `slide_link`. Example:
+```yaml
+attachments:
+  slides_link: http://link.to.slides/
+```
 
 #### File extensions
-There is an important difference in file extensions which depends on course technology.  
+There is an important difference in file extensions which depends on course technology when naming a chapter file. 
 
 Example of directory structure for `R` technology:
 ```
@@ -105,24 +133,6 @@ chapter5.md
 
 The only difference is `.Rmd` versus `.md` depending on the technology.  
 `.Rmd` provides a specific `R` technology markdown flavour and syntax on Github.  
-
-#### Chapter fields
-
-Each chapter file contains general information about the chapter in YAML format such as:
-
-| Field        | Explanation                                                                                                                          |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| title        | Title of the chapter                                                                                                                 |
-| description  | Description of the chapter                                                                                                           |
-| free_preview | If it's a paying course, whether this chapter is a free preview (typically the first chapter of a premium course is a free preview). |
-| attachments  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                            |
-
-###### attachments
-You can specify attachments for the chapter, currently only used to specify the slides for the chapter by using the `slide_link`. Example:
-```yaml
-attachments:
-  slides_link: http://link.to.slides/
-```
 
 ### `requirements.r`
 This file holds all the `R` dependencies or packages you may want to use through your project.

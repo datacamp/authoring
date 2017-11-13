@@ -1,6 +1,6 @@
-# Content
+# Exercises
 
-The content of a course is organized into chapters, each of which consists of one or more exercises.
+As we have learned when examining the [course data structure](../data-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
 
 ## Metadata
 
