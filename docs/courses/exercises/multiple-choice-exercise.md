@@ -121,6 +121,9 @@ test_mc(4, [msg1, msg2, msg3, msg4])
 
 {%- endcodetabs %}
 
+> #### info::NOTE
+> Detailed block information is available [here](./README.md#exercise-blocks)
+
 ## Pure Multiple Choice Exercise {#pure-mce}
 
 ![Pure Multiple Choice Exercise](/images/PlainMultipleChoiceExerciseR.png)
@@ -211,9 +214,13 @@ A list which maps to "Possible answers" where you can provide customized feedbac
 
 {%- endcodetabs %}
 
+> #### info::NOTE
+> Detailed block information is available [here](./README.md#exercise-blocks)
+
 ## Plain Multiple Choice Exercise
 
 It is the same as a `MultipleChoiceExercise`, but without a console. However, it requires a backend session. This exercise type will be deprecated in favor of `PureMultipleChoice`, which is simply a better version of the `PlainMultipleChoiceExercise` that loads faster, is easier to code up, but looks the exact same way to the end user.
 
 > #### warning::NOTE
 > This type of exercise is replaced by `PureMultipleChoice` exercise.
+

@@ -16,6 +16,10 @@ Additional information regarding the exercise or the data set that is used is st
 | `@solution`          | Solution code for the exercise
 | `@sct`               | Submission correctness tests.
 
+
+> #### info::NOTE
+> Detailed block information is available [here](./README.md#exercise-blocks)
+
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
 Each block is described in detail following this example.
@@ -151,3 +155,6 @@ success_msg("Good job! Head over to the next exercise")
 ```
 
 {%- endcodetabs %}
+
+> #### info::NOTE
+> Detailed block information is available [here](./README.md#exercise-blocks)

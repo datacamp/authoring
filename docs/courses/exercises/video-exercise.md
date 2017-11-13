@@ -47,3 +47,6 @@ description : Yes! This chapter contains a video!
 //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
 
 {% endcodetabs %}
+
+> #### info::NOTE
+> Detailed block information is available [here](./README.md#exercise-blocks)
