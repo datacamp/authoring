@@ -9,7 +9,6 @@
 
 * [Courses](courses/README.md)
    - [Data structure](courses/data-structure.md)
-   - [Metadata](courses/metadata.md)
    - [Exercises](courses/exercises/README.md)
      - [Video](courses/exercises/video-exercise.md)
      - [Normal](courses/exercises/normal-exercise.md)

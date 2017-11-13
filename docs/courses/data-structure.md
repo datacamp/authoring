@@ -53,7 +53,7 @@ This file contains the general information about your course being:
 | `difficulty_level`     | 1, 2 or 3, depending on the difficulty of the course. 1 corresponds to beginner, 2 to intermediate and 3 to advanced. You can also use the difficulty level of 0: a Getting Started course.                                                                                                               |
 | `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              |
 | `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          |
-| `datasets`             | YAML key value combinations that explicitely define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is __IGNORE__, the dataset won't be shown on the course page.|
+| `datasets`             | YAML key value combinations that explicitely define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is  `__IGNORE__`, the dataset won't be shown on the course page.|
 
 Some of the fields are explained in detail below:
 
@@ -76,10 +76,16 @@ datasets:
   r_script_i_need.R: __IGNORE__ # This file won't be shown on the course page
 ```
 
-### `chapter(1-n).Rmd`
-As you may have noticed there could be many chapter files depending on how much you add by using the Teach Editor.  
-An example would be an `R` course with 5 chapters, in such case the folder structure would contain 5 files:
+> #### info::Note
+> to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab. 
 
+### `chapter(1-n).Rmd` / `chapter(1-n).md`
+As you may have noticed there could be many chapter files depending on how much you add by using the Teach Editor.  
+
+#### File extensions
+There is an important difference in file extensions which depends on course technology.  
+
+Example of directory structure for `R` technology:
 ```
 chapter1.Rmd
 chapter2.Rmd
@@ -88,12 +94,7 @@ chapter4.Rmd
 chapter5.Rmd
 ```
 
-Each chapter file contains general information about the chapter and exercises.  
-
-### `chapter(1-n).md`
-Similar to `Rmd` file `md` files are used when creating `Python` and `SQL` courses.
-An example would be an `Python` course with 5 chapters, in such case the folder structure would contain 5 files:
-
+Example of directory structure for `Python` and `SQL` technology:
 ```
 chapter1.md
 chapter2.md
@@ -102,9 +103,12 @@ chapter4.md
 chapter5.md
 ```
 
-Each chapter file contains general information about the chapter and exercises.  
+The only difference is `.Rmd` versus `.md` depending on the technology.  
+`.Rmd` provides a specific `R` technology markdown flavour and syntax on Github.  
 
 #### Chapter fields
+
+Each chapter file contains general information about the chapter in YAML format such as:
 
 | Field        | Explanation                                                                                                                          |
 |--------------|--------------------------------------------------------------------------------------------------------------------------------------|

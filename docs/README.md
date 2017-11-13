@@ -20,9 +20,8 @@ Challenges are different to courses as the sole purpose is to question student's
 
 ![Introduction to R challenges](images/challenges/challenges-screen.png)
 
-{% hint style='info' %}
-_Challenges are going to be available soon, meanwhile you can read the [documentation](challenges/README.md)_
-{% endhint %}
+> #### info::Note
+> _Challenges are going to be available soon, meanwhile you can read the [documentation](challenges/README.md)_
 
 ### Projects
 Seems your students are performing well completing all your courses and challenges. The newest addition to the Datacamp learning portfolio is Projects.

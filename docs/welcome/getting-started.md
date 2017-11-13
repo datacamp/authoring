@@ -13,7 +13,6 @@ Upcoming sections are going to guide you through the process of creating the nec
 Creating a DataCamp account is a straightforward process. Visit [www.datacamp.com](https://www.datacamp.com/) and enter your credentials.
 
 ![Create DataCamp account](../images/prerequisites/create-datacamp-account.png)
-
 Once you have created your DataCamp account you can proceed with creating your Github Account.
 
 ## Github Account
@@ -41,9 +40,8 @@ As a part of second step you will need to choose the Github plan:
 
 ![Github registration form - Plan](../images/prerequisites/2-select-github-plan.png)
 
-{% hint style='info' %}
-_Paid plan is preferred if you are going to create content which needs to be private, meaning non accessible by other Github users_
-{% endhint %}
+> #### info::Note
+> _Paid plan is preferred if you are going to create content which needs to be private, meaning non accessible by other Github users_
 
 We recommend you to start with the _Unlimited Plan_ and upgrade at later stage when and if it becomes necessary.
 
