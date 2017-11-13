@@ -1,9 +1,7 @@
 # Data structure
 Course consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
 
-Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating the course the data structure can differ.
-
-## `R`
+Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating the course the data structure can slightly differ.
 
 The structure outline is as follows:
 
@@ -12,9 +10,11 @@ The structure outline is as follows:
 |- img/
 |- .gitignore
 |- README.md
+|- chapter1.Rmd
 |- chapter1.md
 |- course.yml
 |- requirements.r
+|- requirements.sh
 |- scripts
 |  |- ch1_1_script.md
 |  |- ch1_2_script.md
@@ -32,10 +32,12 @@ An overview of what each of this does is:
 | `scripts/*`          | TBD                                                                         |
 | `slides/*`           | Video slide markdown files.                                                                         |
 | `.gitignore`         | Files and folders which should be ignored by Git  |
-| `README.md`         | A readme file with a list of resources more explanation to get started.  |
-| `chapter(1-n).Rmd`      | (__required__) A markdown file with chapter metadata and exercises.      |
-| `course.yml`       | (__required__) A yaml file with course metadata                          |
+| `README.md`         | A readme file with a list of resources more explanation to get started  |
+| `chapter(1-n).Rmd`      | A markdown file with chapter metadata and exercises used in `R` courses      |
+| `chapter(1-n).md`      | A markdown file with chapter metadata and exercises used in `Python` and `SQL` courses    |
+| `course.yml`       | A yaml file with course metadata                          |
 | `requirements.r`   | Additional R packages you may want to use in your course                                                                          |
+| `requirements.sh`   | Additional Python / SQL packages you may want to use in your course                                                                          |
 
 Let's go over some of the most important files and folders in more detail.
 
@@ -52,6 +54,8 @@ This file contains the general information about your course being:
 | `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              |
 | `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          |
 | `datasets`             | YAML key value combinations that explicitely define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is __IGNORE__, the dataset won't be shown on the course page.|
+
+Some of the fields are explained in detail below:
 
 ##### prerequisites
 As previously mentioned prerequisites contain a list of course id's which are the prerequisite for the course. An example on how to specify those in the `course.yml` is:
@@ -74,7 +78,7 @@ datasets:
 
 ### `chapter(1-n).Rmd`
 As you may have noticed there could be many chapter files depending on how much you add by using the Teach Editor.  
-An example would be a course with 5 chapters, in such case the folder structure would contain 5 files:
+An example would be an `R` course with 5 chapters, in such case the folder structure would contain 5 files:
 
 ```
 chapter1.Rmd
@@ -82,6 +86,20 @@ chapter2.Rmd
 chapter3.Rmd
 chapter4.Rmd
 chapter5.Rmd
+```
+
+Each chapter file contains general information about the chapter and exercises.  
+
+### `chapter(1-n).md`
+Similar to `Rmd` file `md` files are used when creating `Python` and `SQL` courses.
+An example would be an `Python` course with 5 chapters, in such case the folder structure would contain 5 files:
+
+```
+chapter1.md
+chapter2.md
+chapter3.md
+chapter4.md
+chapter5.md
 ```
 
 Each chapter file contains general information about the chapter and exercises.  
@@ -102,6 +120,25 @@ attachments:
   slides_link: http://link.to.slides/
 ```
 
-## `Python`
+### `requirements.r`
+This file holds all the `R` dependencies or packages you may want to use through your project.
+Example:
 
-## `SQL`
+```r
+devtools::install_version("ggplot2", "2.2.1")
+devtools::install_version("data.table", "1.10.0")
+```
+
+This file is only present when the technology of a course is `R`
+
+### `requirements.sh`
+This file holds all the `Python` or `SQL` dependencies or packages you may want to use through your project.
+Example:
+
+```python
+pip3 install numpy==1.12.0
+pip3 install pandas==0.19.2 
+pip3 install dccpu==0.3.7
+```
+
+This file is only present when the technology of a course is `SQL` or `Python`
