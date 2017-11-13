@@ -2,11 +2,12 @@
   "plugins": [
     "codetabs",
     "bootstrap-callout",
-    "theme-vuejs",
-    "expandable-chapters"
+    "expandable-chapters",
+    "advanced-emoji"
   ],
   "pluginsConfig": {},
   "pdf": {
     "fontFamily": "Lato"
-  }
+  },
+  "root": "docs/"
 }

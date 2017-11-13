@@ -1,25 +1,18 @@
 # Summary
 
-* [Introduction](README.md)
-* [Welcome](welcome.md)
-* [Getting Started](getting-started.md)
+## Introduction
 
----
+* [Welcome](README.md)
+* [Getting started](welcome/getting-started.md)
 
-## Authoring
+## Creating content
 
 * [Courses](courses/README.md)
-   - [Metadata](courses/metadata.md)
-   - [Content](courses/content/README.md)
-     - [Video Exercise](courses/content/video-exercise.md)
-     - [Normal Exercise](courses/content/normal-exercise.md)
-     - [Multiple Choice Exercise](courses/content/multiple-choice-exercise.md)
-     - [Console Exercise](courses/content/console-exercise.md)
-     - [Tab Exercise](courses/content/tab-exercise.md)
-     - [Bullet Exercise](courses/content/bullet-exercise.md)
-     - [Markdown Exercise](courses/content/markdown-exercise.md)
-     - [Swirl Exercise](courses/content/swirl-exercise.md)
-     - [File Exercise](courses/content/file-exercise.md)
+   - [Data structure](courses/data-structure.md)
+   - [Exercises](courses/exercises/README.md)
+     - [Video](courses/exercises/video-exercise.md)
+     - [Normal](courses/exercises/normal-exercise.md)
+     - [Multiple Choice](courses/exercises/multiple-choice-exercise.md)
    - [Datasets](courses/datasets.md)
    - [Index](courses/indx.md)
    - [Requirements](courses/requirements.md)
@@ -42,6 +35,9 @@
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
 
+## Teach interface
+
+* [Dashboard](interface/dashboard.md)
 
 
 
