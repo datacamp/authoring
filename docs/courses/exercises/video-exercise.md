@@ -2,7 +2,9 @@
 
 ![video-exercise](/images/VideoExercise.png)
 
-A `VideoExercise` displays a video player with a video lesson. It is usual to start a course with a `VideoExercise`.
+`VideoExercise` features an instructional video. The finished video shows the instructor explaining concepts with slides that are rendered in the background. The video files are uploaded to Vimeo and the embed link is added to the video exercise.
+
+It is usual to start a course with a `VideoExercise`.
 
 ## Authoring
 
@@ -36,4 +38,5 @@ video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.mast
 
 {% endcodetabs %}
 
-
+> #### info::Note
+> It's always reccomended to use the `Version 2` of the authoring format.
