@@ -32,4 +32,7 @@ __Congratulations! You just created your first course!__
 Following actually happened behind the scenes after you have clicked "Create" button:
 
 1. DataCamp has created a course populated with scaffolded exercises and information
-2. The course has been pushed (uploaded) to your Github account in a repository named `best-course` (_check the next section for explanation on course data structure_)
+2. The course has been pushed (uploaded) to your Github account in a repository named `best-course`
+3. Feel free to visit your newly created Github repository (*you can find it by opening your Github account and searching for repository with name `best-course`*)
+
+**[Next: Learn about the course data structure](data-structure.md)**
