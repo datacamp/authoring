@@ -1,11 +1,11 @@
 # NormalExercise
+An interactive exercise, where the student is expected to submit code based on the assignment and instructions provided. The student’s submission is compared to the ideal solution with DataCamp’s autograder and appropriate feedback is generated.
+
 A `NormalExercise` shows the exercise and instructions on the left, editor top right, and console bottom right. The code is executed in two processes/environments, so that you can easily compare objects in them in the submission correctness tests.
 
 [![img](/images/NormalExercise.png)](https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=3)
 
-A `NormalExercise` is a traditional interactive exercise, where the student is expected to write code. Additional information regarding the exercise or the data set that is used is stated in the `assignment` part; the actual tasks the student has to solve through code are outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in the editor that is initialized with the `sample_code`. When the student is not able to solve the exercise, he or she can refer to the `hint` or, ultimately, can peek at the `solution`. Every time the student hits the ‘Submit Code’ button, his or her code is checked for correctness using the submission correctness testing code (`sct`). This SCT generates a feedback message that depends on the input of the student.
-
- 
+Additional information regarding the exercise or the data set that is used is stated in the `assignment` part; the actual tasks the student has to solve through code are outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in the editor that is initialized with the `sample_code`. When the student is not able to solve the exercise, he or she can refer to the `hint` or, ultimately, can peek at the `solution`. Every time the student hits the ‘Submit Code’ button, his or her code is checked for correctness using the submission correctness testing code (`sct`). This SCT generates a feedback message that depends on the input of the student. 
 
 | Block                | Description                                                               |
 |:---------------------|:--------------------------------------------------------------------------|
@@ -16,7 +16,58 @@ A `NormalExercise` is a traditional interactive exercise, where the student is e
 | `@solution`          | Solution code for the exercise
 | `@sct`               | Submission correctness tests.
 
+## Complete example
+Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
+Each block is described in detail following this example.
 
+{% codetabs name="Version 2", type="text" -%}
+---
+title       : This is chapter 1
+description : This is chapter 1 description
+---
+
+## Interactive Exercise Title
+
+```yaml
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1,3
+```
+
+This basic exercise will challenge you to assign a variable in R.
+
+`@instructions`
+- Assign `5` to the variable `x` in the editor on the right.
+
+`@hint`
+Use `<-` for assignment.
+
+`@pre_exercise_code`
+```{r}
+y <- 3
+```
+
+`@sample_code`
+```{r}
+# Assign 5 to the variable x
+```
+
+`@solution`
+```{r}
+# Assign 5 to the variable x
+x <- 5
+```
+
+`@sct`
+```{r}
+test_error()
+test_object("x",
+            undefined_msg = "Make sure to define `x`!",
+            incorrect_msg = "Have you correctly assigned 5 to `x`!")
+success_msg("Good job! Head over to the next exercise")
+```
+{%- endcodetabs %}
 
 ## Context
 
@@ -24,37 +75,31 @@ A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and 
 
 {% codetabs name="Version 2", type="text" -%}
 
-## Variable assignment 
+### Interactive Exercise Title
 
 ```yaml
-type: NormalExercise 
-xp: 100 
+type: NormalExercise
+lang: r
+xp: 100
+skills: 1,3
 ```
 
-A basic concept in (statistical) programming is called a **variable**. It allows you to 
-store a value (e.g. 4) or an object.
+This basic exercise will challenge you to assign a variable in R.
 
 {%- endcodetabs %}
 
 ## Instructions
 
 {% codetabs name="Version 2", type="text" -%}
-
 `@instructions`
-
-- Assign the value 42 to the variable `x`. 
-- Print the value of `x`.
-
+- Assign `5` to the variable `x` in the editor on the right.
 {%- endcodetabs %}
 
 ## Hints
 
 {% codetabs name="Version 2", type="text" -%}
-
 `@hint`
-
-- Look at how the value 4 was assigned to `my_variable`. 
-- Use the `print` function.
+Use `<-` for assignment.
 
 {%- endcodetabs %}
 
@@ -63,9 +108,8 @@ store a value (e.g. 4) or an object.
 {% codetabs name="Version 2", type="text" -%}
 
 `@pre_exercise_code`
-
 ```{r}
-# no pec
+y <- 3
 ```
 
 {%- endcodetabs %}
@@ -75,13 +119,8 @@ store a value (e.g. 4) or an object.
 {% codetabs name="Version 2", type="text" -%}
 
 `@sample_code`
-
 ```{r}
-# Assign the value 42 to x
-x <- 
-
-# Print out the value of the variable x
-
+# Assign 5 to the variable x
 ```
 
 {%- endcodetabs %}
@@ -91,13 +130,9 @@ x <-
 {% codetabs name="Version 2", type="text" -%}
 
 `@solution`
-
 ```{r}
-# Assign the value 42 to x
-x <- 42
-
-# Print out the value of the variable x
-x
+# Assign 5 to the variable x
+x <- 5
 ```
 
 {%- endcodetabs %}
@@ -107,13 +142,12 @@ x
 {% codetabs name="Version 2", type="text" -%}
 
 `@sct`
-
 ```{r}
-test_object("x", 
-  undefined_msg = "Make sure to define a variable `x`.",
-  incorrect_msg = "Make sure that you assign the correct value to `x`."
-) 
-success_msg("Good job!")
+test_error()
+test_object("x",
+            undefined_msg = "Make sure to define `x`!",
+            incorrect_msg = "Have you correctly assigned 5 to `x`!")
+success_msg("Good job! Head over to the next exercise")
 ```
 
 {%- endcodetabs %}
