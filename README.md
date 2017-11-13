@@ -70,14 +70,27 @@ Gitbook works with markdown files therefore any changes to any markdown file wil
 
 Same markdown flavour applies as on Github.
 
-Before you start working locally on your gitbook **be sure** to branch out to a new branch as pushing to `master` will cause the documentation to build and it **WILL** be available in production.
 
-Once you are done with the work create a pull request to master and merge after reviewing.
 
 #### Important files / folders
 There are a few folders and files which have special meaning / tasks:
 
 - `docs/` - All the markdown files which are being used to create a static documentation site. Place all your markdown in the folders.
+- `docs/courses` - All the content related to courses
+- `docs/projects` - All the content related to projects
+- `docs/challenges` - All the content related to challenges
+- `docs/interface` - All the content related to the teach interface
 - `docs/image` - All the image files should be placed in this folder depending on the content type (`courses`, `projects`, etc..)
 - `SUMMARY.md` - Represents the left menu and the structure of the content. Usually nicely maps with `docs/` structure.
 - `books.json` - Lists all the plugins gitbook is currently using. (emojis etc.)
+
+#### How to create content
+Before you start working locally on your gitbook **be sure** to branch out to a new branch as pushing to `master` will cause the documentation to build and it **WILL** be available in production.
+
+Flow for creating content:
+
+1. Create a markdown file in one of folders (`docs/courses`, `docs/projects`, `docs/challenges`, `docs/interface`)
+2. Add the markdown
+3. If you want to add the markdown file to the left menu edit the [docs/SUMMARY.md](docs/SUMMARY.md)
+
+Once you are done with the work create a pull request to master and merge after reviewing.
