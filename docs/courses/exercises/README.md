@@ -73,6 +73,6 @@ Only applicable to `PureMultipleChoiceExercise` defining a list of possible answ
 Only applicable to `PureMultipleChoiceExercise` defining a list of possible feedbacks based on the chosen possible answer. ([How to create PureMultipleChoiceExercise](./multiple-choice-exercise.md#pure-mce))
 
 > #### info::Note
-> Each exercise contains the format which should be used in order to create them. It's always reccomended to use the `Version 2` of the authoring format.
+> Each exercise contains the format which should be used in order to create them. It's always recommended to use the `Version 2` of the authoring format.
 
 

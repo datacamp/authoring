@@ -10,7 +10,7 @@ The landing page consists of two parts: a sortable, filterable and paginated tab
 - **Instructors**: instructors of the repository. You can set these in the Settings tab of the master branch of the repository.
 - **Updated by me**: when the repository was last updated by me
 - **Updated by instructor**: when the repository was last updated by an instructor
-- **Unreviewed time**: the time differences between when the repository was last updated by me and when it was last updated by an instructor
+- **Un reviewed time**: the time differences between when the repository was last updated by me and when it was last updated by an instructor
 - **Last updated branch**: the branch of this repository that was last updated
 
 For featured courses the following extra columns are in the table:

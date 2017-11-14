@@ -23,7 +23,7 @@ Enable video export to convert the projector videos with slide decks to mp4 vide
 
 ### Audio
 
-*This step is a prerequirement to export **subtitles**.*
+*This step is a pre requirement to export **subtitles**.*
 
 Enable audio export to extract the audio from videos. The url's that point to the exported audio files are stored in the projector and reported in the build logs.
 
@@ -35,7 +35,7 @@ Enable pdf export to export the projector slides in pdf format. All individual s
 
 ### Scripts
 
-*This step is a prerequirement to export **subtitles**.*
+*This step is a pre requirement to export **subtitles**.*
 
 The scripts export takes care of combining and exporting scripts in markdown files. There's a clear distinction between **traditional videos** and videos built with the **Slides Interface**:
 

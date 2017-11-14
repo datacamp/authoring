@@ -20,7 +20,7 @@ Datasets or slides have a maximum size of 10 Megabytes. Bigger datasets won't be
 
 ## I need a package but it's not installed on your servers, what can I do?
 
-At the moment a lot of packages that can be used for Data Science are installed on our servers. There's no easy way to install packages yourself, however if you come accross a package you think should really be installed, you can mail `content-engineering@datacamp.com`. Please note that there is no guarantee that we will install the package.
+At the moment a lot of packages that can be used for Data Science are installed on our servers. There's no easy way to install packages yourself, however if you come across a package you think should really be installed, you can mail `content-engineering@datacamp.com`. Please note that there is no guarantee that we will install the package.
 
 
 

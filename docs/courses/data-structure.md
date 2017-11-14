@@ -86,7 +86,7 @@ Similar to the `course.yml`, every chapter files start with a YAML header contai
 
 ```yaml
 ---
-title    : Introdution to Basics
+title    : Introduction to Basics
 title_meta: Chapter 1
 description: In this chapter, you will take your first steps with R.
 ---

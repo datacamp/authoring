@@ -27,7 +27,7 @@ The following fields can be set in the YAML header:
 - **video_link**: a list of links to the video (and, potentially, audio) files on S3:
   - **hls**: link to the HLS video (.m3u8 extension).
   - **mp4**: link to the MP4 video.
-  - **mp3**: link to the MP3 file. If this is the only source you specify, an audio track will be played alongside the slidedeck, instead of a video.
+  - **mp3**: link to the MP3 file. If this is the only source you specify, an audio track will be played alongside the slide deck, instead of a video.
 - **transformations**:
   - **scale**: scale the video by this factor
   - **translateX**: position of the video on the x-axis. 0 is the middle of the screen, 100 is the right.
