@@ -3,7 +3,8 @@
     "codetabs",
     "bootstrap-callout",
     "expandable-chapters",
-    "advanced-emoji"
+    "advanced-emoji",
+    "video"
   ],
   "pluginsConfig": {},
   "pdf": {

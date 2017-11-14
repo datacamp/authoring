@@ -2,7 +2,6 @@
 
 ```yaml
 type: BlanksChallenge 
-key: 311ctWBt9Xp3r
 ```
 
 `@context`

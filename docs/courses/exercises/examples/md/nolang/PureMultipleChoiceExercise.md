@@ -2,7 +2,6 @@
 
 ```yaml
 type: PureMultipleChoiceExercise
-key: e78f5f79fb 
 xp: 50
 ```
 

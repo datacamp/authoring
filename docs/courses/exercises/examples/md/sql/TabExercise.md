@@ -4,7 +4,6 @@
 type: TabExercise 
 lang: sql 
 xp: 100 
-key: ecc1838fc7
 ```
 
 You now know how to select rows that meet __some__ but not __all__ conditions by combining `AND` and `OR`.
@@ -41,7 +40,6 @@ set_options(visible_tables = ['films'])
 ```yaml
 type: NormalExercise
 xp: 30
-key: 510b387baa
 ```
 
 
@@ -99,7 +97,6 @@ Ex().test_correct(check_result(), [
 ```yaml
 type: NormalExercise
 xp: 30
-key: 969ed73542
 ```
 
 `@instructions`
@@ -165,7 +162,6 @@ Ex().test_correct(check_result(), [
 ```yaml
 type: NormalExercise
 xp: 30
-key: d961856c7a
 ```
 
 `@instructions`

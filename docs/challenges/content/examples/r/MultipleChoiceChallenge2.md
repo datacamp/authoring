@@ -2,7 +2,6 @@
 
 ```yaml
 type: MultipleChoiceChallenge
-key: a12312mas03
 difficulty: 1
 ```
 

@@ -4,7 +4,6 @@
 type: BulletExercise 
 lang: sql 
 xp: 100 
-key: de52236965
 ```
 
 Often your results will include many duplicate values. If you want to select all the unique values from a column, you can use the `DISTINCT` keyword.
@@ -37,7 +36,6 @@ set_options(visible_tables = ['films', 'roles'])
 ```yaml
 type: NormalExercise
 xp: 30
-key: e6b81711f1
 ```
 
 `@instructions`
@@ -83,7 +81,6 @@ Ex().test_correct(check_result(), [
 ```yaml
 type: NormalExercise
 xp: 30
-key: 2cb9a4bf6a
 ```
 
 `@instructions`
@@ -130,7 +127,6 @@ Ex().test_correct(check_result(), [
 ```yaml
 type: NormalExercise
 xp: 30
-key: 26835d3029
 ```
 
 `@instructions`

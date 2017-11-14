@@ -2,7 +2,6 @@
 
 ```yaml
 type: TabExercise
-key: ed98f7522c
 ```
 
 This is a tabexercise. Great! Super great!
@@ -21,7 +20,6 @@ connect('postgresql', 'dvdrental')
 ```yaml
 type: NormalExercise
 xp: 10
-key: e7cd8d45cb0
 ```
 `@instructions`
 
@@ -56,7 +54,6 @@ Ex().check_result()
 ```yaml
 type: MultipleChoiceExercise
 xp: 20
-key: 216ce6d2106
 ```
 `@question`
 
@@ -91,7 +88,6 @@ Ex().test_mc(2,[msg1,msg2,msg3,msg4])
 ```yaml
 type: NormalExercise
 xp: 30
-key: f643f41db4
 ```
 `@sample_code`
 
@@ -126,7 +122,6 @@ Ex().check_result()
 ```yaml
 type: NormalExercise
 xp: 40
-key: -1489013679
 ```
 `@instructions`
 
@@ -157,7 +152,6 @@ Ex().check_result()
 ```yaml
 type: NormalExercise
 xp: 50
-key: b78ff98e7e
 ```
 `@instructions`
 

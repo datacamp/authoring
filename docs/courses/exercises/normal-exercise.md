@@ -18,7 +18,8 @@ Additional information regarding the exercise or the data set that is used is st
 
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
+> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
 
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
@@ -157,4 +158,5 @@ success_msg("Good job! Head over to the next exercise")
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
+> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)

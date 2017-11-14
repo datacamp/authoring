@@ -3,7 +3,6 @@
 ```yaml
 type: ConsoleExercise
 xp: 100
-key: asd89a00a
 ```
 
 Write a script like this:

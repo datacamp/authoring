@@ -29,7 +29,7 @@ An overview of what each of this does is:
 |:--------------------|:-------------------------------------------------------------------------|
 | `datasets/*`          | Folder containing all datasets you may want to use during the course creation process (eg. csv / excel files)|
 | `img/*`          | Folder containing the course image should as `shield_image.png`|
-| `scripts/*`          | TBD                                                                         |
+| `scripts/*`          | Contains all the narrative which corresponds to the slides and the videos included in the course                                                                        |
 | `slides/*`           | Video slide markdown files.                                                                         |
 | `.gitignore`         | Files and folders which should be ignored by Git  |
 | `README.md`         | A readme file with a list of resources more explanation to get started  |
@@ -86,7 +86,7 @@ Similar to the `course.yml`, every chapter files start with a YAML header contai
 
 ```yaml
 ---
-title    : Introdution to Basics
+title    : Introduction to Basics
 title_meta: Chapter 1
 description: In this chapter, you will take your first steps with R.
 ---

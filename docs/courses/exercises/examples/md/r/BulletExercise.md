@@ -4,7 +4,6 @@
 type: BulletExercise 
 lang: r 
 xp: 150 
-key: 79e232200d
 ```
 
 `@pre_exercise_code`
@@ -26,7 +25,6 @@ ggplot(mtcars, aes(x = mpg, y = wt))
 ```yaml
 type: NormalExercise
 xp: 30
-key: 1db0bdc483
 ```
 
 
@@ -57,7 +55,6 @@ ggplot(mtcars, aes(x = mpg, y = wt)) +
 
 ```yaml
 type: NormalExercise
-key: 555a6267d7
 xp: 30
 ```
 

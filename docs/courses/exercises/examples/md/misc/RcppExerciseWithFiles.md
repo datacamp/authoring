@@ -5,7 +5,6 @@ This is an Rcpp exercise that can be run as a `NormalExercise` that takes advant
 ```yaml
 type: RcppExercise
 xp: 100
-key: asdfa83432
 ```
 
 `@sample_code`

@@ -2,7 +2,6 @@
 
 ```yaml
 type: TabConsoleExercise 
-key: ed98f7522c
 ```
 
 This is a TabConsoleExercise. Great! Super great!
@@ -20,7 +19,6 @@ XP should be defined at the subexercise level
 ```yaml
 type: ConsoleExercise
 xp: 10
-key: f8b2c20c47
 ```
 
 `@instructions`
@@ -57,7 +55,6 @@ Ex().success_msg("Great!")
 ```yaml
 type: ConsoleExercise
 xp: 20
-key: a4d37ad20b
 ```
 
 `@instructions`
@@ -95,7 +92,6 @@ Ex().success_msg("Great!")
 ```yaml
 type: ConsoleExercise
 xp: 30
-key: 936cddd386
 ```
 
 `@instructions`

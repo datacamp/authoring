@@ -24,7 +24,6 @@ type: VideoExercise
 lang: r
 xp: 50 
 skills: 1 
-key: 9af3e6d86523573ebe761f674cb92f849b61898e
 video_link: //player.vimeo.com/video/160339466
 video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
 ```
@@ -34,7 +33,7 @@ video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.mast
 title       : This is chapter with video exercise
 description : Yes! This chapter contains a video!
 
---- type:VideoExercise lang:r xp:50 skills:1  key:9af3e6d86523573ebe761f674cb92f849b61898e
+--- type:VideoExercise lang:r xp:50 skills:1
 
 ## Video Exercise
 
@@ -48,5 +47,8 @@ description : Yes! This chapter contains a video!
 
 {% endcodetabs %}
 
+[Recommended read: Creating slides and videos](../../slides.md)
+
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
+> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)

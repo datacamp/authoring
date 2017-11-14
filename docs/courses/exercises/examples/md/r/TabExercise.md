@@ -4,7 +4,6 @@
 type: TabExercise 
 lang: r 
 xp: 100 
-key: dbbca81c55
 ```
 
 By now you've learned the fundamentals of `dplyr`: the five data manipulation verbs and the additional `group_by()` function to discover interesting group-wise statistics. This exercise brings together these concepts and provides you with an opportunity to combine them to answer some interesting questions.
@@ -31,7 +30,6 @@ hflights %>%
 
 ```yaml
 type: NormalExercise 
-key: 421e55e2ec
 xp: 30
 ```
 
@@ -57,7 +55,6 @@ hflights %>%
 
 ```yaml
 type: NormalExercise 
-key: 6eb56c5f40
 xp: 30
 ```
 
@@ -86,7 +83,6 @@ hflights %>%
 
 ```yaml
 type: NormalExercise 
-key: be3d94b96c
 xp: 30
 ```
 

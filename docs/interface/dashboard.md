@@ -3,14 +3,14 @@
 ![Teach dashboard](../images/courses/teach-dashboard.png)
 *Teach dashboard*
 
-The new landing page consists of two parts: a sortable, filterable and paginated table of course repositories and a modal to create new courses. The table has the following columns:
+The landing page consists of two parts: a sortable, filterable and paginated table of course repositories and a modal to create new courses. The table has the following columns:
 
 - **Title**: the title of the course (or repository name if it is not properly built yet)
 - **Owner**: the owner of the repository. If the repository has no owner yet, you can claim it if it's yours.
 - **Instructors**: instructors of the repository. You can set these in the Settings tab of the master branch of the repository.
 - **Updated by me**: when the repository was last updated by me
 - **Updated by instructor**: when the repository was last updated by an instructor
-- **Unreviewed time**: the time differences between when the repository was last updated by me and when it was last updated by an instructor
+- **Un reviewed time**: the time differences between when the repository was last updated by me and when it was last updated by an instructor
 - **Last updated branch**: the branch of this repository that was last updated
 
 For featured courses the following extra columns are in the table:

@@ -3,7 +3,6 @@
 ```yaml
 type: ConsoleExercise 
 xp: 100 
-key: 4dd1296871
 ```
 
 `@instructions`
