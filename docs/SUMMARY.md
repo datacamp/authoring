@@ -19,6 +19,8 @@
      - [Exports](courses/guides/exports.md)
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
+   - [Design](courses/design.md)
+     - [Design template](courses/template.md)
 * [Challenges](challenges/README.md)
    - [Data structure](challenges/data-structure.md)
    - [Content](challenges/content/README.md)
