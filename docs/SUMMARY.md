@@ -14,8 +14,6 @@
      - [Normal](courses/exercises/normal-exercise.md)
      - [Multiple Choice](courses/exercises/multiple-choice-exercise.md)
    - [Assets](courses/assets.md)
-   - [Index](courses/indx.md)
-   - [Requirements](courses/requirements.md)
    - [Slides](courses/slides.md)
    - [Scripts](courses/scripts.md) 
    - [Guides](courses/guides/README.md)
