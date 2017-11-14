@@ -31,6 +31,7 @@
    - [Metadata](projects/projects-metadata.md)
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
+* [FAQ](faq/README.md)
 
 ## Teach interface
 
