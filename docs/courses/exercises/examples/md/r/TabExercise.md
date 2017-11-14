@@ -1,107 +1,109 @@
-## Advanced Group By Exercises
+# R Tab exercise example
 
-```yaml
-type: TabExercise 
-lang: r 
-xp: 100 
-```
+    ## Advanced Group By Exercises
 
-By now you've learned the fundamentals of `dplyr`: the five data manipulation verbs and the additional `group_by()` function to discover interesting group-wise statistics. This exercise brings together these concepts and provides you with an opportunity to combine them to answer some interesting questions.
+    ```yaml
+    type: TabExercise 
+    lang: r 
+    xp: 100 
+    ```
 
-Let us suppose we want to find the most visited destination for each carrier. Before reading ahead, please spend a couple of minutes thinking about how you might go about solving this exercise using dplyr.
+    By now you've learned the fundamentals of `dplyr`: the five data manipulation verbs and the additional `group_by()` function to discover interesting group-wise statistics. This exercise brings together these concepts and provides you with an opportunity to combine them to answer some interesting questions.
 
-As this is the first time you are combining multiple dplyr concepts, we have broken this exercise down into smaller steps. Each step will allow you to focus on a specific concept.
+    Let us suppose we want to find the most visited destination for each carrier. Before reading ahead, please spend a couple of minutes thinking about how you might go about solving this exercise using dplyr.
 
-`@pre_exercise_code`
+    As this is the first time you are combining multiple dplyr concepts, we have broken this exercise down into smaller steps. Each step will allow you to focus on a specific concept.
 
-```{r}
-library(dplyr)
-library(hflights)
-```
+    `@pre_exercise_code`
 
-`@sample_code`
+    ```{r}
+    library(dplyr)
+    library(hflights)
+    ```
 
-```{r}
-hflights %>%
-  
-```
+    `@sample_code`
 
-***
+    ```{r}
+    hflights %>%
+      
+    ```
 
-```yaml
-type: NormalExercise 
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise 
+    xp: 30
+    ```
 
-Compute for every carrier, the aggregate number of visits to each destination.
+    `@instructions`
 
-`@solution`
+    Compute for every carrier, the aggregate number of visits to each destination.
 
-```{r}
-hflights %>% 
-  group_by(UniqueCarrier, Dest) %>%
-  summarise(n = n())
-```
+    `@solution`
 
-`@sct`
+    ```{r}
+    hflights %>% 
+      group_by(UniqueCarrier, Dest) %>%
+      summarise(n = n())
+    ```
 
-```{r}
-# Test ...
-```
+    `@sct`
 
-***
+    ```{r}
+    # Test ...
+    ```
 
-```yaml
-type: NormalExercise 
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise 
+    xp: 30
+    ```
 
-Rank the aggregate number of visits for every carrier.
+    `@instructions`
 
-`@solution`
+    Rank the aggregate number of visits for every carrier.
 
-```{r}
-hflights %>% 
-  group_by(UniqueCarrier, Dest) %>%
-  summarise(n = n()) %>%
-  mutate(rank = rank(desc(n)))
-```
+    `@solution`
 
-`@sct`
+    ```{r}
+    hflights %>% 
+      group_by(UniqueCarrier, Dest) %>%
+      summarise(n = n()) %>%
+      mutate(rank = rank(desc(n)))
+    ```
 
-```{r}
-# Test ...
-```
+    `@sct`
 
-***
+    ```{r}
+    # Test ...
+    ```
 
-## Filter
+    ***
 
-```yaml
-type: NormalExercise 
-xp: 30
-```
+    ## Filter
 
-`@instructions`
+    ```yaml
+    type: NormalExercise 
+    xp: 30
+    ```
 
-Filter the results to only return the top ranked destination for every carrier.
+    `@instructions`
 
-`@solution`
+    Filter the results to only return the top ranked destination for every carrier.
 
-```{r}
-hflights %>% 
-  group_by(UniqueCarrier, Dest) %>%
-  summarise(n = n()) %>%
-  mutate(rank = rank(desc(n))) %>%
-  filter(rank == 1)
-```
+    `@solution`
 
-`@sct`
+    ```{r}
+    hflights %>% 
+      group_by(UniqueCarrier, Dest) %>%
+      summarise(n = n()) %>%
+      mutate(rank = rank(desc(n))) %>%
+      filter(rank == 1)
+    ```
 
-```{r}
-# Test ...
-```
+    `@sct`
+
+    ```{r}
+    # Test ...
+    ```

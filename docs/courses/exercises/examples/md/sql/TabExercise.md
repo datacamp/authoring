@@ -1,227 +1,229 @@
-## WHERE AND OR (2)
+# SQL Tab exercise example
 
-```yaml
-type: TabExercise 
-lang: sql 
-xp: 100 
-```
+    ## WHERE AND OR (2)
 
-You now know how to select rows that meet __some__ but not __all__ conditions by combining `AND` and `OR`.
+    ```yaml
+    type: TabExercise 
+    lang: sql 
+    xp: 100 
+    ```
 
-For example, the following query selects all films that were released in 1994 or 1995 which had a rating of PG or R.
+    You now know how to select rows that meet __some__ but not __all__ conditions by combining `AND` and `OR`.
 
-```
-SELECT title
-FROM films
-WHERE (release_year = 1994 OR release_year = 1995)
-AND (certification = 'PG' OR certification = 'R');
-```
+    For example, the following query selects all films that were released in 1994 or 1995 which had a rating of PG or R.
 
-<hr>
+    ```
+    SELECT title
+    FROM films
+    WHERE (release_year = 1994 OR release_year = 1995)
+    AND (certification = 'PG' OR certification = 'R');
+    ```
 
-Now you'll write a query to get the title and release year of films released in the 90s which were in French or Spanish and which took in more than $2M gross.
+    <hr>
 
-It looks like a lot, but you can build the query up one step at a time to get comfortable with the underlying concept in each step. Let's go!
+    Now you'll write a query to get the title and release year of films released in the 90s which were in French or Spanish and which took in more than $2M gross.
 
-`@pre_exercise_code`
+    It looks like a lot, but you can build the query up one step at a time to get comfortable with the underlying concept in each step. Let's go!
 
-```{python}
-connect('postgresql', 'films')
-set_options(visible_tables = ['films'])
-```
+    `@pre_exercise_code`
 
-`@sample_code`
+    ```{python}
+    connect('postgresql', 'films')
+    set_options(visible_tables = ['films'])
+    ```
 
-```{sql}
-```
+    `@sample_code`
 
-***
+    ```{sql}
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ***
 
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-`@instructions`
 
-Get the title and release year for films released in the 90s.
+    `@instructions`
 
-`@solution`
+    Get the title and release year for films released in the 90s.
 
-```{sql}
-SELECT title, release_year
-FROM films
-WHERE release_year >= 1990 AND release_year < 2000;
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT title, release_year
+    FROM films
+    WHERE release_year >= 1990 AND release_year < 2000;
+    ```
 
-```
-SELECT ___, ___
-FROM ___
-WHERE ___ >= 1990 AND ___ < 2000;
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT ___, ___
+    FROM ___
+    WHERE ___ >= 1990 AND ___ < 2000;
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-title = test_column('title', msg='Did you select the `title` column?')
+    ```{python}
+    sel = check_node('SelectStmt')
 
-release_year = test_column('release_year', msg='Did you select the `release_year` column?')
+    title = test_column('title', msg='Did you select the `title` column?')
 
-from_clause = sel.check_field('from_clause')
+    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
 
-where_clause = sel.check_field('where_clause')
+    from_clause = sel.check_field('from_clause')
 
-where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
+    where_clause = sel.check_field('where_clause')
 
-where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
+    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    where_release_year1,
-    where_release_year2,
-    title,
-    release_year,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
+    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
 
-***
+    Ex().test_correct(check_result(), [
+        from_clause,
+        where_release_year1,
+        where_release_year2,
+        title,
+        release_year,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-Now, build on your query to filter the records to only include French or Spanish language films.
+    `@instructions`
 
-`@solution`
+    Now, build on your query to filter the records to only include French or Spanish language films.
 
-```{sql}
-SELECT title, release_year
-FROM films
-WHERE (release_year >= 1990 AND release_year < 2000)
-AND (language = 'French' OR language = 'Spanish');
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT title, release_year
+    FROM films
+    WHERE (release_year >= 1990 AND release_year < 2000)
+    AND (language = 'French' OR language = 'Spanish');
+    ```
 
-```
-SELECT ___, ___
-FROM ___
-WHERE (___ >= 1990 AND ___ < 2000)
-AND (___ = 'French' OR ___ = 'Spanish');
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT ___, ___
+    FROM ___
+    WHERE (___ >= 1990 AND ___ < 2000)
+    AND (___ = 'French' OR ___ = 'Spanish');
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-title = test_column('title', msg='Did you select the `title` column?')
+    ```{python}
+    sel = check_node('SelectStmt')
 
-release_year = test_column('release_year', msg='Did you select the `release_year` column?')
+    title = test_column('title', msg='Did you select the `title` column?')
 
-from_clause = sel.check_field('from_clause')
+    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
 
-where_clause = sel.check_field('where_clause')
+    from_clause = sel.check_field('from_clause')
 
-where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
+    where_clause = sel.check_field('where_clause')
 
-where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
+    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
 
-where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
+    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
 
-where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
+    where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
 
+    where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    where_release_year1,
-    where_release_year2,
-    where_language1,
-    where_language2,
-    title,
-    release_year,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
 
-***
+    Ex().test_correct(check_result(), [
+        from_clause,
+        where_release_year1,
+        where_release_year2,
+        where_language1,
+        where_language2,
+        title,
+        release_year,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-Finally, restrict the query to only return films that took in more than $2M gross.
+    `@instructions`
 
-`@solution`
+    Finally, restrict the query to only return films that took in more than $2M gross.
 
-```{sql}
-SELECT title, release_year
-FROM films
-WHERE (release_year >= 1990 AND release_year < 2000)
-AND (language = 'French' OR language = 'Spanish')
-AND gross > 2000000;
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT title, release_year
+    FROM films
+    WHERE (release_year >= 1990 AND release_year < 2000)
+    AND (language = 'French' OR language = 'Spanish')
+    AND gross > 2000000;
+    ```
 
-```
-SELECT ___, ___
-FROM ___
-WHERE (___ >= 1990 AND ___ < 2000)
-AND (___ = '___' OR ___ = '___')
-AND ___ > ___;
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT ___, ___
+    FROM ___
+    WHERE (___ >= 1990 AND ___ < 2000)
+    AND (___ = '___' OR ___ = '___')
+    AND ___ > ___;
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-title = test_column('title', msg='Did you select the `title` column?')
+    ```{python}
+    sel = check_node('SelectStmt')
 
-release_year = test_column('release_year', msg='Did you select the `release_year` column?')
+    title = test_column('title', msg='Did you select the `title` column?')
 
-from_clause = sel.check_field('from_clause')
+    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
 
-where_clause = sel.check_field('where_clause')
+    from_clause = sel.check_field('from_clause')
 
-where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly?')
+    where_clause = sel.check_field('where_clause')
 
-where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
+    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly?')
 
-where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
+    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
 
-where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
+    where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
 
-where_gross = where_clause.has_equal_ast(sql='gross > 2000000', start='expression', exact=False, msg='Did you check the `gross` correctly in your `WHERE` clause?')
+    where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    where_release_year1,
-    where_release_year2,
-    where_language1,
-    where_language2,
-    where_gross,
-    title,
-    release_year,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
+    where_gross = where_clause.has_equal_ast(sql='gross > 2000000', start='expression', exact=False, msg='Did you check the `gross` correctly in your `WHERE` clause?')
+
+    Ex().test_correct(check_result(), [
+        from_clause,
+        where_release_year1,
+        where_release_year2,
+        where_language1,
+        where_language2,
+        where_gross,
+        title,
+        release_year,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
