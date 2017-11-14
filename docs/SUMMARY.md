@@ -20,12 +20,11 @@
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
 * [Challenges](challenges/README.md)
+   - [Data structure](challenges/data-structure.md)
    - [Content](challenges/content/README.md)
       - [Output Challenge](challenges/content/output-challenge.md)
       - [Multiple Choice Challenge](challenges/content/multiple-choice-challenge.md)
       - [Blanks Challenge](challenges/content/blanks-challenge.md)
-   - [Review Mode]()
-   - [FAQs](challenges/FAQs.md)
 * [Projects](projects/README.md)
    - [Vision](projects/projects-vision.md)
    - [Metadata](projects/projects-metadata.md)
@@ -40,6 +39,8 @@
 * [Create content dialog](interface/create-content-dialog.md)
 * [Content overview](interface/content-overview.md)
 * [Editor](interface/teach-editor.md)
+
+## Premium content
 
 
 
