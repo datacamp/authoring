@@ -13,6 +13,8 @@
      - [Video](courses/exercises/video-exercise.md)
      - [Normal](courses/exercises/normal-exercise.md)
      - [Multiple Choice](courses/exercises/multiple-choice-exercise.md)
+     - [Tab](courses/exercises/tab-exercise.md)
+     - [Bullet](courses/exercises/bullet-exercise.md)
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
    - [Guides](courses/guides/README.md)
