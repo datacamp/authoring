@@ -30,6 +30,7 @@
    - [Metadata](projects/projects-metadata.md)
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
+* [Gamification](gamification.md)
 * [FAQ](faq/README.md)
 
 ## Teach interface

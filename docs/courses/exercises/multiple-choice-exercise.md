@@ -122,7 +122,8 @@ test_mc(4, [msg1, msg2, msg3, msg4])
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
+> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
@@ -213,7 +214,8 @@ A list which maps to "Possible answers" where you can provide customized feedbac
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
+> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
 
 ## Plain Multiple Choice Exercise
 
