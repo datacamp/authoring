@@ -3,7 +3,7 @@
 ![Teach dashboard](../images/courses/teach-dashboard.png)
 *Teach dashboard*
 
-The new landing page consists of two parts: a sortable, filterable and paginated table of course repositories and a modal to create new courses. The table has the following columns:
+The landing page consists of two parts: a sortable, filterable and paginated table of course repositories and a modal to create new courses. The table has the following columns:
 
 - **Title**: the title of the course (or repository name if it is not properly built yet)
 - **Owner**: the owner of the repository. If the repository has no owner yet, you can claim it if it's yours.
