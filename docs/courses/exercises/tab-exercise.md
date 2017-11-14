@@ -65,9 +65,7 @@ set_options(visible_tables = ['films'])
 ```yaml
 type: NormalExercise
 xp: 30
-key: 510b387baa
 ```
-
 
 `@instructions`
 
@@ -100,7 +98,6 @@ WHERE release_year >= 1990 AND release_year < 2000;
 ```yaml
 type: NormalExercise
 xp: 30
-key: 969ed73542
 ```
 
 `@instructions`

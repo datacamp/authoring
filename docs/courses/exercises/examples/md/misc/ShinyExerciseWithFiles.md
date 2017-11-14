@@ -4,7 +4,6 @@
 ```yaml
 type: ShinyExercise
 xp: 100
-key: asdf8234asd0
 ```
 
 This is an introductory exercise for Shiny

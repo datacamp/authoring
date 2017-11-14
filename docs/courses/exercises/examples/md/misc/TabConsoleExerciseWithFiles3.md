@@ -4,7 +4,6 @@
 ```yaml
 type: TabConsoleExercise
 xp: 100
-key: asd89a00a
 ```
 
 In this exercise, you will practice how to edit the contents of a file and commit it to the repo.
@@ -39,7 +38,6 @@ This file will NOT be open when the exercise is initialized.
 ```yaml
 type: FileExercise
 xp: 30
-key: f9adsfasd0
 ```
 
 `@instructions`
@@ -70,7 +68,6 @@ Hello World
 ```yaml
 type: ConsoleExericse
 xp: 30
-key: ysadfa8233
 ```
 
 `@instructions`

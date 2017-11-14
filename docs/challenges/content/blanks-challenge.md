@@ -113,7 +113,7 @@ var2:
 
 {%- language name="Version 1", type="text" -%}
 
---- type:BlanksChallenge key:9v8inklg4su2kae6418twqaor
+--- type:BlanksChallenge
 
 *** =code
 

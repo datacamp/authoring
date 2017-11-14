@@ -144,7 +144,6 @@ description : Yes! This chapter contains a Pure Multiple Choice exercise!
 
 ```yaml
 type: PureMultipleChoiceExercise 
-key: d4ae489740
 ```
 
 This is a Pure multiple choice exercise.
@@ -177,7 +176,6 @@ A `PureMultipleChoiceExercise` starts with a `## Title`, followed by a `metadata
 
 ```yaml
 type: PureMultipleChoiceExercise 
-key: d4ae489740
 ```
 
 This is a Pure multiple choice exercise.
