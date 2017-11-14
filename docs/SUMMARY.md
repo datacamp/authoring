@@ -18,7 +18,6 @@
    - [Guides](courses/guides/README.md)
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
-   - [FAQs](courses/FAQs.md)
 * [Challenges](challenges/README.md)
    - [Content](challenges/content/README.md)
       - [Output Challenge](challenges/content/output-challenge.md)
