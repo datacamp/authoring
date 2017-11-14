@@ -37,6 +37,7 @@
 
 * [Dashboard](interface/dashboard.md)
 * [Create content dialog](interface/create-content-dialog.md)
+* [Content overview](interface/content-overview.md)
 
 
 
