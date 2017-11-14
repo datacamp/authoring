@@ -1,4 +1,4 @@
-# Multiple Choice Exercise
+# Multiple Choice Exercises
 
 There are two different types of `MultipleChoiceExercise`.
 
@@ -122,7 +122,7 @@ test_mc(4, [msg1, msg2, msg3, msg4])
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed block information is available [here](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
@@ -215,7 +215,7 @@ A list which maps to "Possible answers" where you can provide customized feedbac
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed block information is available [here](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
 
 ## Plain Multiple Choice Exercise
 

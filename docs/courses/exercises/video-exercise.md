@@ -49,4 +49,4 @@ description : Yes! This chapter contains a video!
 {% endcodetabs %}
 
 > #### info::NOTE
-> Detailed block information is available [here](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)

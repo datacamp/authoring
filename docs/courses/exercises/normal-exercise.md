@@ -1,4 +1,4 @@
-# NormalExercise
+# Normal Exercise
 An interactive exercise, where the student is expected to submit code based on the assignment and instructions provided. The student’s submission is compared to the ideal solution with DataCamp’s autograder and appropriate feedback is generated.
 
 A `NormalExercise` shows the exercise and instructions on the left, editor top right, and console bottom right. The code is executed in two processes/environments, so that you can easily compare objects in them in the submission correctness tests.
@@ -18,7 +18,7 @@ Additional information regarding the exercise or the data set that is used is st
 
 
 > #### info::NOTE
-> Detailed block information is available [here](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
 
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
@@ -157,4 +157,4 @@ success_msg("Good job! Head over to the next exercise")
 {%- endcodetabs %}
 
 > #### info::NOTE
-> Detailed block information is available [here](./README.md#exercise-blocks)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)
