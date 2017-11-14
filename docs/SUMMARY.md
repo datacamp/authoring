@@ -13,7 +13,7 @@
      - [Video](courses/exercises/video-exercise.md)
      - [Normal](courses/exercises/normal-exercise.md)
      - [Multiple Choice](courses/exercises/multiple-choice-exercise.md)
-   - [Datasets](courses/datasets.md)
+   - [Assets](courses/assets.md)
    - [Index](courses/indx.md)
    - [Requirements](courses/requirements.md)
    - [Slides](courses/slides.md)
@@ -38,6 +38,7 @@
 ## Teach interface
 
 * [Dashboard](interface/dashboard.md)
+* [Create content dialog](interface/create-content-dialog.md)
 
 
 
