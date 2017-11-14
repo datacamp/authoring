@@ -29,7 +29,7 @@ An overview of what each of this does is:
 |:--------------------|:-------------------------------------------------------------------------|
 | `datasets/*`          | Folder containing all datasets you may want to use during the course creation process (eg. csv / excel files)|
 | `img/*`          | Folder containing the course image should as `shield_image.png`|
-| `scripts/*`          | TBD                                                                         |
+| `scripts/*`          | Contains all the narrative which corresponds to the slides and the videos included in the course                                                                        |
 | `slides/*`           | Video slide markdown files.                                                                         |
 | `.gitignore`         | Files and folders which should be ignored by Git  |
 | `README.md`         | A readme file with a list of resources more explanation to get started  |

@@ -47,6 +47,8 @@ description : Yes! This chapter contains a video!
 
 {% endcodetabs %}
 
+[Reccomended read: Creating slides and videos](../../slides.md)
+
 > #### info::NOTE
 > Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
 > Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)

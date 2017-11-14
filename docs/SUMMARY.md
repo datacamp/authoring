@@ -16,6 +16,7 @@
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
    - [Guides](courses/guides/README.md)
+     - [Exports](courses/guides/exports.md)
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
 * [Challenges](challenges/README.md)
