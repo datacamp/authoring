@@ -1,169 +1,171 @@
-## SELECT DISTINCT
+# SQL Bullet exercise example
 
-```yaml
-type: BulletExercise 
-lang: sql 
-xp: 100 
-```
+    ## SELECT DISTINCT
 
-Often your results will include many duplicate values. If you want to select all the unique values from a column, you can use the `DISTINCT` keyword.
+    ```yaml
+    type: BulletExercise 
+    lang: sql 
+    xp: 100 
+    ```
 
-This might be useful if, for example, you're interested in knowing which languages are represented in the `films` table:
+    Often your results will include many duplicate values. If you want to select all the unique values from a column, you can use the `DISTINCT` keyword.
 
-```sql
-SELECT DISTINCT language
-FROM films;
-```
+    This might be useful if, for example, you're interested in knowing which languages are represented in the `films` table:
 
-Remember, you can check out the data in the tables by clicking on the tabs to the right under the editor!
+    ```sql
+    SELECT DISTINCT language
+    FROM films;
+    ```
 
-`@pre_exercise_code`
+    Remember, you can check out the data in the tables by clicking on the tabs to the right under the editor!
 
-```{python}
-connect('postgresql', 'films')
-set_options(visible_tables = ['films', 'roles'])
-```
+    `@pre_exercise_code`
 
-`@sample_code`
+    ```{python}
+    connect('postgresql', 'films')
+    set_options(visible_tables = ['films', 'roles'])
+    ```
 
-```{sql}
-```
+    `@sample_code`
 
-***
+    ```{sql}
+    ```
 
-## Unique Countries
+    ***
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ## Unique Countries
 
-`@instructions`
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-Get all the unique countries represented in the `films` table.
+    `@instructions`
 
-`@solution`
+    Get all the unique countries represented in the `films` table.
 
-```{sql}
-SELECT DISTINCT country
-FROM films;
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT DISTINCT country
+    FROM films;
+    ```
 
-```
-SELECT DISTINCT ___
-FROM ___;
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT DISTINCT ___
+    FROM ___;
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
+    ```{python}
+    sel = check_node('SelectStmt')
 
-country = test_column('country', msg='Did you select the `country` column?')
+    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
 
-from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
+    country = test_column('country', msg='Did you select the `country` column?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    distinct,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
+    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
 
-***
+    Ex().test_correct(check_result(), [
+        from_clause,
+        distinct,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-Get all the different film certifications from the `films` table.
+    `@instructions`
 
-`@solution`
+    Get all the different film certifications from the `films` table.
 
-```{sql}
-SELECT DISTINCT certification
-FROM films;
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT DISTINCT certification
+    FROM films;
+    ```
 
-```
-SELECT DISTINCT ___
-FROM ___;
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT DISTINCT ___
+    FROM ___;
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
+    ```{python}
+    sel = check_node('SelectStmt')
 
-certification = test_column('certification', msg='Did you select the `certification` column?')
+    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
 
-from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
+    certification = test_column('certification', msg='Did you select the `certification` column?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    certification,
-    distinct,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
+    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
 
-***
+    Ex().test_correct(check_result(), [
+        from_clause,
+        certification,
+        distinct,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ***
 
-`@instructions`
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-Get the different types of film roles from the `roles` table.
+    `@instructions`
 
-`@solution`
+    Get the different types of film roles from the `roles` table.
 
-```{sql}
-SELECT DISTINCT role
-FROM roles;
-```
+    `@solution`
 
-`@hint`
+    ```{sql}
+    SELECT DISTINCT role
+    FROM roles;
+    ```
 
-```
-SELECT DISTINCT ___
-FROM ___;
-```
+    `@hint`
 
-`@sct`
+    ```
+    SELECT DISTINCT ___
+    FROM ___;
+    ```
 
-```{python}
-sel = check_node('SelectStmt')
+    `@sct`
 
-distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
+    ```{python}
+    sel = check_node('SelectStmt')
 
-role = test_column('role', msg='Did you select the `role` column?')
+    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
 
-from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
+    role = test_column('role', msg='Did you select the `role` column?')
 
-Ex().test_correct(check_result(), [
-    from_clause,
-    distinct,
-    role,
-    test_has_columns(),
-    test_ncols(),
-    test_error()
-])
-```
+    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
+
+    Ex().test_correct(check_result(), [
+        from_clause,
+        distinct,
+        role,
+        test_has_columns(),
+        test_ncols(),
+        test_error()
+    ])
+    ```
