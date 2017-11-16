@@ -34,7 +34,7 @@ Creating exercises is based around building blocks. Most of the exercises are sh
 | `possible_answers`        | :x:      | :x:       | :x:               | :white_check_mark:                    |
 | `feedbacks`      | :x:      | :x:       | :x:                | :white_check_mark:                    |
 
-#### Field explanations
+#### Block explanations
 
 ##### `title`
 Title of the exercise which is going to be visible to the student when taking the course.
