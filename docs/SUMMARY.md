@@ -34,6 +34,7 @@
       - [Multiple Choice Challenge](challenges/content/multiple-choice-challenge.md)
       - [Blanks Challenge](challenges/content/blanks-challenge.md)
    - [Guidelines](challenges/guidelines.md)
+   - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
    - [Vision](projects/projects-vision.md)
    - [Metadata](projects/projects-metadata.md)
