@@ -6,7 +6,7 @@ A `MultipleChoiceChallenge` presents the student with a block of text that can b
 
 It is possible to specify several assignment/options pairs; the backend will randomly pick from these. You can enclose options between `[ ]`, to indicate that they are correct.
 
-## Complete example
+## Authoring
 
 {% codetabs name="Version 2", type="text" -%}
 
