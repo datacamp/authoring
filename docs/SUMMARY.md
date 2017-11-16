@@ -10,17 +10,18 @@
 * [Courses](courses/README.md)
    - [Data structure](courses/data-structure.md)
    - [Exercises](courses/exercises/README.md)
-     - [Video](courses/exercises/video-exercise.md)
-     - [Normal](courses/exercises/normal-exercise.md)
-     - [Multiple Choice](courses/exercises/multiple-choice-exercise.md)
-     - [Tab](courses/exercises/tab-exercise.md)
+     - [Video Exercise](courses/exercises/video-exercise.md)
+     - [Normal Exercise](courses/exercises/normal-exercise.md)
+     - [Multiple Choice Exercise](courses/exercises/multiple-choice-exercise.md)
+     - [Tab Exercise](courses/exercises/tab-exercise.md)
        - [SQL Example](courses/exercises/examples/md/sql/TabExercise.md)
        - [R Example](courses/exercises/examples/md/r/TabExercise.md)
        - [Python Example](courses/exercises/examples/md/python/TabExercise.md)
-     - [Bullet](courses/exercises/bullet-exercise.md)
+     - [Bullet Exercise](courses/exercises/bullet-exercise.md)
        - [SQL Example](courses/exercises/examples/md/sql/BulletExercise.md)
        - [R Example](courses/exercises/examples/md/r/BulletExercise.md)
        - [Python Example](courses/exercises/examples/md/python/BulletExercise.md)
+   - [XP](courses/xp.md)
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
    - [Guides](courses/guides/README.md)
@@ -40,7 +41,6 @@
    - [Metadata](projects/projects-metadata.md)
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
-* [Gamification](gamification.md)
 * [FAQ](faq/README.md)
 
 ## Teach interface
@@ -52,5 +52,4 @@
 
 ## Premium content
 
-
-
+* [Course index](premium_content/index.md)

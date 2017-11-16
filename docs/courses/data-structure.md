@@ -10,8 +10,10 @@ The structure outline is as follows:
 |- img/
 |- .gitignore
 |- README.md
-|- chapter1.Rmd
 |- chapter1.md
+|- chapter2.md
+|- ...
+|- chapterN.md
 |- course.yml
 |- requirements.r
 |- requirements.sh
@@ -27,17 +29,16 @@ An overview of what each of this does is:
 
 | File/Folder         | Description                                                              |
 |:--------------------|:-------------------------------------------------------------------------|
-| `datasets/*`          | Folder containing all datasets you may want to use during the course creation process (eg. csv / excel files)|
-| `img/*`          | Folder containing the course image should as `shield_image.png`|
-| `scripts/*`          | Contains all the narrative which corresponds to the slides and the videos included in the course                                                                        |
-| `slides/*`           | Video slide markdown files.                                                                         |
-| `.gitignore`         | Files and folders which should be ignored by Git  |
-| `README.md`         | A readme file with a list of resources more explanation to get started  |
-| `chapter(1-n).Rmd`      | A markdown file with chapter metadata and exercises used in `R` courses      |
-| `chapter(1-n).md`      | A markdown file with chapter metadata and exercises used in `Python` and `SQL` courses    |
-| `course.yml`       | A yaml file with course metadata                          |
-| `requirements.r`   | Additional R packages you may want to use in your course                                                                          |
-| `requirements.sh`   | Additional Python / SQL packages you may want to use in your course                                                                          |
+| `datasets/*` | Folder containing all datasets you may want to use during the course creation process (eg. csv / excel files)|
+| `img/*` | Folder containing the course image should as `shield_image.png`|
+| `scripts/*` | Contains all the narrative which corresponds to the slides and the videos included in the course |
+| `slides/*` | Video slide markdown files. |
+| `.gitignore` | Files and folders which should be ignored by Git  |
+| `README.md` | A readme file with a list of resources more explanation to get started  |
+| `chapterX.md` | A markdown file with chapter metadata and exercises  |
+| `course.yml` | A YAML file with course metadata |
+| `requirements.r` | Additional R packages you may want to use in your course |
+| `requirements.sh`   | Additional Python / SQL packages you may want to use in your course |
 
 Let's go over some of the most important files and folders in more detail.
 
@@ -53,21 +54,23 @@ This file contains the general information about your course being:
 | `difficulty_level`     | 1, 2 or 3, depending on the difficulty of the course. 1 corresponds to beginner, 2 to intermediate and 3 to advanced. You can also use the difficulty level of 0: a Getting Started course.                                                                                                               |
 | `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              |
 | `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          |
-| `datasets`             | YAML key value combinations that explicitely define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is  `__IGNORE__`, the dataset won't be shown on the course page.|
+| `datasets`             | YAML key value combinations that explicitly define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is  `__IGNORE__`, the dataset won't be shown on the course page.|
 
 Some of the fields are explained in detail below:
 
 ##### prerequisites
+
 As previously mentioned prerequisites contain a list of course id's which are the prerequisite for the course. An example on how to specify those in the `course.yml` is:
 
 ```yaml
 prerequisites:
   - 58 # Introduction to R
-  - 672 # Intermediate R 
+  - 672 # Intermediate R
 ```
 
 ##### datasets
-As previously mentioned datasets is a list of datasets used in the course. All the datasets are going to be visible on the course page (page which is seend by students) unless you ignore the files which shouldn't be visible. You can ignore files in the `course.yml` by using `__IGNORE__` as follows:
+
+As previously mentioned datasets is a list of datasets used in the course. All the datasets are going to be visible on the course page (page which is seen by students) unless you ignore the files which shouldn't be visible. You can ignore files in the `course.yml` by using `__IGNORE__` as follows:
 
 ```yaml
 datasets:
@@ -77,9 +80,10 @@ datasets:
 ```
 
 > #### info::Note
-> to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab. 
+> to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab.
 
-### `chapter(1-n).Rmd` / `chapter(1-n).md`
+### `chapterX.(R)md`
+
 The content of a course is organized into chapters, each of which consists of one or more exercises.  
 
 Similar to the `course.yml`, every chapter files start with a YAML header containing information about the chapter:
@@ -104,37 +108,19 @@ Each chapter file contains general information about the chapter in YAML format 
 | attachments  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                            |
 
 ###### attachments
+
 You can specify attachments for the chapter, currently only used to specify the slides for the chapter by using the `slide_link`. Example:
 ```yaml
 attachments:
   slides_link: http://link.to.slides/
 ```
 
-#### File extensions
-There is an important difference in file extensions which depends on course technology when naming a chapter file. 
+#### md vs Rmd
 
-Example of directory structure for `R` technology:
-```
-chapter1.Rmd
-chapter2.Rmd
-chapter3.Rmd
-chapter4.Rmd
-chapter5.Rmd
-```
-
-Example of directory structure for `Python` and `SQL` technology:
-```
-chapter1.md
-chapter2.md
-chapter3.md
-chapter4.md
-chapter5.md
-```
-
-The only difference is `.Rmd` versus `.md` depending on the technology.  
-`.Rmd` provides a specific `R` technology markdown flavour and syntax on Github.  
+The `.md` extension for chapter files is supported for all languages (`R`, `Python` and `SQL`). In addition, you can use the `.Rmd` format for R courses. `.Rmd` provides a specific `R` technology markdown flavor and syntax on Github.  
 
 ### `requirements.r`
+
 This file holds all the `R` dependencies or packages you may want to use through your project.
 Example:
 
@@ -151,7 +137,7 @@ Example:
 
 ```python
 pip3 install numpy==1.12.0
-pip3 install pandas==0.19.2 
+pip3 install pandas==0.19.2
 pip3 install dccpu==0.3.7
 ```
 
