@@ -12,7 +12,7 @@ above and beyond what's included in the persona.
 - Age: 34
 - Location: Reno, Nevada, USA
 - Education: Bachelor in Mathematics and Master in Finance & Risk Management - University of Nevada
-- Personal: Married, parent of 4-year-old.
+- Personal: Interested in teaching courses himself some day.
 
 **Previous Jobs**
 
@@ -67,7 +67,7 @@ for him lies in the apply fast way the learning experience is set up.
 - Age: 28
 - Location: Bangalore, Karnataka, India
 - Education: Bachelor in Biochemistry, Master in Medicinal and Pharmaceutical Chemistry - University of Mumbai
-- Personal: Partially deaf, so prefers materials with closed captioning.
+- Personal: Likes things she can do on the move (e.g., podcasts).
 
 **Previous Jobs**
 
@@ -108,8 +108,8 @@ curated and has things in one place are a big plus for her as
 well. She misses being able to easily export the code so she can keep
 it with the slides.
 
-> I was surprised to see how immediately you had to code. From the get
-> go. As a chemist with no data science background, this made all the
+> I was surprised to see how you had to code from the get go. As a
+> chemist with no data science background, this made all the
 > difference in giving me confidence.
 
 **Is Uncertain About…**
@@ -124,7 +124,7 @@ it with the slides.
 - Age: 42
 - Location: Calgary, Alberta, Canada
 - Education: Bachelor of Computer Science - University of Saskatchewan
-- Personal: Juggling many responsibilities, so needs things she can do in small bites or on the move.
+- Personal: Highly motivated by the social side of learning.
 
 **Previous Jobs**
 
@@ -178,7 +178,7 @@ her tinker with code as she went along.
 - Age: 27
 - Location: London, UK
 - Education: Bachelor in Philosophy & Bachelor in Business  Economics - King's College London
-- Personal: Interested in teaching courses himself some day.
+- Personal: Partially deaf, so prefers materials with closed captioning.
 
 **Previous Job**
 
