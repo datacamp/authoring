@@ -1,5 +1,6 @@
-# Data structure
-Course consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
+# Repository Structure
+
+A course repository consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
 
 Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating the course the data structure can slightly differ.
 
