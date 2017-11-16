@@ -477,11 +477,8 @@ Its six levels and verbs often used in learning objectives at those levels are:
    (choose, rate, select).
 
 [bloom]: https://en.wikipedia.org/wiki/Bloom's_taxonomy
-[datacamp-how]: https://www.datacamp.com/teach/documentation
 [huston-teaching]: https://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674035801/
 [lang-teaching]: https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/
-[learner-profiles]: http://third-bit.com/teaching/lessons.html#learner-profiles
-[profile-site]: https://github.com/datacamp/learner-profiles
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
 [teaching-statistics]: https://www.amazon.com/Teaching-Statistics-Tricks-Andrew-Gelman/dp/0198572247/
 [wilson-teaching]: http://third-bit.com/teaching/

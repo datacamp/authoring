@@ -1,6 +1,6 @@
 # **Course Title**<br/>by **Course Author**
 
-*Please read the [example course specs](design.md)
+*Please read the [course design process description](design.md)
 and complete these steps in the `README.md` file in your course repository.
 If you need assistance,
 please speak with your Curriculum Lead.*
@@ -17,7 +17,7 @@ please speak with your Curriculum Lead.*
 
 ## Step 2: Who is this course for?
 
-Link to [student profiles][profile-site].
+Link to [learner personas](personas.md)
 
 * Student 1: discussion.
 * Student 2: discussion.
@@ -75,6 +75,3 @@ One-paragraph description of the course.
 
 - Prerequisite 1
 - Prerequisite 2
-
-[course-specs]: https://github.com/datacamp/example-course-specs
-[profile-site]: https://github.com/datacamp/learner-profiles
