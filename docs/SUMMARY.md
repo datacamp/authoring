@@ -21,6 +21,7 @@
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
    - [Design](courses/design.md)
      - [Design template](courses/template.md)
+     - [Learner personas](courses/personas.md)
 * [Challenges](challenges/README.md)
    - [Data structure](challenges/data-structure.md)
    - [Content](challenges/content/README.md)

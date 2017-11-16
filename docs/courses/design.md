@@ -1,5 +1,7 @@
 # Course Design
 
+Please see <https://www.datacamp.com/teach/> for your course's dashboard.
+
 ## Introduction
 
 Designing a good course is as hard as designing good software.
@@ -22,8 +24,6 @@ or realize that your initial plan isn't going to play out the way you first thou
 
 Please copy [this template](template.md) to `README.md` in the root directory of your course repository
 and fill it in to design your own course.
-
-Please see <https://www.datacamp.com/teach/> for your courses dashboard.
 
 ## Terminology and Structure
 
@@ -126,49 +126,44 @@ The questions and answers for the Unix shell course are:
 and many factors besides pre-existing knowledge influence who a course is suitable for.
 The second step in designing a course is therefore to agree on an audience with your CL.
 To help you do this,
-we have created [student profiles][profile-site] for typical DataCamp students.
-Each profile has [four parts][learner-profiles]:
-the person's general background,
+we have created [learner personas](personas.md) for typical DataCamp students.
+Each persona describes the person's general background,
 what they already know,
-what they think they want to do,
-and any special needs they might have.
+and what they think they want to do.
 
 After you are done brainstorming,
-you should go through these profiles
-and decide which students your course will help and how.
+you should go through these personas
+and decide which of them your course is intended for,
+and how it will help them.
 While doing this,
-you should make some notes about what specific prerequisite skills or knowledge you expect students to have.
-If none of our profiles capture your intended audience,
-you and your CL may decide to add one.
+you should make some notes about what specific prerequisite skills or knowledge you expect students to have
+above and beyond what's in the persona.
+If none of our personas capture your intended audience,
+talk to your CL to make sure you agree on who you're aiming for.
 
 Checkin: brief summaries of who your course will help and how.
 
-Note: our [profiles][profile-site] will be updated
-as we gather more data about who is using our courses.
-Please do not copy the profiles into your course design;
-instead,
+Note: Please do not copy the profiles into your course design,
+since we will update them as we gather more data on our learners.
+Instead,
 link to them and comment on how the course relates to them.
 
 ### Running Example
 
-Our introduction to the Unix shell will help two learners,
-but won't be much use to a third:
+- [Alex](personas.md#advanced-alex)
+  knows how to do a few things with the Terminal application on his Mac,
+  but now wants to learn how to use the shell to access his company's cloud computing resources.
+  This course will serve as a quick refresher
+  before he goes on to a more advanced course.
 
-- [Jasmine](https://github.com/datacamp/learner-profiles#jasmine)
-  has never used a command line shell.
+- [Sindhu](personas.md#starting-sindhu)
+  has never used a command-line shell.
   This course will give her a basic understanding of Unix
-  so that she can help her students solve the problems they encounter
-  using the university's systems in their statistics courses.
+  so that she can use the command-line tools her colleagues have built.
 
-- [Thanh](https://github.com/datacamp/learner-profiles#thanh)
-  can already use `ls`, `cd`, and similar simple commands when he has to,
-  but does anything requiring loops or reproducibility in R.
-  This course will show him how to build shell scripts that call legacy tools used by his group
-  so that he can automate the analyses other members of his group do.
-
-- [Yngve](https://github.com/datacamp/learner-profiles#yngve)
-  uses the tools that this course introduces on a daily basis,
-  so he won't be interested in taking it.
+- [Chen](personas.md#coder-chen)
+  *doesn't* need this course,
+  since she has been using Unix for more than twenty years.
 
 <!-- -------------------------------------------------------------------------------- -->
 
