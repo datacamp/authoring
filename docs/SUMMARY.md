@@ -33,6 +33,7 @@
       - [Output Challenge](challenges/content/output-challenge.md)
       - [Multiple Choice Challenge](challenges/content/multiple-choice-challenge.md)
       - [Blanks Challenge](challenges/content/blanks-challenge.md)
+   - [Guidelines](challenges/guidelines.md)
 * [Projects](projects/README.md)
    - [Vision](projects/projects-vision.md)
    - [Metadata](projects/projects-metadata.md)
