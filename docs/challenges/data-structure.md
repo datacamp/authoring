@@ -8,8 +8,8 @@ Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating
 |- datasets/
 |- img/
 |- challenges/
-|  |- chapter1.md
-|  |- chapter2.md
+|  |- my_first_challenge.md
+|  |- my_second_challenge.md
 |- .gitignore
 |- README.md
 |- pool.yml

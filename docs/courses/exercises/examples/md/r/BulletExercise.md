@@ -1,81 +1,83 @@
-## Building a plot!
+# R Bullet exercise example
 
-```yaml
-type: BulletExercise 
-lang: r 
-xp: 150 
-```
+    ## Building a plot!
 
-`@pre_exercise_code`
+    ```yaml
+    type: BulletExercise 
+    lang: r 
+    xp: 150 
+    ```
 
-```{r}
-library(ggplot2)
-```
+    `@pre_exercise_code`
 
-`@sample_code`
+    ```{r}
+    library(ggplot2)
+    ```
 
-```{r}
-ggplot(mtcars, aes(x = mpg, y = wt))
-```
+    `@sample_code`
 
-***
+    ```{r}
+    ggplot(mtcars, aes(x = mpg, y = wt))
+    ```
 
-## Add a scatterplot
+    ***
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ## Add a scatterplot
+
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
 
-`@instructions`
+    `@instructions`
 
-Use `geom_point` to add a scatterplot
+    Use `geom_point` to add a scatterplot
 
-`@hint`
+    `@hint`
 
-Submit the query!
+    Submit the query!
 
-`@solution`
+    `@solution`
 
-```{r}
-ggplot(mtcars, aes(x = mpg, y = wt)) +
-  geom_point()
-```
+    ```{r}
+    ggplot(mtcars, aes(x = mpg, y = wt)) +
+      geom_point()
+    ```
 
-`@sct`
+    `@sct`
 
-```{r}
-# Test if user added geom_point
-```
+    ```{r}
+    # Test if user added geom_point
+    ```
 
-***
+    ***
 
-## Add a regression line
+    ## Add a regression line
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-`@instructions`
+    `@instructions`
 
-Use `geom_smooth` with `method` set to `lm` to add a regression line
+    Use `geom_smooth` with `method` set to `lm` to add a regression line
 
-`@hint`
+    `@hint`
 
-Submit the query!
+    Submit the query!
 
-`@solution`
+    `@solution`
 
-```{r}
-ggplot(mtcars, aes(x = mpg, y = wt)) +
-  geom_point() +
-  geom_smooth(method = 'lm')
-```
+    ```{r}
+    ggplot(mtcars, aes(x = mpg, y = wt)) +
+      geom_point() +
+      geom_smooth(method = 'lm')
+    ```
 
-`@sct`
+    `@sct`
 
-```{r}
-# Test if the user added a geom_smooth with method = 'lm'
-```
+    ```{r}
+    # Test if the user added a geom_smooth with method = 'lm'
+    ```
