@@ -1,6 +1,6 @@
-# Data structure
+# Repository Structure
 
-Challenges consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
+A Challenges repository consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
 
 Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating the challenge the data structure can slightly differ.
 
@@ -59,7 +59,7 @@ Example:
 
 ```python
 pip3 install numpy==1.12.0
-pip3 install pandas==0.19.2 
+pip3 install pandas==0.19.2
 pip3 install dccpu==0.3.7
 ```
 
