@@ -8,7 +8,6 @@ In an `OutputChallenge`, a student has to match code with the corresponding outp
 
 Every `OutputChallenge` starts with a title (optional) and metadata.
 
-
 {% codetabs name="Version 2", type="text" -%}
 
 ## Functions
@@ -91,14 +90,14 @@ In some cases, you might want to specify several code templates. In this case, f
 
 `@code`
 
-`@@code1`
+`@code1`
 ```{r}
 x <- {{var1}}
 y <- {{var2}}
 {{fun1}}(x, y)
 ```
 
-`@@code2`
+`@code2`
 ```{r}
 x <- {{var1}}
 y <- {{var2}}
@@ -195,6 +194,69 @@ fun1:
 {%- endcodetabs %}
 
 When the challenge backend renders this kind of challenge and tries to find a valid value for `var1`, it will first execute the `sprintf(...)` expression. It will use the values that result from that as if they were hard coded values. This allows you to make the number of possibilities virtually endless. Notice that you can still specify hardcoded values in addition to 'expression values', as the `'c(1, 1, 1, 1)'` example shows. This is supported for R, Python and SQL now.
+
+#### Complete example
+
+Here is the complete `OutputChallenge` example:
+
+{% codetabs name="Version 2", type="text" -%}
+## Functions
+
+```yaml
+type: OutputChallenge
+```
+
+`@code`
+
+```{r}
+x <- {{var1}}
+y <- {{var2}}
+{{fun1}}(x, y)
+```
+
+`@variables`
+
+```{yaml}
+var1:
+  - 'list(p = c(3, 9))'
+  - 'list(q = c(8, 4))'
+  - 'list(r = c(2, 6))'
+var2:
+  - 'c(3, 4)'
+  - 'c(1, 2)'
+  - 'c(7, 5)'
+  - 'c(8, 6)'
+fun1:
+  - 'c'
+  - 'list'
+```
+
+{%- language name="Version 1", type="text" -%}
+--- type:OutputChallenge
+
+## Functions
+
+*** =code
+```{r}
+x <- {{var1}}
+y <- {{var2}}
+{{fun1}}(x, y)
+```
+
+*** =variables
+var1:
+  - 'list(p = c(3, 9))'
+  - 'list(q = c(8, 4))'
+  - 'list(r = c(2, 6))'
+var2:
+  - 'c(3, 4)'
+  - 'c(1, 2)'
+  - 'c(7, 5)'
+  - 'c(8, 6)'
+fun1:
+  - 'c'
+  - 'list'
+{% endcodetabs %}
 
 ### Pre Challenge Code
 
