@@ -1,6 +1,6 @@
 # Slides
 
-ou can create slides for your course using the Teach Editor. Each [VideoExercise](exercises/video-exercise.md) can have a slide deck associated with it. Using these tools, you can even time the slide deck to a DataCamp video.
+You can create slides for your course using the Teach Editor. Each [VideoExercise](exercises/video-exercise.md) can have a slide deck associated with it. Using these tools, you can even time the slide deck to a DataCamp video.
 
 ## Getting started
 
