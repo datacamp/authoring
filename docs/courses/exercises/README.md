@@ -6,7 +6,7 @@ If you've created a course repository through [www.datacamp.com/teach](https://w
 
 ### Exercise Types
 
-Following are currently supported types of exercises you can created on Datacamp platform.
+Following are currently supported types of exercises you can created on DataCamp platform.
 
 | Type                          | Description                                                                |
 |:------------------------------|:---------------------------------------------------------------------------|

@@ -4,7 +4,7 @@ As we have learned when examining the [challenges data structure](../repo-struct
 
 ### Challenge Types
 
-Following are currently supported types of challenge types you can create on Datacamp platform.
+Following are currently supported types of challenge types you can create on DataCamp platform.
 
 | Type                          | Description                                                                |
 |:------------------------------|:---------------------------------------------------------------------------|

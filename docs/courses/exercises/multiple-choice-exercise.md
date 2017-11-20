@@ -10,7 +10,7 @@ A `MultipleChoiceExercise` shows assignment, question, and options on the left, 
 
 ### Complete example
 
-This is an example taken from Datacamp [Introduction to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science) free course.
+This is an example taken from DataCamp [Introduction to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science) free course.
 Following the example all blocks are going to be explained in detail.
 
     ---

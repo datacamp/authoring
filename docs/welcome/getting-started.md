@@ -4,7 +4,7 @@ In order to start creating courses, challenges and projects on DataCamp platform
 
 - Create DataCamp account
 - Create Github account
-- Authorize Datacamp to manage your Github account
+- Authorize DataCamp to manage your Github account
 
 You can start by following the steps from the "Getting started" video:
 {% vimeo %}153250442{% endvimeo %}
@@ -20,7 +20,7 @@ Once you have created your DataCamp account you can proceed with creating your G
 
 ## Github Account
 
-Datacamp uses Github as platform for hosting, versioning and collaborating on content.  
+DataCamp uses Github as platform for hosting, versioning and collaborating on content.  
 In case you are not familiar with Git we highly recommend you to take the [official Github tutorial](https://try.github.io).
 
 Now that you are more familiar with Git you can proceed with creating your Github account.
