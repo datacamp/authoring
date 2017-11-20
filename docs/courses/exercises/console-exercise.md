@@ -10,34 +10,30 @@ __Examples__
 
 __Authoring__
 
-{% codetabs name="Version 2", type="markdown" -%}
+    ## Create a New Directory
 
-## Create a New Directory
+    ```yaml
+    type: ConsoleExercise 
+    xp: 100 
+    ```
 
-```yaml
-type: ConsoleExercise 
-xp: 100 
-```
+    `@instructions`
 
-`@instructions`
+    - Create a new directory, called `test`.
 
-- Create a new directory, called `test`.
+    `@hint`
 
-`@hint`
+    - You need to use `mkdir`.
 
-- You need to use `mkdir`.
+    `@solution`
 
-`@solution`
+    ```{bash}
+    mkdir test
+    ```
 
-```{bash}
-mkdir test
-```
+    `@sct`
 
-`@sct`
-
-```{python}
-Ex().test_expr_error('[ -d "test" ]')
-Ex().success_msg("Great!")
-```
-
-{% endcodetabs %}
+    ```{python}
+    Ex().test_expr_error('[ -d "test" ]')
+    Ex().success_msg("Great!")
+    ```

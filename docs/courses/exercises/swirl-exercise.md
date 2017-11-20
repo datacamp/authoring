@@ -41,45 +41,24 @@ git merge upstream/master
 
 Swirl courses are divided in lessons. On DataCamp, a swirl lesson corresponds is a single `SwirlExercise`. To actually add a DataCamp exercise that links to a swirl lesson, you can add an exercise of type `SwirlExercise` to the chapter file. To add a DataCamp exercise, named Basic Building Blocks, that loads in the Basic Building Blocks swirl lesson, from the R Programming course, you need this chunk inside your chapterX.Rmd file:
 
-{% codetabs name="Version 2", type="text" -%}
+    ## Basic Building Blocks
 
-## Basic Building Blocks
+    ```yaml
+    type: SwirlExercise 
+    lang: r 
+    xp: 250 
+    skills: 1
+    ```
 
-```yaml
-type: SwirlExercise 
-lang: r 
-xp: 250 
-skills: 1
-```
+    `@swirl_course`
 
-`@swirl_course`
+    R Programming
 
-R Programming
+    `@swirl_lesson`
 
-`@swirl_lesson`
-
-Basic Building Blocks
-
-{%- language name="Version 1", type="text" -%}
-
-
---- type:SwirlExercise lang:r xp:250 skills:1
-
-## Basic Building Blocks
-
-*** =swirl_course
-
-R Programming
-
-*** =swirl_lesson
-
-Basic Building Blocks
-
-
-{% endcodetabs %}
+    Basic Building Blocks
 
 Each 'swirl course' has its own repository, where these 'mappings' are done.
-
 
 ## What happens behind the scenes
 

@@ -11,41 +11,21 @@ It is usual to start a course with a `VideoExercise`.
 
 Following is a complete example of a chapter containing the `VideoExercise`
 
-{% codetabs name="Version 2", type="text" -%}
----
-title       : This is chapter with video exercise
-description : Yes! This chapter contains a video!
----
+    ---
+    title       : This is chapter with video exercise
+    description : Yes! This chapter contains a video!
+    ---
 
-## Video Exercise
+    ## Video Exercise
 
-```yaml
-type: VideoExercise 
-lang: r
-xp: 50 
-skills: 1 
-video_link: //player.vimeo.com/video/160339466
-video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
-```
-
-{%- language name="Version 1", type="text" -%}
----
-title       : This is chapter with video exercise
-description : Yes! This chapter contains a video!
-
---- type:VideoExercise lang:r xp:50 skills:1
-
-## Video Exercise
-
-*** =video_link
-
-//player.vimeo.com/video/160339466
-
-*** =video_hls
-
-//videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
-
-{% endcodetabs %}
+    ```yaml
+    type: VideoExercise 
+    lang: r
+    xp: 50 
+    skills: 1 
+    video_link: //player.vimeo.com/video/160339466
+    video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
+    ```
 
 [Recommended read: Creating slides and videos](../../slides.md)
 
