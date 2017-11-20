@@ -43,9 +43,6 @@ As a part of second step you will need to choose the Github plan:
 
 ![Github registration form - Plan](../images/prerequisites/2-select-github-plan.png)
 
-> #### info::Note
-> _Paid plan is preferred if you are going to create content which needs to be private, meaning non accessible by other Github users_
-
 We recommend you to start with the _Unlimited Plan_ and upgrade at later stage when and if it becomes necessary.
 
 The last step is completing your Github registration.
