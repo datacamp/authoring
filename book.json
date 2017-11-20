@@ -1,6 +1,5 @@
 {
   "plugins": [
-    "codetabs",
     "bootstrap-callout",
     "expandable-chapters",
     "advanced-emoji",
