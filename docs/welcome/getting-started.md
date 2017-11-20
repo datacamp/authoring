@@ -7,7 +7,7 @@ In order to start creating courses, challenges and projects on DataCamp platform
 - Authorize Datacamp to manage your Github account
 
 You can start by following the steps from the "Getting started" video:
-{% video %}https://www.vimeo.com/153250442{% endvideo %}
+{% vimeo %}153250442{% endvimeo %}
 
 While you can also read the upcoming sections which are going to guide you through the process of creating the necessary accounts.
 

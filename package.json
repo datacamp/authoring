@@ -12,7 +12,7 @@
     "gitbook-plugin-collapsible-menu-rmp": "^1.0.1",
     "gitbook-plugin-expandable-chapters": "^0.2.0",
     "gitbook-plugin-theme-vuejs": "^1.1.0",
-    "gitbook-plugin-video": "0.0.3"
+    "gitbook-plugin-videoclips": "^0.1.9"
   },
   "devDependencies": {},
   "scripts": {
