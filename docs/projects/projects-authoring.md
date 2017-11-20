@@ -125,7 +125,7 @@ There are three components that can help write great hints.
 
 **Links to Exercises**
 
-Every hint should start with a reference to exercises from datacamp courses, that contain the skills required to tackle the task in question. The idea is that a user who is stuck can refer to these exercises, refresh their knowledge, and attempt the task with a fresh mind. The more relevant these exercise links are, the better.
+Every hint should start with a reference to exercises from DataCamp courses, that contain the skills required to tackle the task in question. The idea is that a user who is stuck can refer to these exercises, refresh their knowledge, and attempt the task with a fresh mind. The more relevant these exercise links are, the better.
 
 **Scaffolded Code**
 

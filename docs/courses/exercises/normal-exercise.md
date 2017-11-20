@@ -19,7 +19,7 @@ Additional information regarding the exercise or the data set that is used is st
 
 > #### info::NOTE
 > Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about `xp` can be found in [XP page](../../xp.md)
 
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
@@ -36,7 +36,6 @@ Each block is described in detail following this example.
     type: NormalExercise
     lang: r
     xp: 100
-    skills: 1,3
     ```
 
     This basic exercise will challenge you to assign a variable in R.
@@ -82,7 +81,6 @@ A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and 
     type: NormalExercise
     lang: r
     xp: 100
-    skills: 1,3
     ```
 
     This basic exercise will challenge you to assign a variable in R.
@@ -132,4 +130,4 @@ A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and 
 
 > #### info::NOTE
 > Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about `xp` can be found in [XP page](../../xp.md)

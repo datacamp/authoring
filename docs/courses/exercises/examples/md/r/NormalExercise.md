@@ -3,7 +3,6 @@
 ```yaml
 type: NormalExercise 
 xp: 100 
-skills: 1 
 ```
 
 You can execute R commands straight in the console. This is a good way to experiment with R code, as your submission is not checked for correctness.

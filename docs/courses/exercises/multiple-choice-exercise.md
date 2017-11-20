@@ -25,7 +25,6 @@ Following the example all blocks are going to be explained in detail.
     type: MultipleChoiceExercise
     lang: python
     xp: 50
-    skills: 2
     ```
 
     Python is a pretty versatile language. For which applications can you use Python?
@@ -62,7 +61,6 @@ A `MultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` bl
     type: MultipleChoiceExercise
     lang: python
     xp: 50
-    skills: 2
     ```
 
     Python is a pretty versatile language. For which applications can you use Python?
@@ -100,7 +98,7 @@ A `MultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` bl
 
 > #### info::NOTE
 > Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about `xp` can be found in [XP page](../../xp.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
@@ -177,7 +175,7 @@ A list which maps to "Possible answers" where you can provide customized feedbac
 
 > #### info::NOTE
 > Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about `xp` can be found in [XP page](../../xp.md)
 
 ## Plain Multiple Choice Exercise
 

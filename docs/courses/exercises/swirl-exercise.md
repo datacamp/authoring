@@ -47,7 +47,6 @@ Swirl courses are divided in lessons. On DataCamp, a swirl lesson corresponds is
     type: SwirlExercise 
     lang: r 
     xp: 250 
-    skills: 1
     ```
 
     `@swirl_course`

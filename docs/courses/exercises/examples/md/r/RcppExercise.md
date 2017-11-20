@@ -4,7 +4,6 @@
 type: RCppExercise 
 lang: r 
 xp: 100
-skills: 1
 ```
 
 Remember when you wrote the `answer` function that always returns `42`. Let's

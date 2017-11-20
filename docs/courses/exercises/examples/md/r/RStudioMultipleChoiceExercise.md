@@ -3,7 +3,6 @@
 ```yaml
 type: RStudioMultipleChoiceExercise 
 xp: 50 
-skills: 1 
 ```
 
 The viewer pane is similar to the plots pane, but it displays HTML output.

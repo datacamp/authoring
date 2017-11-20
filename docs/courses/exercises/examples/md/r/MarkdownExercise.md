@@ -3,7 +3,6 @@
 ```yaml
 type: MarkdownExercise 
 xp: 100 
-skills: 1,5
 ```
 
 For this course, DataCamp has developed a new kind of interface that looks like the R Markdown pane in RStudio. You have a space (my_document.Rmd) to write R Markdown documents, as well as the buttons to compile the R Markdown document. To keep things simple, we'll stick with making html and pdf documents, although it is also possible to create Microsoft Word documents with R Markdown.
