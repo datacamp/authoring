@@ -55,12 +55,11 @@ There is no need to provide answers to any of the fields. You can proceed with c
 
 In order for DataCamp to access your content on Github you will need to grant access to DataCamp. It sounds a bit scarier than it is. Follow these steps to authorize DataCamp for managing your Github account:
 
-1. Login to your DataCamp account by clicking [here](https://www.datacamp.com/users/sign_in)
-2. Visit DataCamp for Teachers by clicking [here](https://www.datacamp.com/teach)
-3. You will be prompted to authorize DataCamp to manage your Github account:
+1. Visit DataCamp for Teachers by clicking [here](https://www.datacamp.com/teach)
+2. You will be prompted to authorize DataCamp to manage your Github account:
 ![Github registration form - Plan](../images/prerequisites/link-teach-authorize-github.png)
 Click on "Link Github Account" button
-4. You will be redirected to Github where you need to click "Authorize" button
-5. Once authorization is complete you will see the DataCamp for Teachers
+3. You will be redirected to Github where you need to click "Authorize" button
+4. Once authorization is complete you will see the DataCamp for Teachers
 
 Now you are ready to start creating your content. You can proceed by [creating a course](../courses/README.md).
