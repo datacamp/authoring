@@ -1,6 +1,6 @@
 # Exports
 
-For video exercises on **DataCamp**, there's a possibility to add several types of extra data -- also called **exports**. Adding them will enhance student's experience in the campus app. These exports are closely related to videos built with the **Slides Interface**.
+For video exercises on **DataCamp**, there's a possibility to add several types of extra data -- also called **exports**. Adding them will enhance student's experience in the Learning interface. These exports are closely related to videos built with the **Slides Interface**.
 
 However, with some extra **steps** you can also generate these exports for video exercises not using the **Slides Interface** -- also called traditional videos. The following steps are required for exports to work for traditional videos:
 
