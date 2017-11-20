@@ -4,7 +4,8 @@
     "expandable-chapters",
     "advanced-emoji",
     "videoclips",
-    "copy-code-button"
+    "copy-code-button",
+    "codetabs"
   ],
   "pluginsConfig": {},
   "pdf": {

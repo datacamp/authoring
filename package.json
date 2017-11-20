@@ -7,6 +7,7 @@
     "express": "^4.16.2",
     "gitbook-plugin-advanced-emoji": "^0.2.2",
     "gitbook-plugin-bootstrap-callout": "^0.1.2",
+    "gitbook-plugin-codetabs": "^1.0.0",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-collapsible-menu-rmp": "^1.0.1",
     "gitbook-plugin-copy-code-button": "0.0.2",
