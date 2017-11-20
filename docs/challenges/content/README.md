@@ -24,15 +24,15 @@ type: OutputChallenge
 ```yaml
 type: BlanksChallenge
 ```
-{%- language name="MultipleChallenge", type="py" -%}
+{%- language name="MultipleChoiceChallenge", type="py" -%}
 ```yaml
-type: MultipleChallenge
+type: MultipleChoiceChallenge
 ```
 {%- endcodetabs %}
 
 Currently all types of challenges are supporting same YAML properties:
 
-| Proprety | OutputChallenge    | BlanksChallenge    | MultipleChallenge  |
+| Proprety | OutputChallenge    | BlanksChallenge    | MultipleChoiceChallenge  |
 |----------|--------------------|--------------------|--------------------|
 | `type`     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | `key`      | :white_check_mark: | :white_check_mark: | :white_check_mark: |
@@ -41,7 +41,7 @@ Currently all types of challenges are supporting same YAML properties:
 
 Creating challenges is based around building blocks.
 
-| Property           | OutputChallenge    | BlanksChallenge    | MultipleChallenge  |
+| Property           | OutputChallenge    | BlanksChallenge    | MultipleChoiceChallenge  |
 |--------------------|--------------------|--------------------|--------------------|
 | context            | :white_check_mark: | :white_check_mark: | :x:                |
 | code               | :white_check_mark: | :white_check_mark: | :x:                |
