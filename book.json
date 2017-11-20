@@ -4,7 +4,8 @@
     "bootstrap-callout",
     "expandable-chapters",
     "advanced-emoji",
-    "videoclips"
+    "videoclips",
+    "copy-code-button"
   ],
   "pluginsConfig": {},
   "pdf": {
