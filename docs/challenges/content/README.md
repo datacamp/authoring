@@ -12,27 +12,48 @@ Following are currently supported types of challenge types you can create on Dat
 | [`MultipleChoiceChallenge`](./multiple-choice-challenge)  | Presents the student with a block of text that can be a statement or question, and the student has to select the correct option |
 | [`BlanksChallenge`](./blanks-challenge.md) | In this challenge student is presented a 'required output', and has to fill in the blanks of a script in such a way that, when executed, the script produces the same output as the required output    |
 
+### Challenge Header {#challenge-header}
+
+Each challenge starts with a header which consists of YAML properties defining the challenge.  
+
+{% codetabs name="OutputChallenge", type="py" -%}
+```yaml
+type: OutputChallenge
+```
+{%- language name="BlanksChallenge", type="py" -%}
+```yaml
+type: BlanksChallenge
+```
+{%- language name="MultipleChallenge", type="py" -%}
+```yaml
+type: MultipleChallenge
+```
+{%- endcodetabs %}
+
+Currently all types of challenges are supporting same YAML properties:
+
+| Proprety | OutputChallenge    | BlanksChallenge    | MultipleChallenge  |
+|----------|--------------------|--------------------|--------------------|
+| `type`     | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `key`      | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 
 ### Challenges blocks
 
 Creating challenges is based around building blocks.
 
+| Property           | OutputChallenge    | BlanksChallenge    | MultipleChallenge  |
+|--------------------|--------------------|--------------------|--------------------|
+| context            | :white_check_mark: | :white_check_mark: | :x:                |
+| code               | :white_check_mark: | :white_check_mark: | :x:                |
+| pre_challenge_code | :white_check_mark: | :white_check_mark: | :x:                |
+| variables          | :white_check_mark: | :white_check_mark: | :x:                |
+| distractors        | :x:                | :white_check_mark: | :x:                |
+| assignment         | :x:                | :x:                | :white_check_mark: |
+| options            | :x:                | :x:                | :white_check_mark: |
+
 #### Block explanations
 
-#### `code`
-
-The code block provides a template to generate options for a challenge. It contains references to the variables with `{{ }}` notation.
-For example, the code template below uses for variables `var1`, `var2` and `fun1`, whose values are dynamically generated based on the values specified in the variables block.
-
-#### `assignment`
-
-The assignment block allows you to specify the assignment student needs to answer. eg. `Which function convert a character string to uppercase?`
-
-#### `options`
-
-Following the assignment block, options should be specified to provide list of answers while marking one as correct by surrounding it with `[]`.
-
-##### `context`
+#### `context`
 
 In some cases, you might want to specify a bit more context with the challenge at hand. You can do this by optionally specifying a `context` block. This context part will be parsed as markdown, and shown in a simple div at the top of the view.
 
@@ -43,6 +64,34 @@ In some cases, you might want to specify a bit more context with the challenge a
     `@context`
 
     This is some extra context. You should only use this when it's _really_ required!
+
+#### `code`
+
+The code block provides a template to generate options for a challenge. It contains references to the variables with `{{ }}` notation.
+For example, the code template below uses for variables `var1`, `var2` and `fun1`, whose values are dynamically generated based on the values specified in the variables block.
+
+#### `pre_challenge_code`
+
+Often, you'll want to use a bit more advanced code for your expression values, and potentially reuse this. You can use the optional `pre_challenge_code` block for this. When the backend executes the expression to generate a value, it will first execute this code. You can think of it as initialization code.
+
+    `@pre_challenge_code`
+
+    ```{r}
+    generate_vector <- function(x) {
+      sprintf("c(%s)", paste(sample(-4:4, x), collapse = ", "))
+    }
+    ```
+
+    `@variables`
+
+    ```{yaml}
+    var1:
+      - '!expr generate_vector(4)'
+    fun1:
+      - '!expr sample(c("var", "mean", "sd", "max", "min"), 1)'
+    ```
+
+The `pre_challenge_code` is also run before the student tries out code or does a submission when he or she is actually taking a challenge, so you can also use it to pre-initialize your workspace. This can be useful, for example,when you want students to interact with a complex data frame that requires a lot of code to set up, but that you don't want people to see. Take care, however, in using this feature, as it can reduce the overall understandability of your code. If you don't provide extra information in the context, this can lead to obscure challenges!
 
 #### `variables`
 
@@ -79,32 +128,17 @@ Instead of exhaustively specifying all the values - like in `OutputChallenge`, `
 
 When the challenge backend renders this kind of challenge and tries to find a valid value for `var1`, it will first execute the `sprintf(...)` expression. It will use the values that result from that as if they were hard coded values. This allows you to make the number of possibilities virtually endless. Notice that you can still specify hardcoded values in addition to 'expression values', as the `'c(1, 1, 1, 1)'` example shows. This is supported for R, Python and SQL now.
 
+#### `assignment`
+
+The assignment block allows you to specify the assignment student needs to answer. eg. `Which function convert a character string to uppercase?`
+
 #### `distractors`
 
 @content?
 
-#### `pre_challenge_code`
+#### `options`
 
-Often, you'll want to use a bit more advanced code for your expression values, and potentially reuse this. You can use the optional `pre_challenge_code` block for this. When the backend executes the expression to generate a value, it will first execute this code. You can think of it as initialization code.
-
-    `@pre_challenge_code`
-
-    ```{r}
-    generate_vector <- function(x) {
-      sprintf("c(%s)", paste(sample(-4:4, x), collapse = ", "))
-    }
-    ```
-
-    `@variables`
-
-    ```{yaml}
-    var1:
-      - '!expr generate_vector(4)'
-    fun1:
-      - '!expr sample(c("var", "mean", "sd", "max", "min"), 1)'
-    ```
-
-The `pre_challenge_code` is also run before the student tries out code or does a submission when he or she is actually taking a challenge, so you can also use it to pre-initialize your workspace. This can be useful, for example,when you want students to interact with a complex data frame that requires a lot of code to set up, but that you don't want people to see. Take care, however, in using this feature, as it can reduce the overall understandability of your code. If you don't provide extra information in the context, this can lead to obscure challenges!
+Following the assignment block, options should be specified to provide list of answers while marking one as correct by surrounding it with `[]`.
 
 ## YAML Syntax
 
