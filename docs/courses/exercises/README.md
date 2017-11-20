@@ -1,6 +1,6 @@
 # Exercises
 
-As we have learned when examining the [course data structure](../data-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
+As we have learned when examining the [course data structure](../repo-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
 
 If you've created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter file will already contain some DataCamp exercises to start from. There's four types of exercises: a `VideoExercise`, a `NormalExercise`, `MultipleChoiceExercise` and  `PureMultipleChoiceExercise`. These different types of exercises have some blocks in common; other blocks are type-specific.
 

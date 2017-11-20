@@ -34,4 +34,4 @@ Following actually happened behind the scenes after you have clicked "Create" bu
 2. The course has been pushed (uploaded) to your Github account in a repository named `best-course`
 3. Feel free to visit your newly created Github repository (*you can find it by opening your Github account and searching for repository with name `best-course`*)
 
-**[Next: Learn about the course data structure](data-structure.md)**
+**[Next: Learn about the course data structure](repo-structure.md)**

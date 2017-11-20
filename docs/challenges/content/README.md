@@ -1,6 +1,6 @@
 # Challenges
 
-As we have learned when examining the [challenges data structure](../data-structure.md) the content of a challenge is organized into chapters in `challenges/` folder, each of which consists of one or more challenges.
+As we have learned when examining the [challenges data structure](../repo-structure.md) the content of a challenge is organized into chapters in `challenges/` folder, each of which consists of one or more challenges.
 
 ### Challenge Types
 
