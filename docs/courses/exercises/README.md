@@ -2,9 +2,9 @@
 
 As we have learned when examining the [course data structure](../repo-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
 
-If you've created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter file will already contain some DataCamp exercises to start from. There's four types of exercises: a `VideoExercise`, a `NormalExercise`, `MultipleChoiceExercise` and  `PureMultipleChoiceExercise`. These different types of exercises have some blocks in common; other blocks are type-specific.
+If you've created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter file will already contain some DataCamp exercises to start from. DataCamp supports variety of different exercises. These different types of exercises have some blocks in common; other blocks are type-specific.
 
-### Exercise Types
+### Exercise Types {#exercise-types}
 
 Following are currently supported types of exercises you can created on DataCamp platform.
 
@@ -14,6 +14,8 @@ Following are currently supported types of exercises you can created on DataCamp
 | [`NormalExercise`](./normal-exercise)  | Shows exercise, instructions, code editor and learn by doing console             |
 | [`MultipleChoiceExercise`](./multiple-choice-exercise.md) | Shows multiple choice question and console     |
 | [`PureMultipleChoiceExercise`](./multiple-choice-exercise.md#pure-mce) | Shows multiple choice question    |   
+| [`TabExercise`](./tab-exercise.md) | Create a series of smaller sub exercises    |   
+| [`BulletExercise`](./bullet-exercise.md) | Create a series of smaller sub exercises    |   
 
 ### Exercise blocks {#exercise-blocks}
 
@@ -33,6 +35,9 @@ Creating exercises is based around building blocks. Most of the exercises are sh
 | `aspect_ratio`      | :x:      | :x:       | :x:                | :white_check_mark:                    |
 | `possible_answers`        | :x:      | :x:       | :x:               | :white_check_mark:                    |
 | `feedbacks`      | :x:      | :x:       | :x:                | :white_check_mark:                    |
+
+> #### info::Note
+> `TabExercise` and `BulletExercise` are combinations of other exercises thus those are not included in the comparison table.
 
 #### Block explanations
 
