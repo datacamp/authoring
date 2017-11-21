@@ -46,18 +46,19 @@ Let's go over some of the most important files and folders in more detail.
 ### `course.yml`
 This file contains the general information about your course being:
 
-| Field                | Explanation                                                                                                                                                                                                                                                                                               |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `title`                | Title of the course                                                                                                                                                                                                                                                                                       |
-| `university`           | Organization, university or company the author is linked to                                                                                                                                                                                                                                               |
-| `description`          | Description of the course                                                                                                                                                                                                                                                                                 |
-| `programming_language` | Programming language of the course (r, python, sql)                                                                                                                                                                                                                                                       |
-| `difficulty_level`     | 1, 2 or 3, depending on the difficulty of the course. 1 corresponds to beginner, 2 to intermediate and 3 to advanced. You can also use the difficulty level of 0: a Getting Started course.                                                                                                               |
-| `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              |
-| `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          |
-| `datasets`             | YAML key value combinations that explicitly define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is  `__IGNORE__`, the dataset won't be shown on the course page.|
+| Property             | description                                                                                                                                                                                                                                                                                               |          |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| `title`                | Title of the course                                                                                                                                                                                                                                                                                       | required |
+| `description`          | Description of the course                                                                                                                                                                                                                                                                                 | required |
+| `programming_language` | Programming language of the course (r, python, sql)                                                                                                                                                                                                                                                       | required |
+| `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              | optional |
+| `difficulty_level`     | 1 = beginner, 2 = intermediate, 3 = advanced                                                                                                                                                                                                                                                              | required |
+| `practice_pool_id`     | The id of the challenges connected to the course                                                                                                                                                                                                                                                          | optional |
+| `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          | optional |
+| `datasets`             | YAML key value combinations that explicitly define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is,`__IGNORE__`, the dataset won't be shown on the course page | optional |
+| `from`                 | A special key reserved and used only by DataCamp                                                                                                                                                                                                                            | required |
 
-Some of the fields are explained in detail below:
+Properties which require additional explanation are:
 
 ##### prerequisites
 
@@ -101,12 +102,13 @@ description: In this chapter, you will take your first steps with R.
 
 Each chapter file contains general information about the chapter in YAML format such as:
 
-| Field        | Explanation                                                                                                                          |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------|
-| title        | Title of the chapter                                                                                                                 |
-| description  | Description of the chapter                                                                                                           |
-| free_preview | If it's a paying course, whether this chapter is a free preview (typically the first chapter of a premium course is a free preview). |
-| attachments  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                            |
+| Property     | Explanation                                                                                                                         |          |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------|----------|
+| `title`        | Title of the chapter                                                                                                                | required |
+| `description`  | Description of the chapter                                                                                                          | required |
+| `free_preview` | If it's a paying course, whether this chapter is a free preview (typically the first chapter of a premium course is a free preview) | optional |
+| `attachments`  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                           | optional |
+
 
 ###### attachments
 
@@ -142,6 +144,7 @@ pip3 install pandas==0.19.2
 pip3 install dccpu==0.3.7
 ```
 
-This file is only present when the technology of a course is `SQL` or `Python`
+> #### info:Note
+`requirements.sh` file is sometimes present in repositories for `R` courses when there is a need to install system-level dependencies for certain `R` packages (e.g. `libcurl`)
 
 **[Next: Learn about exercises](exercises/README.md)**

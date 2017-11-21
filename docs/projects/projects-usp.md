@@ -14,7 +14,7 @@ Our implementation of projects works around this in a few ways:
 
 1 | While the narrative describes the high-level objectives of the task, the instructions provide a lot of detail into what is expected from the user. The instructions focus on what are the required elements of the output, and also shares output snippets, making it very clear what is to be expected. As the instructions focus on what needs to be done, rather than how it needs to be done, it provides the user with a lot of flexibility in terms of writing code.
 
-<img src="./media/image10.png" />
+![](/projects/media/image10.png)
 
 2 | The **tests** are written only to test certain properties of the user output that are made amply clear in the instructions. This lets the user write code in a very flexible way, while still being able to address the requirements of the task, based on the output requirements that are made explicit in the **instructions**.
 

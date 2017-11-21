@@ -2,74 +2,45 @@
 
 A `MultipleChoiceChallenge` presents the student with a block of text that can be a statement or question, and the student has to select the correct option.
 
-![Multiple Choice Challenge](./images/MultipleChoiceChallenge.png)
+![Multiple Choice Challenge](/challenges/content/images/MultipleChoiceChallenge.png)
 
 It is possible to specify several assignment/options pairs; the backend will randomly pick from these. You can enclose options between `[ ]`, to indicate that they are correct.
 
 ## Authoring
 
-{% codetabs name="Version 2", type="text" -%}
+    ## Choose the right answer
 
-## Choose the right answer
+    ```yaml
+    type: MultipleChoiceChallenge
+    ```
 
-```yaml
-type: MultipleChoiceChallenge
-```
+    ***
 
-***
+    `@assignment`
 
-`@assignment`
+    Which function convert a character string to uppercase?
 
-Which function convert a character string to uppercase?
+    `@options`
 
-`@options`
+    - `upper()`
+    - [`toupper()`]
+    - `caps()`
+    - `allcaps()`
 
-- `upper()`
-- [`toupper()`]
-- `caps()`
-- `allcaps()`
+    ***
 
-***
+    `@assignment`
 
-`@assignment`
+    Which function adapts the casing of a character string?
 
-Which function adapts the casing of a character string?
+    `@options`
 
-`@options`
-
-- `lower()`
-- `upper()`
-- [`tolower()`]
-- [`toupper()`]
-- `smallcaps()`
-- `allsmallcaps()`
-
-{%- language name="Version 1", type="text" -%}
-
---- type:MultipleChoiceChallenge
-## Choose the right answer
-
-*** =assignment1
-Which function convert a character string to uppercase?
-
-*** =options1
-- `upper()`
-- [`toupper()`]
-- `caps()`
-- `allcaps()`
-
-*** =assignment2
-Which function adapts the casing of a character string?
-
-*** =options2
-- `lower()`
-- `upper()`
-- [`tolower()`]
-- [`toupper()`]
-- `smallcaps()`
-- `allsmallcaps()`
-
-{% endcodetabs %}
+    - `lower()`
+    - `upper()`
+    - [`tolower()`]
+    - [`toupper()`]
+    - `smallcaps()`
+    - `allsmallcaps()`
 
 If a student encounters this challenge, he/she gets to see either the first or the second assignment. The challenge backend will randomly select 3 incorrect options and one correct option to present to the student.
 

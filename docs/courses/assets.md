@@ -4,11 +4,11 @@ A DataCamp course has a course badge, and your exercises will typically use data
 
 ## Images
 
-When you create a course with the "[Create a DataCamp Course](../interface/create-content-dialog.md)" dialog, DataCamp will create the course files and an `img/` folder with a template course shield image (`shield_image.png`). You can replace the course shield image with your own, just make sure to use the same name and that file size is under 1Mb. As soon as you push the changes to GitHub, the image of your course will be updated.
+When you create a course with the "[Create a DataCamp Course](/interface/create-content-dialog.md)" dialog, DataCamp will create the course files and an `img/` folder with a template course shield image (`shield_image.png`). You can replace the course shield image with your own, just make sure to use the same name and that file size is under 1Mb. As soon as you push the changes to GitHub, the image of your course will be updated.
 
 ## Datasets
 
-To use a dataset in your exercises, create a `datasets` folder on the root level of the repository. Every file in the `datasets` folder with a typical dataset extension, will be uploaded whenever you push the changes to GitHub. The build logs that you can find in the repository overview will inform about the upload of these datasets to DataCamp's Amazon S3 servers, and provide a link. You can then use this link in the `pre_exercise_code` block of your exercises to initialize the workspace for the student.
+The recommended way of uploading your assets is by using the [Teach editor assets interface](/interface/teach-editor.md#editor-upload-assets) however you can create datasets and upload them to `datasets` folder on the root level of the repository (you can create the folder if it doesn't exist). Every file in the `datasets` folder with a typical dataset extension, will be uploaded whenever you push the changes to GitHub. The build logs that you can find in the repository overview will inform about the upload of these datasets to DataCamp's Amazon S3 servers, and provide a link. You can then use this link in the `pre_exercise_code` block of your exercises to initialize the workspace for the student.
 
 Example for loading in an RData file in an `R` exercise:
 

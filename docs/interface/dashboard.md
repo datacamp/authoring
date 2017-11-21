@@ -1,6 +1,6 @@
 # Course dashboard
 
-![Teach dashboard](../images/courses/teach-dashboard.png)
+![Teach dashboard](/images/courses/teach-dashboard.png)
 *Teach dashboard*
 
 The landing page consists of two parts: a sortable, filterable and paginated table of course repositories and a modal to create new courses. The table has the following columns:

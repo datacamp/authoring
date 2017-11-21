@@ -36,7 +36,7 @@ The narrative consists of two parts: Context and Solution
 
 The context is the prose part of the narrative that describes the story for the task, and engages the reader. The best way to write the narrative is to take the mindset of an author writing a blog post.
 
-<img src="./media/image12.png" width="624" height="177" />
+![](/projects/media/image12.png)
 
 Context from the BabyNames Project
 
@@ -62,7 +62,7 @@ Given that the project’s narrative is the most challenging part of a project, 
 
 An equally important part of the narrative is the solution code. Although this does not end up in the project notebook, it is important to write the solution code, so you have a good idea of what it would actually take for a user to complete the task on hand. Moreover, it also gives you a sense of what the finished project would look like, and if it would blog-worthy!
 
-<img src="./media/image11.png" width="624" height="170" />
+![](/projects/media/image11.png)
 
 Solution for Task 1 from the BabyNames Project
 
@@ -80,7 +80,7 @@ You might find it strange that I put tests first here. Let me explain. Recall th
 
 Shown below are tests from the baby names project.
 
-<img src="./media/image9.png" width="624" height="222" />
+![](/projects/media/image9.png)
 
 Test for Task 1 from the BabyNames Project
 
@@ -99,7 +99,7 @@ The tests are meant to help the user figure out if their output matches the solu
 
 Now that you have written the tests, it is time to write the instructions. The instructions should help the user understand what is the output they are striving for, and how they can get to it. One way to write a good set of instructions is to start by describing the overall objective of the task, use bullet points to break it down into steps, and ending with an illustrative output (table, plot , etc.)
 
-<img src="./media/image10.png" width="624" height="225" />
+![](/projects/media/image10.png)
 
 Instructions for Task 1 from the BabyNames Project
 
@@ -109,7 +109,7 @@ Keep the instructions brief, but with enough detail that makes it clear to the u
 
 The sample code provides the user with a starting point to start coding. It is displayed in the notebook. Given that we want to provide the user ample flexibility in how they write their code, it is recommended to keep the sample code minimal.
 
-<img src="./media/image4.png" width="624" height="96" />
+![](/projects/media/image4.png)
 
 Sample Code for Task 1 from the BabyNames Project
 
@@ -117,7 +117,7 @@ Sample Code for Task 1 from the BabyNames Project
 
 Occasionally a user will get stuck on a task and NOT be able to pass the tests despite their best attempt. In such cases, they will turn to hints. So, the objective of hints should be to help the user getting unstuck.
 
-<img src="./media/image8.png" width="624" height="89" />
+![](/projects/media/image8.png)
 
 Hint for Task 1 from the BabyNames Project
 
@@ -125,7 +125,7 @@ There are three components that can help write great hints.
 
 **Links to Exercises**
 
-Every hint should start with a reference to exercises from datacamp courses, that contain the skills required to tackle the task in question. The idea is that a user who is stuck can refer to these exercises, refresh their knowledge, and attempt the task with a fresh mind. The more relevant these exercise links are, the better.
+Every hint should start with a reference to exercises from DataCamp courses, that contain the skills required to tackle the task in question. The idea is that a user who is stuck can refer to these exercises, refresh their knowledge, and attempt the task with a fresh mind. The more relevant these exercise links are, the better.
 
 **Scaffolded Code**
 

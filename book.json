@@ -1,10 +1,11 @@
 {
   "plugins": [
-    "codetabs",
     "bootstrap-callout",
     "expandable-chapters",
     "advanced-emoji",
-    "video"
+    "videoclips",
+    "copy-code-button",
+    "codetabs"
   ],
   "pluginsConfig": {},
   "pdf": {

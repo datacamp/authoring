@@ -67,20 +67,6 @@ The header of each slide holds the `type` of that slide and can two extra fields
 - `center_content`, which centers all content in a slide if its value is `true`
 - `code_zoom` (only for **FullCodeSlide**). It's value is a percentage (e.g. value 120 means the code is 20% bigger than normal)
 
-### Slide editing
-
-The first step of creating your videos for DataCamp, is creating the slides. You do this in the **Slide Editing** mode. The following screencast will show how to do that.
-
-Note that the video might not be 100% up to date. For example, the usage of `slides_key` is deprecated and replaced by `projector_key`. However, the system automatically fills this in for you, so you shouldn't worry too much about that.
-
-<iframe frameBorder="0" allowfullscreen width="640" height="360" src="//projector-prod.herokuapp.com/?auto_play=false&amp;video_hls=//videos.datacamp.com/transcoded/000_non-course_videos/screencasts/hls-slide_editing.master.m3u8"></iframe>
-
-### Slide timing
-
-After you're done with creating your slides, you can time them to videos. This is explained in the screen cast below.
-
-<iframe frameBorder="0" allowfullscreen width="640" height="360" src="//projector-prod.herokuapp.com/?auto_play=false&amp;video_hls=//videos.datacamp.com/transcoded/000_non-course_videos/screencasts/hls-slide_timing.master.m3u8"></iframe>
-
 ### Previewing slides
 
 Currently, there are 2 ways to preview the slides you're making:
@@ -88,4 +74,4 @@ Currently, there are 2 ways to preview the slides you're making:
 1. In **Slide Editing** mode, there's a preview window that shows you the active slide deck. You can navigate through the preview by giving it focus and using the arrows, or by clicking on the arrow navigation. There's no video in the **Slide Editing** mode preview.
 2. In **Slide Timing** mode, there's a preview window that shows you the active slide deck, with video. You can start the video by pressing the space bar if the **Slide Timer** window has focus, or clicking the play button.
 
-It's currently not possible to have a preview of the video, created in Slide Editing and Slide Timing mode, in the Course Editing mode preview. Video exercises using the projector system won't render in the preview in Course Editing mode. They will work in the Campus App once the course is built successfully.
+It's currently not possible to have a preview of the video, created in Slide Editing and Slide Timing mode, in the Course Editing mode preview. Video exercises using the projector system won't render in the preview in Course Editing mode.

@@ -18,145 +18,116 @@ Additional information regarding the exercise or the data set that is used is st
 
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
 
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
 Each block is described in detail following this example.
 
-{% codetabs name="Version 2", type="text" -%}
----
-title       : This is chapter 1
-description : This is chapter 1 description
----
+    ---
+    title       : This is chapter 1
+    description : This is chapter 1 description
+    ---
 
-## Interactive Exercise Title
+    ## Interactive Exercise Title
 
-```yaml
-type: NormalExercise
-lang: r
-xp: 100
-skills: 1,3
-```
+    ```yaml
+    type: NormalExercise
+    lang: r
+    xp: 100
+    ```
 
-This basic exercise will challenge you to assign a variable in R.
+    This basic exercise will challenge you to assign a variable in R.
 
-`@instructions`
-- Assign `5` to the variable `x` in the editor on the right.
+    `@instructions`
+    - Assign `5` to the variable `x` in the editor on the right.
 
-`@hint`
-Use `<-` for assignment.
+    `@hint`
+    Use `<-` for assignment.
 
-`@pre_exercise_code`
-```{r}
-y <- 3
-```
+    `@pre_exercise_code`
+    ```{r}
+    y <- 3
+    ```
 
-`@sample_code`
-```{r}
-# Assign 5 to the variable x
-```
+    `@sample_code`
+    ```{r}
+    # Assign 5 to the variable x
+    ```
 
-`@solution`
-```{r}
-# Assign 5 to the variable x
-x <- 5
-```
+    `@solution`
+    ```{r}
+    # Assign 5 to the variable x
+    x <- 5
+    ```
 
-`@sct`
-```{r}
-test_error()
-test_object("x",
-            undefined_msg = "Make sure to define `x`!",
-            incorrect_msg = "Have you correctly assigned 5 to `x`!")
-success_msg("Good job! Head over to the next exercise")
-```
-{%- endcodetabs %}
+    `@sct`
+    ```{r}
+    test_error()
+    test_object("x",
+                undefined_msg = "Make sure to define `x`!",
+                incorrect_msg = "Have you correctly assigned 5 to `x`!")
+    success_msg("Good job! Head over to the next exercise")
+    ```
 
 ## Context
 
 A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and a context block that describes the exercise.
 
-{% codetabs name="Version 2", type="text" -%}
+    ### Interactive Exercise Title
 
-### Interactive Exercise Title
+    ```yaml
+    type: NormalExercise
+    lang: r
+    xp: 100
+    ```
 
-```yaml
-type: NormalExercise
-lang: r
-xp: 100
-skills: 1,3
-```
-
-This basic exercise will challenge you to assign a variable in R.
-
-{%- endcodetabs %}
+    This basic exercise will challenge you to assign a variable in R.
 
 ## Instructions
 
-{% codetabs name="Version 2", type="text" -%}
-`@instructions`
-- Assign `5` to the variable `x` in the editor on the right.
-{%- endcodetabs %}
+    `@instructions`
+    - Assign `5` to the variable `x` in the editor on the right.
 
 ## Hints
 
-{% codetabs name="Version 2", type="text" -%}
-`@hint`
-Use `<-` for assignment.
-
-{%- endcodetabs %}
+    `@hint`
+    Use `<-` for assignment.
 
 ## Pre Exercise Code
 
-{% codetabs name="Version 2", type="text" -%}
-
-`@pre_exercise_code`
-```{r}
-y <- 3
-```
-
-{%- endcodetabs %}
+    `@pre_exercise_code`
+    ```{r}
+    y <- 3
+    ```
 
 ## Sample Code
 
-{% codetabs name="Version 2", type="text" -%}
-
-`@sample_code`
-```{r}
-# Assign 5 to the variable x
-```
-
-{%- endcodetabs %}
+    `@sample_code`
+    ```{r}
+    # Assign 5 to the variable x
+    ```
 
 ## Solution
 
-{% codetabs name="Version 2", type="text" -%}
-
-`@solution`
-```{r}
-# Assign 5 to the variable x
-x <- 5
-```
-
-{%- endcodetabs %}
+    `@solution`
+    ```{r}
+    # Assign 5 to the variable x
+    x <- 5
+    ```
 
 ## Submission Correctness Tests (SCT)
 
-{% codetabs name="Version 2", type="text" -%}
-
-`@sct`
-```{r}
-test_error()
-test_object("x",
-            undefined_msg = "Make sure to define `x`!",
-            incorrect_msg = "Have you correctly assigned 5 to `x`!")
-success_msg("Good job! Head over to the next exercise")
-```
-
-{%- endcodetabs %}
+    `@sct`
+    ```{r}
+    test_error()
+    test_object("x",
+                undefined_msg = "Make sure to define `x`!",
+                incorrect_msg = "Have you correctly assigned 5 to `x`!")
+    success_msg("Good job! Head over to the next exercise")
+    ```
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` and `skills` can be found in [Gamification page](../../gamification.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)

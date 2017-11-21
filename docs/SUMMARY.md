@@ -41,7 +41,6 @@
    - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
    - [Vision](projects/projects-vision.md)
-   - [Metadata](projects/projects-metadata.md)
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
 * [FAQ](faq/README.md)

@@ -6,57 +6,30 @@ In a `BlanksChallenge`, the student is presented a 'required output', and has to
 
 The `variables` are added with YAML syntax. In the `code` block, you have to prepend the variable name with a `_` if you want to turn this into a blank in the interface.
 
-{% codetabs name="Version 2", type="text" -%}
+    ## Complete the Script
 
-## Complete the Script
+    ```yaml
+    type: BlanksChallenge 
+    ```
 
-```yaml
-type: BlanksChallenge 
-```
+    `@code`
 
-`@code`
+    ```{r}
+    x <- {{_var1}}
+    y <- {{_var2}}
+    list(x, y)
+    ```
 
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
+    `@variables`
 
-`@variables`
-
-```{yaml}
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-```
-
-{%- language name="Version 1", type="text" -%}
-
---- type:BlanksChallenge
-
-## Complete the Script
-
-*** =code
-
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
-
-*** =variables
-
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-
-{% endcodetabs %}
+    ```{yaml}
+    var1:
+      - 'c(1, 2)'
+      - 'c(3, 4)'
+    var2:
+      - 'c(7, 8)'
+      - 'c(9, 10)'
+    ```
 
 If a student encounters this challenge, the backend will randomly choose a value for `var1` and `var2`. Suppose that the backend selects `c(1, 2)` for `var1` and `c(7, 8)` for `var2`, then the student is expected to fill in the blanks as follows:
 
@@ -71,76 +44,41 @@ This is a variant of the `BlanksChallenge`, where the interface displays a set o
 
 ![Blanks Challenge with Distractors](images/BlanksChallengeWithDistractors.png)
 
-{% codetabs name="Version 2", type="text" -%}
+    ## Complete the Script
 
-## Complete the Script
+    ```yaml
+    type: BlanksChallenge 
+    ```
 
-```yaml
-type: BlanksChallenge 
-```
+    `@code`
 
-`@code`
+    ```{r}
+    x <- {{_var1}}
+    y <- {{_var2}}
+    list(x, y)
+    ```
 
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
+    `@variables`
 
-`@variables`
+    ```{yaml}
+    var1:
+      - 'c(1, 2)'
+      - 'c(3, 4)'
+    var2:
+      - 'c(7, 8)'
+      - 'c(9, 10)'
+    ```
 
-```{yaml}
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-```
+    `@distractors`
 
-`@distractors`
-
-```{yaml}
-var1:
-  - '{{var1}}'
-  - 'c(5, 6)'
-var2:
-  - '{{var2}}'
-  - 'c(11, 12)'
-```
-
-{%- language name="Version 1", type="text" -%}
-
---- type:BlanksChallenge
-
-*** =code
-
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
-
-*** =variables
-
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-
-*** =distractors
-
-var1:
-  - '{{var1}}'
-  - 'c(5, 6)'
-var2:
-  - '{{var2}}'
-  - 'c(11, 12)'
-
-{% endcodetabs %}
-
+    ```{yaml}
+    var1:
+      - '{{var1}}'
+      - 'c(5, 6)'
+    var2:
+      - '{{var2}}'
+      - 'c(11, 12)'
+    ```
 
 In addition to what is displayed for a free form `BlanksChallenge`, four distractors will be added to the list: `c(3, 4)`, `c(5, 6)`, `c(9, 10)` and `c(11, 12)`. In the `distractors` block, you can specify both a `variable` and extra `distractors`. If you specify a `variable`, all other options, that are not the target, will be considered to add to the `distractors` list. The additional distractors you can add for each blank allow you to also specify distractors that you don't want to be used as 'target blanks'.
 
@@ -149,48 +87,28 @@ In addition to what is displayed for a free form `BlanksChallenge`, four distrac
 
 You can also write up a BlanksChallenge without specifying `distractors`, like this:
 
-{% codetabs name="Version 2", type="text" -%}
-```yaml
-type: BlanksChallenge 
-```
+    ```yaml
+    type: BlanksChallenge 
+    ```
 
-`@code`
+    `@code`
 
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
+    ```{r}
+    x <- {{_var1}}
+    y <- {{_var2}}
+    list(x, y)
+    ```
 
-`@variables`
+    `@variables`
 
-```{yaml}
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-```
-
-{%- language name="Version 1", type="text" -%}
---- type:BlanksChallenge
-
-*** =code
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
-
-*** =variables
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-{% endcodetabs %}
+    ```{yaml}
+    var1:
+      - 'c(1, 2)'
+      - 'c(3, 4)'
+    var2:
+      - 'c(7, 8)'
+      - 'c(9, 10)'
+    ```
 
 In this case, a similar interface with blanks will be shown, but this time the student is not presented with options to fill in into the blanks. Instead, the student is required to type in the blanks.
 
@@ -198,93 +116,50 @@ In this case, a similar interface with blanks will be shown, but this time the s
 
 Similar to the `OutputChallenge`, it is possible to specify several code blocks in `BlanksChallenge`. When generating a view from the challenge , the challenge backend will start by randomly selecting one of these code blocks:
 
-{% codetabs name="Version 2", type="text" -%}
-```yaml
-type: BlanksChallenge 
-```
+    ```yaml
+    type: BlanksChallenge 
+    ```
 
-`@code1`
+    `@code1`
 
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
+    ```{r}
+    x <- {{_var1}}
+    y <- {{_var2}}
+    list(x, y)
+    ```
 
-`@code2`
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-z <- {{_var3}}
-list(x, y, z)
-```
+    `@code2`
+    ```{r}
+    x <- {{_var1}}
+    y <- {{_var2}}
+    z <- {{_var3}}
+    list(x, y, z)
+    ```
 
-`@distractors`
+    `@distractors`
 
-```{yaml}
-var1:
-  - '{{var1}}'
-  - 'c(5, 6)'
-var2:
-  - '{{var2}}'
-  - 'c(11, 12)'
-var3:
-  - '{{var3}}'
-  - 'c(17, 18)'
+    ```{yaml}
+    var1:
+      - '{{var1}}'
+      - 'c(5, 6)'
+    var2:
+      - '{{var2}}'
+      - 'c(11, 12)'
+    var3:
+      - '{{var3}}'
+      - 'c(17, 18)'
 
-*** =variables
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
+    *** =variables
+    var1:
+      - 'c(1, 2)'
+      - 'c(3, 4)'
+    var2:
+      - 'c(7, 8)'
+      - 'c(9, 10)'
 
-var3:
-  - 'c(13, 14)'
-  - 'c(15, 16)'
-```
-
-{%- language name="Version 1", type="text" -%}
---- type:BlanksChallenge
-
-*** =code1
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-list(x, y)
-```
-
-*** =code2
-```{r}
-x <- {{_var1}}
-y <- {{_var2}}
-z <- {{_var3}}
-list(x, y, z)
-```
-
-*** =distractors
-var1:
-  - '{{var1}}'
-  - 'c(5, 6)'
-var2:
-  - '{{var2}}'
-  - 'c(11, 12)'
-var3:
-  - '{{var3}}'
-  - 'c(17, 18)'
-
-*** =variables
-var1:
-  - 'c(1, 2)'
-  - 'c(3, 4)'
-var2:
-  - 'c(7, 8)'
-  - 'c(9, 10)'
-
-var3:
-  - 'c(13, 14)'
-  - 'c(15, 16)'
-{% endcodetabs %}
+    var3:
+      - 'c(13, 14)'
+      - 'c(15, 16)'
+    ```
 
 Of course, if you want to make a free-form `BlanksChallenge`, you can also specify multiple codeX blocks when you don't specify `distractors`.

@@ -9,7 +9,7 @@ A `TabExercise`, similar to a [`BulletExercise`](bullet-exercise.md), allows an 
 3. [Tab Exercise in Python](examples/md/python/TabExercise.md)
 
 
-Please read [this article](../guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
+Please read [this article](/courses/guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
 
 ## Authoring
 
@@ -33,100 +33,96 @@ Experience Points (XP) are assigned at the subexercise level and work the same w
 ### Example
 
 
-{% codetabs name="Version 2", type="text" -%}
+    ## WHERE AND OR (2)
 
-## WHERE AND OR (2)
+    ```yaml
+    type: TabExercise 
+    lang: sql 
+    xp: 100 
+    ```
 
-```yaml
-type: TabExercise 
-lang: sql 
-xp: 100 
-```
+    You will Write a query to get the title and release year of films released 
+    in the 90s which were in French or Spanish and which took in more than $2M.
 
-You will Write a query to get the title and release year of films released 
-in the 90s which were in French or Spanish and which took in more than $2M.
+    `@pre_exercise_code`
 
-`@pre_exercise_code`
+    ```{python}
+    connect('postgresql', 'films')
+    set_options(visible_tables = ['films'])
+    ```
 
-```{python}
-connect('postgresql', 'films')
-set_options(visible_tables = ['films'])
-```
+    `@sample_code`
 
-`@sample_code`
+    ```{sql}
+    ```
 
-```{sql}
-```
+    ***
 
-***
+    ### Get Films Released in 90s
 
-### Get Films Released in 90s
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    `@instructions`
 
-`@instructions`
+    Get the title and release year for films released in the 90s.
 
-Get the title and release year for films released in the 90s.
+    `@solution`
 
-`@solution`
+    ```{sql}
+    SELECT title, release_year
+    FROM films
+    WHERE release_year >= 1990 AND release_year < 2000;
+    ```
 
-```{sql}
-SELECT title, release_year
-FROM films
-WHERE release_year >= 1990 AND release_year < 2000;
-```
+    `@hint`
 
-`@hint`
+    ```
+    # Hint
+    ```
 
-```
-# Hint
-```
+    `@sct`
 
-`@sct`
+    ```{python}
+    # SCTs
+    ```
 
-```{python}
-# SCTs
-```
+    ***
 
-***
+    ### Filter for French/Spanish Films
 
-### Filter for French/Spanish Films
+    ```yaml
+    type: NormalExercise
+    xp: 30
+    ```
 
-```yaml
-type: NormalExercise
-xp: 30
-```
+    `@instructions`
 
-`@instructions`
+    Now, build on your query to filter the records to only include 
+    French or Spanish language films.
 
-Now, build on your query to filter the records to only include 
-French or Spanish language films.
+    `@solution`
 
-`@solution`
+    ```{sql}
+    SELECT title, release_year
+    FROM films
+    WHERE (release_year >= 1990 AND release_year < 2000)
+    AND (language = 'French' OR language = 'Spanish');
+    ```
 
-```{sql}
-SELECT title, release_year
-FROM films
-WHERE (release_year >= 1990 AND release_year < 2000)
-AND (language = 'French' OR language = 'Spanish');
-```
+    `@hint`
 
-`@hint`
+    ```
+    # Hint
+    ```
 
-```
-# Hint
-```
+    `@sct`
 
-`@sct`
-
-```{python}
-# SCT
-```
-
-{% endcodetabs %}
+    ```{python}
+    # SCT
+    ```
 
 ## Tab Console Exercise
 

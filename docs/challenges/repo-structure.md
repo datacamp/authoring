@@ -63,6 +63,7 @@ pip3 install pandas==0.19.2
 pip3 install dccpu==0.3.7
 ```
 
-This file is only present when the technology of a challenge is `SQL` or `Python`
+> #### info:Note
+`requirements.sh` file is sometimes present in repositories for `R` challenges when there is a need to install system-level dependencies for certain `R` packages (e.g. `libcurl`)
 
 **[Next: Learn about supported challenges](content/README.md)**

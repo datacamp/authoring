@@ -1,11 +1,11 @@
 # Exports
 
-For video exercises on **DataCamp**, there's a possibility to add several types of extra data -- also called **exports**. Adding them will enhance student's experience in the campus app. These exports are closely related to videos built with the **Slides Interface**.
+For video exercises on **DataCamp**, there's a possibility to add several types of extra data -- also called **exports**. Adding them will enhance student's experience in the Learning interface. These exports are closely related to videos built with the **Slides Interface**.
 
 However, with some extra **steps** you can also generate these exports for video exercises not using the **Slides Interface** -- also called traditional videos. The following steps are required for exports to work for traditional videos:
 
 1. Your course needs to have video exercises for this to have any effect
-2. Go to the **Settings** tab in the [Content Overview](../interface/content-overview.md) page
+2. Go to the **Settings** tab in the [Content Overview](/interface/content-overview.md) page
 3. Scroll down to find the **Videos** section. In this section make sure the checkbox "Add traditional video to projector" is checked and hit "Update Settings"
 4. At this point, it's best to do a manual build. The Teach App should automatically make a commit to your repository. This commit should add "projector_key" attributes to the video exercises that don't have a "projector_key" already
 
@@ -56,7 +56,8 @@ The scripts export takes care of combining and exporting scripts in markdown fil
     In the final video of this chapter, let's look at what we learned.
     ```
 
-When you build the course and new scripts like this are added, the **Teach App ** will make a new commit that automatically adds x attributes to the scripts, behind the `---` lines. You shouldn't worry too much about this, it's added to have a more robust mapping between `VideoExercise` exercises in the chapter files and parts of the script markdown.
+When you build the course and new scripts like this are added, the **Teach App ** will make a new commit that automatically adds video exercise keys to the scripts, behind the `---` lines. An example would be `--- video_exercise_key: abcdef123`.  
+You shouldn't worry too much about this, it's added to have a more robust mapping between `VideoExercise` exercises in the chapter files and parts of the script markdown.
 
 This export also adds missing exercise keys in the script files, which are committed to the course repository.
 

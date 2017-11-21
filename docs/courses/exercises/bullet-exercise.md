@@ -10,7 +10,7 @@ __Examples__
 2. [Bullet Exercise in R](examples/md/r/BulletExercise.md)
 3. [Bullet Exercise in Python](examples/md/python/BulletExercise.md)
 
-Please read [this article](../guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
+Please read [this article](/courses/guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
 
 ## Bullet Console Exercise
 
