@@ -56,7 +56,8 @@ The scripts export takes care of combining and exporting scripts in markdown fil
     In the final video of this chapter, let's look at what we learned.
     ```
 
-When you build the course and new scripts like this are added, the **Teach App ** will make a new commit that automatically adds x attributes to the scripts, behind the `---` lines. You shouldn't worry too much about this, it's added to have a more robust mapping between `VideoExercise` exercises in the chapter files and parts of the script markdown.
+When you build the course and new scripts like this are added, the **Teach App ** will make a new commit that automatically adds video exercise keys to the scripts, behind the `---` lines. An example would be `--- video_exercise_key: abcdef123`.  
+You shouldn't worry too much about this, it's added to have a more robust mapping between `VideoExercise` exercises in the chapter files and parts of the script markdown.
 
 This export also adds missing exercise keys in the script files, which are committed to the course repository.
 
