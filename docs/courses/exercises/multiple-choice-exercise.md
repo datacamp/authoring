@@ -97,8 +97,8 @@ A `MultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` bl
     ```
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](../../xp.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
@@ -174,8 +174,8 @@ A list which maps to "Possible answers" where you can provide customized feedbac
     - D is not correct
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](../../xp.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
 
 ## Plain Multiple Choice Exercise
 

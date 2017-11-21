@@ -9,7 +9,7 @@ A `TabExercise`, similar to a [`BulletExercise`](bullet-exercise.md), allows an 
 3. [Tab Exercise in Python](examples/md/python/TabExercise.md)
 
 
-Please read [this article](../guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
+Please read [this article](/courses/guides/tab-vs-bullet-exercises.html) to understand the distinction between `TabExercise` and `BulletExercise`, and learn when to use one of the over the other.
 
 ## Authoring
 

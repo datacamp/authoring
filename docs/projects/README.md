@@ -1,6 +1,6 @@
 # Projects
 
-![projects](./media/projects.png)
+![projects](/projects/media/projects.png)
 
 ## Getting started
 

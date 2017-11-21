@@ -4,7 +4,7 @@ A DataCamp course has a course badge, and your exercises will typically use data
 
 ## Images
 
-When you create a course with the "[Create a DataCamp Course](../interface/create-content-dialog.md)" dialog, DataCamp will create the course files and an `img/` folder with a template course shield image (`shield_image.png`). You can replace the course shield image with your own, just make sure to use the same name and that file size is under 1Mb. As soon as you push the changes to GitHub, the image of your course will be updated.
+When you create a course with the "[Create a DataCamp Course](/interface/create-content-dialog.md)" dialog, DataCamp will create the course files and an `img/` folder with a template course shield image (`shield_image.png`). You can replace the course shield image with your own, just make sure to use the same name and that file size is under 1Mb. As soon as you push the changes to GitHub, the image of your course will be updated.
 
 ## Datasets
 

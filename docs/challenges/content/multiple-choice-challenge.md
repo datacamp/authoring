@@ -2,7 +2,7 @@
 
 A `MultipleChoiceChallenge` presents the student with a block of text that can be a statement or question, and the student has to select the correct option.
 
-![Multiple Choice Challenge](./images/MultipleChoiceChallenge.png)
+![Multiple Choice Challenge](/challenges/content/images/MultipleChoiceChallenge.png)
 
 It is possible to specify several assignment/options pairs; the backend will randomly pick from these. You can enclose options between `[ ]`, to indicate that they are correct.
 

@@ -1,6 +1,6 @@
 # Exercises
 
-As we have learned when examining the [course data structure](../repo-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
+As we have learned when examining the [course data structure](/courses/repo-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
 
 If you've created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter file will already contain some DataCamp exercises to start from. DataCamp supports variety of different exercises. These different types of exercises have some blocks in common; other blocks are type-specific.
 
@@ -10,12 +10,12 @@ Following are currently supported types of exercises you can created on DataCamp
 
 | Type                          | Description                                                                |
 |:------------------------------|:---------------------------------------------------------------------------|
-| [`VideoExercise`](./video-exercise.md) | Displays a video exercise                                                       |
-| [`NormalExercise`](./normal-exercise)  | Shows exercise, instructions, code editor and learn by doing console             |
-| [`MultipleChoiceExercise`](./multiple-choice-exercise.md) | Shows multiple choice question and console     |
-| [`PureMultipleChoiceExercise`](./multiple-choice-exercise.md#pure-mce) | Shows multiple choice question    |   
-| [`TabExercise`](./tab-exercise.md) | Create a series of smaller sub exercises    |   
-| [`BulletExercise`](./bullet-exercise.md) | Create a series of smaller sub exercises    |   
+| [`VideoExercise`](/courses/exercises/video-exercise.md) | Displays a video exercise                                                       |
+| [`NormalExercise`](/courses/exercises/normal-exercise)  | Shows exercise, instructions, code editor and learn by doing console             |
+| [`MultipleChoiceExercise`](/courses/exercises/multiple-choice-exercise.md) | Shows multiple choice question and console     |
+| [`PureMultipleChoiceExercise`](/courses/exercises/multiple-choice-exercise.md#pure-mce) | Shows multiple choice question    |   
+| [`TabExercise`](/courses/exercises/tab-exercise.md) | Create a series of smaller sub exercises    |   
+| [`BulletExercise`](/courses/exercises/bullet-exercise.md) | Create a series of smaller sub exercises    |   
 
 ### Exercise Header {#exercise-header}
 
@@ -139,9 +139,9 @@ Only applicable to the `VideoExercise` pointing to the link of the Vimeo video.
 Only applicable to the `VideoExercise` defining the video aspect ratio.
 
 ##### `possible_answers`
-Only applicable to `PureMultipleChoiceExercise` defining a list of possible answers and a correct answer. ([How to create PureMultipleChoiceExercise](./multiple-choice-exercise.md#pure-mce))
+Only applicable to `PureMultipleChoiceExercise` defining a list of possible answers and a correct answer. ([How to create PureMultipleChoiceExercise](/courses/exercises/multiple-choice-exercise.md#pure-mce))
 
 ##### `feedbacks`
-Only applicable to `PureMultipleChoiceExercise` defining a list of possible feedbacks based on the chosen possible answer. ([How to create PureMultipleChoiceExercise](./multiple-choice-exercise.md#pure-mce))
+Only applicable to `PureMultipleChoiceExercise` defining a list of possible feedbacks based on the chosen possible answer. ([How to create PureMultipleChoiceExercise](/courses/exercises/multiple-choice-exercise.md#pure-mce))
 
 

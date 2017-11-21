@@ -15,7 +15,7 @@ While you can also read the upcoming sections which are going to guide you throu
 
 Creating a DataCamp account is a straightforward process. Visit [www.datacamp.com](https://www.datacamp.com/) and enter your credentials.
 
-![Create DataCamp account](../images/prerequisites/create-datacamp-account.png)
+![Create DataCamp account](/images/prerequisites/create-datacamp-account.png)
 Once you have created your DataCamp account you can proceed with creating your Github Account.
 
 ## Github Account
@@ -30,7 +30,7 @@ To create a new account visit [Github registration](https://github.com/join?sour
 
 The first step is providing login information:
 
-![Github registration form](../images/prerequisites/1-join-github.png)
+![Github registration form](/images/prerequisites/1-join-github.png)
 
 Fill in all the required fields being:
 - Username
@@ -41,13 +41,13 @@ Then click "Create new account" button to proceed to the next step.
 
 As a part of second step you will need to choose the Github plan:
 
-![Github registration form - Plan](../images/prerequisites/2-select-github-plan.png)
+![Github registration form - Plan](/images/prerequisites/2-select-github-plan.png)
 
 We recommend you to start with the _Unlimited Plan_ and upgrade at later stage when and if it becomes necessary.
 
 The last step is completing your Github registration.
 
-![Github registration form - Complete](../images/prerequisites/3-complete-github.png)
+![Github registration form - Complete](/images/prerequisites/3-complete-github.png)
 
 There is no need to provide answers to any of the fields. You can proceed with clicking on "Submit" button in order to complete your Github account registration.
 
@@ -57,9 +57,9 @@ In order for DataCamp to access your content on Github you will need to grant ac
 
 1. Visit DataCamp for Teachers by clicking [here](https://www.datacamp.com/teach)
 2. You will be prompted to authorize DataCamp to manage your Github account:
-![Github registration form - Plan](../images/prerequisites/link-teach-authorize-github.png)
+![Github registration form - Plan](/images/prerequisites/link-teach-authorize-github.png)
 Click on "Link Github Account" button
 3. You will be redirected to Github where you need to click "Authorize" button
 4. Once authorization is complete you will see the DataCamp for Teachers
 
-Now you are ready to start creating your content. You can proceed by [creating a course](../courses/README.md).
+Now you are ready to start creating your content. You can proceed by [creating a course](/courses/README.md).

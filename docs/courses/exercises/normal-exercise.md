@@ -18,8 +18,8 @@ Additional information regarding the exercise or the data set that is used is st
 
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](../../xp.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
 
 ## Complete example
 Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
@@ -129,5 +129,5 @@ A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and 
     ```
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](../../xp.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)

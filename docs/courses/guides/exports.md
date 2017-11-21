@@ -5,7 +5,7 @@ For video exercises on **DataCamp**, there's a possibility to add several types 
 However, with some extra **steps** you can also generate these exports for video exercises not using the **Slides Interface** -- also called traditional videos. The following steps are required for exports to work for traditional videos:
 
 1. Your course needs to have video exercises for this to have any effect
-2. Go to the **Settings** tab in the [Content Overview](../interface/content-overview.md) page
+2. Go to the **Settings** tab in the [Content Overview](/interface/content-overview.md) page
 3. Scroll down to find the **Videos** section. In this section make sure the checkbox "Add traditional video to projector" is checked and hit "Update Settings"
 4. At this point, it's best to do a manual build. The Teach App should automatically make a commit to your repository. This commit should add "projector_key" attributes to the video exercises that don't have a "projector_key" already
 

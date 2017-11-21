@@ -2,7 +2,7 @@
 
 Courses can be edited using the Teach Editor, an editor specifically built to create DataCamp courses. This editor can be reached by clicking the **Edit this Course** button on the [Content Overview](content-overview.md) page.
 
-![Teach editor interface](../images/interface/teach-editor.png)  
+![Teach editor interface](/images/interface/teach-editor.png)  
 *Teach editor interface example*
 
 ## Features
@@ -13,7 +13,7 @@ Teach editor is going to provide you with several features in order to ease your
 
 Navigation bar offers different helpers and actions you can execute.
 
-![Teach editor navigation bar](../images/interface/teach-editor-nav-bar.png)  
+![Teach editor navigation bar](/images/interface/teach-editor-nav-bar.png)  
 *Teach editor navigation bar example*
 
 - **Save** You can use the save button to persist all your changes to Github
@@ -22,7 +22,7 @@ Navigation bar offers different helpers and actions you can execute.
 - **Add multiple choice exercise** You can use "Add multiple choice exercise" button. Once clicked editor is going to insert the scaffolded markdown to help you create the exercise.
 - **Add pure choice exercise** You can use "Add pure multiple choice exercise" button. Once clicked editor is going to insert the scaffolded markdown to help you create the exercise.
 - **Add video exercise** You can use "Add video exercise" button. Once clicked editor is going to insert the scaffolded markdown to help you create the exercise.
-- **Add assets** Once clicked a new dialog is going to be presented to you where you can select the files from your device and upload them in order to be used within your course. (Check [Assets](../courses/assets.md) for more information)
+- **Add assets** Once clicked a new dialog is going to be presented to you where you can select the files from your device and upload them in order to be used within your course. (Check [Assets](/courses/assets.md) for more information)
 - **Find and replace** Once clicked it's going to provide you with ability to search through the whole course and replace the content if desired.
 - **Refresh preview** Once clicked the course preview is going to be refreshed
 - **Extract preview** Once clicked the preview is going to be opened in another window
@@ -42,11 +42,11 @@ It's always handy to see how your content is going to look like before publishin
 
 Editor provides you with a feature to upload your datasets by using the simple upload interface:
 
-![Teach editor upload assets interface](../images/interface/teach-editor-upload-assets-interface.png)  
+![Teach editor upload assets interface](/images/interface/teach-editor-upload-assets-interface.png)  
 *Upload assets interface*
 
 Once uploaded your assets are going to be available in the `/datasets` folder.
-You can read more about assets by visiting the [Assets Page](../courses/assets.md)
+You can read more about assets by visiting the [Assets Page](/courses/assets.md)
 
 ## Handling content
 

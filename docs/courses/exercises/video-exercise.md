@@ -26,8 +26,8 @@ Following is a complete example of a chapter containing the `VideoExercise`
     video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
     ```
 
-[Recommended read: Creating slides and videos](../../slides.md)
+[Recommended read: Creating slides and videos](/courses/slides.md)
 
 > #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](./README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](../../xp.md)
+> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/README.md#exercise-blocks)  
+> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
