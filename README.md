@@ -94,3 +94,13 @@ Flow for creating content:
 3. If you want to add the markdown file to the left menu edit the [docs/SUMMARY.md](docs/SUMMARY.md)
 
 Once you are done with the work create a pull request to master and merge after reviewing.
+
+#### How to link to images or pages?
+Linking should always be absolute, which means that you should specify the whole path. The reason behind that decision is search and replace as relative paths could lead to broken links.
+
+Examples on how to import images or create links:
+```
+![Image description](/images/interface/teach-editor.png) # Will create an image
+[A link](/courses/README.md) # Will create a link
+[A link to part of the [age](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
+```
