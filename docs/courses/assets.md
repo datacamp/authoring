@@ -8,7 +8,7 @@ When you create a course with the "[Create a DataCamp Course](../interface/creat
 
 ## Datasets
 
-To use a dataset in your exercises, create a `datasets` folder on the root level of the repository. Every file in the `datasets` folder with a typical dataset extension, will be uploaded whenever you push the changes to GitHub. The build logs that you can find in the repository overview will inform about the upload of these datasets to DataCamp's Amazon S3 servers, and provide a link. You can then use this link in the `pre_exercise_code` block of your exercises to initialize the workspace for the student.
+The recommended way of uploading your assets is by using the [Teach editor assets interface](/interface/teach-editor.md#editor-upload-assets) however you can create datasets and upload them to `datasets` folder on the root level of the repository (you can create the folder if it doesn't exist). Every file in the `datasets` folder with a typical dataset extension, will be uploaded whenever you push the changes to GitHub. The build logs that you can find in the repository overview will inform about the upload of these datasets to DataCamp's Amazon S3 servers, and provide a link. You can then use this link in the `pre_exercise_code` block of your exercises to initialize the workspace for the student.
 
 Example for loading in an RData file in an `R` exercise:
 

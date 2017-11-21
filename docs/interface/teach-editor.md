@@ -38,6 +38,16 @@ Editor is used to edit Chapter and Exercises along with Slide Deck and slides in
 
 It's always handy to see how your content is going to look like before publishing it to your students. By using preview you can make sure that the content and exercises are behaving as expected before pushing the content to your students.
 
+### Upload assets {#editor-upload-assets}
+
+Editor provides you with a feature to upload your datasets by using the simple upload interface:
+
+![Teach editor upload assets interface](../images/interface/teach-editor-upload-assets-interface.png)  
+*Upload assets interface*
+
+Once uploaded your assets are going to be available in the `/datasets` folder.
+You can read more about assets by visiting the [Assets Page](../courses/assets.md)
+
 ## Handling content
 
 With the Teach Editor, you edit markdown files that are also on GitHub. While using the editor, a version of the file is kept on the Teach Editor server. 
