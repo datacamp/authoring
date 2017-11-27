@@ -44,6 +44,7 @@
    - [Content](projects/projects-authoring.md)
    - [USP](projects/projects-usp.md)
 * [FAQ](faq/README.md)
+* [Diagnostics](diagnostics.md)
 
 ## Teach interface
 

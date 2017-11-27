@@ -18,7 +18,7 @@ Once the new branch is created, you can start making updates to that branch. Tha
 
 Each 'branch overview' shows you the title, author, course image and author badge of the course. If you click the course title, you are redirected to the course corresponding to the selected branch on DataCamp. Next to this general information, the branch overview contains tabs with the most recent build, the build history and the settings. All of this information - title, images, builds settings - is branch-specific.
 
-## Build information
+## Build information {#build-information}
 
 Whenever you make a change to a particular branch on your GitHub repository, DataCamp notices and starts a build attempt. It fetches all the course files from the branch, parses them, performs validity checks on them, and uploads them to DataCamp's databases, so that they are available on the learning platform.
 
