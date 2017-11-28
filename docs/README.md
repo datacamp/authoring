@@ -24,11 +24,11 @@ Challenges are different to courses as the sole purpose is to question student's
 > _Challenges are going to be available soon, meanwhile you can read the [documentation](challenges/README.md)_
 
 ### Projects
-Seems your students are performing well completing all your courses and challenges. The newest addition to the DataCamp learning portfolio is Projects.
+DataCamp Projects is an exiting new teaching format that allow students to flex their skills when completing an applied data science task. [Here is the documentation for how to create a DataCamp project](projects/README.md).
 
-The purpose of projects is to allow students to apply their knowledge by resolving real world problems.
+If you've never seen a DataCamp project then you'll quickly get the gist by watching this intro video:
 
-![Start a project](images/projects/projects-screen.png)
+<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W86aAYmcsSM?rel=0" frameborder="0" allowfullscreen></iframe></center>
 
-> #### info::NOTE
-> _Projects are going to be available soon, meanwhile you can read the [documentation](projects/README.md)_
+> #### info::WANT TO CREATE A PROJECT? 
+> Currently only invited creators can create Projects on DataCamp, but we're always looking for engaged professionals and academics who want to help us teach Data Science. If you want to create a Project, please contact rasmus@datacamp.com for more info!

@@ -1,10 +1,6 @@
 # Getting started
 
-In order to start creating courses, challenges and projects on DataCamp platform you need to fulfill following prerequisites:
-
-- Create DataCamp account
-- Create Github account
-- Authorize DataCamp to manage your Github account
+In order to start creating courses, challenges and projects on the DataCamp platform you need to have a DataCamp account and a Github account. For courses and challenges (but not projects) you also need to authorize DataCamp to manage your Github account. 
 
 You can start by following the steps from the "Getting started" video:
 {% vimeo %}153250442{% endvimeo %}

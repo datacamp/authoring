@@ -40,9 +40,22 @@
    - [Guidelines](challenges/guidelines.md)
    - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
-   - [Vision](projects/projects-vision.md)
-   - [Content](projects/projects-authoring.md)
-   - [USP](projects/projects-usp.md)
+<!--  - [What makes a good project?](projects/projects-good-project.md) --> 
+   - [Project Creation Process](projects/projects-process.md)
+   - [Narrative notebook format](projects/projects-narrative-format.md)
+   - [Project notebook format](projects/projects-format.md)
+     - [Overview](projects/projects-format.md#overview)
+     - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
+     - [`@context`](projects/projects-format.md#context)
+     - [`@instructions`](projects/projects-format.md#instructions)
+     - [`@hint`](projects/projects-format.md#hint)
+     - [`@sample_code`](projects/projects-format.md#sample-code)
+     - [`@solution`](projects/projects-format.md#solution)
+     - [`@tests`](projects/projects-format.md#tests)
+     - [Test examples](projects/projects-test-examples.md)
+   - [Project File Structure](projects/projects-repo-structure.md)
+<!--   - [Example Projects](projects/projects-examples.md) -->
+
 * [FAQ](faq/README.md)
 * [Diagnostics](diagnostics.md)
 
