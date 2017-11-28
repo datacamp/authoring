@@ -1,15 +1,78 @@
-Projects use a simple directory structure.
+The repository structure of a Project
+==========================================
 
-```text
-|- README.md\*
-|- project.yml\*
-|- project.ipynb\*
-|- datasets/
-|- img/
-|- requirements.sh
-|- notebooks/
+The main file of a Project is the Project Jupyter notebook. But for the project to be built and published on DataCamp it has to be put in a GitHub repository with a specific file and folder structure. If you are following [the project creation process](projects-process.md), then you usually won't have to deal with this as your DataCamp contact will help you set everything up. 
+
+The Project repository name should follow the convention `projects-(short-project-name)-(r|python)`. For example, `projects-forecasting-horse-demand-python` or `projects-ab-testing-ponies-r` are good names.
+
+A complete project repository has the following files and directories:
+
+* `project.ipynb` : The Project Jupyter notebook that describes the whole Project. [See here for the format](projects-format.md).
+* `project.yml` : A YAML file with metadata regarding the Project such as title, the difficulty level, etc. [See here for the format](#project-yml).
+* `datasets/` : In this folder you'll put all files that the student will need to access when doing the project. It will automatically be uploaded with your Project. That is, if you have added `datasets/top_10_horses.csv`, then the student will also be able to access `datasets/top_10_horses.csv` when doing the project.
+* `img/` : In this folder you'll put all image you need to reference from `markdown` cells in `project.ipynb`. Only images put in this folder will be displayed when the Project is live. Avoid linking to external images.
+* `requirements.sh` : This shell script will be executed on the Linux (Ubuntu) image that your Project will run from. It can be used to install python libraries (using `pip`) and to install other requirements (using, for example, `apt-get`).
+* `requirements.R` (optional) : If you're developing an R project then this (optional) R script can be used to install needed packages. It will be run after `requirements.sh`.
+* `project_narrative.ipynb` (optional) : If you follow [the project creation process](projects-process.md) then you should have produced this notebook containing only the narrative part of the Project, and it should be included in the Project repository. [See here for the format](projects/projects-narrative-format.md).
+
+Except for these required files and folders, a Project repository can contain *any* other files and folders you use when developing the Project.
+
+
+> #### info::Check out an existing project repository! 
+> The easiest way of understanding the structure of a Project repository is to look at an example. Here are the R and python repositories behind the project *Dr. Semmelweis and the discovery of handwashing*. Here is the [python GitHub repo](https://github.com/datacamp/projects-discovery-of-handwashing-python) (and [live project](https://projects.datacamp.com/projects/20)), here is the [R GitHub repo](https://github.com/datacamp/projects-discovery-of-handwashing-r) (and [live project](https://projects.datacamp.com/projects/49)).
+
+
+
+Format of `project.yml` {#project-yml}
+-------------------------------------------
+
+The `project.yml` file contains metadata for the Project written in the [YAML file format](https://learnxinyminutes.com/docs/yaml/). The fields you'll need to edit as the author of a Project are:
+
+(Here in YAML notation)
+
+```yaml
+#### General information about the project    ####
+#### All this will be visible on DataCamp.com ####
+title          : "The title of the project"
+description    : >
+  A short description of the project, less than 140 characters. Written in markdown.
+long_description: |
+  A longer description of the project around 3 - 4 lines. Written in markdown.
+  Should mention and link to prerequisite courses.
+time_needed: "45 minutes" # "30/45/60 minutes".
+instructors: # DataCamp connected email of the creator of the Project
+  - horse.mcponyface@horsemail.com
+collaborators: # DataCamp connected email of people that helped with the Project
+  - rasmus@datacamp.com
 ```
 
+Except for these fields, there are also a number of fields with technical details specific to the DataCamp platform. These will most often be filled in by your DataCamp contact:
+
+```yaml
+#### Metadata regarding course requirements and topics ####
+#### This will be updated by your DataCamp contact     ####
+technology: 2 # 1 == R, 2 == python, 3 == sql
+# IDs for courses that are prerequisites
+# See https://mb.datacamp.com/question/126 for IDs
+prerequisites: # Course prerequisites for the Project
+  - 799
+difficulty_level: 2 # 1 == easy, 2 == medium, 3 == hard
+# IDs for the topics the project covers
+# See https://mb.datacamp.com/question/319 for IDs
+topics: # What topics the project covers
+  - 12
+# A link to the cover illustration of the project.
+illustration: "https://s3.amazonaws.com/assets.datacamp.com/production/project_37/datasets/project_image.png"
+
+#### Technical settings for the docker image running the project ####
+#### This will be updated by your DataCamp contact.              ####
+language       : python # One of r, python or sql
+# The name of the docker image used to run the course
+from           : 'python-notebooks-prod:93'
+runtime_config : default # default/heavy . Set to heavy for more resource intensive projects.
+```
+
+The `topic` id's are as follows:
 
 | id|Topic                     |
 |--:|:-------------------------|
@@ -30,67 +93,3 @@ Projects use a simple directory structure.
 
 
 
-An overview of each file/folder is provided below.
-
-| **File**                                                                                        | **Description**                                                                                                                                     |
-|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `README.md`                                                                                       | Describe the project and links to Teach and Project App.                                                                                            |
-| `project.yml`                                                                                     | Project metadata. See [*here*](projects-metadata.md) for more details                                                                              |
-| [*project.ipynb*](https://github.com/datacamp/projects-babynames/blob/master/project.ipynb)     | Project notebook with tasks. See [*here*](projects-authoring.md) for more details.                                                                   |
-| [*datasets/*](https://github.com/datacamp/projects-babynames/tree/master/datasets)              | Folder with datasets used by the project.                                                                                                           |
-| `img/`                                                                                            | Folder containing project images like the shield                                                                                                    |
-| [*requirements.sh*](https://github.com/datacamp/projects-babynames/blob/master/requirements.sh) | Bash script to install necessary packages and bake datasets into image                                                                              |
-| `notebooks/`                                                                                      | Supporting notebooks (e.g. [*notebook to download data*](https://github.com/datacamp/projects-babynames/blob/master/notebooks/download-data.ipynb)) |
-
-
-Let's go over some of the most important files and folders in more detail.
-
-
-### `project.yml`
-This file contains the general information about your project being:
-
-| Property             | description                                                                                                                                                                                                                                                                                               |          |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| `title`                | Title of the project                                                                                                                                                                                                                                                                                       | required |
-| `description`          | Short project description of the project                                                                                                                                                                                                                                                                                 | required |
-| `long_description`          | Long project description                                                                                                                                                                                                                                                                                 | optional |
-| `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              | optional |
-| `technology` | Programming language of the course (`1` = R, `2` = python, `3` = sql)                                                                                                                                                                                                                                                       | required |
-| `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          | optional |
-| `difficulty_level`     | 1 = beginner, 2 = intermediate, 3 = advanced                                                                                                                                                                                                                                                              | required |
-| `topics`     | Id's of the topics project is covering. Set by DataCamp                                                                                                                                                                                                                                                         | required |
-| `illustration`     | URL to the project image                                                                                                                                                                                                                                                         | optional |
-| `language`     | One of `r`, `python` or `sql`                                                                                                                                                                                                                                                         | optional |
-| `from`                 | A special key reserved and used only by DataCamp                                                                                                                                                                                                                            | required |
-| `datasets`             | YAML key value combinations that explicitly define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is,`__IGNORE__`, the dataset won't be shown on the course page | optional |
-
-Properties which require additional explanation are:
-
-##### prerequisites
-
-As previously mentioned prerequisites contain a list of course id's which are the prerequisite for the course. An example on how to specify those in the `course.yml` is:
-
-```yaml
-prerequisites:
-  - 58 # Introduction to R
-  - 672 # Intermediate R
-```
-
-##### datasets
-
-As previously mentioned datasets is a list of datasets used in the course. All the datasets are going to be visible on the course page (page which is seen by students) unless you ignore the files which shouldn't be visible. You can ignore files in the `course.yml` by using `__IGNORE__` as follows:
-
-```yaml
-datasets:
-  some_data.RData: Super nice dataset
-  some_image.jpg: Some image
-  r_script_i_need.R: __IGNORE__ # This file won't be shown on the course page
-```
-
-> #### info::Note
-> to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab.
-
-You may have noticed that`language` and `technology` are both required regardless of specifying similar data. This is due to legacy reasons and could be subject to change in upcoming versions.
-
-### `project.ipynb`
-This while should be created by using the Jupyter notebook. DataCamp will read contents of the file and create the project for your students.
