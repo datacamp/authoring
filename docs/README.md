@@ -39,10 +39,6 @@ Projects allow students to apply what they've learned in a more open-ended and r
 
 [![Dr. Semmelweis and the discovery of handwashing](images/projects/handwashing-project.png)](https://projects.datacamp.com/projects/20)
 
-If you've never seen DataCamp projects, you can also watch this short video (~1.5 minutes) to see what they're all about!
-
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W86aAYmcsSM?rel=0" frameborder="0" allowfullscreen></iframe></center>
-
 <!-- Ready to create a project? **[Get started now!](projects/README.md)** -->
 
 > #### info::Note
