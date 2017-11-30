@@ -44,6 +44,7 @@ instructors: # DataCamp connected email of the creator of the Project
   - horse.mcponyface@horsemail.com
 collaborators: # DataCamp connected email of people that helped with the Project
   - rasmus@datacamp.com
+xp: 1500 # Amount of XP student will earn for completing the project. Default value is 1500.
 ```
 
 Except for these fields, there are also a number of fields with technical details specific to the DataCamp platform. These will most often be filled in by your DataCamp contact:
