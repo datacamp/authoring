@@ -3,7 +3,7 @@
 This repository contains comprehensive documentation on how to author different forms of content on the DataCamp platform. It has been built by collating content from different github repositories, wikis, and google documents. The objective is for all authoring related documentation to live in one place that authors can easily access and search.
 
 ## Links
-[Documentation](https://teach-documentation.herokuapp.com)
+[Documentation](https://authoring.datacamp.com/)
 
 ### Prerequisites
 

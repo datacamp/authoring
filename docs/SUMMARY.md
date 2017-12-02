@@ -57,6 +57,7 @@
 <!--   - [Example Projects](projects/projects-examples.md) -->
 
 * [FAQ](faq/README.md)
+* [Diagnostics](diagnostics.md)
 
 ## Teach interface
 
