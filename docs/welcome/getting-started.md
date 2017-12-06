@@ -21,23 +21,15 @@ DataCamp uses GitHub behind the scenes for hosting, versioning, and collaboratin
 
 To create a new account visit the [GitHub registration](https://github.com/join?source=header-home) page and complete the three steps process.
 
-The first step is providing your login information:
+The first step is providing your login information. Fill in all three required fields, then click the "Create an account" button to proceed.
 
 ![GitHub registration form](/images/prerequisites/1-join-github.png)
 
-Fill in all three required fields:
-
-- Username
-- Email
-- Password
-
-Then click the "Create new account" button to proceed to the next step.
-
-Second, choose your plan. We recommend you start with the free plan and upgrade later if necessary:
+Next, choose your plan. We recommend you start with the free plan and upgrade later if necessary.
 
 ![GitHub registration form - Plan](/images/prerequisites/2-select-github-plan.png)
 
-You can skip the final step or fill in your details if desired:
+You can skip the final step or fill in your details if desired.
 
 ![GitHub registration form - Complete](/images/prerequisites/3-complete-github.png)
 
