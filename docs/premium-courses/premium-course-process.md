@@ -37,8 +37,8 @@ which is described in detail [here](/courses/exercises/).
 
 We want you to focus on the core content and not get too bogged down in
 the details associated with the structure of the chapter files or making
-things interactive. At this stage, just fill in the following elements for each
-exercise type, ideally using the [course
+things interactive. For example, just fill in the following elements for each
+of these three core exercise types, ideally using the [course
 editor](http://www.datacamp.com/teach) to ease development:
 
 -   `VideoExercise`
@@ -80,10 +80,8 @@ time upfront, it makes the recording process far more efficient and the
 resulting videos significantly more polished and professional.
 
 You will create all slides and scripts in the 'Slide Editing' mode of
-the [course editor](http://www.datacamp.com/teach), which is accessible
-via the menu bar:
-
-![](images/premium-courses/slide-editing-mode.png)
+the [course editor](http://www.datacamp.com/teach). Detailed documentation on
+this process can be found [here](/courses/slides.md).
 
 A few pieces of advice before you get started:
 
@@ -138,7 +136,7 @@ and provide feedback in preparation for your time in the studio.
 
 After reviewing the screencasts and making any final adjustments to
 either the slides or the scripts, the next step is for you to spend one
-day (\~6-8 hours) in our professional recording studio in Cambridge, MA.
+day (\~4-6 hours) in our professional recording studio in Cambridge, MA.
 (Don't worry, we'll cover travel expenses.) Our team is well-trained and
 prepared to make sure things go smoothly.
 

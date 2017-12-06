@@ -70,7 +70,7 @@
 * [Development process](premium-courses/premium-course-process.md)
   - [1. Course specs](premium-courses/premium-course-process.md#course-specs)
   - [2. Exercises](premium-courses/premium-course-process.md#exercises)
-  - [3. Slide and scripts](premium-courses/premium-course-process.md#slides-scripts)
+  - [3. Slides and scripts](premium-courses/premium-course-process.md#slides-scripts)
   - [4. Screencasts](premium-courses/premium-course-process.md#screencasts)
   - [5. Videos](premium-courses/premium-course-process.md#videos)
   - [6. Review and release](premium-courses/premium-course-process.md#review-release)
