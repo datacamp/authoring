@@ -65,7 +65,3 @@
 * [Create content dialog](interface/create-content-dialog.md)
 * [Content overview](interface/content-overview.md)
 * [Editor](interface/teach-editor.md)
-
-## Premium content
-
-* [Course index](premium_content/index.md)
