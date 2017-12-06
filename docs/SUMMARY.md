@@ -67,5 +67,12 @@
 
 ## Premium courses
 
-* [Development process](premium/premium-course-process.md)
-* [Course structure](premium/premium-course-structure.md)
+* [Development process](premium-courses/README.md)
+  - [Course specs](premium-courses/process/course-specs.md)
+  - [Exercises](premium-courses/process/exercises.md)
+  - [Slide and scripts](premium-courses/process/slides-scripts.md)
+  - [Screencasts](premium-courses/process/screencasts.md)
+  - [Videos](premium-courses/process/videos.md)
+  - [Review and release](premium-courses/process/review-release.md)
+  - [Monitor and maintain](premium-courses/process/monitor-maintain.md)
+* [Course structure](premium-courses/premium-course-structure.md)
