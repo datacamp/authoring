@@ -65,7 +65,7 @@
   - [Content overview](interface/content-overview.md)
 * [Teach Editor](interface/teach-editor.md)
 
-## Premium content
+## Premium courses
 
-* [Course development process](premium/premium-course-process.md)
+* [Development process](premium/premium-course-process.md)
 * [Course structure](premium/premium-course-structure.md)
