@@ -12,31 +12,32 @@ under the [DataCamp organization](https://github.com/datacamp), where
 all of your course materials will be kept. This will allow us to
 collaborate seemlessly by keeping everything in one place, tracking
 changes to documents over time, and providing a system for proposing and
-merging changes. **If you're new to GitHub, take a moment to [create a
-free account](https://github.com/) and provide us with your GitHub
-username so we can add you as a collaborator to the repo**.
+merging changes. **If you're new to GitHub, visit our 
+[Getting started](/welcome/getting-started.md) page
+to get your account set up and linked to DataCamp.**
 
 ## 1. Course specs {#course-specs}
 
-TBD.
+The first step in the course development process is to develop a detailed
+blueprint for your course. We call this blueprint the *course specs*.
+
+In addition to helping you brainstorm topics for the course, you'll define
+your audience, create some example exercises, created a high-level outline
+for the material, and tie everything together with a "sales" pitch to students
+on why they should take your course and what they'll learn.
+
+Your course repository will have some example course specs along with a
+blank template for your specs. Additional instructions can be found there.
 
 ## 2. Exercises {#exercises}
 
-This is the most important step of the course development process, since
-it's primarily through the interactive exercises that students will
-engage with your material. We'll be using your course index to generate
-chapter templates, so the basic structure of each exercise will already
-be in place, along with the title and content you provided in the index.
-
-There are three types of exercises in a DataCamp course, each of which
-is described in detail on the [Code
-Exercises](https://www.datacamp.com/teach/documentation#tab_code_exercises)
-page of the technical documentation.
+Once your course is fully spec'd and approved, you'll begin working on 
+exercises. There several different flavors of DataCamp exercises, each of 
+which is described in detail [here](/courses/exercises/).
 
 We want you to focus on the core content and not get too bogged down in
 the details associated with the structure of the chapter files or making
-things interactive. We can help with the latter (hints, answer testing,
-etc.) At this stage, just fill in the following elements for each
+things interactive. At this stage, just fill in the following elements for each
 exercise type, ideally using the [course
 editor](http://www.datacamp.com/teach) to ease development:
 
@@ -82,7 +83,7 @@ You will create all slides and scripts in the 'Slide Editing' mode of
 the [course editor](http://www.datacamp.com/teach), which is accessible
 via the menu bar:
 
-![](https://s3.amazonaws.com/content-partnerships/staging/images/screenshots/slide-editing-mode.png)
+![](images/premium-courses/slide-editing-mode.png)
 
 A few pieces of advice before you get started:
 
