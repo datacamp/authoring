@@ -6,7 +6,7 @@ This page details steps you go through when you create a *premium* DataCamp Proj
 Overview
 --------------
 
-Here are the steps for creating a DataCamp Projects:
+Here are the steps for creating a DataCamp Project:
 
 1. [Prerequisites for making a Project](#projects-prerequisites).
   - Before you can create a DataCamp project, you need access to two tools: Jupyter notebooks and GitHub. You should also check out some example Projects.
