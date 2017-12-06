@@ -6,78 +6,150 @@ This page details steps you go through when you create a *premium* DataCamp Proj
 Overview
 --------------
 
-0. What do I need to make a DataCamp Project? {#projects-what-do-i-need}
-1. What is a good topic for a Project? {#projects-a-good-topic}
-2. Writing the Project specification {#projects-writing-specification}
-3. Writing the narrative notebook {#projects-writing-narrative}
-4. Writing the Project notebook {#projects-writing-notebook}
-5. Launching the Project {#projects-launching}
+Here are the steps for creating a DataCamp Project:
 
+1. [Prerequisites for making a Project](#projects-prerequisites).
+  - Before you can create a DataCamp project, you need access to two tools: Jupyter notebooks and GitHub. You should also check out some example Projects.
+2. [Coming up with a good topic](#projects-a-good-topic)
+  - The first step when creating a Project is to come up with a good topic.
+3. [Writing the Project specification](#projects-writing-specification).
+  - When you know the topic of your Project, you'll complete a short *Project specification*. When both you and your DataCamp contact have OK'd the Project specification, you sign a contract and can now go ahead and create the Project.
+4. [Writing the narrative notebook](#projects-writing-narrative).
+  - A Project is built around a case study / analysis / data narrative. You'll start by creating this narrative as a Jupyter notebook.
+5. [Writing the Project notebook](#projects-writing-notebook).
+  - When the narrative notebook is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
+6. [Launching the Project](#projects-launching).
+  - When the Project notebook is finished, we will beta test it and launch it on DataCamp. Optionally, as part of the launch, you'll make an unpretentious introduction video to your Project. 
 
-0. What do I need to make a DataCamp Project? {#projects-what-do-i-need}
+During this process, you will work closely with your DataCamp contact, and each step above also includes receiving and integrating feedback from your DataCamp contact.
+
+1. Prerequisites for making a Project {#projects-prerequisites}
 ---------------------------------------------------------------------
 
-http://jupyter.org/
-Installing Jupyter notebooks (use python 3!): http://jupyter.org/install.html
-Quick introduction: https://youtu.be/Hr4yh1_4GlQ
+Before you create a DataCamp Project, you should check out some of the existing projects to get a feel for the format. We recommend that you complete:
 
-Introduction to projects and Jupyter notebooks: 
-- python: https://projects.datacamp.com/projects/33
-- R: https://projects.datacamp.com/projects/41
+* *Introduction to Projects and Jupyter notebooks*
+  - python: https://projects.datacamp.com/projects/33
+  - R: https://projects.datacamp.com/projects/41
+* *Dr. Semmelweis and the discovery of handwashing*
+  - python: https://projects.datacamp.com/projects/20
+  - R: https://projects.datacamp.com/projects/49
 
-Markdown tutorial: http://commonmark.org/help/tutorial/index.html
+To create a DataCamp project you'll only need to use two tools: Jupyter notebooks and GitHub.
 
-https://github.com/
-Basic introduciton to git: https://try.github.io/
+### Jupyter notebooks {#jupyter-notebooks}
+
+From [jupyter.org](http://jupyter.org/):
+
+> The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
+
+If you're doing data science in python chances are you're already using Jupyter notebooks. Coming from the R side, a Jupyter notebook is similar to an R-markdown document: it allows you to mix code, markdown, and output in an interactive document. A DataCamp Project is presented to students as a Jupyter notebook, but the Project spec and the final Project is *also* authored as notebooks. Jupyter notebooks work both with python and with R but rely on python for the interface. Here are some useful resources:
+
+* [Instructions for how to install Jupyter](http://jupyter.org/install.html). Make sure to chose python 3.
+* If you are creating a Project in R you also need [the R-kernel for Jupyter](https://irkernel.github.io/installation/).
+* A quick video introduction to Jupyter: https://youtu.be/Hr4yh1_4GlQ
+* All text in a Jupyter notebook is written using markdown. If you don't know markdown, you can learn it in 10 minutes here: http://commonmark.org/help/tutorial/index.html
+
+### GitHub
+
+GitHub is a web front-end for the Git version control system and is where all the files of your final Project will live. If you don't already have a GitHub account you can sign up for free here: https://github.com/ . If you need to get up to speed with using git, we recommend this tutorial: https://try.github.io/ .
 
 
-
-
-
-1. What is a good topic for a Project? {#projects-a-good-topic}
+2. Coming up with a good topic {#projects-a-good-topic}
 ---------------------------------------------
 
+> A Project should allow students to take the skills they have learned and apply them in an end-to-end analysis, on a real-world **task**, using real-world **tools** and **workflows**.
 
-* "Intro to Projects" (https://projects.datacamp.com/projects/33) . This is kind of a "meta"-project that introduces the Projects interface to the Student.
-* "Dr. Semmelweis and the discovery of handwashing" (https://projects.datacamp.com/projects/20). This is a project proper where the student completes a whole analysis, from reading in the data to analyzing it. 
+To this end, here are some guidelines for what makes a good Project:
 
-2. Writing the Project specification {#projects-writing-specification}
+- **The more applied the topic of the Project is, the better.** Areas the Project topic could come from include, but are not limited to: Healthcare, finance, online retail, applied research, official statistics, software engineering, mobile gaming, insurance, education, media & entertainment, logistics, web analytics, etc. 
+- **Real-world case studies are a good basis for a Project.** A goal of DataCamp projects is to give Students real-world experience, with real-world datasets. A topic related to your company or research could make a great Project. It is no problem, rather the opposite, if you want to feature your company or institution as part of the Project.
+- **A Project should be doable during a Lunch break.** While the name "Project" signals a large undertaking, this should not be the case. A DataCamp student should be able to complete a Project in less than an hour, and "short case study" would be a more fitting description. 
+- **Students should be able to apply what they've learned in DataCamp courses.** Students on the DataCamp platform learn new tools in courses and apply these tools in Projects. A challenge with creating a Project is to make sure that Students can learn the skills required to complete it from a DataCamp course. If you are uncertain what's covered in DataCamp courses, then your DataCamp contact will help you with this. 
+
+It is generally no problem if you want to re-purpose already existing material (such as a blog post or existing case study) as a DataCamp project. 
+
+
+3. Writing the Project specification {#projects-writing-specification}
 ------------------------------------------
 
+When you've come up with a topic for your Project the next step is to complete a *Project specification*: A short document that outlines the topic of your project and the skills necessary to complete it. The Project spec is written as a Jupyter notebook, so to edit it you need to have Jupyter installed on your local machine ([see here](#jupyter-notebooks) for more info).
 
-3. Writing the narrative notebook {#projects-writing-narrative}
+The Project spec should be self-explanatory and is available here:
+
+* [Project spec notebook for python](notebooks/datacamp_python_project_spec.ipynb).  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_python_project_spec.ipynb).
+* [Project spec notebook for R](notebooks/datacamp_r_project_spec.ipynb).  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_r_project_spec.ipynb).
+
+When you've completed the Project spec just e-mail it to your DataCamp contact. Make sure to include all external resources (like datasets, images, etc.) as e-mail attachments, or put them online and link to them from the notebook. 
+
+When both you and your DataCamp contact have OK'd the Project specification, the Project creation process officially begins:
+
+* You and DataCamp will sign a Project authoring contract. Please ask your DataCamp contact if you have questions about this contract.
+* Your DataCamp contact will set up a GitHub repository for your Project. Until the Project is released, you will work in the `develop` branch of the repository. 
+* Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project_narrative.ipynb` (the narrative notebook). Here is [more information about the filestructure of a Project](projects-repo-structure.md).
+
+
+4. Writing the narrative notebook {#projects-writing-narrative}
 ------------------------------------------
 
+The goal of a DataCamp project, from the students perspective, is to complete the case study / analysis / data narrative in the student's Jupyter notebook. The next step in building a DataCamp project is to write this completed *narrative notebook* which should live in the `project_narrative.ipynb` notebook in your GitHub repo. 
 
-4. Writing the Project notebook {#projects-writing-notebook}
+See the [narrative notebook format](projects/projects-narrative-format.md) for instructions and a style guide. 
+
+
+5. Writing the Project notebook {#projects-writing-notebook}
 ------------------------------------------
 
+A finished Project consists of a narrative notebook which is supplemented by instructions, hints, and correctness checks. When you've completed the narrative notebook your DataCamp contact will add a scaffold around it -- with all the code and markdown cells required in a finished Project -- and put it into the `project.ipynb` notebook in your GitHub repo. It is now up to you to fill in the scaffold and complete the Project.
 
-5. Launching the Project {#projects-launching}
+See the [Project notebook format](projects/projects-format.md) for instructions and a style guide. 
+
+You can now also start previewing how your project will appear on datacamp.com. Every time you push an update to GitHub a new version of your project will be built. You'll find links to a dashboard where you can monitor the build process and to the live preview in the `README.md` file in the Project's GitHub repo.
+
+### Two quirks
+
+*A current quirk is that the live preview of your project won't auto update, and you need to reset the project manually to make the latest version show.*
+
+![](media/reset_quirk.png)
+
+*Another quirk is that the system that puts the project on datacamp.com won't accept Jupyter notebooks larger than 1 mb. To make sure that your notebook isn't too large, you need to clear the cell outputs before committing.*
+
+![](media/clear_quirk.png)
+
+*We're working on fixing these quirks, but currently you need to use the workarounds above.*
+
+
+6. Launching the Project {#projects-launching}
 ------------------------------------------
 
-[macOS](http://osxdaily.com/2016/12/04/record-video-mac/), [Windows](https://support.microsoft.com/en-us/help/17444/windows-camera-app-webcams-help), [Linux/GNU](https://help.ubuntu.com/community/Webcam).
+When you have completed the Project notebook your DataCamp contact will send out the Project to a small group of DataCamp subscribers that will complete the Project and give feedback on it. When you've incorporated the feedback into the Project, it is ready for release on DataCamp.com!
 
+### Making a Project introduction video
+
+As part of the Project launch, you'll make a 20 to 30 sec. video that introduces the Project. This is an opportunity to let the student know a bit about you and to make students excited to do your Project. Here is an example introduction video for the python Project *Dr. Semmelweis and the discovery of handwashing*:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NzsaLfZ-QfA?rel=0" frameborder="0" allowfullscreen></iframe> 
 
+<br>
+
+*Introduction video style guide:*
+
+* The introduction video is meant to be informal and relaxed. The idea is to talk directly to the student as if you were in a video meeting.
+* The video should be around 20 - 30 seconds long.
+* It can be filmed using your laptop's web camera or using a high-end mobile phone. Here are guides for recording your web camera on [macOS](http://osxdaily.com/2016/12/04/record-video-mac/), [Windows](https://support.microsoft.com/en-us/help/17444/windows-camera-app-webcams-help), and [Linux/GNU](https://help.ubuntu.com/community/Webcam).
+* Make sure that you are in a quiet environment and that the lighting is good.
+* Don't worry if you don't get started right away in the video. Your DataCamp contact will trim the beginning and end of the video for you. 
+* The video should introduce you and your Project. Here is a handy template script you can follow:
 ```text
 Hi, I'm {name} and I'm {current position}.
 I've made a DataCamp project where you {get to use a skill/package}.
-{One or two sentences about what you'll get to analyse in the Project}.
+{One or two sentences about what you'll get to analyze in the Project}.
 I hope you'll enjoy it. {Good luck! / Cheers! / Bye! }
 ```
 
-
-The best quickly getting an idea of what the possibilities are and how a project can look is to check out some of the live projects:
-
+When you've recorded the video upload it by following this link: https://www.dropbox.com/request/8FPVPgIPGLU0Gddd1pxl
 
 
-The process for making a project goes like this:
+### Maintaining your Project
 
-1. We have a quick meeting where I show the Projects interface and we chat about what could be a good topic for your project.
-2.  You complete a project spec: A short document with the title of the project, datasets used, etc.
-3. When we've agreed on the project spec we sign a contract. Briefly: DataCamp have the right to put the project on DataCamp.com, you keep the copyright and receive royalties when subscribers complete your project.
-4. You go ahead and create the project.
-
-
+Even though your Project has been beta tested, there might still be bugs/mistakes to iron out. The DataCamp subscribers doing your Project can leave feedback and report issues.Your DataCamp contact will collect these issues and report them to you at three points in time: (1) When your Project is released, (2) two weeks after release, and (3) two months after release. As the author of the Project, it is then your responsibility to make sure that DataCamp subscribers can complete and enjoy the Project.

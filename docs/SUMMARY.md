@@ -31,6 +31,8 @@
    - [Design](courses/design.md)
      - [Design template](courses/template.md)
      - [Learner personas](courses/personas.md)
+   - [Diagnostics](diagnostics.md)
+   - [FAQ](faq/README.md)
 * [Challenges](challenges/README.md)
    - [Repo Structure](challenges/repo-structure.md)
    - [Content](challenges/content/README.md)
@@ -56,12 +58,9 @@
    - [Project File Structure](projects/projects-repo-structure.md)
 <!--   - [Example Projects](projects/projects-examples.md) -->
 
-* [FAQ](faq/README.md)
-* [Diagnostics](diagnostics.md)
-
 ## Teach interface
 
-* [Dashboard](interface/dashboard.md)
-* [Create content dialog](interface/create-content-dialog.md)
-* [Content overview](interface/content-overview.md)
-* [Editor](interface/teach-editor.md)
+* [Teach Dashboard](interface/dashboard.md)
+  - [Create content dialog](interface/create-content-dialog.md)
+  - [Content overview](interface/content-overview.md)
+* [Teach Editor](interface/teach-editor.md)
