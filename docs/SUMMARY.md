@@ -67,4 +67,5 @@
 
 ## Premium content
 
-* [Creating a premium course](premium/premium-course-process.md)
+* [Course development process](premium/premium-course-process.md)
+* [Course structure](premium/premium-course-structure.md)
