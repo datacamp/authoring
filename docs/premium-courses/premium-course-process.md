@@ -136,13 +136,13 @@ and provide feedback in preparation for your time in the studio.
 
 After reviewing the screencasts and making any final adjustments to
 either the slides or the scripts, the next step is for you to spend one
-day (\~4-6 hours) in our professional recording studio in Cambridge, MA.
+day (\~4-6 hours) in our professional recording studio in New York City.
 (Don't worry, we'll cover travel expenses.) Our team is well-trained and
 prepared to make sure things go smoothly.
 
-Once the videos are recorded, we will review and edit them, add your
-slides in the background, use animations to highlight key points, etc.
-Finally, we'll plug the final videos into the course.
+Once the videos are recorded, we will review and edit them, then add your
+slides in the background. You'll then use our slide editor to time out the slide 
+animations and make sure everything fits nicely into the course.
 
 ## 6. Review and release {#review-release}
 
