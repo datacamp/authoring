@@ -1,12 +1,12 @@
 # Welcome!
 
-This documentation is the single source of truth for all things related to creating educational content on the DataCamp platform. Anyone can create content for free using our authoring tools, then make that content available to others.
+This documentation is the single source of truth for all things related to creating training content on the DataCamp platform. Anyone can create content for free using our authoring tools, then make that content available to others.
 
 If you'd like to make your content freely available to the general public via the [Community section](https://www.datacamp.com/community/) of our website, you can get started on your content right away and reach out to [support@datacamp.com](mailto:support@datacamp.com) when it's done. If you're interested in creating premium content on [datacamp.com](https://www.datacamp.com/) available only to DataCamp subscribers, you can [apply here](https://www.datacamp.com/create/) to be considered. If selected to create premium content, we will work closely with you to plan and develop the material so that it fits neatly among our other premium offerings.
 
 # Types of content
 
-DataCamp supports several different types of educational content, each serving a particular purpose: 
+DataCamp supports several different types of training content, each serving a particular purpose: 
 
 * **Courses** teach new data science material
 * **Challenges** allow students to practice what they've learned in courses
