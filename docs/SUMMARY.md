@@ -67,12 +67,12 @@
 
 ## Premium courses
 
-* [Development process](premium-courses/README.md)
-  - [Course specs](premium-courses/process/course-specs.md)
-  - [Exercises](premium-courses/process/exercises.md)
-  - [Slide and scripts](premium-courses/process/slides-scripts.md)
-  - [Screencasts](premium-courses/process/screencasts.md)
-  - [Videos](premium-courses/process/videos.md)
-  - [Review and release](premium-courses/process/review-release.md)
-  - [Monitor and maintain](premium-courses/process/monitor-maintain.md)
+* [Development process](premium-courses/premium-course-process.md)
+  - [Course specs](premium-courses/premium-course-process.md#course-specs)
+  - [Exercises](premium-courses/premium-course-process.md#exercises)
+  - [Slide and scripts](premium-courses/premium-course-process.md#slides-scripts)
+  - [Screencasts](premium-courses/premium-course-process.md#screencasts)
+  - [Videos](premium-courses/premium-course-process.md#videos)
+  - [Review and release](premium-courses/premium-course-process.md#review-release)
+  - [Monitor and maintain](premium-courses/premium-course-process.md#monitor-maintain)
 * [Course structure](premium-courses/premium-course-structure.md)

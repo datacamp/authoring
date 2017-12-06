@@ -1,4 +1,6 @@
-## Introduction
+# Premium course development process
+
+## Introduction {#introduction}
 
 The purpose of this section is to guide you through the step-by-step
 process of developing a premium DataCamp course. The emphasis here is on
@@ -14,11 +16,11 @@ merging changes. **If you're new to GitHub, take a moment to [create a
 free account](https://github.com/) and provide us with your GitHub
 username so we can add you as a collaborator to the repo**.
 
-## Course specs
+## Course specs {#course-specs}
 
 TBD.
 
-## Exercises
+## Exercises {#exercises}
 
 This is the most important step of the course development process, since
 it's primarily through the interactive exercises that students will
@@ -61,7 +63,7 @@ editor](http://www.datacamp.com/teach) to ease development:
     -   *Instructions:* For multiple choice questions, the
         "instructions" are actually a list of possible choices
 
-## Slides and scripts
+## Slides and scripts {#slides-scripts}
 
 You will record the videos for your course in front of a green screen in
 our professional recording studio. The green screen allows us to display
@@ -101,7 +103,7 @@ A few pieces of advice before you get started:
     (or different parts of the same dataset) or by performing slightly
     different operations on the same dataset
 
-## Screencasts
+## Screencasts {#screencasts}
 
 Screencasts involve recording your computer screen while cycling through
 your slides and talking over them as if you are recording the full
@@ -131,7 +133,7 @@ that they appear in your course as placeholders for the full videos. We
 can then review them in context, alongside the rest of the exercises,
 and provide feedback in preparation for your time in the studio.
 
-## Videos
+## Videos {#videos}
 
 After reviewing the screencasts and making any final adjustments to
 either the slides or the scripts, the next step is for you to spend one
@@ -143,7 +145,7 @@ Once the videos are recorded, we will review and edit them, add your
 slides in the background, use animations to highlight key points, etc.
 Finally, we'll plug the final videos into the course.
 
-## Review and release
+## Review and release {#review-release}
 
 At this point, we will put any finishing touches on the course, then ask
 that you review the course in its entirety.
@@ -157,7 +159,7 @@ more substantive changes.
 Once everyone agrees we're ready to move forward, we will release the
 course on the DataCamp website. Congrats!
 
-## Monitor and maintain
+## Monitor and maintain {#monitor-maintain}
 
 Since your course will be exposed to thousands of students all over the
 world, we will quickly learn of any improvements that need to be made.
