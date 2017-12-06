@@ -39,9 +39,7 @@ Finally, you need to allow the DataCamp application to access your GitHub accoun
 
 1. Visit [datacamp.com/teach](https://www.datacamp.com/teach)
 2. Click on the "Link GitHub Account" button
-
 ![GitHub registration form - Plan](/images/prerequisites/link-teach-authorize-github.png)
-
 3. When promoted by GitHub, click the "Authorize" button
 4. Once authorization is complete you will see your Teach dashboard
 
