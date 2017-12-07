@@ -22,12 +22,13 @@ The first step in the course development process is to develop a detailed
 blueprint for your course. We call this blueprint the *course specs*.
 
 In addition to helping you brainstorm topics for the course, you'll define
-your audience, create some example exercises, created a high-level outline
+your audience, create some example exercises, write a high-level outline
 for the material, and tie everything together with a "sales" pitch to students
 on why they should take your course and what they'll learn.
 
 Your course repository will have some example course specs along with a
-blank template for your specs. Additional instructions can be found there.
+blank template for your specs and detailed instructions for how to create your
+own.
 
 ## 2. Exercises {#exercises}
 
@@ -38,7 +39,7 @@ which is described in detail [here](/courses/exercises/).
 We want you to focus on the core content and not get too bogged down in
 the details associated with the structure of the chapter files or making
 things interactive. For example, just fill in the following elements for each
-of these three core exercise types, ideally using the [course
+of these most common exercise types, ideally using the [course
 editor](http://www.datacamp.com/teach) to ease development:
 
 -   `VideoExercise`
@@ -66,16 +67,14 @@ editor](http://www.datacamp.com/teach) to ease development:
 
 ## 3. Slides and scripts {#slides-scripts}
 
-You will record the videos for your course in front of a green screen in
-our professional recording studio. The green screen allows us to display
-slides in the background, which will enable you to walk students through
+The videos in your course will show slides with you talking over them.
+This enables you to walk students through
 important concepts and examples in a concrete and concise way, preparing
 them to complete the interactive exercises. The slides will also be made
 available for reference as students are working through the exercises.
 
 In addition to the slides, you will also script out exactly what you'll
-say in the videos. We'll feed these scripts into our teleprompter when
-you're in the studio. Although writing scripts takes some additional
+say in the videos. Although writing scripts takes some additional
 time upfront, it makes the recording process far more efficient and the
 resulting videos significantly more polished and professional.
 
@@ -106,9 +105,9 @@ A few pieces of advice before you get started:
 
 Screencasts involve recording your computer screen while cycling through
 your slides and talking over them as if you are recording the full
-videos. This provides an opportunity to practice for your big day in the
-studio. We'll also review the overall presentation and provide feedback
-in plenty of time for you to make adjustments.
+videos. This provides an opportunity to practice before doing your
+final recordings. We'll also review the overall presentation and provide 
+feedback in plenty of time for you to make adjustments.
 
 It's best to keep this step as simple as possible. If you're using a
 Mac, we recommend using QuickTime Player to record your screen. If you
@@ -128,41 +127,55 @@ you did with the slides (e.g. `ch2_3` for the third screencast in
 chapter 2).
 
 Once we've received the screencasts, we'll upload them to DataCamp so
-that they appear in your course as placeholders for the full videos. We
+that they appear in your course as placeholders for the final videos. We
 can then review them in context, alongside the rest of the exercises,
-and provide feedback in preparation for your time in the studio.
+and provide feedback in preparation for recording the final videos.
 
 ## 5. Videos {#videos}
 
-After reviewing the screencasts and making any final adjustments to
-either the slides or the scripts, the next step is for you to spend one
-day (\~4-6 hours) in our professional recording studio in New York City.
-(Don't worry, we'll cover travel expenses.) Our team is well-trained and
-prepared to make sure things go smoothly.
+For some courses, we record the instructor on camera. For others, we're able to
+simply do audio recordings. We'll let you know which it will be as early as
+possible in the course development process.
 
-Once the videos are recorded, we will review and edit them, then add your
-slides in the background. You'll then use our slide editor to time out the slide 
-animations and make sure everything fits nicely into the course.
+After reviewing the screencasts and making any final adjustments to
+either the slides or the scripts, the next step is to do the final recordings.
+
+If we're recording you on camera, we will fly you to New York City for a day
+to join us in our professional recording studio. The actual recording process
+generally takes no longer than 4-6 hours. Don't worry: we'll cover travel 
+expenses and our team is well-trained and prepared to make sure things go 
+smoothly.
+
+If we're recording audio-only, we'll make sure you have the proper equipment
+set up in your home or office, then give you detailed instructions on how to 
+produce high quality recordings for the course.
+
+Once the videos are recorded, we will review, edit, and merge them with your
+slides. You'll then use our slide editor to time out the slide 
+animations and make sure everything fits neatly into the course.
 
 ## 6. Review and release {#review-release}
 
-At this point, we will put any finishing touches on the course, then ask
-that you review the course in its entirety.
+At this point we will put any finishing touches on the course, make sure
+it's fully interactive, then ask that you review the course in its entirety
+before it goes live.
 
-We'll also have a select group of DataCamp students beta test the course
-to collect additional feedback and make a final round of updates before
-the course goes live. We'll implement as many small adjustments as
-possible based on the feedback, but we will need your assistance for
+Once it does go live, we'll ensure that enough students complete and give
+feedback on the course to allow us to work out any remaining kinks before
+we make a big announcement to our students.
+
+During this process, we'll implement as many small adjustments as
+possible based on the feedback we receive, but we will need your assistance for
 more substantive changes.
 
-Once everyone agrees we're ready to move forward, we will release the
-course on the DataCamp website. Congrats!
+Once everyone agrees we're ready to move forward, we will announce the
+launch of the course to the world and watch the magic take place. Congrats!
 
 ## 7. Monitor and maintain {#monitor-maintain}
 
 Since your course will be exposed to thousands of students all over the
 world, we will quickly learn of any improvements that need to be made.
-For small stuff like typos or issues with hints or answer testing, our
+For small stuff like typos or issues with solution testing, our
 team will make the necessary adjustments without bothering you. If,
 however, there are any serious issues with the content that require your
 expertise or input, we'll be sure to notify you immediately, then work
