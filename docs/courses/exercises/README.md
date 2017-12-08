@@ -1,25 +1,25 @@
 # Exercises
 
-As we have learned when examining the [course data structure](/courses/repo-structure.md) the content of a course is organized into chapters, each of which consists of one or more exercises.
+Every course is organized into chapters consisting of one or more exercises.  If you created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter files will already contain some DataCamp exercises to start from.
 
-If you've created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter file will already contain some DataCamp exercises to start from. DataCamp supports variety of different exercises. These different types of exercises have some blocks in common; other blocks are type-specific.
+DataCamp supports variety of different exercises, each of which consists of several blocks.  Some types of blocks are used by many exercises, while others are exercise-specific.
 
-### Exercise Types {#exercise-types}
+## Exercise Types {#exercise-types}
 
-Following are currently supported types of exercises you can created on DataCamp platform.
+These types of exercises are currently supported:
 
-| Type                          | Description                                                                |
-|:------------------------------|:---------------------------------------------------------------------------|
-| [`VideoExercise`](/courses/exercises/video-exercise.md) | Displays a video exercise                                                       |
-| [`NormalExercise`](/courses/exercises/normal-exercise)  | Shows exercise, instructions, code editor and learn by doing console             |
-| [`MultipleChoiceExercise`](/courses/exercises/multiple-choice-exercise.md) | Shows multiple choice question and console     |
-| [`PureMultipleChoiceExercise`](/courses/exercises/multiple-choice-exercise.md#pure-mce) | Shows multiple choice question    |   
-| [`TabExercise`](/courses/exercises/tab-exercise.md) | Create a series of smaller sub exercises    |   
-| [`BulletExercise`](/courses/exercises/bullet-exercise.md) | Create a series of smaller sub exercises    |   
+| Type                                                                 | Description |
+|:---------------------------------------------------------------------|:------------|
+| [`VideoExercise`](video-exercise.md)                                 | Displays a video exercise |
+| [`NormalExercise`](normal-exercise)                                  | Instructions, exercise, code editor, and console |
+| [`MultipleChoiceExercise`](multiple-choice-exercise.md)              | Multiple choice question and console |
+| [`PureMultipleChoiceExercise`](multiple-choice-exercise.md#pure-mce) | Multiple choice question without a console |
+| [`TabExercise`](tab-exercise.md)                                     | A series of connected sub-exercises |
+| [`BulletExercise`](bullet-exercise.md)                               | A series of connected sub-exercises |   
 
 ### Exercise Header {#exercise-header}
 
-Each exercise starts with a header which consists of `title` block (see below) and a YAML properties defining the exercise.  
+Each exercise has a header consisting of a `title` block and a YAML properties defining the exercise:
 
 {% codetabs name="Video", type="py" -%}
 ## Video Exercise
@@ -55,93 +55,66 @@ type: PureMultipleChoiceExercise
 ```
 {%- endcodetabs %}
 
-Depending on the type of exercise you are creating the supported properties differ:
+## Exercise properties {#exercise-properties}
 
-| Block             | Video | Normal | MultipleChoice | PureMultipleChoice |
-|-------------------|-------:|--------:|----------------:|--------------------:|
-| `type`             |  :white_check_mark:     |  :white_check_mark:      | :white_check_mark:               | :white_check_mark:                   |
-| `key`        | :white_check_mark:      |   :white_check_mark:     |    :white_check_mark:            |   :white_check_mark:                 |
-| `lang`      | :white_check_mark:      |  :white_check_mark:      | :white_check_mark:               | :x:                   |
-| `xp`              | :white_check_mark:     |  :white_check_mark:      | :white_check_mark:               |  :white_check_mark:                  |
-| `video_link` | :white_check_mark:    |  :x:      | :x:               | :x:                   |
-| `aspect_ratio`       |  :white_check_mark:     | :x:       |  :x:              | :x:                    |
+The supported properties differ depending on the type of the exercise:
 
-#### Properties explanations
+| Block          | Video              | Normal             | MultipleChoice     | PureMultipleChoice  |
+|----------------|-------------------:|-------------------:|-------------------:|--------------------:|
+| `type`         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| `key`          | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| `lang`         | :white_check_mark: | :white_check_mark: | :white_check_mark: | :x:                 |
+| `xp`           | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark:  |
+| `video_link`   | :white_check_mark: | :x:                | :x:                | :x:                 |
+| `aspect_ratio` | :white_check_mark: | :x:                | :x:                | :x:                 |
 
-##### `type`
-Type of the exercise you are creating as listed in [Exercise Types](README.md#exercise-types).
+- `type`: type of the exercise you are creating as listed in [Exercise Types](README.md#exercise-types).
+- `key`: a unique key for the exercise generated by DataCamp. Do not modify or duplicate this key.
+- `lang`: the language of the exercise (`r`, `python`, `sql`, or `shell`).
+- `xp`: the XP the student will receive for solving the exercise.
+- `video_link`: a link to the video for a `VideoExercise`.
+- `aspect_ratio`: the aspect ration for a `VideoExercise`.
 
-##### `key`
-Unique key. Generated by DataCamp.
+## Exercise blocks {#exercise-blocks}
 
-##### `lang`
-Language of exercise. One of `sql`, `python` or `r`.
+Exercises may contain the following kinds of blocks:
 
-##### `xp`
-Amount of XP student is going to receive for solving the exercise.
-
-##### `video_link`
-Link to the video (on Vimeo). Only for `VideoExercise`
-
-##### `aspect_ratio`
-Defining the aspect ratio. Only for `VideoExercise`
-
-### Exercise blocks {#exercise-blocks}
-
-Creating exercises is based around building blocks. Most of the exercises are sharing the blocks. However there are exercises which have specific block types.
-
-| Block             | Video | Normal | MultipleChoice | PureMultipleChoice |
-|-------------------|-------:|--------:|----------------:|--------------------:|
-| `title`             |  :white_check_mark:     |  :white_check_mark:      | :white_check_mark:               | :white_check_mark:                   |
-| `assignment`        | :white_check_mark:      |   :white_check_mark:     |    :white_check_mark:            |   :white_check_mark:                 |
-| `instructions`      | :x:      |  :white_check_mark:      | :white_check_mark:               | :white_check_mark:                   |
-| `hint`              | :x:     |  :white_check_mark:      | :white_check_mark:               |  :white_check_mark:                  |
-| `pre_exercise_code` | :x:    |  :white_check_mark:      | :white_check_mark:               | :white_check_mark:                   |
-| `sample_code`       |  :x:     | :white_check_mark:       |  :x:              | :x:                    |
-| `solution`          | :x:      | :white_check_mark:       |  :x:              | :x:                   |
-| `sct`               | :x:      |  :white_check_mark:      | :white_check_mark:               | :x:                   |
-| `possible_answers`        | :x:      | :x:       | :x:               | :white_check_mark:                    |
-| `feedbacks`      | :x:      | :x:       | :x:                | :white_check_mark:                    |
+| Block               | Video              | Normal             | MultipleChoice     | PureMultipleChoice |
+|---------------------|-------------------:|-------------------:|-------------------:|-------------------:|
+| `title`             | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `assignment`        | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `instructions`      | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `hint`              | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `pre_exercise_code` | :x:                | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| `sample_code`       | :x:                | :white_check_mark: | :x:                | :x:                |
+| `solution`          | :x:                | :white_check_mark: | :x:                | :x:                |
+| `sct`               | :x:                | :white_check_mark: | :white_check_mark: | :x:                |
+| `possible_answers`  | :x:                | :x:                | :x:                | :white_check_mark: |
+| `feedbacks`         | :x:                | :x:                | :x:                | :white_check_mark: |
 
 > #### info::Note
-> `TabExercise` and `BulletExercise` are combinations of other exercises thus those are not included in the comparison table.
+> `TabExercise` and `BulletExercise` are not included in the comparison table because they are combinations of other exercise types.
 
-#### Block explanations
+- `title`: title of the exercise shown to students taking the course.
+- `assignment`: describes the task the student is to solve.
+- `instructions`: the actual question or task for the student. In the case of a `MultipleChoiceExercise`, the instructions list the options from which the student can choose.
+- `hint`: a hint the student can request.
+- `pre_exercise_code`: code run in the background when the exercise is loaded to load necessary libraries, define variables, etc.
+- `sample_code`: starter code made available to the user at the beginning of the exercise.
+- `solution`: a correct solution to an interactive exercise.  DataCamp's back end runs this code when building the course to check that the exercise's submission tests run correctly.
+- `sct`: the exercise's submission correctness tests (described below).
+- `video_link`: the link to the video (`VideoExercise` only).
+- `aspect_ratio`: the aspect ratio (`VideoExercise` only).
+- `possible_answers`: a list of possible answers and a correct answer (`PureMultipleChoiceExercise` only). See [How to create PureMultipleChoiceExercise](multiple-choice-exercise.md#pure-mce) for details.
+- `feedbacks`: a list with feedback for each possible answer (`PureMultipleChoiceExercise` only). See [How to create PureMultipleChoiceExercise](multiple-choice-exercise.md#pure-mce) for details.
 
-##### `title`
-Title of the exercise which is going to be visible to the student when taking the course.
+### Submission correctness tests (SCTs)
 
-##### `assignment`
-Assignment provides a task description student should solve.
+`NormalExercise` and `MultipleChoiceExercise` require you to write *Submission Correctness Tests* (SCTs) to assess whether the student gave the correct answer. Writing good SCTs is challenging, so DataCamp has developed technology-specific packages to simplify the task:
 
-##### `instructions`
-The actual question or task for the student. In the case of a `MultipleChoiceExercise`, the instructions list the options from which the student can choose.
-
-##### `hint`
-Hint that can help the student to correctly solve the exercise.
-
-##### `pre_exercise_code`
-Code that is run in the background when the exercise is loaded. It typically loads the necessary libraries and defines variables to allow the student to start solving the exercise right away.
-
-##### `sample_code`
-Initial code that is available to the user at the onset of the exercise, to better guide the student to a solution or to limit typing efforts.
-
-##### `solution`
-Correct solution to an interactive exercise. How the exercise should have been solved ideally. However, other approaches that also lead to a correct result should be selected.
-
-##### `sct`
-Both `NormalExercises` and `MultipleChoiceExercises` require you to write so-called Submission Correctness Tests (`SCT`), to assess whether the student gave the correct answer Writing good SCTs is a challenge; that's why programming language-specific packages have been written to make this process as easy as possible. For R, there's the [testwhat](https://github.com/datacamp/testwhat) package ([GitHub wiki](https://github.com/datacamp/testwhat/wiki)). For Python, there's the [pythonwhat](https://github.com/datacamp/pythonwhat) package ([GitHub wiki](https://github.com/datacamp/pythonwhat/wiki)).
-
-##### `video_link`
-Only applicable to the `VideoExercise` pointing to the link of the Vimeo video.
-
-##### `aspect_ratio`
-Only applicable to the `VideoExercise` defining the video aspect ratio.
-
-##### `possible_answers`
-Only applicable to `PureMultipleChoiceExercise` defining a list of possible answers and a correct answer. ([How to create PureMultipleChoiceExercise](/courses/exercises/multiple-choice-exercise.md#pure-mce))
-
-##### `feedbacks`
-Only applicable to `PureMultipleChoiceExercise` defining a list of possible feedbacks based on the chosen possible answer. ([How to create PureMultipleChoiceExercise](/courses/exercises/multiple-choice-exercise.md#pure-mce))
-
-
+| Language | Source                                               | Documentation |
+|----------|------------------------------------------------------|---------------|
+| R        | [testwhat](https://github.com/datacamp/testwhat)     | [GitHub wiki](https://github.com/datacamp/testwhat/wiki) |
+| Python   | [pythonwhat](https://github.com/datacamp/pythonwhat) | [ReadTheDocs](https://pythonwhat.readthedocs.io/en/latest/) |
+| SQL      | [sqlwhat](https://github.com/datacamp/sqlwhat)       | [ReadTheDocs](https://sqlwhat.readthedocs.io/en/latest/) |
+| Shell    | [shellwhat](https://github.com/datacamp/shellwhat)   | [ReadTheDocs](https://shellwhat.readthedocs.io/en/latest/) |

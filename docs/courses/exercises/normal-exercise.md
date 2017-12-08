@@ -1,29 +1,23 @@
 # Normal Exercise
-An interactive exercise, where the student is expected to submit code based on the assignment and instructions provided. The student’s submission is compared to the ideal solution with DataCamp’s autograder and appropriate feedback is generated.
 
-A `NormalExercise` shows the exercise and instructions on the left, editor top right, and console bottom right. The code is executed in two processes/environments, so that you can easily compare objects in them in the submission correctness tests.
+A `NormalExercise` gives students some background information and instructions, then checks the code they submit and provides feedback.  The exercise and instructions are shown on the left, the code editor in the top right, and an interactive console for experimentation in the bottom right.  Code is executed in two processes/environments so that you can safely compare objects in them in the submission correctness tests.
 
 [![img](/images/NormalExercise.png)](https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=3)
 
-Additional information regarding the exercise or the data set that is used is stated in the `assignment` part; the actual tasks the student has to solve through code are outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in the editor that is initialized with the `sample_code`. When the student is not able to solve the exercise, he or she can refer to the `hint` or, ultimately, can peek at the `solution`. Every time the student hits the ‘Submit Code’ button, his or her code is checked for correctness using the submission correctness testing code (`sct`). This SCT generates a feedback message that depends on the input of the student. 
+Information regarding the exercise or the dataset is stated in the `assignment` part; the actual tasks the student has to solve is outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in the editor that is initialized with the `sample_code`. When the student is not able to solve the exercise, they can refer to the `hint` or look at the `solution`. Every time the student clicks the "Submit Code" button, their code is checked using the Submission Correctness Testing code (`sct`), which generates a feedback message.
 
-| Block                | Description                                                               |
-|:---------------------|:--------------------------------------------------------------------------|
-| `@instructions`      | Instructions
-| `@hint`              | Hints
-| `@pre_exercise_code` | Code to be run prior to initializing the exercise.
-| `@sample_code`       | Sample code to provide to the user.
-| `@solution`          | Solution code for the exercise
-| `@sct`               | Submission correctness tests.
+| Block                | Description                                       |
+|:---------------------|:--------------------------------------------------|
+| `@instructions`      | Instructions                                      |
+| `@hint`              | Hints                                             |
+| `@pre_exercise_code` | Code to be run prior to initializing the exercise |
+| `@sample_code`       | Sample code to provide to the user                |
+| `@solution`          | Solution code for the exercise                    |
+| `@sct`               | Submission correctness tests                      |
 
+## Example
 
-> #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
-
-## Complete example
-Following is an complete example of a chapter containing one `NormalExercise` for `R` technology.
-Each block is described in detail following this example.
+This chapter contains one `NormalExercise` for R.  Each block is described in detail following the example.
 
     ---
     title       : This is chapter 1
@@ -73,7 +67,7 @@ Each block is described in detail following this example.
 
 ## Context
 
-A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and a context block that describes the exercise.
+A `NormalExercise` starts with `## Title`, followed by a `metadata` block and a context block that describes the exercise.
 
     ### Interactive Exercise Title
 
@@ -128,6 +122,6 @@ A `NormalExercise` starts with a `## Title`, followed by a `metadata` block and 
     success_msg("Good job! Head over to the next exercise")
     ```
 
-> #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
+See also:
+- [Exercises](/courses/exercises/README.md#exercise-blocks) page.
+- [Experience Points](/courses/xp.md)

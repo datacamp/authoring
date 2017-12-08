@@ -2,13 +2,13 @@
 
 ![Console Exercise - Shell](/images/ConsoleExerciseShell.png)
 
-A `ConsoleExercise` only features a console. Typing a command in the console and hitting `Enter` submits the answer, and the backend provides feedback. This is currently enabled only for shell courses (`lang:shell`).
+A `ConsoleExercise` only features a console. Typing a command in the console and hitting `Enter` submits the answer, and the backend provides feedback. This is currently available only for Shell courses.
 
-__Examples__
+### Example
 
 1. [Console Exercise in Shell](examples/md/shell/ConsoleExercise.md)
 
-__Authoring__
+### Authoring
 
     ## Create a New Directory
 

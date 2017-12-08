@@ -1,10 +1,8 @@
 # Repository Structure
 
-A course repository consists of a simple directory structure used by the DataCamp build process to generate the views your students will be able to interact with.
-
-Depending on the technology (`R`, `Python`, `SQL`) you have chosen when creating the course the data structure can slightly differ.
-
-The structure outline is as follows:
+A course repository is used by DataCamp's build process to generate the views your students will interact with.
+Depending on the technology you chose when creating the course (R, Python, SQL, or Shell) the repository's structure can slightly differ.
+In general, the repository contains:
 
 ```text
 |- datasets/
@@ -28,52 +26,46 @@ The structure outline is as follows:
 
 An overview of what each of this does is:
 
-| File/Folder         | Description                                                              |
-|:--------------------|:-------------------------------------------------------------------------|
-| `datasets/*` | Folder containing all datasets you may want to use during the course creation process (eg. csv / excel files)|
-| `img/*` | Folder containing the course image should as `shield_image.png`|
-| `scripts/*` | Contains all the narrative which corresponds to the slides and the videos included in the course |
-| `slides/*` | Video slide markdown files. |
-| `.gitignore` | Files and folders which should be ignored by Git  |
-| `README.md` | A readme file with a list of resources more explanation to get started  |
-| `chapterX.md` | A markdown file with chapter metadata and exercises  |
-| `course.yml` | A YAML file with course metadata |
-| `requirements.r` | Additional R packages you may want to use in your course |
-| `requirements.sh`   | Additional Python / SQL packages you may want to use in your course |
+| File/Folder         | Description |
+|:--------------------|:------------|
+| `datasets/*`        | Contains all datasets you may want to use in your course (e.g., CSV files) |
+| `img/*`             | Contains the course image, such as `shield_image.png` |
+| `scripts/*`         | Contains all the narrative for the course's slides and videos |
+| `slides/*`          | Contains the markdown slides for your course's videos |
+| `.gitignore`        | Specifies files and folders that Git should ignore |
+| `README.md`         | The Markdown file used as the course's home page on GitHub |
+| `chapterX.md`       | A Markdown file containing metadata and exercises for one chapter |
+| `course.yml`        | A YAML file with course metadata |
+| `requirements.r`    | An R script to install additional R packages used in your course |
+| `requirements.sh`   | A shell script to install other packages used in your course |
 
-Let's go over some of the most important files and folders in more detail.
+The sections below describe some of these files and folders in more detail.
 
 ### `course.yml`
-This file contains the general information about your course being:
 
-| Property             | description                                                                                                                                                                                                                                                                                               |          |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-| `title`                | Title of the course                                                                                                                                                                                                                                                                                       | required |
-| `description`          | Description of the course                                                                                                                                                                                                                                                                                 | required |
-| `programming_language` | Programming language of the course (r, python, sql)                                                                                                                                                                                                                                                       | required |
-| `time_needed`          | The time needed to finish the course. Use small caps. "4 hours", for example                                                                                                                                                                                                                              | optional |
-| `difficulty_level`     | 1 = beginner, 2 = intermediate, 3 = advanced                                                                                                                                                                                                                                                              | required |
-| `practice_pool_id`     | The id of the challenges connected to the course                                                                                                                                                                                                                                                          | optional |
-| `prerequisites`        | a YAML list of course ids that are a prerequisite of this course                                                                                                                                                                                                                                          | optional |
-| `datasets`             | YAML key value combinations that explicitly define the datasets that are used in this course. The key is the filename of the dataset, the value is the humanized title of the dataset, that will be shown on the course page. If the value is,`__IGNORE__`, the dataset won't be shown on the course page | optional |
-| `from`                 | A special key reserved and used only by DataCamp                                                                                                                                                                                                                            | required |
+This file contains general information about your course:
 
-Properties which require additional explanation are:
+| Property               | Status   | Description |
+|------------------------|----------|-------------|
+| `title`                | required | Title of the course |
+| `description`          | required | Description of the course |
+| `programming_language` | required | Technology of the course (`r`, `python`, `sql`, or `shell`) |
+| `time_needed`          | optional | Time needed to finish the course, e.g., "4 hours" |
+| `difficulty_level`     | required | 1 = beginner, 2 = intermediate, 3 = advanced |
+| `practice_pool_id`     | optional | The ID of the challenges connected to the course |
+| `prerequisites`        | optional | A YAML list of course IDs of this course's prerequisites |
+| `datasets`             | optional | YAML key-value pairs that define the datasets used in this course |
+| `from`                 | required | Reserved for DataCamp use |
 
-##### prerequisites
+In more detail:
 
-As previously mentioned prerequisites contain a list of course id's which are the prerequisite for the course. An example on how to specify those in the `course.yml` is:
-
+* `prerequisites` is a list of course IDs specifying the prerequisite for the course, such as:
 ```yaml
 prerequisites:
   - 58 # Introduction to R
   - 672 # Intermediate R
 ```
-
-##### datasets
-
-As previously mentioned datasets is a list of datasets used in the course. All the datasets are going to be visible on the course page (page which is seen by students) unless you ignore the files which shouldn't be visible. You can ignore files in the `course.yml` by using `__IGNORE__` as follows:
-
+* `datasets` uses filenames as keys and the human-readable titles of datasets as values to be shown on the course page. If the value is `__IGNORE__` the dataset won't be shown on the course page:
 ```yaml
 datasets:
   some_data.RData: Super nice dataset
@@ -82,17 +74,17 @@ datasets:
 ```
 
 > #### info::Note
-> to make your life easier, there's an automated system that will add the datasets in your datasets directory to your course.yml. The system will try to generate a humanized string, you can change it afterwards (or change it to `__IGNORE__` if you want the system to ignore this dataset). To trigger it, you'll see a button in the build status block of your course, in the Home tab.
+> to make your life easier, an automated system will add the datasets in your `datasets` directory to your `course.yml` file. The system will try to generate a humanized string; you can change it afterwards (or set it to `__IGNORE__` if you don't want this dataset displayed).  You can trigger regeneration of this dataset listing by clicking the button on the build status block in the Home tab of your course.
 
 ### `chapterX.(R)md`
 
-The content of a course is organized into chapters, each of which consists of one or more exercises.  
-
-Similar to the `course.yml`, every chapter files start with a YAML header containing information about the chapter:
+A course is organized into chapters, each of which contains one or more exercises.
+Chapter files must be called `chapter1.md`, `chapter2.md`, and so on,
+and must start with a YAML header inside triple-dashed lines containing information about the chapter:
 
 ```yaml
 ---
-title    : Introduction to Basics
+title : Introduction to Basics
 title_meta: Chapter 1
 description: In this chapter, you will take your first steps with R.
 ---
@@ -102,41 +94,36 @@ description: In this chapter, you will take your first steps with R.
 
 Each chapter file contains general information about the chapter in YAML format such as:
 
-| Property     | Explanation                                                                                                                         |          |
-|--------------|-------------------------------------------------------------------------------------------------------------------------------------|----------|
-| `title`        | Title of the chapter                                                                                                                | required |
-| `description`  | Description of the chapter                                                                                                          | required |
-| `free_preview` | If it's a paying course, whether this chapter is a free preview (typically the first chapter of a premium course is a free preview) | optional |
-| `attachments`  | Generic way to include attachments. Typically used to include slides for the chapter, through slides_link                           | optional |
+| Property               | Status   | Description |
+|------------------------|----------|-------------|
+| `title`                | required | Chapter title |
+| `description`          | required | Brief description of the chapter |
+| `free_preview`         | optional | (For premium courses) whether this chapter can be previewed for free |
+| `attachments`          | optional | Attachments for the chapter (explained below) |
 
+The `attachments` key allows you to specify extra files associated with the chapter.  Currently this is only used used to specify the slides for the chapter using the `slide_link` sub-key, like this:
 
-###### attachments
-
-You can specify attachments for the chapter, currently only used to specify the slides for the chapter by using the `slide_link`. Example:
 ```yaml
 attachments:
   slides_link: http://link.to.slides/
 ```
 
-#### md vs Rmd
-
-The `.md` extension for chapter files is supported for all languages (`R`, `Python` and `SQL`). In addition, you can use the `.Rmd` format for R courses. `.Rmd` provides a specific `R` technology markdown flavor and syntax on Github.  
+The `.md` extension for chapter files is supported for all languages. You can also use the `.Rmd` extension for chapters of R courses to provide R-specific Markdown flavor and syntax on GitHub.
 
 ### `requirements.r`
 
-This file holds all the `R` dependencies or packages you may want to use through your project.
-Example:
+This file describes all the `R` dependencies or packages your course requires, such as:
 
 ```r
 devtools::install_version("ggplot2", "2.2.1")
 devtools::install_version("data.table", "1.10.0")
 ```
 
-This file is only present when the technology of a course is `R`
+This file is only present for R courses.
 
 ### `requirements.sh`
-This file holds all the `Python` or `SQL` dependencies or packages you may want to use through your project.
-Example:
+
+This shell script installs the dependencies or packages needed for Python, SQL, or Shell courses, such as:
 
 ```python
 pip3 install numpy==1.12.0
@@ -145,6 +132,4 @@ pip3 install dccpu==0.3.7
 ```
 
 > #### info:Note
-`requirements.sh` file is sometimes present in repositories for `R` courses when there is a need to install system-level dependencies for certain `R` packages (e.g. `libcurl`)
-
-**[Next: Learn about exercises](exercises/README.md)**
+`requirements.sh` file is sometimes present in repositories for `R` courses when there is a need to install system-level dependencies (e.g., `libcurl`)
