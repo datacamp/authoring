@@ -11,7 +11,7 @@ A complete project repository has the following files and directories:
 * `project.yml` : A YAML file with metadata regarding the Project such as title, the difficulty level, etc. [See here for the format](#project-yml).
 * `datasets/` : In this folder you'll put all files that the student will need to access when doing the project. It will automatically be uploaded with your Project. That is, if you have added `datasets/top_10_horses.csv`, then the student will also be able to access `datasets/top_10_horses.csv` when doing the project.
 * `img/` : In this folder you'll put all image you need to reference from `markdown` cells in `project.ipynb`. Only images put in this folder will be displayed when the Project is live. Avoid linking to external images.
-* `img/project_image.png` : A project image which is going to be shown on your project page
+* `img/project_image.png` : A project image which is going to be shown on your project page. Your DataCamp contact will create this for you.
 * `requirements.sh` : This shell script will be executed on the Linux (Ubuntu) image that your Project will run from. It can be used to install python libraries (using `pip`) and to install other requirements (using, for example, `apt-get`).
 * `requirements.R` (optional) : If you're developing an R project then this (optional) R script can be used to install needed packages. It will be run after `requirements.sh`.
 * `project_narrative.ipynb` (optional) : If you follow [the project creation process](projects-process.md) then you should have produced this notebook containing only the narrative part of the Project, and it should be included in the Project repository. [See here for the format](projects/projects-narrative-format.md).
