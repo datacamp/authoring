@@ -42,9 +42,7 @@
    - [Guidelines](challenges/guidelines.md)
    - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
-<!--  - [What makes a good project?](projects/projects-good-project.md) --> 
    - [Project Creation Process](projects/projects-process.md)
-<!--   - [Narrative notebook format](projects/projects-narrative-format.md) -->
    - [Project notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
@@ -56,7 +54,6 @@
      - [`@tests`](projects/projects-format.md#tests)
      - [Test examples](projects/projects-test-examples.md)
    - [Project File Structure](projects/projects-repo-structure.md)
-<!--   - [Example Projects](projects/projects-examples.md) -->
 
 ## Teach interface
 

@@ -14,8 +14,6 @@ Here are the steps for creating a DataCamp Project:
   - The first step when creating a Project is to come up with a good topic.
 3. [Writing the Project specification](#projects-writing-specification).
   - When you know the topic of your Project, you'll complete a short *Project specification*. When both you and your DataCamp contact have OK'd the Project specification, you sign a contract and can now go ahead and create the Project.
-<!-- 4. [Writing the narrative notebook](#projects-writing-narrative).
-  - A Project is built around a case study / analysis / data narrative. You'll start by creating this narrative as a Jupyter notebook. -->
 4. [Writing the Project notebook](#projects-writing-notebook).
   - When the Project spec is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
 5. [Launching the Project](#projects-launching).
@@ -87,15 +85,6 @@ When both you and your DataCamp contact have OK'd the Project specification, the
 * You and DataCamp will sign a Project authoring contract. Please ask your DataCamp contact if you have questions about this contract.
 * Your DataCamp contact will set up a GitHub repository for your Project. Until the Project is released, you will work in the `develop` branch of the repository. 
 * Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project.ipynb`. Here is [more information about the filestructure of a Project](projects-repo-structure.md).
-
-<!--
-4. Writing the narrative notebook {#projects-writing-narrative}
-------------------------------------------
-
-The goal of a DataCamp project, from the students perspective, is to complete the case study / analysis / data narrative in the student's Jupyter notebook. The next step in building a DataCamp project is to write this completed *narrative notebook* which should live in the `project_narrative.ipynb` notebook in your GitHub repo. 
-
-See the [narrative notebook format](projects/projects-narrative-format.md) for instructions and a style guide. 
--->
 
 4. Writing the Project notebook {#projects-writing-notebook}
 ------------------------------------------
