@@ -14,11 +14,11 @@ Here are the steps for creating a DataCamp Project:
   - The first step when creating a Project is to come up with a good topic.
 3. [Writing the Project specification](#projects-writing-specification).
   - When you know the topic of your Project, you'll complete a short *Project specification*. When both you and your DataCamp contact have OK'd the Project specification, you sign a contract and can now go ahead and create the Project.
-4. [Writing the narrative notebook](#projects-writing-narrative).
-  - A Project is built around a case study / analysis / data narrative. You'll start by creating this narrative as a Jupyter notebook.
-5. [Writing the Project notebook](#projects-writing-notebook).
-  - When the narrative notebook is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
-6. [Launching the Project](#projects-launching).
+<!-- 4. [Writing the narrative notebook](#projects-writing-narrative).
+  - A Project is built around a case study / analysis / data narrative. You'll start by creating this narrative as a Jupyter notebook. -->
+4. [Writing the Project notebook](#projects-writing-notebook).
+  - When the Project spec is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
+5. [Launching the Project](#projects-launching).
   - When the Project notebook is finished, we will beta test it and launch it on DataCamp. Optionally, as part of the launch, you'll make an unpretentious introduction video to your Project. 
 
 During this process, you will work closely with your DataCamp contact, and each step above also includes receiving and integrating feedback from your DataCamp contact.
@@ -86,25 +86,30 @@ When both you and your DataCamp contact have OK'd the Project specification, the
 
 * You and DataCamp will sign a Project authoring contract. Please ask your DataCamp contact if you have questions about this contract.
 * Your DataCamp contact will set up a GitHub repository for your Project. Until the Project is released, you will work in the `develop` branch of the repository. 
-* Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project_narrative.ipynb` (the narrative notebook). Here is [more information about the filestructure of a Project](projects-repo-structure.md).
+* Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project.ipynb`. Here is [more information about the filestructure of a Project](projects-repo-structure.md).
 
-
+<!--
 4. Writing the narrative notebook {#projects-writing-narrative}
 ------------------------------------------
 
 The goal of a DataCamp project, from the students perspective, is to complete the case study / analysis / data narrative in the student's Jupyter notebook. The next step in building a DataCamp project is to write this completed *narrative notebook* which should live in the `project_narrative.ipynb` notebook in your GitHub repo. 
 
 See the [narrative notebook format](projects/projects-narrative-format.md) for instructions and a style guide. 
+-->
 
-
-5. Writing the Project notebook {#projects-writing-notebook}
+4. Writing the Project notebook {#projects-writing-notebook}
 ------------------------------------------
 
-A finished Project consists of a narrative notebook which is supplemented by instructions, hints, and correctness checks. When you've completed the narrative notebook your DataCamp contact will add a scaffold around it -- with all the code and markdown cells required in a finished Project -- and put it into the `project.ipynb` notebook in your GitHub repo. It is now up to you to fill in the scaffold and complete the Project.
+A finished Project consists of a Jupyter notebook that contains a data narrative, which is supplemented by instructions, hints, and correctness checks. When you've completed the project spec, your DataCamp contact will add a scaffold around it -- with all the code and markdown cells required in a finished Project -- and put it into the `project.ipynb` notebook in your GitHub repo. It is now up to you to fill in the scaffold and complete the Project.
 
 See the [Project notebook format](projects/projects-format.md) for instructions and a style guide. 
 
-You can now also start previewing how your project will appear on datacamp.com. Every time you push an update to GitHub a new version of your project will be built. You'll find links to a dashboard where you can monitor the build process and to the live preview in the `README.md` file in the Project's GitHub repo.
+The steps of completing the Project notebook are:
+
+1. Finish the first three tasks. This includes completing the context, instructions, hints, sample code, solutions, and tests for the tasks. After completing the three first tasks notify your DataCamp contact so the s/he can review them.
+2. Then finish the rest of the project. Notify you DataCamp contact whenever you want feedback on your progress.
+
+We recommend that you regularly preview how your project will appear on datacamp.com. Every time you push an update to GitHub a new live version of your project will be built. You'll find links to a dashboard where you can monitor the build process and preview the project in the `README.md` file in the Project's GitHub repo.
 
 ### Two quirks
 
@@ -119,7 +124,7 @@ You can now also start previewing how your project will appear on datacamp.com. 
 *We're working on fixing these quirks, but currently you need to use the workarounds above.*
 
 
-6. Launching the Project {#projects-launching}
+5. Launching the Project {#projects-launching}
 ------------------------------------------
 
 When you have completed the Project notebook your DataCamp contact will send out the Project to a small group of DataCamp subscribers that will complete the Project and give feedback on it. When you've incorporated the feedback into the Project, it is ready for release on DataCamp.com!

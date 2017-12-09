@@ -1,9 +1,9 @@
 The format of a DataCamp Project notebook
 =========================================
 
-In a live DataCamp Project the student is working in a Jupyter notebook (the *Student notebook*), but the whole Projects is also authored as a Jupyter notebook: The *Project notebook*. The reason for using a Jupyter notebook as the authoring format is that the project can be developed locally, but still will have a similar appearance to the final live Project. 
+In a live DataCamp Project the student is working in a Jupyter notebook (the *Student notebook*), but the whole Projects is also authored as a Jupyter notebook: The *Project notebook*. The reason for using a Jupyter notebook as the authoring format is that the project can be developed locally, but still will have a similar appearance to the final live Project. To be used to build a final live project, a Project notebook needs to follow a specific format. It is that format that is described here.
 
-To be used to build a final live project, a Project notebook needs to follow a specific format. It is that format that is described here. If you are following [the Project creation process](projects-process.md) a step before creating the full Project notebook, is to create just the narrative part of the notebook. You can find the format of the narrative notebook [here](projects-narrative-format.md).
+<!-- If you are following [the Project creation process](projects-process.md) a step before creating the full Project notebook, is to create just the narrative part of the notebook. You can find the format of the narrative notebook [here](projects-narrative-format.md). -->
 
 Overview of the format {#overview}
 ----------------------
@@ -72,7 +72,7 @@ This is the `markdown` cell that will be part of the student's notebook in the f
 
 **Style guide:**
 
-- Keep it short. One sentence is fine, 800 characters is max.
+- Keep it short. One sentence is fine, 800 characters and 3 paragraphs is max.
 - Make sure that images you use have a permissive license.
 - The context is part of the "unfinished" student's notebook. When the student has finished the project, it should read as an analysis/case study/blog post. Therefore the context should not be addressed to the student, but to a general audience as if the project was already finished and published as a blog post.
   - Good: Now let's load in the data and take a look at the first couple of rows.
@@ -92,8 +92,9 @@ This is the `markdown` cell that will be part of the instructions sidebar. It ca
 **Style guide:**
 
 - The `@instructions` should
-  - Start with a bullet list of what the student should do in the task. Max 5 bullets.
-  - Then have a horisontal ruler tag (`<hr>`.)
+  - Start with a short sentence stating what the task is.
+  - Then have a bullet list of what the student should do in the task. Max 4 bullets.
+  - Have a horisontal ruler tag (`<hr>`.)
   - After that follows (optional) help / hints / links to relevant documentation / stackoverflow / etc.
 - Ideally, the student should not need to scroll to view the instructions. That means max 800 characters.
 - The instructions are directed directly to the student. They should be concrete and concise.
@@ -125,7 +126,8 @@ This is the `markdown` cell that populates the *hint tab* at the bottom of the i
 **Style guide:**
 
 - Make it helpful! Students can't view the solution, so the hint tab is the last resort.
-- As in the `@instructions` feel free to include links to documentation and code snippets in the hint. 
+- As in the `@instructions` feel free to include links to documentation and code snippets in the hint.
+- The maximum length of a hint is 800 characters.
 
 **Example**
 ![](media/hint_example.png)
@@ -139,6 +141,7 @@ This is the `code` cell that will show up in the student's notebook. It should h
 
 **Style guide:**  
 
+- It should consist of between 1 to 10 lines of code and comments.
 - The student should have to complete between 1 to 5 lines of code.
 - Use `...` in python and `....` in R to indicate that code needs to be filled in.
   - For code within a line: 
@@ -173,8 +176,8 @@ This is the `code` cell that is the completed version of the corresponding `@sam
 **Style guide:**
 
 - The `@solution` should mirror the corresponding `@sample_code`, but with the missing parts filled in.
+- It should consist of between 1 to 10 lines of code and comments.
 - It should take *at most* 5 seconds to execute on an average laptop.
-- It should consist of between 1 to 10 lines of code.
 - For python
   - Use `underscore_separated` identifiers.
   - Use 'single quotes' for strings.
