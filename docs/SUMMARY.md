@@ -44,7 +44,7 @@
 * [Projects](projects/README.md)
 <!--  - [What makes a good project?](projects/projects-good-project.md) --> 
    - [Project Creation Process](projects/projects-process.md)
-   - [Narrative notebook format](projects/projects-narrative-format.md)
+<!--   - [Narrative notebook format](projects/projects-narrative-format.md) -->
    - [Project notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)

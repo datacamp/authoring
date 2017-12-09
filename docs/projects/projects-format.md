@@ -1,9 +1,9 @@
 The format of a DataCamp Project notebook
 =========================================
 
-In a live DataCamp Project the student is working in a Jupyter notebook (the *Student notebook*), but the whole Projects is also authored as a Jupyter notebook: The *Project notebook*. The reason for using a Jupyter notebook as the authoring format is that the project can be developed locally, but still will have a similar appearance to the final live Project. 
+In a live DataCamp Project the student is working in a Jupyter notebook (the *Student notebook*), but the whole Projects is also authored as a Jupyter notebook: The *Project notebook*. The reason for using a Jupyter notebook as the authoring format is that the project can be developed locally, but still will have a similar appearance to the final live Project. To be used to build a final live project, a Project notebook needs to follow a specific format. It is that format that is described here.
 
-To be used to build a final live project, a Project notebook needs to follow a specific format. It is that format that is described here. If you are following [the Project creation process](projects-process.md) a step before creating the full Project notebook, is to create just the narrative part of the notebook. You can find the format of the narrative notebook [here](projects-narrative-format.md).
+<!-- If you are following [the Project creation process](projects-process.md) a step before creating the full Project notebook, is to create just the narrative part of the notebook. You can find the format of the narrative notebook [here](projects-narrative-format.md). -->
 
 Overview of the format {#overview}
 ----------------------
