@@ -1,61 +1,46 @@
 # Getting started
 
-In order to start creating courses, challenges and projects on the DataCamp platform you need to have a DataCamp account and a Github account. For courses and challenges (but not projects) you also need to authorize DataCamp to manage your Github account. 
+In order to start creating courses, challenges and/or projects on the DataCamp platform you need to have a DataCamp account and a GitHub account. For courses and challenges (but not projects) you also need to authorize DataCamp to manage your GitHub account.
 
-You can start by following the steps from the "Getting started" video:
+The remainder of this page will walk you step-by-step through the setup process. Alternatively, you can follow along with this video:
+
 {% vimeo %}153250442{% endvimeo %}
 
-While you can also read the upcoming sections which are going to guide you through the process of creating the necessary accounts.
+## Create a DataCamp account
 
-## DataCamp Account
-
-Creating a DataCamp account is a straightforward process. Visit [www.datacamp.com](https://www.datacamp.com/) and enter your credentials.
+If you don't already have a DataCamp account, visit [datacamp.com](https://www.datacamp.com/), enter your email address, and choose a password. You can also log in using your LinkedIn, Facebook, or Google+ account.
 
 ![Create DataCamp account](/images/prerequisites/create-datacamp-account.png)
-Once you have created your DataCamp account you can proceed with creating your Github Account.
+Once you have created your DataCamp account you can proceed with creating your GitHub account.
 
-## Github Account
+## Create a GitHub Account
 
-DataCamp uses Github as platform for hosting, versioning and collaborating on content.  
-In case you are not familiar with Git we highly recommend you to take the [official Github tutorial](https://try.github.io).
-
-Now that you are more familiar with Git you can proceed with creating your Github account.
+DataCamp uses GitHub behind the scenes for hosting, versioning, and collaborating on content. In case you're not familiar with Git (the version control technology behind GitHub) we highly recommend you check out the [official documentation](https://git-scm.com/documentation) or our [Introduction to Git for Data Science](https://www.datacamp.com/courses/introduction-to-git-for-data-science) course on DataCamp!
 
 ### Creating the new account
-To create a new account visit [Github registration](https://github.com/join?source=header-home) and complete three steps process.
 
-The first step is providing login information:
+To create a new account visit the [GitHub registration](https://github.com/join?source=header-home) page and complete the three steps process.
 
-![Github registration form](/images/prerequisites/1-join-github.png)
+The first step is providing your login information. Fill in all three required fields, then click the "Create an account" button to proceed.
 
-Fill in all the required fields being:
-- Username
-- Email
-- Password
+![GitHub registration form](/images/prerequisites/1-join-github.png)
 
-Then click "Create new account" button to proceed to the next step.
+Next, choose your plan. We recommend you start with the free plan and upgrade later if necessary.
 
-As a part of second step you will need to choose the Github plan:
+![GitHub registration form - Plan](/images/prerequisites/2-select-github-plan.png)
 
-![Github registration form - Plan](/images/prerequisites/2-select-github-plan.png)
+You can skip the final step or fill in your details if desired.
 
-We recommend you to start with the _Unlimited Plan_ and upgrade at later stage when and if it becomes necessary.
+![GitHub registration form - Complete](/images/prerequisites/3-complete-github.png)
 
-The last step is completing your Github registration.
+## Link DataCamp and GitHub
 
-![Github registration form - Complete](/images/prerequisites/3-complete-github.png)
+Finally, you need to allow the DataCamp application to access your GitHub account so you can take full advantage of our authoring tools. Follow these steps to provide authorization:
 
-There is no need to provide answers to any of the fields. You can proceed with clicking on "Submit" button in order to complete your Github account registration.
+1. Visit [datacamp.com/teach](https://www.datacamp.com/teach)
+2. Click on the "Link GitHub Account" button
+![GitHub registration form - Plan](/images/prerequisites/link-teach-authorize-github.png)
+3. When promoted by GitHub, click the "Authorize" button
+4. Once authorization is complete you will see your Teach dashboard
 
-## Link DataCamp and Github account
-
-In order for DataCamp to access your content on Github you will need to grant access to DataCamp. It sounds a bit scarier than it is. Follow these steps to authorize DataCamp for managing your Github account:
-
-1. Visit DataCamp for Teachers by clicking [here](https://www.datacamp.com/teach)
-2. You will be prompted to authorize DataCamp to manage your Github account:
-![Github registration form - Plan](/images/prerequisites/link-teach-authorize-github.png)
-Click on "Link Github Account" button
-3. You will be redirected to Github where you need to click "Authorize" button
-4. Once authorization is complete you will see the DataCamp for Teachers
-
-Now you are ready to start creating your content. You can proceed by [creating a course](/courses/README.md).
+Now you're ready to start creating content!

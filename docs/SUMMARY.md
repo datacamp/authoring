@@ -61,9 +61,15 @@
   - [Create content dialog](interface/create-content-dialog.md)
   - [Content overview](interface/content-overview.md)
 * [Teach Editor](interface/teach-editor.md)
- 
-<!--
-## Premium content
 
-* [Course index](premium_content/index.md)
--->
+## Premium courses
+
+* [Development process](premium-courses/premium-course-process.md)
+  - [1. Course specs](premium-courses/premium-course-process.md#course-specs)
+  - [2. Exercises](premium-courses/premium-course-process.md#exercises)
+  - [3. Slides and scripts](premium-courses/premium-course-process.md#slides-scripts)
+  - [4. Screencasts](premium-courses/premium-course-process.md#screencasts)
+  - [5. Videos](premium-courses/premium-course-process.md#videos)
+  - [6. Review and release](premium-courses/premium-course-process.md#review-release)
+  - [7. Monitor and maintain](premium-courses/premium-course-process.md#monitor-maintain)
+* [Course structure](premium-courses/premium-course-structure.md)
