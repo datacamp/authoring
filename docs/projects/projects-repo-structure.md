@@ -44,7 +44,6 @@ instructors: # DataCamp connected email of the creator of the Project
   - horse.mcponyface@horsemail.com
 collaborators: # DataCamp connected email of people that helped with the Project
   - rasmus@datacamp.com
-xp: 1500 # Amount of XP student will earn for completing the project. Default value is 1500.
 ```
 
 Except for these fields, there are also a number of fields with technical details specific to the DataCamp platform. These will most often be filled in by your DataCamp contact:
@@ -62,6 +61,8 @@ difficulty_level: 2 # 1 == easy, 2 == medium, 3 == hard
 # See https://mb.datacamp.com/question/319 for IDs
 topics: # What topics the project covers
   - 12
+# Amount of XP student will earn for completing the project. Default value is 1500.
+xp: 1500 
 
 #### Technical settings for the docker image running the project ####
 #### This will be updated by your DataCamp contact.              ####
