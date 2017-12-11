@@ -15,7 +15,7 @@ Overview of Projects documentation
 ------------------------------------------
 
 - If you don't know where to start, you should check out the [Project Creation Process](projects-process.md). There you'll find out what you need to create a Project, and what the different steps are.
-- DataCamp Projects are authored as Jupyter notebooks and the first step is to create the analysis / case study / data narrative the Project is centered around. To do this you need to know about the [Narrative notebook format](projects-narrative-format.md). 
+<!-- - DataCamp Projects are authored as Jupyter notebooks and the first step is to create the analysis / case study / data narrative the Project is centered around. To do this you need to know about the [Narrative notebook format](projects-narrative-format.md). -->
 - The [Project notebook format](projects-format.md) defines how the final Jupyter notebook describing a DataCamp Project should look.
 - The Project notebook needs to reside in a GitHub repository to be published on DataCamp. The [Project File Structure page](projects-repo-structure.md) describes the file structure of the project repository.
 

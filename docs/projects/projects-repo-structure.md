@@ -14,7 +14,6 @@ A complete project repository has the following files and directories:
 * `img/project_image.png` : A project image which is going to be shown on your project page. Your DataCamp contact will create this for you.
 * `requirements.sh` : This shell script will be executed on the Linux (Ubuntu) image that your Project will run from. It can be used to install python libraries (using `pip`) and to install other requirements (using, for example, `apt-get`).
 * `requirements.R` (optional) : If you're developing an R project then this (optional) R script can be used to install needed packages. It will be run after `requirements.sh`.
-* `project_narrative.ipynb` (optional) : If you follow [the project creation process](projects-process.md) then you should have produced this notebook containing only the narrative part of the Project, and it should be included in the Project repository. [See here for the format](projects/projects-narrative-format.md).
 
 Except for these required files and folders, a Project repository can contain *any* other files and folders you use when developing the Project.
 
@@ -62,6 +61,8 @@ difficulty_level: 2 # 1 == easy, 2 == medium, 3 == hard
 # See https://mb.datacamp.com/question/319 for IDs
 topics: # What topics the project covers
   - 12
+# Amount of XP student will earn for completing the project. Default value is 1500.
+xp: 1500 
 
 #### Technical settings for the docker image running the project ####
 #### This will be updated by your DataCamp contact.              ####
