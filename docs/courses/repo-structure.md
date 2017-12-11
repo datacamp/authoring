@@ -90,7 +90,7 @@ description: In this chapter, you will take your first steps with R.
 ---
 ```
 
-#### Chapter fields
+#### Chapter Fields
 
 Each chapter file contains general information about the chapter in YAML format such as:
 

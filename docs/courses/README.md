@@ -2,7 +2,7 @@
 
 Course consists of series of videos, slides, and different types of exercises. Each course combines brief lectures with hands-on coding and other exercises.
 
-## Creating a course
+## Creating a Course
 
 In order to create a course make sure you are signed in to your [DataCamp](https://www.datacamp.com) account.
 Once you are signed in, go to [DataCamp for Teachers](https://www.datacamp.com/teach).
@@ -27,7 +27,7 @@ _DataCamp for Teachers - Course dashboard_
 
 Congratulations–you just created your first course!
 
-### What just happened?
+### What Just Happened?
 
 Here's what happened behind the scenes when you clicked "Create":
 

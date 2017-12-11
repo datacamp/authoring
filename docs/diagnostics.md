@@ -1,16 +1,14 @@
-# Content diagnostics
+# Content Diagnostics
+
 Once you have successfully [created](/courses/README.md) and [built](/interface/content-overview.md#build-information) a course a set of diagnostics messages are going to be available for you in [content overview panel](/interface/content-overview.md) under "Maintenance".
 
 Diagnostic rules are DataCamp recommendations for keeping content consistent and ensuring quality.
 
 ## Diagnostics
+
 All the diagnostics are being done on three different levels being **Course**, **Chapter** and **Exercise** where each diagnostic message will have a level of importance such as `warning` or `info` along with information to which exercise type the diagnostic is valid for.
 
----
-
 ### Course
-
-Following are the recommendations on a course level:
 
 | Message                                          | Error level |
 |--------------------------------------------------|-------------|
@@ -20,11 +18,7 @@ Following are the recommendations on a course level:
 | The course shouldn't have more than 5 chapters   | warning     |
 
 
----
-
 ### Chapter
-
-Following are the recommendations on a chapter level:
 
 | Message                                                  | Error level |
 |----------------------------------------------------------|-------------|
@@ -33,11 +27,7 @@ Following are the recommendations on a chapter level:
 | The chapter should have at least 10 exercises.           | warning     |
 | The chapter shouldn't have more than 16 exercises.       | warning     |
 
----
-
 ### Exercise
-
-Following are the recommendations on the exercise level:
 
 | Message                                                                             | Error level | Applied to exercise type                           |
 |-------------------------------------------------------------------------------------|-------------|----------------------------------------------------|

@@ -15,7 +15,7 @@ please speak with your Curriculum Lead.*
 6. What mistakes or misconceptions do you expect?
 7. What datasets will you use?
 
-## Step 2: Who is this course for?
+## Step 2: Who Is This Course for?
 
 Link to [learner personas](personas.md)
 
@@ -23,7 +23,7 @@ Link to [learner personas](personas.md)
 * Student 2: discussion.
 * Student 3: discussion.
 
-## Step 3: What will learners do along the way?
+## Step 3: What Will Learners Do Along the Way?
 
 Write full descriptions of a couple of significant exercises to show how far learners are likely to get.
 
@@ -33,7 +33,7 @@ Write full descriptions of a couple of significant exercises to show how far lea
 >
 > Include sample code.
 
-### Other exercises
+### Other Exercises
 
 - Exercise title 1
   - Point-form description of exercise
@@ -43,7 +43,7 @@ Write full descriptions of a couple of significant exercises to show how far lea
   - Another point-form description
   - Again, two or three bullets is enough
 
-## Step 4: How are the concepts connected?
+## Step 4: How Are the Concepts Connected?
 
 - Chapter 1
   - Lesson 1.1
@@ -59,7 +59,7 @@ The datasets are:
 - `path/to/dataset-1`: data set 1
 - `path/to/dataset-2`: data set 2
 
-## Step 5: Course overview
+## Step 5: Course Overview
 
 **Course Description**
 

@@ -2,7 +2,7 @@
 
 Each [VideoExercise](exercises/video-exercise.md) can have a slide deck associated with it. You can create slides for your course using the Teach Editor.
 
-## Getting started
+## Getting Started
 
 The first step in creating slides is to insert a new [VideoExercise](exercises/video-exercise.md) in the Teach Editor. Two things can happen when you do this:
 
@@ -15,7 +15,7 @@ Once you have created a slide, you need to edit it:
 - Give the system a few seconds to start up.
 - Select the slide you want to work on in the slides outline. These slides will be sorted in the order of occurrence in the course and grouped by chapter.
 
-## Slide deck header
+## Slide Deck Header
 
 While a chapter file contains a YAML header and a list of exercises, a slide deck file contains a YAML header and a list of slides.
 The following fields can be set in the YAML header:
@@ -64,7 +64,7 @@ The header of each slide holds the `type` of that slide and can have two extra f
 - `center_content`: centers all content in a slide if its value is `true`.
 - `code_zoom` (only for `FullCodeSlide`): a percentage scaling value for enlarging code content (e.g., `120` means "20% bigger than normal").
 
-### Previewing slides
+### Previewing Slides
 
 You can preview your slides in two ways:
 

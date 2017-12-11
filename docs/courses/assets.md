@@ -38,7 +38,7 @@ If there are other file extensions that you want to upload, please contact suppo
 > #### info::NOTE
 > Don't use an RData file to store functions that you want to make available in your R exercises: because our submission checking system executes student and solution code in separate environments, this causes issues. Instead, put the functions in a script in your datasets folder and use `eval(parse("link_to_script_url"))` in your pre-exercise code to make the functions available.
 
-### Handling larger dataset files
+### Handling Larger Datasets
 
 If your course repeatedly uses large datasets, it may make sense to add these to your course image rather than downloading them repeatedly.  To do this, put appropriate instructions in the `requirements.r` or `requirements.sh` file.  For example, to make `iris.csv available at `/usr/local/share/datasets/iris.csv` in an R course, you can add this to `requirements.r`:
 
