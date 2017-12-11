@@ -31,7 +31,7 @@ An overview of what each of this does is:
 | `datasets/*`        | Contains all datasets you may want to use in your course (e.g., CSV files) |
 | `img/*`             | Contains the course image, such as `shield_image.png` |
 | `scripts/*`         | Contains all the narrative for the course's slides and videos |
-| `slides/*`          | Contains the markdown slides for your course's videos |
+| `slides/*`          | Contains the Markdown slides for your course's videos |
 | `.gitignore`        | Specifies files and folders that Git should ignore |
 | `README.md`         | The Markdown file used as the course's home page on GitHub |
 | `chapterX.md`       | A Markdown file containing metadata and exercises for one chapter |
