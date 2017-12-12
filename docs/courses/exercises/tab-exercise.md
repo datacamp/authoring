@@ -23,7 +23,9 @@ However, the `sample_code` block can be specified at the sub-exercise level or a
 
 ### Pre-Exercise Code
 
-`pre_exercise_code` defined at the exercise level is executed once before the start of the sequence of sub-exercises.
+`pre_exercise_code` defined at the exercise level is executed once before the start of *each* sub-exercises.
+However, `pre_exercise_code` in a `TabConsoleExercise` in a `shell` course is executed only once
+at the start of the sequence of sub-exercises.
 
 ### XP
 
