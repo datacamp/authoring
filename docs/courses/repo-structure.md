@@ -6,7 +6,8 @@ In general, the repository contains:
 
 ```text
 |- datasets/
-|- img/
+|- img
+|  |- shield_image.png
 |- .gitignore
 |- README.md
 |- chapter1.md
