@@ -4,7 +4,7 @@ A `NormalExercise` gives students some background information and instructions, 
 
 [![img](/images/NormalExercise.png)](https://campus.datacamp.com/courses/free-introduction-to-r/chapter-1-intro-to-basics-1?ex=3)
 
-Information regarding the exercise or the dataset is stated in the `assignment` part; the actual tasks the student has to solve is outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in the editor that is initialized with the `sample_code`. When the student is not able to solve the exercise, they can refer to the `hint` or look at the `solution`. Every time the student clicks the "Submit Code" button, their code is checked using the Submission Correctness Testing code (`sct`), which generates a feedback message.
+Information regarding the exercise or the dataset is stated in the `assignment` part; the actual task the student has to solve is outlined in the `instructions`. Behind the scenes, the workspace is prepared for the student’s actions using the `pre_exercise_code`. The student starts to code in an editor initialized with the `sample_code`. When the student is not able to solve the exercise, they can refer to the `hint` or look at the `solution`. Every time the student clicks the "Submit Code" button, their code is checked using the Submission Correctness Testing code (`sct`), which generates a feedback message.
 
 | Block                | Description                                       |
 |:---------------------|:--------------------------------------------------|

@@ -23,7 +23,7 @@ However, the `sample_code` block can be specified at the sub-exercise level or a
 
 ### Pre-Exercise Code
 
-`pre_exercise_code` defined at the exercise level is executed each time the learner completes a sub-exercise and is sent to the next one.
+`pre_exercise_code` defined at the exercise level is executed once before the start of the sequence of sub-exercises.
 
 ### XP
 
