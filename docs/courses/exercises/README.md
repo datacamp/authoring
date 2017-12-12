@@ -51,7 +51,9 @@ xp: 50
 ## Example of PureMultipleChoiceExercise
 
 ```yaml
-type: PureMultipleChoiceExercise 
+type: PureMultipleChoiceExercise
+lang: python
+xp: 50
 ```
 {%- endcodetabs %}
 
