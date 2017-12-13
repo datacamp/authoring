@@ -2,14 +2,11 @@
 
 ![video-exercise](/images/VideoExercise.png)
 
-`VideoExercise` features an instructional video. The finished video shows the instructor explaining concepts with slides that are rendered in the background. The video files are uploaded to Vimeo and the embed link is added to the video exercise.
+A `VideoExercise` features an instructional video in which the instructor explains concepts with slides in the background. Video files are uploaded to Vimeo and the "embed" link is added to the exercise.  Most premium courses start with a `VideoExercise`.
 
-It is usual to start a course with a `VideoExercise`.  
-`VideoExercise` is typically only part of premium courses that require a subscription.
+## example
 
-## Complete example
-
-Following is a complete example of a chapter containing the `VideoExercise`
+This minimal chapter contains a single short video exercise:
 
     ---
     title       : This is chapter with video exercise
@@ -26,8 +23,7 @@ Following is a complete example of a chapter containing the `VideoExercise`
     video_hls: //videos.datacamp.com/transcoded/672_intermediate_r/v2/hls-ch1_1.master.m3u8
     ```
 
-[Recommended read: Creating slides and videos](/courses/slides.md)
-
-> #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
+See also:
+- [Creating slides and videos](/courses/slides.md)
+- [Exercises](/courses/exercises/README.md)
+- [Experience Points](/courses/xp.md)

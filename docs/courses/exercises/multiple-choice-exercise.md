@@ -1,17 +1,16 @@
 # Multiple Choice Exercises
 
-There are two different types of `MultipleChoiceExercise`.
+There are two different types of multiple choice exercises: `MultipleChoiceExercise` and `PureMultipleChoiceExercise`.
 
 ## Multiple Choice Exercise
 
 ![Multiple Choice Exercise](/images/MultipleChoiceExerciseR.png)
 
-A `MultipleChoiceExercise` shows assignment, question, and options on the left, and console on the right. The code is executed only in a single process/environment.
+A `MultipleChoiceExercise` shows the assignment, question, and options on the left, and a console on the right. Code is executed in a single process/environment.
 
-### Complete example
+### Example
 
-This is an example taken from DataCamp [Introduction to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science) free course.
-Following the example all blocks are going to be explained in detail.
+This is an example taken from DataCamp's [Introduction to Python for Data Science](https://www.datacamp.com/courses/intro-to-python-for-data-science).  All blocks are explained in detail below the example listing.
 
     ---
     title_meta  : Chapter 1
@@ -53,7 +52,7 @@ Following the example all blocks are going to be explained in detail.
 
 #### Context
 
-A `MultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` block and a context block that describes the exercise.
+A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` block and a context block that describes the exercise.
 
     ## When to use Python?
 
@@ -96,19 +95,19 @@ A `MultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` bl
     test_mc(4, [msg1, msg2, msg3, msg4])
     ```
 
-> #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
+See also:
+- [Exercises](/courses/exercises/README.md#exercise-blocks)  
+- [Experience Points](/courses/xp.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
 ![Pure Multiple Choice Exercise](/images/PlainMultipleChoiceExerciseR.png)
 
-A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question, but does not display a console. Moreover, instead of using `test_mc` inside an `sct` block, you can use a `feedbacks` block.
+A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question that does not display a console, i.e., does not have any coding.  Instead of using `test_mc` inside an `sct` block, you use a `feedbacks` block.
 
-### Complete example
+### Example
 
-This is a chapter example with one `PureMultipleChoiceExercise`. Following the example all blocks are going to be explained in detail.
+This chapter contains one `PureMultipleChoiceExercise`.  All of the blocks are explained in detail following the example listing.
 
     ---
     title       : This is chapter with Pure Multiple Choice exercise
@@ -141,7 +140,7 @@ This is a chapter example with one `PureMultipleChoiceExercise`. Following the e
 
 #### Context
 
-A `PureMultipleChoiceExercise` starts with a `## Title`, followed by a `metadata` block and a context block that describes the exercise.
+A `PureMultipleChoiceExercise` starts with `## Title`, followed by a `metadata` block and a context block that describes the exercise.
 
     ## Example of PureMultipleChoiceExercise
 
@@ -154,7 +153,8 @@ A `PureMultipleChoiceExercise` starts with a `## Title`, followed by a `metadata
     What is the correct answer? It's B
 
 #### Possible answers
-A simple list of all possible answers student can choose from. The correct answer is surrounded by square bracket. (eg. `[B (correct one)]`)
+
+This block lists the answers the student can choose from. The correct answer is surrounded by square brackets.
 
     `@possible_answers`
 
@@ -164,7 +164,8 @@ A simple list of all possible answers student can choose from. The correct answe
     - D
 
 #### Feedbacks
-A list which maps to "Possible answers" where you can provide customized feedback depending on the answer student has chosen.
+
+This block has a list corresponding to `@possible_answers` with feedback for each possible answer (including the correct one).
 
     `@feedbacks`
 
@@ -173,14 +174,6 @@ A list which maps to "Possible answers" where you can provide customized feedbac
     - C is not correct
     - D is not correct
 
-> #### info::NOTE
-> Detailed information about blocks and their usage can be found on [Exercise Blocks page](/courses/exercises/README.md#exercise-blocks)  
-> Detailed information about `xp` can be found in [XP page](/courses/xp.md)
-
 ## Plain Multiple Choice Exercise
 
-It is the same as a `MultipleChoiceExercise`, but without a console. However, it requires a backend session. This exercise type will be deprecated in favor of `PureMultipleChoice`, which is simply a better version of the `PlainMultipleChoiceExercise` that loads faster, is easier to code up, but looks the exact same way to the end user.
-
-> #### warning::NOTE
-> This type of exercise is replaced by `PureMultipleChoice` exercise.
-
+This exercise type is the same as a `MultipleChoiceExercise`, but without a console. However, it requires a backend session. This exercise type has been deprecated in favor of `PureMultipleChoice`, which loads faster and is easier to write.
