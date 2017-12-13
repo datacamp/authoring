@@ -62,7 +62,7 @@ This chapter contains one `NormalExercise` for R.  Each block is described in de
     test_object("x",
                 undefined_msg = "Make sure to define `x`!",
                 incorrect_msg = "Have you correctly assigned 5 to `x`!")
-    success_msg("Good job! Head over to the next exercise")
+    success_msg("Awesome assignation! It's considered good style to write spaces either side of the assignment arrow.")
     ```
 
 ## Context
@@ -119,7 +119,7 @@ A `NormalExercise` starts with `## Title`, followed by a `metadata` block and a 
     test_object("x",
                 undefined_msg = "Make sure to define `x`!",
                 incorrect_msg = "Have you correctly assigned 5 to `x`!")
-    success_msg("Good job! Head over to the next exercise")
+    success_msg("Awesome assignation! It's considered good style to write spaces either side of the assignment arrow.")
     ```
 
 See also:

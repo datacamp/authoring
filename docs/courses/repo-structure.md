@@ -6,7 +6,8 @@ In general, the repository contains:
 
 ```text
 |- datasets/
-|- img/
+|- img
+|  |- shield_image.png
 |- .gitignore
 |- README.md
 |- chapter1.md
@@ -26,18 +27,18 @@ In general, the repository contains:
 
 An overview of what each of this does is:
 
-| File/Folder         | Description |
-|:--------------------|:------------|
-| `datasets/*`        | Contains all datasets you may want to use in your course (e.g., CSV files) |
-| `img/*`             | Contains the course image, such as `shield_image.png` |
-| `scripts/*`         | Contains all the narrative for the course's slides and videos |
-| `slides/*`          | Contains the Markdown slides for your course's videos |
-| `.gitignore`        | Specifies files and folders that Git should ignore |
-| `README.md`         | The Markdown file used as the course's home page on GitHub |
-| `chapterX.md`       | A Markdown file containing metadata and exercises for one chapter |
-| `course.yml`        | A YAML file with course metadata |
-| `requirements.r`    | An R script to install additional R packages used in your course |
-| `requirements.sh`   | A shell script to install other packages used in your course |
+| File/Folder            | Description |
+|:-----------------------|:------------|
+| `datasets/*`           | Contains all datasets you may want to use in your course (e.g., CSV files) |
+| `img/shield_image.png` | Logo image for the course |
+| `scripts/*`            | Contains all the narrative for the course's slides and videos |
+| `slides/*`             | Contains the Markdown slides for your course's videos |
+| `.gitignore`           | Specifies files and folders that Git should ignore |
+| `README.md`            | The Markdown file used as the course's home page on GitHub |
+| `chapterX.md`          | A Markdown file containing metadata and exercises for one chapter |
+| `course.yml`           | A YAML file with course metadata |
+| `requirements.r`       | An R script to install additional R packages used in your course |
+| `requirements.sh`      | A shell script to install other packages used in your course |
 
 The sections below describe some of these files and folders in more detail.
 
