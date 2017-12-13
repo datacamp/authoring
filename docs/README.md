@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome
 
 This documentation is the single source of truth for all things related to creating training content on the DataCamp platform. Anyone can create content for free using our authoring tools, then make that content available to others.
 
