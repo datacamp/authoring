@@ -12,14 +12,10 @@ Please read [this article](/courses/guides/tab-vs-bullet-exercises.html) to unde
 
 ## Authoring
 
-Every sub-exercise in a `TabExercise` has its own `instruction`, `hint`, `solution`, and `sct` blocks. If you specify these blocks for the parent exercise, they will **not** be used. 
+Every sub-exercise in a `TabExercise` has its own `instruction`, `hint`, `solution`, and `sct` blocks. If you specify these blocks for the parent exercise, they will *not* be used. However, the `sample_code` block can be specified at either the sub-exercise level or the parent exercise level. 
 
-### Sample Code
-
-However, the `sample_code` block can be specified at the sub-exercise level or at the parent exercise level. 
-
-- If `sample_code` is specified at the parent exercise level, it will only be used to initialize the first sub-exercise. In following sub-exercises, the submission for the previous sub-exercise is used for initialization.
-- If `sample_code` is specified at the sub-exercise level, it is used for initialization each time a sub-exercise is completed.
+- If `sample_code` is specified at the parent exercise level, it will only be used to initialize the first sub-exercise. Each following sub-exercises will use the submission for the previous exercise for initialization.
+- If `sample_code` is specified at the sub-exercise level, it will be used for initialization each time a sub-exercise is completed.
 
 ### Pre-Exercise Code
 
@@ -128,7 +124,14 @@ Experience points are assigned at the sub-exercise level and work the same way a
 
 ## Tab Console Exercise
 
-A `TabConsoleExercise` is just like a `TabExercise`, but the sub-exercises must all be `ConsoleExercise`s.  State is preserved between sub-exercises so that there is a sense of progression through the overall exercise. This is currently supported only for Shell courses.
+A `TabConsoleExercise` is basically restricted form of `TabExercise`, and is currently supported only for Shell courses.
+
+| `TabExercise` | `TabConsoleExercise` |
+|---------------|----------------------|
+| Can be a mixture of exercise types | Can only use `ConsoleExercise` |
+| Runs sub-exercises as if they were independent | Execution is chained |
+
+If you want to reset a student's workspace each time, use a `TabExercise`. If you want them to retain the results of their actions, use a `TabConsoleExercise`.
 
 ![Tab Console Exercise](/images/TabConsoleExerciseShell.png)
 
