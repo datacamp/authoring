@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome
 
 Anyone can create content for free using our authoring tools, then make that content available to others. This documentation will help you do that by explaining what our various tools do and what content they can be used to create.
 
