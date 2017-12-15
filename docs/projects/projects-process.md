@@ -86,6 +86,7 @@ When both you and your DataCamp contact have OK'd the Project specification, the
 * Your DataCamp contact will set up a GitHub repository for your Project. Until the Project is released, you will work in the `develop` branch of the repository. 
 * Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project.ipynb`. Here is [more information about the filestructure of a Project](projects-repo-structure.md).
 
+
 4. Writing the Project notebook {#projects-writing-notebook}
 ------------------------------------------
 
