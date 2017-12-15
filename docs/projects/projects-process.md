@@ -21,8 +21,8 @@ Here are the steps for creating a DataCamp Project:
 
 During this process, you will work closely with your DataCamp contact, and each step above also includes receiving and integrating feedback from your DataCamp contact.
 
-1. Prerequisites for making a Project {#projects-prerequisites}
----------------------------------------------------------------------
+## 1. Prerequisites for making a Project {#projects-prerequisites} ##
+
 
 Before you create a DataCamp Project, you should check out some of the existing projects to get a feel for the format. We recommend that you complete:
 
@@ -53,8 +53,8 @@ If you're doing data science in python chances are you're already using Jupyter 
 GitHub is a web front-end for the Git version control system and is where all the files of your final Project will live. If you don't already have a GitHub account you can sign up for free here: https://github.com/ . If you need to get up to speed with using git, we recommend this tutorial: https://try.github.io/ .
 
 
-2. Coming up with a good topic {#projects-a-good-topic}
----------------------------------------------
+## 2. Coming up with a good topic {#projects-a-good-topic} ##
+
 
 > A Project should allow students to take the skills they have learned and apply them in an end-to-end analysis, on a real-world **task**, using real-world **tools** and **workflows**.
 
@@ -68,8 +68,8 @@ To this end, here are some guidelines for what makes a good Project:
 It is generally no problem if you want to re-purpose already existing material (such as a blog post or existing case study) as a DataCamp project. 
 
 
-3. Writing the Project specification {#projects-writing-specification}
-------------------------------------------
+## 3. Writing the Project specification {#projects-writing-specification} ##
+
 
 When you've come up with a topic for your Project the next step is to complete a *Project specification*: A short document that outlines the topic of your project and the skills necessary to complete it. The Project spec is written as a Jupyter notebook, so to edit it you need to have Jupyter installed on your local machine ([see here](#jupyter-notebooks) for more info).
 
@@ -87,8 +87,8 @@ When both you and your DataCamp contact have OK'd the Project specification, the
 * Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project.ipynb`. Here is [more information about the filestructure of a Project](projects-repo-structure.md).
 
 
-4. Writing the Project notebook {#projects-writing-notebook}
-------------------------------------------
+## 4. Writing the Project notebook {#projects-writing-notebook} ##
+
 
 A finished Project consists of a Jupyter notebook that contains a data narrative, which is supplemented by instructions, hints, and correctness checks. When you've completed the project spec, your DataCamp contact will add a scaffold around it -- with all the code and markdown cells required in a finished Project -- and put it into the `project.ipynb` notebook in your GitHub repo. It is now up to you to fill in the scaffold and complete the Project.
 
@@ -114,8 +114,8 @@ We recommend that you regularly preview how your project will appear on datacamp
 *We're working on fixing these quirks, but currently you need to use the workarounds above.*
 
 
-5. Launching the Project {#projects-launching}
-------------------------------------------
+## 5. Launching the Project {#projects-launching} ##
+
 
 When you have completed the Project notebook your DataCamp contact will send out the Project to a small group of DataCamp subscribers that will complete the Project and give feedback on it. When you've incorporated the feedback into the Project, it is ready for release on DataCamp.com!
 
