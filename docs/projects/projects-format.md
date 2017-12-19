@@ -12,7 +12,7 @@ A Jupyter notebook consists of a number of cells, and the cell types used in a P
 
 ![](media/jupyter_tags.png)
 
-The first cell in a Project notebook should be a `markdown` cell with the project title written as a one-line H1 header. For example
+The first cell in a Project notebook should be a `markdown` cell with the project title written as a one-line H1 header. The title should be, at most, 41 characters long. For example
 
 ```
 # The Title of The Project
