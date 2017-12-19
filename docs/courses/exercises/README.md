@@ -2,7 +2,7 @@
 
 Every course is organized into chapters consisting of one or more exercises.  If you created a course repository through [www.datacamp.com/teach](https://www.datacamp.com/teach), your chapter files will already contain some DataCamp exercises to start from.
 
-DataCamp supports variety of different exercises, each of which consists of several blocks.  Some types of blocks are used by many exercises, while others are exercise-specific.
+DataCamp supports variety of different exercises, each of which consists of several blocks.  Some types of blocks are used by many exercises, while others are exercise-specific.  Whenever possible, choose a coding exercise over a non-coding exercise: people come to us for hands-on instruction, and having them use what they're learning right away improves retention.
 
 ## Exercise Types {#exercise-types}
 
