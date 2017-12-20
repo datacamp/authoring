@@ -74,8 +74,6 @@ The `topic` id's are as follows:
 
 | id|Topic                     |
 |--:|:-------------------------|
-|  1|R Programming             |
-|  2|Python Programming        |
 |  3|Data Manipulation         |
 |  4|Data Visualization        |
 |  5|Reporting                 |

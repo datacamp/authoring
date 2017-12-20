@@ -17,7 +17,7 @@ Here are the steps for creating a DataCamp Project:
 4. [Writing the Project notebook](#projects-writing-notebook).
   - When the Project spec is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
 5. [Launching the Project](#projects-launching).
-  - When the Project notebook is finished, we will beta test it and launch it on DataCamp. Optionally, as part of the launch, you'll make an unpretentious introduction video to your Project. 
+  - When the Project notebook is finished, we will beta test it and launch it on DataCamp. As part of the launch, you'll make an unpretentious introduction video to your Project. 
 
 During this process, you will work closely with your DataCamp contact, and each step above also includes receiving and integrating feedback from your DataCamp contact.
 
