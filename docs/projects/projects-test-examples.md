@@ -12,7 +12,7 @@ There are some packages you need to be able to run tests locally. Run the follow
 
 ```
 pip install nose
-pip install git+https://github.com/akaihola/ipython_nose
+pip install git+https://github.com/datacamp/ipython_nose
 ```
 
 The test examples are a work in progress. In the meantime, you can check out the `@tests` cells in this example `project.ipynb` from the Project *Dr. Semmelweis and the discovery of handwashing*. Here is the [python GitHub repo](https://github.com/datacamp/projects-discovery-of-handwashing-python) (and [live project](https://projects.datacamp.com/projects/20)).
