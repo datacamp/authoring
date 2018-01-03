@@ -24,6 +24,8 @@ During this process, you will work closely with your DataCamp contact, and each 
 1. Prerequisites for making a Project {#projects-prerequisites}
 ---------------------------------------------------------------------
 
+Writing a DataCamp project is similar to writing an educational blog post or case study. The only formal requirement for creating a DataCamp project is therefore that you've already published some educational writing of your own, for example, in the form of a blog post, notebook, article, book or internal case study.
+
 Before you create a DataCamp Project, you should check out some of the existing projects to get a feel for the format. We recommend that you complete:
 
 * *Introduction to Projects and Jupyter notebooks*
