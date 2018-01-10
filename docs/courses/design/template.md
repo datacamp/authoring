@@ -40,7 +40,7 @@ It should typically be 2 or 3 lines.
 
 ### Other Exercises
 
-Write brief descriptions of other 10 to 15 exercises throughout the course.
+Write brief descriptions of 10 to 15 more exercises throughout the course.
 After this step you should have a clear idea of the flow of the course.
 
 #### Exercise title 1
