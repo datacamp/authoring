@@ -29,19 +29,43 @@ Write full descriptions of a couple of significant exercises to show how far lea
 
 ### Title of Exercise
 
-> **Solution**
->
-> Include sample code.
+Describe the exercise here, including the learning objectives, concepts taught, and any other important details.
+
+**Solution**
+
+```
+Include the code that you expect the students to write by the end of the course.
+It should typically be 2 or 3 lines.
+```
 
 ### Other Exercises
 
-- Exercise title 1
-  - Point-form description of exercise
-  - Two or three bullets is enough
+Write brief descriptions of other 10 to 15 exercises throughout the course.
+After this step you should have a clear idea of the flow of the course.
 
-- Exercise title 2
-  - Another point-form description
-  - Again, two or three bullets is enough
+#### Exercise title 1
+
+- Describe the exercise.
+- Mention the learning objectives.
+- Two or three bullets points is enough.
+
+**Solution**
+
+```
+Solution code here.
+It should typically be 2 or 3 lines.
+```
+
+#### Exercise title 2
+
+- Describe the exercise.
+- …
+
+**Solution**
+
+```
+Solution code here.
+```
 
 ## Step 4: How Are the Concepts Connected?
 
