@@ -8,6 +8,7 @@
 ## Creating content
 
 * [Courses](courses/README.md)
+   - [Creating your audition video](courses/audition.md)
    - [Repo Structure](courses/repo-structure.md)
    - [Exercises](courses/exercises/README.md)
      - [Video Exercise](courses/exercises/video-exercise.md)
