@@ -25,7 +25,7 @@ Here are a few examples of auditions we have particularly liked (used
 with permission):
 
 -   Sarah Guido: [Decision Trees][guido-video] (slideshow)
--   Kevin Markham: [Renaming DataFrame Columns] (Jupyter Notebook)
+-   Kevin Markham: [Renaming DataFrame Columns][markham-video] (Jupyter Notebook)
 -   Nick Tierney: [Exploring Missing Data][tierney-video] (slideshow)
 -   Becca Krouse: [Power & Sample Size in RCTs][krouse-video] (slideshow)
 -   Laurent Gatto: [Accessing Raw Mass Spectrometry Data in R][gatto-video] (live coding)
