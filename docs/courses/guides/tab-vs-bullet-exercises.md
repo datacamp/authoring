@@ -44,7 +44,7 @@ Consider the following exercise:
 > ORDER BY release_year
 > ```
 
-This exercise requires the learner to apply the three concepts `SELECT`, `WHERE` and `ORDER BY`, so it is best expressed as a `BulletExercise`.
+This exercise requires the learner to apply the three concepts `SELECT`, `WHERE` and `ORDER BY`, so it is best expressed as a `TabExercise`.
 
 1. Get the `title` and `release` year of `films`.
 2. Filter the results to only return films released in 2000 or 2015
