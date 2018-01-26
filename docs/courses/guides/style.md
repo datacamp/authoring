@@ -1,4 +1,4 @@
-# Style Guide
+# Course Style
 
 The main purpose of the DataCamp's style guidelines is to build out a course library that has a consistent look and feel for students.
 

@@ -1,4 +1,4 @@
-# Content Guidelines
+# Course Content
 
 We designed our learning platform and product to realize a vision. Content plays a central role in user experience. The main objective of these guidelines are to ensure that all the content we develop is in sync with this vision and provides our users with the best possible user experience.
 
