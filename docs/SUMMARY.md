@@ -54,6 +54,7 @@
      - [`@tests`](projects/projects-format.md#tests)
      - [Test examples](projects/projects-test-examples.md)
    - [Project File Structure](projects/projects-repo-structure.md)
+*  [Style Guide](style-guide/README.md)
 
 ## Teach interface
 
