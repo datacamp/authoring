@@ -45,6 +45,7 @@
    - [Project Creation Process](projects/projects-process.md)
    - [Project notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
+     - [Guidelines](projects/projects-guidelines.md)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
      - [`@context`](projects/projects-format.md#context)
      - [`@instructions`](projects/projects-format.md#instructions)
