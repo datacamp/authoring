@@ -1,16 +1,15 @@
-# Content Guidelines
+Enforced Guidelines
+=========================
+ 
+To keep Projects similar to each other and to ensure that DataCamp students get a good experience we enforce a number of guidelines for projects. While the project is in development violation of these guidellines will show up as warnings. But when the Project is going into release these violations will be made into errors and so before release they have to be resolved.
 
-We designed our learning platform and product to realize a vision. Content plays a central role in user experience. The main objective of these guidelines are to ensure that all the content we develop is in sync with this vision and provides our users with the best possible user experience.
-
-## Projects
-
-The following guidelines are in place in order to ensure Project consistency:
+The following guidelines are in place for the Project as a whole:
 
 ###### P1. Number of tasks in a project {#P1}
 ###### P2. Number of characters in the project title {#P2}
 ###### P3. Number of characters in the project description {#P3}
 
-Different set of guidelines applies to tasks within the project:
+The following guidelines are in place for each task:
 
 ###### T1. The number of items in the instructions list {#T1}
 ###### T2. The number of characters in instruction (paragraph + list) {#T2}
@@ -23,12 +22,13 @@ Different set of guidelines applies to tasks within the project:
 ###### T10. The number of characters in hints. {#T10}
 ###### T11. The number of characters in title of the task {#T11}
 
-### Overriding rules
+### Overriding enforced guidelines
 
-Sticking to the already defined rules is good, however, sometimes you will need to override the rules imposed by DataCamp.  
-In order to do so you will need to create the `rules.yml` file in the root of your project repository (alongside `project.yml`).
+It's possible to override the enforced guidelines. This should only be done in rare situations and after consulting your DataCamp contact.
 
-Currently supported rules are:
+In order to override the enforced guidelines you will need to create a `rules.yml` file in the root of your Project repository (alongside `project.yml`).
+
+Here are the guidelines you can override:
 
 | Doc ID | Measure | Reco | Min | Max |
 |--------|---------|------|-----|-----|
@@ -46,7 +46,7 @@ Currently supported rules are:
 | **T10** | `project_num_chars_hint` |  | 0 | 800 |
 | **T11** | `project_num_chars_task_title` |   | 1 | 41 |
 
-Following is the example of `rules.yml` along with overriding all configure-able rules:
+Here is an example of a `rules.yml` file overriding all configureable guidelines:
 
 ```{yaml}
 rules:
@@ -90,6 +90,3 @@ rules:
         min: 1
         max: 90
 ```
-
-> #### info::Note
-> In case you are working on the **Premium** project we highly recommend you to consult with your Content Developer **before** overriding any of the rules.

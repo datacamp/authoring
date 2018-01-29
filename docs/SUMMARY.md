@@ -42,10 +42,9 @@
    - [Guidelines](challenges/guidelines.md)
    - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
-   - [Project Creation Process](projects/projects-process.md)
-   - [Project notebook format](projects/projects-format.md)
+   - [Creation Process](projects/projects-process.md)
+   - [notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
-     - [Guidelines](projects/projects-guidelines.md)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
      - [`@context`](projects/projects-format.md#context)
      - [`@instructions`](projects/projects-format.md#instructions)
@@ -54,7 +53,8 @@
      - [`@solution`](projects/projects-format.md#solution)
      - [`@tests`](projects/projects-format.md#tests)
      - [Test examples](projects/projects-test-examples.md)
-   - [Project File Structure](projects/projects-repo-structure.md)
+   - [File Structure](projects/projects-repo-structure.md)
+   - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
 
 ## Teach interface
 
