@@ -93,6 +93,128 @@ TabExercises are perfect to help users learn to combine multiple concepts togeth
 ####### TE2. A TabExercise should have 2 - 4 sub-exercises (recommended is 3) {#TE2}
 ####### TE3. A BulletExericse should have subexercises that have instructions of length 10 - 240 characters (recommended is 120)  {#TE3}
 
+### Overriding rules
 
+Sticking to the already defined rules is good, however, sometimes you will need to override the rules imposed by DataCamp.  
+In order to do so you will need to create the `rules.yml` file in the root of your course repository (alongside `course.yml`).
 
+Currently supported rules are:
 
+| Doc ID | Unit | Measure | Rec | Min | Max |
+|--------|------|---------|------|---------|---------|
+| **NE1** | Instructions | `normal_exercise_num_chars_instructions` | 0 | 30 | 0 |
+| **NE2** | Instructions | `normal_exercise_num_items_instructions` | 3 | 0 | 4 |
+| **NE4** | Assignment | `normal_exercise_num_chars_assignment` | 0 | 30 | 0 |
+| **NE6** | Hints | `normal_exercise_num_chars_hints` | 0 | 30 | 0 |
+| **NE7** | Hints | `normal_exercise_num_items_hints` | 3 | 0 | 4 |
+| **NE9** | Sample Code | `normal_exercise_num_lines_code_sample` | 10 | 1 | 15 |
+| **NE10** | Solution Code | `normal_exercise_num_lines_code_solution` | 10 | 1 | 15 |
+| **NE13** | Submission Correctness Tests | `normal_exercise_has_sct` | 1 | 1 | 1 |
+| **NE14** | Submission Correctness Tests | `normal_exercise_has_sct_success_msg` | 1 | 1 | 1 |
+| **MC1** | Assignment | `mce_num_chars_assignment` | 0 | 30 | 0 |
+| **MC2** | Options | `mce_num_chars_options` | 0 | 10 | 0 |
+| **MC3** | Options | `mce_num_items_options` | 4 | 3 | 5 |
+| **TE1** | Assignment | `tab_exercise_num_chars_assignment` | 0 | 10 | 0 |
+| **TE2** | SubExercises | `tab_exercise_num_subex` | 3 | 2 | 4 |
+| **TE3** | Instructions | `tab_normal_ex_num_chars_instructions` | 0 | 10 | 0 |
+| **BE1** | Assignment | `bullet_exercise_num_chars_assignment` | 0 | 10 | 0 |
+| **BE2** | SubExercises | `bullet_exercise_num_subex` | 3 | 2 | 4 |
+| **BE3** | Instructions | `bullet_normal_ex_num_chars_instructions` | 60 | 10 | 0 |
+| **C1** | Chapters | `course_num_chapters` | 4 | 4 | 5 |
+| **C2** | Exercises | `course_num_exercises` | 55 | 40 | 60 |
+| **CH1** | Exercises | `chapter_num_exercises_chapter_1` | 10 | 8 | 12 |
+| **CH2** | Exercises | `chapter_num_exercises_chapter_n` | 15 | 10 | 16 |
+| **NE3** | Exercises | `course_pct_ex_instructions_lte_reco` |  | 0.4 |  |
+| **NE6** | Exercises | `course_pct_ex_assignment_lte_reco` |  | 0.4 |  |
+| **NE8** | Exercises | `course_pct_ex_hints_lte_reco` |  | 0.4 |  |
+| **NE11** | Exercises | `course_pct_ex_code_sample_lte_reco` |  | 0.4 |  |
+| **NE12** | Exercises | `course_pct_ex_code_solution_lte_reco` |  | 0.4 |  |
+| **E1** | Title | `all_exercises_num_chars_title` | 30 | 5 | 50 |
+
+Following is the example of `rules.yml` along with overriding all configure-able rules:
+
+```{yaml}
+rules:
+    normal_exercise_num_chars_instructions:
+        min: 30
+        max: 480
+    normal_exercise_num_items_instructions:
+        min: 0
+        max: 4
+    normal_exercise_num_chars_assignment:
+        min: 30
+        max: 780
+    normal_exercise_num_chars_hints:
+        min: 30
+        max: 360
+    normal_exercise_num_items_hints:
+        min: 0
+        max: 4
+    normal_exercise_num_lines_code_sample:
+        min: 1
+        max: 15
+    normal_exercise_num_lines_code_solution:
+        min: 1
+        max: 15
+    normal_exercise_has_sct:
+        min: 1
+        max: 1
+    normal_exercise_has_sct_success_msg:
+        min: 1
+        max: 1
+    mce_num_chars_assignment:
+        min: 30
+        max: 600
+    mce_num_chars_options:
+        min: 10
+        max: 300
+    mce_num_items_options:
+        min: 3
+        max: 5
+    tab_exercise_num_chars_assignment:
+        min: 10
+        max: 780
+    tab_exercise_num_subex:
+        min: 2
+        max: 4
+    tab_normal_ex_num_chars_instructions:
+        min: 10
+        max: 240
+    bullet_exercise_num_chars_assignment:
+        min: 10
+        max: 600
+    bullet_exercise_num_subex:
+        min: 2
+        max: 4
+    bullet_normal_ex_num_chars_instructions:
+        min: 10
+        max: 120
+    course_num_chapters:
+        min: 4
+        max: 5
+    course_num_exercises:
+        min: 40
+        max: 60
+    chapter_num_exercises_chapter_1:
+        min: 8
+        max: 12
+    chapter_num_exercises_chapter_n:
+        min: 10
+        max: 16
+    course_pct_ex_instructions_lte_reco:
+        min: 0.4
+    course_pct_ex_assignment_lte_reco:
+        min: 0.4
+    course_pct_ex_hints_lte_reco:
+        min: 0.4
+    course_pct_ex_code_sample_lte_reco:
+        min: 0.4
+    course_pct_ex_code_solution_lte_reco:
+        min: 0.4
+    all_exercises_num_chars_title:
+        min: 5
+        max: 50
+```
+
+> #### info::Note
+> In case you are working on the **Premium** course we highly recommend you to consult with your Content Developer **before** overriding any of the rules.
