@@ -34,6 +34,7 @@ Our data shows that length of instructions is a big driver of completion rates. 
 ####### NE1. A NormalExercise should have instructions of length 30 - 480 characters (recommended is 360) {#NE1}
 ####### NE2. A NormalExercise should have between 0 - 4 instructions items (recommended is 3) {#NE2}
 ####### NE3. At least 40% of NormalExercises in a course should have instructions that are within the recommended 360 characters. {#NE3}
+####### NE5. A NormalExercise should contain a list which doesn't have more than 8 sub items {#NE5}
 
 The intent is that limiting the number of instructions will limit the number of things a user is required to do to complete the exercise. The character limits are in place to ensure that instructions fit well within a page and allow users to complete them without much scrolling.
 
@@ -105,6 +106,7 @@ Currently supported rules are:
 | **NE1** | Instructions | `normal_exercise_num_chars_instructions` | 0 | 30 | 0 |
 | **NE2** | Instructions | `normal_exercise_num_items_instructions` | 3 | 0 | 4 |
 | **NE4** | Assignment | `normal_exercise_num_chars_assignment` | 0 | 30 | 0 |
+| **NE5** | Instructions | `normal_exercise_num_subitems_instructions` | 0 | 0 | 8 |
 | **NE6** | Hints | `normal_exercise_num_chars_hints` | 0 | 30 | 0 |
 | **NE7** | Hints | `normal_exercise_num_items_hints` | 3 | 0 | 4 |
 | **NE9** | Sample Code | `normal_exercise_num_lines_code_sample` | 10 | 1 | 15 |
@@ -144,6 +146,9 @@ rules:
     normal_exercise_num_chars_assignment:
         min: 30
         max: 780
+    normal_exercise_num_subitems_instructions:
+        min: 0
+        max: 8
     normal_exercise_num_chars_hints:
         min: 30
         max: 360
