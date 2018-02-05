@@ -96,7 +96,7 @@ A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` bloc
     ```
     The SCT section varies slightly for each technology. For example, the same test for an R course: 
     
-       `@sct`
+    `@sct`
     ```{r}
     msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
     msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
@@ -107,7 +107,7 @@ A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` bloc
     
     For a shell/git course: 
     
-       `@sct`
+    `@sct`
     ```{python}
     msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
     msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
