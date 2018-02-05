@@ -95,9 +95,9 @@ A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` bloc
     test_mc(4, [msg1, msg2, msg3, msg4])
     ```
     
-    The `test_mc()` function is used to provide tailored feedback in a `MultipleChoiceExercise`. It varies slightly depending on the technology. The same test for an R course would be `test_mc(4, c(msg1, msg2, msg3, msg4))`, and for a Shell course, would be `Ex() >> test_mc(4, [msg1, msg2, msg3, msg4])`.
+    The `test_mc()` function is used to provide tailored feedback in a `MultipleChoiceExercise`. It varies slightly depending on the technology. The same test for an R course would be `test_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))`, and for a Shell course, would be `Ex() >> test_mc(4, [msg1, msg2, msg3, msg4])`.
     
-    Regardless of technology, the `test_mc()` function takes in two arguments. The first encodes the correct response (option 4 in the above example), while the second is a list of strings (or _vector_ of strings, in R exercises) of length equal to the number of possible options. Each string corresponds to the feedback message that learners would see if they were to select that option. It is encouraged to write informative feedback messages, as these provide an opportunity for you to correct any mistaken mental models learners may have and guide them towards the solution.
+    Regardless of technology, the `test_mc()` function takes in two required arguments. The first encodes the correct response (option 4 in the above example), while the second required argument is a list of strings (or _vector_ of strings, in R exercises) of length equal to the number of possible options. Each string corresponds to the feedback message that learners would see if they were to select that option. It is encouraged to write informative feedback messages, as these provide an opportunity for you to correct any mistaken mental models learners may have and guide them towards the solution.
     
 
 See also:
