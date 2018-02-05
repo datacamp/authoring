@@ -94,6 +94,29 @@ A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` bloc
     msg4 = "Correct! Python is an extremely versatile language."
     test_mc(4, [msg1, msg2, msg3, msg4])
     ```
+    The SCT section varies slightly for each technology. For example, the same test for an R course: 
+    
+       `@sct`
+    ```{r}
+    msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
+    msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
+    msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
+    msg4 = "Correct! Python is an extremely versatile language."
+    test_mc(4, c(msg1, msg2, msg3, msg4))
+    ```
+    
+    For a shell/git course: 
+    
+       `@sct`
+    ```{python}
+    msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
+    msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
+    msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
+    msg4 = "Correct! Python is an extremely versatile language."
+    Ex() >> test_mc(4, [msg1, msg2, msg3, msg4])
+    ```
+    
+
 
 See also:
 - [Exercises](/courses/exercises/README.md#exercise-blocks)  
