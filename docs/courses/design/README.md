@@ -140,7 +140,7 @@ Brainstorming for the course on tree-based models in Python produced this list:
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 2: Who is this course for?
+## Step 2: Who Is This Course For?
 
 "Beginner" and "expert" mean different things to different people,
 and many factors besides pre-existing knowledge influence who a course is suitable for.
@@ -181,7 +181,7 @@ link to them and comment on how the course relates to them.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 3: What will learners do along the way?
+## Step 3: What Will Learners Do Along the Way?
 
 The best way to make the goals in Step 1 firmer is
 to write full descriptions of a couple of exercises
@@ -313,7 +313,7 @@ exercises, and had sample solutions for all of them.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 4: How are concepts connected?
+## Step 4: How Are Concepts Connected?
 
 In this stage,
 you put the exercises in a logical order
@@ -370,7 +370,7 @@ The datasets are:
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Step 5: Course overview
+## Step 5: Course Overview
 
 You can now summarize everything you have created
 by writing a high-level course overview that consists of:

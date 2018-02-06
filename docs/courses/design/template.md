@@ -15,7 +15,7 @@ please speak with your Curriculum Lead.*
 6. What mistakes or misconceptions do you expect?
 7. What datasets will you use?
 
-## Step 2: Who is this course for?
+## Step 2: Who Is This Course for?
 
 Link to [learner personas](personas.md)
 
@@ -23,27 +23,53 @@ Link to [learner personas](personas.md)
 * Student 2: discussion.
 * Student 3: discussion.
 
-## Step 3: What will learners do along the way?
+## Step 3: What Will Learners Do Along the Way?
 
 Write full descriptions of a couple of significant exercises to show how far learners are likely to get.
 
 ### Title of Exercise
 
-> **Solution**
->
-> Include sample code.
+Describe the exercise here, including the learning objectives, concepts taught, and any other important details.
 
-### Other exercises
+**Solution**
 
-- Exercise title 1
-  - Point-form description of exercise
-  - Two or three bullets is enough
+```
+Include the code that you expect the students to write by the end of the course.
+It should typically be 2 or 3 lines.
+```
 
-- Exercise title 2
-  - Another point-form description
-  - Again, two or three bullets is enough
+### Other Exercises
 
-## Step 4: How are the concepts connected?
+Write brief descriptions of 10 to 15 more exercises throughout the course.
+After this step you should have a clear idea of the flow of the course.
+
+#### Exercise title 1
+
+- Describe the exercise.
+- Mention the learning objectives.
+- Two or three bullets points is enough.
+
+**Solution**
+
+```
+Solution code here.
+It should typically be 2 or 3 lines.
+```
+
+#### Exercise title 2
+
+- Describe the exercise.
+- …
+
+**Solution**
+
+```
+Solution code here.
+```
+
+## Step 4: How Are the Concepts Connected?
+
+*Remind yourself about [course terminology](https://authoring.datacamp.com/courses/design#terminology-and-structure), then describe the flow of the course.*
 
 - Chapter 1
   - Lesson 1.1
@@ -59,7 +85,7 @@ The datasets are:
 - `path/to/dataset-1`: data set 1
 - `path/to/dataset-2`: data set 2
 
-## Step 5: Course overview
+## Step 5: Course Overview
 
 **Course Description**
 

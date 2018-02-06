@@ -1,10 +1,10 @@
-# Unified Authoring format
+# Unified Authoring Format
 
-The basic objective of the unified authoring format is to come up with a simple, unified API to document all forms of content in DataCamp. The unified format defines a generic document structure that consists of metadata, sections, sub-sections, content blocks, and sub-blocks, that allows authoring of different types of content like exercises, challenges, projects, etc. in a consistent way. The format is optimized to be simple enough, yet flexible, and render well on github and other media.
+The basic objective of the unified authoring format is to come up with a simple, unified API for all DataCamp content. The unified format specifies metadata, sections, sub-sections, content blocks, and sub-blocks that allow consistent authoring of exercises, challenges, projects, and other content. The format is simple but flexible, and renders well on GitHub and elsewhere.
 
 ## Metadata
 
-> Every document starts with yaml metadata enclosed between separators.
+> Every document starts with YAML metadata between triple-dash separators.
 
     --- 
     title_meta  : Chapter 1
@@ -14,7 +14,7 @@ The basic objective of the unified authoring format is to come up with a simple,
 
 ## Sections
 
-> Every document consists of sections and subsections delimited by separators, `---` and `***`.
+> Every document consists of sections and subsections delimited by `---` and `***` separators.
 
     ---
     title_meta  : Chapter 1
@@ -43,7 +43,7 @@ The basic objective of the unified authoring format is to come up with a simple,
 
 ## Blocks
 
-> Every section/subsection can consist of a `title`, `metadata` and `content blocks`.
+> Every section or subsection can contain title, metadata, and content blocks.
 
     ## Title
 
@@ -68,14 +68,14 @@ The basic objective of the unified authoring format is to come up with a simple,
 
     Content Block 2 > Sub Block 2
 
-A content block is identified by a `@blockname` that is enclosed within a pair of backticks. A content block can contain sub-blocks identified by `@@sub-block-name`, also enclosed within a pair of backticks
+A content block is identified by a `@blockname` tag that is enclosed within backticks. A content block can contain sub-blocks identified by `@@sub-block-name`, also enclosed within backticks.
 
 ## Segments
 
 > Content blocks can be code blocks with multiple segments and YAML metadata.
 
     ```{r}
-    # The vector pioneers has already been created for you
+    # The vector pioneers has already been created for you.
     pioneers <- c("GAUSS:1777", "BAYES:1702", "PASCAL:1623", "PEARSON:1857")
 
     # @step

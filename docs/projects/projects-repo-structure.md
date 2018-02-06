@@ -33,11 +33,11 @@ The `project.yml` file contains metadata for the Project written in the [YAML fi
 ```yaml
 #### General information about the project    ####
 #### All this will be visible on DataCamp.com ####
-title          : "The title of the project"
+title          : "The title of the project" # max 41 character
 description    : >
-  A short description of the project, less than 140 characters. Written in markdown.
+  A short description of the project, less than 110 characters.
 long_description: |
-  A longer description of the project around 3 - 4 lines. Written in markdown.
+  A longer description of the project around 4 - 8 lines (a line is 80 characters). Written in markdown.
   Should mention and link to prerequisite courses.
 time_needed: "45 minutes" # "30/45/60 minutes".
 instructors: # DataCamp connected email of the creator of the Project
@@ -76,8 +76,6 @@ The `topic` id's are as follows:
 
 | id|Topic                     |
 |--:|:-------------------------|
-|  1|R Programming             |
-|  2|Python Programming        |
 |  3|Data Manipulation         |
 |  4|Data Visualization        |
 |  5|Reporting                 |

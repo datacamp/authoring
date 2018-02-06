@@ -1,4 +1,5 @@
 {
+  "title": "Authoring Content for DataCamp",
   "plugins": [
     "bootstrap-callout",
     "expandable-chapters",
