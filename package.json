@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "express": "^4.16.2",
+    "gitbook": "^3.2.3",
     "gitbook-plugin-advanced-emoji": "^0.2.2",
     "gitbook-plugin-bootstrap-callout": "^0.1.2",
     "gitbook-plugin-codetabs": "^1.0.0",
