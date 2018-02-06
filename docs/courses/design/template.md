@@ -75,6 +75,8 @@ Solution code here.
 
 ## Step 4: How Are the Concepts Connected?
 
+*Remind yourself about [course terminology](https://authoring.datacamp.com/courses/design#terminology-and-structure), then describe the flow of the course.*
+
 - Chapter 1
   - Lesson 1.1
   - Lesson 1.2
