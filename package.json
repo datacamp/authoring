@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "This repository contains comprehensive documentation on how to author different forms of content on the DataCamp platform. It has been built by collating content from different github repositories, wikis, and google documents. The objective is for all authoring related documentation to live in one place that authors can easily access and search.",
   "main": "app.js",
+  "engines": {
+    "node": "8.9.4"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "gitbook": "^3.2.3",
