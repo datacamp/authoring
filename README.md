@@ -102,5 +102,5 @@ Examples on how to import images or create links:
 ```
 ![Image description](/images/interface/teach-editor.png) # Will create an image
 [A link](/courses/README.md) # Will create a link
-[A link to part of the [age](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
+A link to [part of the page](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
 ```
