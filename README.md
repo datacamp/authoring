@@ -20,7 +20,7 @@ v7.10.1
 4.2.0
 ```
 
-In case you do not have node installed you can do so by using node version manager, follow these steps:
+In case you do not have node installed you can do so by [using node version manager](https://github.com/creationix/nvm/blob/master/README.md#installation), follow these steps:
 
 1. Open your terminal
 2. Install the Node version manager by executing:
