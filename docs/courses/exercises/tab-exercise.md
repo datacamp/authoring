@@ -138,3 +138,353 @@ If you want to reset a student's workspace each time, use a `TabExercise`. If yo
 __Examples__
 
 1. [Tab Console Exercise in Shell](examples/md/shell/TabConsoleExercise.md)
+
+## Tab Stacked Normal Exercise {#tab-stacked-normal-exercise}
+
+A `TabStackedNormalExercise` is a shorter variation of a `TabExercise` which consists of numerous `NormalExercises`. The UI look is therefore identical to the `TabExercise` while the authoring format has been shortened and it's more convenient to remember and author.
+
+![Tab Stacked Normal Exercise](/images/TabStackedNormalExercise.png)
+<center><i>UI of <code>TabStackedNormalExercise</code> is identical to <code>TabExercise</code></i></center>
+
+
+Following is an example on how to author this type of exercise:
+
+    ---
+    title: TabStackedNormalExercise
+    description: An example of TabStackedNormalExercise
+    ---
+
+    ## This is the title
+
+    ```yaml
+    type: TabStackedNormalExercise
+    xp: 100
+    key: aec26f6a30
+    subkeys:
+    - 1
+    - 2
+    - 3
+    - 4
+    subxps:
+    - 20
+    - 20
+    - 20
+    - 20
+    ```
+
+    This is an assignment
+
+    `@pre_exercise_code`
+
+    ```{r, eval=FALSE}
+    # code for preparing the learning environment
+    ```
+
+    `@instructions`
+
+    - Instructions for first Normal Exercise
+    - Instructions for second Normal Exercise
+    - Instructions for third Normal Exercise
+    - Instructions for fourth Normal Exercise
+
+    `@hint`
+
+    - Hint for first Normal Exercise
+    - Hint for second Normal Exercise
+    - Hint for third Normal Exercise
+    - Hint for fourth Normal Exercise
+
+    `@sample_code`
+
+    ```{r}
+    #' @step
+    # Sample code for first Normal Exercise
+
+    #' @step
+    # Sample code for second Normal Exercise
+
+    #' @step
+    # Sample code for third Normal Exercise
+
+    #' @step
+    # Sample code for fourth Normal Exercise
+
+    ```
+
+    `@solution`
+
+    ```{r}
+    #' @step
+    # Solution for first Normal Exercise
+
+    #' @step
+    # Solution for second Normal Exercise
+
+    #' @step
+    # Solution for third Normal Exercise
+
+    #' @step
+    # Solution for fourth Normal Exercise
+    ```
+
+    `@sct`
+
+    ```{r}
+    #' @step
+    # Sct for first Normal Exercise
+    test_object(...)
+
+    #' @step
+    # Sct for second Normal Exercise
+    test_object(...)
+
+    #' @step
+    # Sct for third Normal Exercise
+    test_correct(...)
+
+    #' @step
+    # Sct for fourth Normal Exercise
+    test_function(...)
+    success_msg("Good job!")
+    ```
+
+### Authoring
+
+Following are the authoring rules to be followed in order to successfully created an `TabStackedNormalExercise`:
+
+#### Title
+
+An exercise starts with a title:
+
+    ## This is a title
+
+#### YAML header
+
+A header is required in order to initialize the exercise:
+
+    ```yaml
+    type: TabStackedNormalExercise
+    xp: 100
+    key: aec26f6a30
+    subkeys:
+    - 1
+    - 2
+    - 3
+    - 4
+    subxps:
+    - 20
+    - 20
+    - 20
+    - 20
+    ```
+
+It consists of:
+- `type` set to `TabStackedNormalExercise`.
+- `xp` amount of xp student gains for resolving this exercise as a whole.
+- `key` a unique key (on chapter level) for this exercise.
+- `subkeys` which are the keys assigned to the `NormalExercise\s` being created.
+- `subxps` which is the xp for each of the `NormalExercise\s` being created.
+
+Both `subkeys` and `subxps` should always have the same length.
+
+#### Instructions
+
+List of instructions for each of the Normal Exercises being created.
+
+    `@instructions`
+
+    - Instructions for first Normal Exercise
+    - Instructions for second Normal Exercise
+    - Instructions for third Normal Exercise
+    - Instructions for fourth Normal Exercise
+
+In this example four `NormalExercise\s` are going to be created where the first one will have the instructions set to `Instructions for first Normal Exercise` while the last will have instructions set to `Instructions for fourth Normal Exercise`.
+
+#### Hint
+
+List of hints for each of the Normal Exercises being created.
+
+    `@hint`
+
+    - Hint for first Normal Exercise
+    - Hint for second Normal Exercise
+    - Hint for third Normal Exercise
+    - Hint for fourth Normal Exercise
+
+In this example four `NormalExercise\s` are going to be created where the first one will have the hint set to `Hint for first Normal Exercise` while the last will have instructions set to `Hint for fourth Normal Exercise`.
+
+#### Solution
+
+Solutions to each of the Normal Exercises being created, where the each `NormalExercise` inherits the solution from all the previous `NormalExercise`'s.
+
+    `@solution`
+
+    ```{r}
+    #' @step
+    # Solution for first Normal Exercise
+
+    #' @step
+    # Solution for second Normal Exercise
+
+    #' @step
+    # Solution for third Normal Exercise
+
+    #' @step
+    # Solution for fourth Normal Exercise
+    ```
+
+In this example first `NormalExercise` solution would be:
+
+    `@solution`
+
+    ```{r}
+    # Solution for first Normal Exercise
+    ```
+while last `NormalExercise` solution would be:
+
+    `@solution`
+
+    ```{r}
+    # Solution for first Normal Exercise
+
+    # Solution for second Normal Exercise
+
+    # Solution for third Normal Exercise
+
+    # Solution for fourth Normal Exercise
+    ```
+
+#### SCT (Submission correctness test)
+
+SCT for each of the Normal Exercises being created, where the each `NormalExercise` inherits the SCT's from all the previous `NormalExercise`'s.
+
+    `@sct`
+
+    ```{r}
+    #' @step
+    # Sct for first Normal Exercise
+    test_object(...)
+
+    #' @step
+    # Sct for second Normal Exercise
+    test_object(...)
+
+    #' @step
+    # Sct for third Normal Exercise
+    test_correct(...)
+
+    #' @step
+    # Sct for fourth Normal Exercise
+    test_function(...)
+    success_msg("Good job!")
+    ```
+
+In this example first `NormalExercise` SCT would be:
+
+    `@sct`
+
+    ```{r}
+    # Sct for first Normal Exercise
+    test_object(...)
+    ```
+while last `NormalExercise` SCT would be:
+
+    `@sct`
+
+    ```{r}
+    # Sct for first Normal Exercise
+    test_object(...)
+
+    # Sct for second Normal Exercise
+    test_object(...)
+
+    # Sct for third Normal Exercise
+    test_correct(...)
+
+    # Sct for fourth Normal Exercise
+    test_function(...)
+    success_msg("Good job!")
+    ```
+
+#### Sample code
+
+Sample code is a combination of `solutions` of all previous `NormalExercise\s` and `sample_code` block for the current `NormalExercise`.
+
+    `@sample_code`
+
+    ```{r}
+    #' @step
+    # Sample code for first Normal Exercise
+
+
+    #' @step
+    # Sample code for second Normal Exercise
+
+
+    #' @step
+    # Sample code for third Normal Exercise
+
+
+    #' @step
+    # Sample code for fourth Normal Exercise
+
+    ```
+
+    `@solution`
+
+    ```{r}
+    #' @step
+    # Solution for first Normal Exercise
+
+    #' @step
+    # Solution for second Normal Exercise
+
+    #' @step
+    # Solution for third Normal Exercise
+
+    #' @step
+    # Solution for fourth Normal Exercise
+    ```
+
+As per example above the first `NormalExercise` `sample_code` would be: 
+
+    `@sample_code`
+
+    ```{r}
+    # Sample code for first Normal Exercise
+
+    ```
+
+While the third `NormalExercise` `sample_code` would be:
+
+    `@sample_code`
+
+    ```{r}
+    # Solution for first Normal Exercise
+
+    # Solution for second Normal Exercise
+
+    # Sample code for third Normal Exercise
+
+    ```
+
+While the fourth `NormalExercise` `sample_code` would be:
+
+    `@sample_code`
+
+    ```{r}
+    # Solution for first Normal Exercise
+
+    # Solution for second Normal Exercise
+
+    # Solution for third Normal Exercise
+
+    # Sample code for fourth Normal Exercise
+
+    ```
+
+Sample code has a special behavior of combining `solution` and `sample_code` in order to create a `NormalExercise`.
+
+> #### warning::Important
+> Number of `subkeys` and `subxps` should alway match the amount of list items in `hint` and `instructions` while also matching the amount of steps defined in `sample_code`, `sct` and `solution` blocks.
+> In case there is a mismatch in any of above-mentioned keys and blocks a descriptive error will be thrown on the course build time.
