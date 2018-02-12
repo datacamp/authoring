@@ -27,8 +27,9 @@ From a course on human resource analytics:
 
 Many courses list four or five problems to solve. This helps to divide the course up into chapters later on. 
 
-Don't feel obliged to stick to this format. Some courses list a single overarching problem to solve, and other courses list a dozen problems. 
+### Can I break that rule?
 
+Sure! Don't feel obliged to stick to this format. Some courses list a single overarching problem to solve, and other courses list a dozen problems. 
 
 ## Good ideas
 
@@ -49,8 +50,10 @@ Don't be afraid to list bad ideas: it's better to have too many ideas at this st
 
 - Read through the contents pages of books on the subject. Amazon's "Look inside" feature is useful for this.
 
+- Check Stack Overflow to see what questions people are asking about the topic.
+
 
 ## How will this be reviewed?
 
-Brainstorming questions are not reviewed (though they provide important context for reviewers).
+Your Curriculum Lead will discuss your responses to the brainstorming questions. They will not be formally reviewed (though they provide important context for reviewers).
 
