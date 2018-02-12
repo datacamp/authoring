@@ -250,7 +250,7 @@ Following is an example on how to author this type of exercise:
 
 ### Authoring
 
-Following are the authoring rules to be followed in order to successfully created an `TabStackedNormalExercise`:
+The purpose of this section is to enumerate and explain all the building blocks of `TabStackedNormalExercise` exercise:
 
 #### Title
 
@@ -408,7 +408,7 @@ while last `NormalExercise` SCT would be:
 
 #### Sample code
 
-Sample code is a combination of `solutions` of all previous `NormalExercise\s` and `sample_code` block for the current `NormalExercise`.
+Sample code is a combination of all `solution` blocks from previous `NormalExercise\s` and a `sample_code` block for the current `NormalExercise`.
 
     `@sample_code`
 
