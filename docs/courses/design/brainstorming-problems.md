@@ -20,20 +20,6 @@ From a course on human resource analytics:
 - How to identify the most effective recruiting channel (how does this generalize?)
 - How to determine what's driving (attrition, high/low performance, etc.)
 
-From a course on psychological methods:
-
-- Use eigenvalues to determine the dimensionality of their data.
-- Determine when to use an exploratory vs. a confirmatory analysis.
-- Conduct an exploratory factor analysis to investigate item loadings and refine their measure.
-- Conduct a confirmatory factor analysis to see how well their proposed model fits the data.
-
-From a course on deep learning with keras:
-
-- Primary goal of the course: learn the keras functional API
-- Learn category embeddings
-- Learn word embeddings
-- Learn RNNs using word embeddings
-
 
 ## FAQs
 
