@@ -10,9 +10,9 @@ From a course on human resource analytics. This example references where an idea
 - How to identify the most effective recruiting channel (how does this generalize?)
 - How to determine what's driving (attrition, high/low performance, etc.)
 
-From a course on generalized additive models. This example distinguishes *concepts* from *skills and techniques*.
+From a course on generalized additive models. This example distinguishes *concepts* from *skills and techniques*, and explicitly rejects ideas by specifying *things to leave out*.
 
-*Concepts:*
+*Concepts*
 
 - Splines, Basis Functions
 - Model formulas
@@ -20,7 +20,7 @@ From a course on generalized additive models. This example distinguishes *concep
 - Smoothing
 - Penalization
 
-*Skills/Techniques:*
+*Skills/Techniques*
 
 - Fitting a GAM to data
 - Checking that a GAM fits well
@@ -28,6 +28,12 @@ From a course on generalized additive models. This example distinguishes *concep
 - Making predictions
 - Selecting predictor variables (maybe too much)
 - Fitting, checking, visualizing a model with binary outcomes
+
+*Things to leave out*
+
+- It seems a bridge too far to go too far into the "generalized" part of GAMs in this course and discuss much about outcome distributions, at least beyond a binary example. This could be a bonus section with "This will be easier if you have learned about GLMs", but I don't know if that works within your infrastructure.
+- It also may make sense to skip most of the different types of basis functions and splines one could potentially use.
+
 
 ## FAQs
 
