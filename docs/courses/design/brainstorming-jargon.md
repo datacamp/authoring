@@ -1,4 +1,4 @@
-# Step 1 - What terms or jargon will you define?
+# Step 1.4 - What terms or jargon will you define?
 
 Write a list of technical terms, jargon, and acronyms that will be used in the course.
 
