@@ -1,4 +1,4 @@
-# Step 1 - What technologies, packages, or functions will students use?
+# Step 1.3 - What technologies, packages, or functions will students use?
 
 Write a list of ideas for technologies that you want to use in the course. Include things like R/Python packages, SQL modules, or Google sheets add-ons. If there are any important functions, methods, or commands that you want to teach, you can mention them here.
 
