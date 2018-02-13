@@ -1,4 +1,4 @@
-# Step 1 - What problem(s) will student learn how to solve?
+# Step 1.1 - What problem(s) will student learn how to solve?
 
 Write a list of ideas for problems that the students will encounter in the course. Don't worry about whether they are good or bad ideas, and don't worry about the order. Filtering and sorting comes later.
 
