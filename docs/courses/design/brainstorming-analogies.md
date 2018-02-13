@@ -1,4 +1,4 @@
-# Step 1 - What analogies or heuristics will you use?
+# Step 1.5 - What analogies or heuristics will you use?
 
 Write a list of analogies for concepts, heuristics for best practices, and any other non-technical explanations of things that may be helpful to students.
 
