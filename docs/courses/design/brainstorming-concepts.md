@@ -1,4 +1,4 @@
-# Step 1 - What techniques or concepts will students learn?
+# Step 1.2 - What techniques or concepts will students learn?
 
 Write a list of ideas for techniques and concepts that you want to teach in the course. As with the previous question, don't worry about whether they are good or bad ideas, and don't worry about the order. Filtering and sorting comes later.
 
