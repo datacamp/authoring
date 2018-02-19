@@ -1,9 +1,14 @@
 # **Course Title**<br/>by **Course Author**
 
+## Step 0: Before You Begin
+
 *Please read the [course design process description](design.md)
 and complete these steps in the `README.md` file in your course repository.
-If you need assistance,
-please speak with your Curriculum Lead.*
+If you need assistance, please speak with your Curriculum Lead.*
+
+*Please read and sign your contract.*
+
+Write the name and email address of one or more people that you'd like to review your course specs.
 
 ## Step 1: Brainstorming
 
