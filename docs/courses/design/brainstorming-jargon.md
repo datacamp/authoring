@@ -33,7 +33,7 @@ Often there are several different words for a particular concept. For example, c
 
 ### I can't think of anything
 
-Split the problem up into different areas. Are there any terms related to the code? Are there any terms related to the statistical modeling techniques? Are there any terms from the application domain? Are there any terms that might to needed to explain the dataset?
+Split the problem up into different areas. Are there any terms related to the code? Are there any terms related to the statistical modeling techniques? Are there any terms from the application domain? Are there any terms that might be needed to explain the dataset?
 
 ## How will this be reviewed?
 
