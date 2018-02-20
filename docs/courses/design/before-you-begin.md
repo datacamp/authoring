@@ -1,6 +1,6 @@
 # Before you begin
 
-In order to get started, you need some basic skills in writing markdown and using GitHub, and an idea of the type of course you will make.
+In order to get started, you need some basic skills in writing markdown, using GitHub, and an idea of the type of course you will make.
 
 ## Learn to write markdown
 
