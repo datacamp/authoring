@@ -22,6 +22,7 @@
        - [SQL Example](courses/exercises/examples/md/sql/BulletExercise.md)
        - [R Example](courses/exercises/examples/md/r/BulletExercise.md)
        - [Python Example](courses/exercises/examples/md/python/BulletExercise.md)
+   - [Guidelines](courses/guidelines.md)
    - [XP](courses/xp.md)
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
@@ -32,7 +33,6 @@
    - [Design](courses/design/README.md)
      - [Design template](courses/design/template.md)
      - [Learner personas](courses/design/personas.md)
-   - [Diagnostics](diagnostics.md)
    - [FAQ](faq/README.md)
 * [Challenges](challenges/README.md)
    - [Repo Structure](challenges/repo-structure.md)
@@ -43,8 +43,8 @@
    - [Guidelines](challenges/guidelines.md)
    - [Review Mode](challenges/review-mode.md)
 * [Projects](projects/README.md)
-   - [Project Creation Process](projects/projects-process.md)
-   - [Project notebook format](projects/projects-format.md)
+   - [Creation Process](projects/projects-process.md)
+   - [notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
      - [`@context`](projects/projects-format.md#context)
@@ -54,7 +54,8 @@
      - [`@solution`](projects/projects-format.md#solution)
      - [`@tests`](projects/projects-format.md#tests)
      - [Test examples](projects/projects-test-examples.md)
-   - [Project File Structure](projects/projects-repo-structure.md)
+   - [File Structure](projects/projects-repo-structure.md)
+   - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
 
 ## Teach interface
 
