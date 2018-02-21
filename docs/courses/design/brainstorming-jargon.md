@@ -7,13 +7,15 @@ Write a list of technical terms, jargon, and acronyms that will be used in the c
 
 From a course on experimental design. This has an extensive list of statistical terms.
 
-Randomization, replication, blocking, Latin Square, Greco-Latin Squares, factorial, ANOVA, T-test, F-test, normality, qqplot, variance, type I/II error, null/alternative hypothesis, effect size, factor/categorical variable
-
+- Randomization, replication, blocking, Latin Square, Greco-Latin Squares, factorial, ANOVA, T-test, F-test, normality, qqplot, variance, type I/II error, null/alternative hypothesis, effect size, factor/categorical variable
 
 From a course on clinical trials analysis. This includes both statistical terms and domain-specific terms.
 
-Bias, blinding, randomization, imbalance, covariates, endpoints, power, multiplicity, significance, non-inferiority, equivalence, bioequivalence.
+- Bias, blinding, randomization, imbalance, covariates, endpoints, power, multiplicity, significance, non-inferiority, equivalence, bioequivalence.
 
+From a course on data privacy. This in an extensive list of both statistical terms and privacy-related terms.
+
+- Statistical Disclosure Limitation, Data Synthesis, K-Anonymity, Neighboring Databases, Randomized Response, Differential Privacy, Composition Rules, Group Privacy, Post-processing, Global Sensitivity, Histogram queries, Laplace Mechanism, Exponential Mechanism, Differential Privacy Data Synthesis
 
 ## FAQs
 
