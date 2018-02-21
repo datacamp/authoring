@@ -2,13 +2,12 @@
 
 ## Introduction
 
-* [Welcome](README.md)
-* [Getting started](welcome/getting-started.md)
+- [Welcome](README.md)
+- [Getting Started](welcome/getting-started.md)
 
-## Creating content
+## Creating Content
 
-* [Courses](courses/README.md)
-   - [Creating your audition video](courses/audition.md)
+- [Courses](courses/README.md)
    - [Repo Structure](courses/repo-structure.md)
    - [Exercises](courses/exercises/README.md)
      - [Video Exercise](courses/exercises/video-exercise.md)
@@ -23,18 +22,15 @@
        - [R Example](courses/exercises/examples/md/r/BulletExercise.md)
        - [Python Example](courses/exercises/examples/md/python/BulletExercise.md)
    - [Guidelines](courses/guidelines.md)
-   - [XP](courses/xp.md)
+   - [Experience Points](courses/xp.md)
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
    - [Guides](courses/guides/README.md)
      - [Exports](courses/guides/exports.md)
      - [Unified Authoring API](courses/guides/unified-authoring-api.md)
      - [Tab vs. Bullet Exercises](courses/guides/tab-vs-bullet-exercises.md)
-   - [Design](courses/design/README.md)
-     - [Design template](courses/design/template.md)
-     - [Learner personas](courses/design/personas.md)
    - [FAQ](faq/README.md)
-* [Challenges](challenges/README.md)
+- [Challenges](challenges/README.md)
    - [Repo Structure](challenges/repo-structure.md)
    - [Content](challenges/content/README.md)
       - [Output Challenge](challenges/content/output-challenge.md)
@@ -42,7 +38,7 @@
       - [Blanks Challenge](challenges/content/blanks-challenge.md)
    - [Guidelines](challenges/guidelines.md)
    - [Review Mode](challenges/review-mode.md)
-* [Projects](projects/README.md)
+- [Projects](projects/README.md)
    - [Creation Process](projects/projects-process.md)
    - [notebook format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
@@ -57,21 +53,24 @@
    - [File Structure](projects/projects-repo-structure.md)
    - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
 
-## Teach interface
+## Teach Interface
 
-* [Teach Dashboard](interface/dashboard.md)
-  - [Create content dialog](interface/create-content-dialog.md)
-  - [Content overview](interface/content-overview.md)
-* [Teach Editor](interface/teach-editor.md)
+- [Teach Dashboard](interface/dashboard.md)
+  - [Create Content Dialog](interface/create-content-dialog.md)
+  - [Content Overview](interface/content-overview.md)
+- [Teach Editor](interface/teach-editor.md)
 
-## Premium courses
+## Premium Courses
 
-* [Development process](premium-courses/premium-course-process.md)
-  - [1. Course specs](premium-courses/premium-course-process.md#course-specs)
-  - [2. Exercises](premium-courses/premium-course-process.md#exercises)
-  - [3. Slides and scripts](premium-courses/premium-course-process.md#slides-scripts)
-  - [4. Screencasts](premium-courses/premium-course-process.md#screencasts)
-  - [5. Videos](premium-courses/premium-course-process.md#videos)
-  - [6. Review and release](premium-courses/premium-course-process.md#review-release)
-  - [7. Monitor and maintain](premium-courses/premium-course-process.md#monitor-maintain)
-* [Course structure](premium-courses/premium-course-structure.md)
+- [Creating Your Audition Video](courses/audition.md)
+- [Design](courses/design/README.md)
+  - [Design Template](courses/design/template.md)
+  - [Learner Personas](courses/design/personas.md)
+- [Development Process](premium-course-process.md)
+  - [Course specs](premium-course-process.md#course-specs)
+  - [Exercises](premium-course-process.md#exercises)
+  - [Slides and Scripts](premium-course-process.md#slides-scripts)
+  - [Screencasts](premium-course-process.md#screencasts)
+  - [Videos](premium-course-process.md#videos)
+  - [Review and release](premium-course-process.md#review-release)
+  - [Monitor and Maintain](premium-course-process.md#monitor-maintain)
