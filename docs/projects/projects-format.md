@@ -205,16 +205,23 @@ This is the `code` cell that checks the Student's solution to the task. The main
   - Good: The column `date` should be converted using the `pd.to_datetime()` function.
   - Bad: `date` is wrong.
 
-### Tests for python & bash ###
+### Tests for python ###
 
-For python & bash, the tests are written using [the nose testing framework](http://nose.readthedocs.io/en/latest/#installation-and-quick-start) and uses the [`ipython_nose` magic](https://github.com/akaihola/ipython_nose). Every `@tests` cell needs to start with the [ipython_nose magic](https://github.com/akaihola/ipython_nose) `%%nose`.
+For python, the tests are written using [the nose testing framework](http://nose.readthedocs.io/en/latest/#installation-and-quick-start) and uses the [`ipython_nose` magic](https://github.com/akaihola/ipython_nose). Every `@tests` cell needs to start with the [ipython_nose magic](https://github.com/akaihola/ipython_nose) `%%nose`.
 
 [**Click here for examples of different python tests and for how to install nose and ipython_nose**](projects-test-examples.md/#tests-python).
 
 **python example:**
 ![](media/python_tests_example.png)
 
+### Tests for Bash ###
 
+For Bash, the tests also use ipython_nose like python, the only difference that as well as the `%%nose` needed at the start of the test cell, it also needs to include `#DC_GRADE`.
+
+[**Click here for examples of different bash tests and for how to install nose and ipython_nose**](projects-test-examples.md/#tests-bash).
+
+**bash example:**
+![](media/bash_tests_example.png)
 
 ### Tests for R ###
 
