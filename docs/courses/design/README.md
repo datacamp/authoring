@@ -21,9 +21,6 @@ You will frequently go back to revise earlier work
 as you learn something from your answer to a later question
 or realize that your initial plan isn't going to play out the way you first thought.**
 
-Please copy [this template](template.md) to `README.md` in the root directory of your course repository
-and fill it in to design your own course.
-
 ## Terminology and Structure
 
 - A **course** is a self-contained module with its own top-level entry in our catalog,
