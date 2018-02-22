@@ -45,8 +45,8 @@
      - [Challenge Content](challenges/guides/content.md)
      - [Challenge Style](challenges/guides/style.md)
 * [Projects](projects/README.md)
-   - [Project Creation Process](projects/projects-process.md)
-   - [Project Notebook Format](projects/projects-format.md)
+   - [Creation Process](projects/projects-process.md)
+   - [Notebook Format](projects/projects-format.md)
      - [Overview](projects/projects-format.md#overview)
      - [`type:NotebookTask`](projects/projects-format.md#notebooktask)
      - [`@context`](projects/projects-format.md#context)
@@ -56,9 +56,8 @@
      - [`@solution`](projects/projects-format.md#solution)
      - [`@tests`](projects/projects-format.md#tests)
      - [Test examples](projects/projects-test-examples.md)
-   - [Project File Structure](projects/projects-repo-structure.md)
-   - [Guidelines](projects/guides/README.md)
-     - [Project Content](projects/guides/content.md)
+   - [File Structure](projects/projects-repo-structure.md)
+   - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
 
 ## Teach interface
 

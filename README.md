@@ -20,7 +20,7 @@ v7.10.1
 4.2.0
 ```
 
-In case you do not have node installed you can do so by using node version manager, follow these steps:
+In case you do not have node installed you can do so by [using node version manager](https://github.com/creationix/nvm/blob/master/README.md#installation), follow these steps:
 
 1. Open your terminal
 2. Install the Node version manager by executing:
@@ -102,5 +102,5 @@ Examples on how to import images or create links:
 ```
 ![Image description](/images/interface/teach-editor.png) # Will create an image
 [A link](/courses/README.md) # Will create a link
-[A link to part of the [age](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
+A link to [part of the page](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
 ```
