@@ -1,6 +1,6 @@
 # Challenge Style
 
-Always presents the original DataFrame in the context/assignment of
+Always present the original DataFrame in the context/assignment of
 a challenge and have outputs only reflect the modified version that
 results from some candidate or generated code.
 
