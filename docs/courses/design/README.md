@@ -14,13 +14,13 @@ this document describes a process based on evidence-based teaching practices:
 - Everything from Step 2 onward goes into your final course, so there is no wasted effort.
 - Getting you to write sample exercises early lets DataCamp check that we can support everything you want your students to do.
 
-We use the design of our introduction to the Unix shell for data scientists as a running example.
+We use the design of our course on tree-based models in Pyython as a running example.
 
-**Note: the steps are described in order of increasing detail,
-but the process itself is always iterative.
-You will frequently go back to revise earlier work
-as you learn something from your answer to a later question
-or realize that your initial plan isn't going to play out the way you first thought.**
+> **Note: the steps are described in order of increasing detail,
+> but the process itself is always iterative.
+> You will frequently go back to revise earlier work
+> as you learn something from your answer to a later question
+> or realize that your initial plan isn't going to play out the way you first thought.**
 
 Please copy [this template](template.md) to `README.md` in the root directory of your course repository
 and fill it in to design your own course.
@@ -95,28 +95,48 @@ Checkin: a rough scope for the course that you have agreed with your CL.
 
 ### Running Example
 
-The questions and answers for the Unix shell course are:
+Brainstorming for the course on tree-based models in Python produced this list:
 
-1. *What problem(s) will student learn how to solve?*
-   How to combine existing/legacy tools;
-   how to make analyses reproducible.
-2. *What techniques or concepts will students learn?*
-   History; pipes; shell scripts.
-3. *What technologies, packages, or functions will students use?*
-   Bash shell; basic Unix commands (`cd`, `ls`); basic data manipulation commands (`head`, `cut`, `grep`).
-4. *What terms or jargon will you define?*
-   Filesystem; redirection; pipe; wildcard.
-5. *What analogies will you use to explain concepts?*
-   Command-line pipeline is like chemistry pipeline;
-   shell scripts are like snippets of command history.
-6. *What heuristics will help students understand things?*
-   Use filenames that are easy to match with tab completion and wildcards;
-   build pipelines step by step.
-7. *What mistakes or misconceptions do you expect?*
-   That the shell shows the same files and folders as the GUI interface they're used to;
-   definition vs. use of variables (especially loop variables).
-8. *What datasets will you use?*
-   dental records.
+1. What problem(s) will student learn how to solve?
+   - How to model supervised learning problems using decision-trees (CART) and some ensemble methods.
+2. What techniques or concepts will students learn?
+   - Using `scikit-learn` to successfully train decision-tree-based models.
+   - Learning how to reduce the bias and variance of tree models through ensembling.
+3. What technologies, packages, or functions will students use?
+    - `scikit-learn` for creating and evaluating models, 
+    - `matplotlib`, `seaborn`, `mlxtend` and some custom functions for plotting, 
+    - `pandas` for reading and manipulating data.
+4. What terms or jargon will you define?
+    - Entropy and Gini indices
+    - Information gain
+    - The bias-variance tradeoff
+    - Generalization error
+    - Ensembling
+    - Bootstrap
+    - Bagging versus random forests
+    - Boosting
+    - Gradient Boosting versus Adaboost
+    - Hyperparameter tuning for tree-based models
+5. What analogies will you use to explain concepts?
+    - Given an observation characterized by features and a label,
+      a decision tree is like a detective asking a sequence of if/else questions about the features
+      in order to figure out the label.
+    - Ensembling is equivalent to combining the judgments of several experts on a particular topic:
+      the combined judgement is in principle less prone to errors than a judgement made by a single expert.
+    - Tuning the hyperparameters of a model is like regulating the control knob of a thermostat in a room
+      to obtain the most convenient temperature for all people in the room.
+6. What heuristics will help students understand things?
+   - Fit a decision tree to the dataset and observe the produced decision regions.
+   - Fit different tree models to bootstrap samples drawn from the dataset
+     and then aggregate their predictions and plot the resulting decision regions.
+7. What mistakes or misconceptions do you expect?
+   - Understanding how to diagnose when a tree-based model is overfitting the training set.
+   - Not knowing which are the best hyperparameters to optimize for the different tree-based models.
+8. What datasets will you use?
+   - Breast Cancer Wisconsin (diagnostic) dataset
+   - Indian liver patient records
+   - Automobile miles per gallon
+   - Bikes
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -151,19 +171,13 @@ link to them and comment on how the course relates to them.
 ### Running Example
 
 - [Alex](personas.md#advanced-alex)
-  knows how to do a few things with the Terminal application on his Mac,
-  but now wants to learn how to use the shell to access his company's cloud computing resources.
-  This course will serve as a quick refresher
-  before he goes on to a more advanced course.
+  builds and uses decision trees on a regular basis using off-the-shelf software,
+  and will take this course to learn how those packages work
+  so that he can prepare data to use with them.
 
 - [Sindhu](personas.md#starting-sindhu)
-  has never used a command-line shell.
-  This course will give her a basic understanding of Unix
-  so that she can use the command-line tools her colleagues have built.
-
-- [Chen](personas.md#coder-chen)
-  *doesn't* need this course,
-  since she has been using Unix for more than twenty years.
+  is new to decision trees,
+  and will take this course to learn about their capabilities and limitations.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -196,127 +210,106 @@ so that the CL can check that our platform can do everything you need.
 
 ### Running Example
 
-**Complete Exercise: Building a Tool to Find Unique Values in Columns**
+1) Fit a CART model to the Wisconsin Breast Cancer dataset in order to
+classify a tumor as malignant or benign.  Recall from the supervised
+learning course that the data has to be first split into a train and a
+test set.
 
-As the final exercise in the Unix shell course,
-you are given several dozen data files, each of which is formatted like this:
-
-```
-2013-11-05,deer,5
-2013-11-05,rabbit,22
-2013-11-05,raccoon,7
-2013-11-06,rabbit,19
-```
-
-1. Write a shell script called `unique.sh`
-   that takes any number of filenames as command-line parameters
-   and prints the names of the species found in each file
-   in alphabetical order.
-   Each file is processed separately.
-
-> **Solution**
->
-> ```
-> #!/usr/bin/env bash
->
-> # Find unique species in CSV files where species is the second data
-> # field.  This script accepts any number of filenames as arguments
-> # and processes each separately.
->
-> for file in $@
-> do
->   echo $file
->   cut -d , -f 2 $file | sort | uniq
-> done
-> ```
-
-**Complete Exercise: Using Wildcards**
-
-2. With one command,
-   use `unique.sh` to find the unique species
-   in all of the `.csv` files in the `~/archive` and `~/new` directories.
-   Use wildcards to specify the names of the files to be processed;
-   do *not* include the `.txt` or `.bak` files in those directories.
+- Import the `DecisionTreeClassifier` model from the `sklearn.tree` module.  
+- Import `train_test_split` from `sklearn.model_selection`.
+- Select the columns `radius_mean` and `concave points_mean` from `df` as the features matrix `X` .
+- Select the column `diagnosis` from `df` as the target vector `y`.
+- Using `train_test_split`, split the data into 80% train and 20% test in a stratified way
+  by specifying the `test_size` to 0.2
+  and the  `stratify` parameter to `y`.
+- Instantiate a `DecisionTreeClassifier` called `dtc`
+  with a minimum percentage of sample leafs equal to 0.02 by specifying the `min_samples_leaf` parameter.
+  For reproducibility, also set the `seed` to 3 by specifying the `random_state` parameter.
+- Fit the classifier to the training data using the `.fit()` method.
+- Evaluate the classifier on the test set using the `.score()` method, then print it.
 
 > **Solution**
+> 
+> ```python
+> from sklearn.tree import DecisionTreeClassifier
+> from sklearn.model_selection import  train_test_split
+> 
+> X = df[['radius_mean', 'concave points_mean']]
+> y = df['diagnosis'].map({'M': 1, 'B':0})
+> 
+> 
+> X_train, X_test, y_train, y_test = \
+>   train_test_split(X, y, test_size = 0.2, stratify = y, random_state = 3)
+> 
+> dtc = DecisionTreeClassifier(min_samples_leaf = 0.02, random_state = 3)
+> dtc.fit(X_train,y_train)
+> 
+> score = dt.score(X_test,y_test)
+> print(score)
+> ```
+
+2) Visualize the decision regions obtained by the decision tree
+classifier that you trained above.
+
+- Import `plot_decision_region` from `mlxtend.plotting`.
+- Visualize the obtained decision regions by calling the `plot_decision_regions` function;
+  pass the arguments `X.values`, `y.values` and the classifier `dtc` as `clf` respectively.
+  Using the `.values` attribute for `X` and `y` ensures that  you are passing NumPy arrays to the function. 
+ 
+> **Solution**
 >
+> ```python
+> from mlxtend.plotting import plot_decision_regions
+> 
+> plot_decision_regions(X.values,y.values, clf=dt)
+> plt.ylim(0,.2)
+> plt.xlim(6,29)
+> plt.show()
 > ```
-> unique.sh ~/archive/*.csv ~/new/*.csv
-> ```
 
-**Exercise Outline: Manipulating Files and Directories**
+3) Train a `DecisionTreeClassifier` and a `BaggingClassifier` on all
+the features of the Wisconsin Breast Cancer dataset. You'll get to
+experiment with the code and explore how ensembling reduces the
+variance of CARTs.
 
-What is the output of the final `ls` command in the sequence shown below?
+- Import the `BaggingClassifier` model from the `sklearn.ensemble` module.
+- Import the `DecisionTreeClassifier` model from the `sklearn.tree` module.
+- Select all the columns from `df` except 'id','diagnosis' and 'Unnamed: 32' as the features matrix `X`.
+- Set the `seed` value to 4 and the number of estimators for the `BaggingClassifier` to 400.
+- Using `train_test_split`, split the data into 80% train and 20% test in a stratified way.
+- Instantiate a `DecisionTreeClassifier` called `dtc` and a `BaggingClassifier` with 400 estimators.
+- Fit the two classifiers to the training data.
 
-```
-$ pwd
-/Users/jasmine/data
+4) Implement a Gradient-Boosting-Regressor algorithm step by step to
+predict the miles-per-gallon consumption of a car using the auto
+dataset.
 
-$ ls
-mortality.dat
+- Prepare the data.
+  - Import `pandas`.
+  - Import `DecisionTreeRegressor` from `sklearn.tree`.
+  - Import function `train_test_split` from `sklearn.model_selection`.
+  - Import `r2_score` from `sklearn.metrics`.
+  - Apply the `pd.get_dummies()` function on `X` to one-hot-encode the `origin` feature-column and assign the result to `X`.
+  - Using `train_test_split`, split the data into 80% train and 20% test.
+- Define the Gradient Boosting Regressor.
+  - Set the number of trees (`n_trees`) to 100 and the learning rate (`learning_rate`) to 0.1.
+  - Create a list called `trees` that consists of `n_trees` decision tree regressors.
+  - Fit the first tree in `trees` using `X_train` and `y_train`.
+  - Using the tree you have fitted, predict the labels of `X_train` and `X_test`.
+    Assign the obtained values to `y_train_pred` and `y_test_pred` respectively.
+  - Evaluate the skill of the tree you have fitted (r2 score) on the test set and assign it to `single_tree_score`.
+- Fit the model and evaluate it on the test set.
+  - Set the residuals as the difference between `y_train` and `y_train_pred`.
+  - Write a loop to iterate over the elements of `trees` starting from the second element.
+  - Inside the loop:
+    - Fit `tree` to (`X_train`, `residuals`).
+    - Subtract the predictions of `tree` on `X_train` from `residuals` and assign it to `residuals`.
+    - Multiply `learning_rate` by the prediction of `tree` on `X_test` and add it to the value of `y_test_pred`.
+  - Evaluate the skill of the model (r2 score) on the test set and assign it to `gb_score`.
+ - Print the value of `gb_score`.
 
-$ mkdir old
-$ mv mortality.dat old
-$ cp old/mortality.dat ../mortality-saved.dat
-$ ls
-```
-
-1. `mortality-saved.dat old`
-2. `old`
-3. `mortality.dat old`
-4. `mortality-saved.dat`
-
-Uses:
-- `pwd`, `ls`, `cp`, `mv`, `mkdir`
-- paths
-- the special path `..`
-
-**Exercise Outline: Tracing Pipes and Redirection**
-
-`dental.csv` contains:
-
-```
-2017-05-05,incisor
-2017-05-05,bicuspid
-2017-05-05,molar
-2017-05-06,bicuspid
-2017-05-06,incisor
-2017-05-06,premolar
-2017-05-07,bicuspid
-2017-05-07,crown
-```
-
-What text passes through each of the pipes and the final redirect in this pipeline?
-
-```
-$ cat dental.csv | head -n 5 | tail -n 3 | sort -t , -k 2 > final.txt
-```
-
-Uses:
-- `cat`, `head`, `tail`, `sort`
-- pipes
-- redirection
-- command flags
-
-**Exercise Outline: Selecting Data by Value**
-
-Write a command that selects *only* data in `dental.csv` from the years 2000, 2005, and 2010.
-
-Uses:
-- `grep` (with fixed text, not regualr expressions)
-
-**Exercise Outline: Shell Scripts**
-
-Fill in the blanks in `dates.sh`
-to select unique dates from the files
-whose names are given as the script's command-line arguments.
-
-Uses:
-- command-line arguments
-- pipes
-- wildcards
-- `cut`, `sort`, `uniq`
-- `#!`
+**Note:** the actual spec for this course included four more
+exercises, and had sample solutions for all of them.
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -342,34 +335,38 @@ Note:
 
 ### Running Example
 
-The chapter and lesson outline for the Unix shell course is:
-
-1. Manipulating Files and Directories
-   1. What a shell is; how it compares to a graphical interface.
-   2. Basic commands (`whoami`; `pwd`; `ls`).
-   3. Moving around (cd; the special paths `.` and `..`).
-   4. Creating, deleting, and renaming (`cp`; `mv`; `rm`; `mkdir`; `rmdir`).
-2. Manipulating Data
-   1. Getting rows (`head`; `tail`).
-   2. Getting columns (`cut`)
-   3. Repeating steps (`history`; `!number` and `!command`)
-   4. Selecting by value (`grep`; quoting arguments to protect special characters)
-3. Combining Tools
-   1. Redirection with `>`
-   2. Piping with `|`
-   4. Using the `*` and `?` wildcards
-   3. Using `uniq` and `sort` (useful, and further examples of pipelines).
-4. Batch Processing
-   1. Storing commands in shell scripts.
-   2. Permissions; using `!#`.
-   3. Using arguments in shell scripts.
-   4. Shell variables.
-   5. Loops.
-
+1. Classification and Regression Trees (CARTs)
+   1. Decision-trees for Classification (use roc_auc_score as it was introduced in Andy Muller's course)
+   2. How do CARTs learn from data?
+   3. Decision-trees for Regression (introduce negative mean squared error as a metric for regression)
+   4. The limitations of CARTs
+2. The Bias-Variance Tradeoff
+   1. Generalization Error and the Bias-Variance Decomposition
+   2. Diagnosing Bias and Variance Problems
+   3. Addressing Bias and Variance Problems with Grid-Search Cross-Validation
+   4. Ensembling to Reduce Bias and Variance
+3. Bagging and Random Forests
+   1. The Bootstrap Method
+   2. Classification with Bagging 
+   3. Regression with Random Forests 
+   4. Out of Bag Estimation of Error
+4. Boosting
+   1. What is Boosting?
+   2. Classification with Adaboost (possibility: introduce multiclass classification problem with corresponding metric?)
+   3. Regression with Gradient Boosting 
+5. Getting the Most out of your Models
+   1. Selecting the most Influential Hyperparameters of a Tree-based Model
+   2. Tuning Random Forests for Classification
+   3. Tuning a Gradient Boosting Regressor
+   4. Using Tree-Based Models to assess the Importance of Features
+  
 The datasets are:
 
-- `./dental.csv`: two-column year and tooth data
-- `./data/*.csv`: seasonal dental data ('autumn.csv', 'spring.csv', 'summer.csv', 'winter.csv')
+- [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
+- [Indian Liver Patient Records](https://www.kaggle.com/uciml/indian-liver-patient-records/data)
+- [Default of Credit Card Clients Dataset](https://www.kaggle.com/uciml/default-of-credit-card-clients-dataset)
+- [Automobile miles per gallon](https://assets.datacamp.com/production/course_1939/datasets/auto.csv)
+- [Bikes](https://assets.datacamp.com/production/course_3851/datasets/Bikes.RData)
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -391,35 +388,48 @@ Note: see the appendix for a discussion of how to write good learning objectives
 
 ### Running Example
 
-Here are the final deliverables for the design of the Unix shell course.
-
 **Course Description**
 
-The Unix command line has survived and thrived for almost fifty years
-because it lets people to do complex things with just a few keystrokes.
-Sometimes called "the duct tape of programming",
-it helps users combine existing programs in new ways,
-automate repetitive tasks,
-and run programs on clusters and clouds
-that may be halfway around the world.
-This course will introduce its key elements
-and show you how to use them efficiently.
+Decision trees are supervised learning models used for problems
+involving classification and regression. They present a high
+flexibility that comes at a price: on one hand, trees are able to
+capture complex non-linear relationships; on the other hand, they are
+prone to memorizing the noise present in a dataset. By aggregating the
+predictions of trees that are trained differently, ensemble methods
+exploit the flexibility of trees while reducing their tendency to
+memorize noise. Ensemble methods are used across a variety of fields
+and have a proven track record of winning many machine learning
+competitions.
+
+In this course, you'll learn how to use Python to train decision trees
+and tree-based models with the user-friendly scikit-learn machine
+learning library. You'll understand the advantages and shortcomings of
+trees and demonstrate how ensembling can alleviate these shortcomings,
+all the while practicing on real-world datasets. Finally, you'll also
+understand how to tune the most influential hyperparameters in order
+to get the most out of your models.
 
 **Learning Objectives**
 
-- Explain the similarities and differences between the Unix shell and graphical user interfaces.
-- Use core Unix commands to create, rename, and remove files and directories.
-- Explain what files and directories are.
-- Match files and directories to relative and absolute paths.
-- Use core data manipulation commands to filter and sort textual data by position and value.
-- Find and interpret help.
-- Predict the paths matched by wildcards and specify wildcards to match sets of paths.
-- Combine programs using pipes to process large data sets.
-- Write shell scripts to re-run command pipes with a varying number of command-line arguments.
+- Define what a Classification and Regression Tree (CART) model is.
+- Explain how a CART model learns from data.
+- Recognize the pros and cons of CARTs.
+- Explain the bias-variance tradeoff.   
+- Recognize the importance of ensembles in generating robust predictions.
+- Define Bagging and Random Forests as models that combine different CARTs incorportating randomization.
+- Demonstrate how Bagging and Random Forests can reduce the variance of CARTs.
+- Define Bossting as a model combining the predictions of weak learners that learn incrementally from errors.  
+- Demonstrate how Boosting can reduce both the bias and variance of CARTs.
+- Select the most influential hyperparameters for tuning each of the defined tree-based models.
+- Recognize the ability of tree-based models to extract the importance of features.
 
 **Prerequisites**
 
-None.
+- [Introduction to Python for Data Science][PDS]
+- [Intermediate Python for Data Science][IPDS]
+- [Statistical Thinking in Python (Part1)][STP1]
+- [Supervised Learning with scikit-learn][SLSKL]
+- [Introduction to Data Visualization with Python][IDVP] (Optional)
 
 <!-- -------------------------------------------------------------------------------- -->
 
@@ -482,3 +492,8 @@ Its six levels and verbs often used in learning objectives at those levels are:
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
 [teaching-statistics]: https://www.amazon.com/Teaching-Statistics-Tricks-Andrew-Gelman/dp/0198572247/
 [wilson-teaching]: http://third-bit.com/teaching/
+[PDS]: https://www.datacamp.com/courses/intro-to-python-for-data-science
+[IPDS]: https://www.datacamp.com/courses/intermediate-python-for-data-science
+[STP1]: https://www.datacamp.com/courses/statistical-thinking-in-python-part-1
+[IDVP]: https://www.datacamp.com/courses/introduction-to-data-visualization-with-python
+[SLSKL]: https://www.datacamp.com/courses/supervised-learning-with-scikit-learn
