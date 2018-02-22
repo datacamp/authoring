@@ -1,5 +1,7 @@
 # **Course Title**<br/>by **Course Author**
 
+Specs deadline: YYYY-MM-DD
+
 *Please read the [course design process description](design.md)
 and complete these steps in the `README.md` file in your course repository.
 If you need assistance,
