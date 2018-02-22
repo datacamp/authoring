@@ -5,8 +5,7 @@ Please see <https://www.datacamp.com/teach/> for your course's dashboard.
 ## Introduction
 
 Designing a good course is as hard as designing good software.
-To help you,
-this document describes a process based on evidence-based teaching practices:
+To help you, this document describes a process based on evidence-based teaching practices:
 
 - It lays out a step-by-step progression to help you figure out what to think about in what order.
 - It provides spaced check-in points so you and your Curriculum Lead (CL) can re-scope or redirect effort.
@@ -56,34 +55,33 @@ You aren't expected to answer all of them,
 and you may pose and answer others if you and your CL think it's helpful,
 but you should always include a couple of answers to the first.
 
-1. **What problem(s) will student learn how to solve?**
+Click the links on each question to see more details aobut how to write an answer.
+
+1. [**What problem(s) will student learn how to solve?**](/courses/design/brainstorming-problems.md)
    E.g., "how to draw plots using `ggplot2`"
    or "how to forecast product demand".
 
-2. **What concepts and techniques will students learn?**
+2. [**What concepts and techniques will students learn?**](/courses/design/brainstorming-concepts.md)
    E.g., "the split-train-model-predict workflow"
    or "rolling back Git commits".
 
-3. **What technologies, packages, or functions will students use?**
+3. [**What technologies, packages, or functions will students use?**](/courses/design/brainstorming-technologies.md)
    E.g., "`ggplot2` for drawing plots".
 
-4. **What terms or jargon will you define?**
+4. [**What terms or jargon will you define?**](/courses/design/brainstorming-jargon.md)
    E.g., "boosting versus bagging"
    or "block/factor/sequential designs".
 
-5. **What analogies will you use to explain concepts?**
-   E.g., "ggplots are like Lego for graphics".
+5. [**What analogies or heuristics will you use to explain concepts?**](/courses/design/brainstorming-analogies.md)
+   E.g., "ggplots are like Lego for graphics"
+   or "draw a simple plot then add elements one by one"
    (See [Gelman & Nolan][teaching-statistics] for more ideas here.)
 
-6. **What heuristics will help students understand things?**
-   E.g., "draw a simple plot then add elements one by one"
-   or "don't use Holt-Winters if your demand spikes on holidays".
-
-7. **What mistakes or misconceptions do you expect?**
+6. [**What mistakes or misconceptions do you expect?**](/courses/design/brainstorming-mistakes.md)
    E.g., "changing colors works differently if the color argument is inside an aesthetic or not"
    or "overfitting models to the data".
 
-8. **What datasets will you use?**
+7. [**What datasets will you use?**](/courses/design/brainstorming-datasets.md)
    E.g., "anything but the diamonds and mtcars datasets"
    or "something from the UCI Archive".
 
@@ -147,6 +145,8 @@ Note: Please do not copy the profiles into your course design,
 since we will update them as we gather more data on our learners.
 Instead,
 link to them and comment on how the course relates to them.
+
+More detail [here](/courses/design/choose-learner-personas.md)
 
 ### Running Example
 
