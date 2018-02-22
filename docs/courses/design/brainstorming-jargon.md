@@ -28,7 +28,7 @@ This depends a lot upon the prerequisites for the course. For example, the intro
 
 ### Think of synonyms
 
-Often there are several different words for a particular concept. For example, columns in a rectangular dataset may also be referred to as fields or features or variables, depending upon context. Many students may have head one term but not the others, so it can be useful to explain synonyms to them.
+Often there are several different words for a particular concept. For example, columns in a rectangular dataset may also be referred to as fields or features or variables, depending upon context. Many students may have head one term but not the others, so it can be useful to explain synonyms to them. (Though note that once you've explained the synonyms, you should be consistent about which term you are using.)
 
 
 ## Common problems and their solutions
