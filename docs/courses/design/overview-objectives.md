@@ -52,7 +52,7 @@ If the objectives for the course aren't clear to you, then they really won't be 
 
 This step will be reviewed by at least two people other than your curriculum lead, possibly including an external reviewer. They will look for the following points.
 
-- Are there a sensible number of objectives.
+- Are there a sensible number of objectives?
 - Is each objective specific?
 - Does each objective sounds useful and interesting?
 - Overall, do the objectives make the course sound worthwhile for students to take?
