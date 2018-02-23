@@ -64,11 +64,11 @@ To provide enough context about what is happening, the final exercise can show a
 
 ### How much detail is necessary?
 
-The exercise should explain what the learning objectives are, explain any background knowledge that you are assuming, and provide the code that you expect the students to write. err on the side or more detail rather than less.
+The exercise should explain what the learning objectives are, explain any background knowledge that you are assuming, and provide the code that you expect the students to write. Err on the side or more detail rather than less.
 
 ### Does the code need to be runnable?
 
-Not yet (though eventually yes). You can write this exercise with 
+Not yet (though eventually yes). You can draft this exercise with a dummy dataset, then improve it later.
 
 
 ## Good ideas
