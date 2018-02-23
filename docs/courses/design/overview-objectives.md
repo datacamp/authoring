@@ -1,11 +1,10 @@
 # Step 5.2 - Course Learning Objectives
 
-Write a list of learning objectives for the course. These are not shown to the students, but they will be used to ensure your vision for the course aligns with the vision of your Curriculum Lead. 
+Write a list of learning objectives for the course. These are not shown to the students, but they will be used to ensure your vision for the course aligns with the vision of your Curriculum Lead. Ideally you should be testing higher levels of thinking (according to Bloom's taxonomy, see below). 
 
 ## Examples
 
 From a course on scikit-learn. This nicely clarifies the point of the course.
-
 
 - Learn the key concepts of supervised learning and how to implement them on real-world datasets;
 - Learn to distinguish regression from classification problems;
@@ -34,7 +33,37 @@ From a course on single cell RNA-Seq analysis. This is exhaustive in describing 
 
 One objective per chapter is typical, but three to ten is acceptable.
 
+### What is Bloom's taxonomy?
+
+Bloom describes six levels of understanding (bigger numbers are better).
+
+1. Knowledge: recalling learned information
+   (name, define, recall).
+2. Comprehension: explaining the meaning of information
+   (restate, locate, explain, recognize).
+3. Application: applying what one knows to novel, concrete situations
+   (apply, demonstrate, use).
+4. Analysis: breaking down a whole into its component parts
+   and explaining how each part contributes to the whole
+   (differentiate, criticize, compare).
+5. Synthesis: assembling components to form a new and integrated whole
+   (design, construct, organize).
+6. Evaluation: using evidence to make judgments about the relative merits of ideas and materials
+   (choose, rate, select).
+
+For further reading, Wikipedia has [a thorough overview](https://en.wikipedia.org/wiki/Bloom's_taxonomy) of the framework, and [this pdf](http://www.bloomstaxonomy.org/Blooms%20Taxonomy%20questions.pdf) has some nice practical examples.
+
 ## Good ideas
+
+### Have testable learning objectives
+
+Rather than writing "Student will understand X", a good learning objective should specify what the student will *do* to demonstrate what they know.
+
+The three elements of a good learning objective are therefore:
+
+1. what you want the student to master,
+2. what level of understanding you want them to have, and
+3. what they will do to demonstrate their understanding.
 
 ### Talk about problems, techniques, and technologies
 
