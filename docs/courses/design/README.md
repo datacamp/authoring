@@ -40,6 +40,16 @@ A typical breakdown is:
 - Chapter 4: 10-16 exercises
 - Chapter 5 (optional): 10-16 exercises
 
+## Types of courses
+
+There are three types of course:
+
+1. Technology courses. These focus on teaching the features of a particular package or technology. This is how we teach plotting, for example, we have courses on ggplot2 and Bokeh, not courses on scatterplots and histograms.
+1. Technique courses. These focus on how, why, and when to use a technique. This is how we teach statistics, for example, we have courses on cluster analysis and network analysis, not courses on the packages that implement them.
+1. Application courses. These start with a business problem or scientific problem, and explain what the problem is, what the data looks like, and how to solve the problem. 
+
+The type of course you are going to make affects the relative importance of different elements in the course spec. Ask your Curriculum Lead if you aren't sure of the type.
+
 <!-- -------------------------------------------------------------------------------- -->
 
 ## Step 1: Brainstorming
