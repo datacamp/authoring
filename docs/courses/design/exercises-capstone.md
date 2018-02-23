@@ -91,7 +91,7 @@ It's really common to struggle with knowing how much content can fit into a cour
 
 ## How will this be reviewed?
 
-This step will be reviewed by at least two people other than your curriculum lead, possibly including an external reviewer. They will look for the following points.
+This step will be reviewed by at least two people other than your Curriculum Lead, possibly including an external reviewer. They will look for the following points.
 
 - Have you clearly described the learning objective?
 - Does the exercise look contain a suitable amount of work for the student to do? (Not too little or too much.)
