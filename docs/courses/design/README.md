@@ -2,6 +2,13 @@
 
 Please see <https://www.datacamp.com/teach/> for your course's dashboard.
 
+## How to read this document
+
+This document provides much of the information that is required to write a good course spec. There is a lot of information to assimilate, so it is best to read it in small pieces.
+
+- Before you begin, read everything up to [Step 1 - Brainstorming](/courses/design/#step-1-brainstorming).
+- As you begin each step (or sub-step), read the documentation for that step only.
+
 ## Introduction
 
 Designing a good course is as hard as designing good software.
