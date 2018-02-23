@@ -52,7 +52,7 @@ You aren't expected to answer all of them,
 and you may pose and answer others if you and your CL think it's helpful,
 but you should always include a couple of answers to the first.
 
-Click the links on each question to see more details aobut how to write an answer.
+Click the links on each question to see more details about how to write an answer.
 
 1. [**What problem(s) will student learn how to solve?**](/courses/design/brainstorming-problems.md)
    E.g., "how to draw plots using `ggplot2`"
@@ -143,7 +143,7 @@ since we will update them as we gather more data on our learners.
 Instead,
 link to them and comment on how the course relates to them.
 
-More detail [here](/courses/design/choose-learner-personas.md)
+More details [here](/courses/design/choose-learner-personas.md).
 
 ### Running Example
 
@@ -375,9 +375,9 @@ The datasets are:
 You can now summarize everything you have created
 by writing a high-level course overview that consists of:
 
-- a one-paragraph description (i.e., a sales pitch to students)
-- half a dozen learning objectives
-- a summary of prerequisites
+- [a one-paragraph description](/courses/design/overview-description.md) (i.e., a sales pitch to students)
+- [half a dozen learning objectives](/courses/design/overview-objectives.md)
+- [a summary of prerequisites](/courses/design/overview-prerequisites.md)
 
 Doing this earlier often wastes effort,
 since material is usually added, cut, or moved around in earlier steps.
