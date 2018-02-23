@@ -42,7 +42,7 @@ If you spend all the time explaining why the students should take the course, it
 
 ## How will this be reviewed?
 
-This step will be reviewed by at least two people other than your curriculum lead, possibly including an external reviewer. They will look for the following points.
+This step will be reviewed by at least two people other than your Curriculum Lead, possibly including an external reviewer. They will look for the following points.
 
 - Is it about the right length?
 - Does the course sound exciting?
