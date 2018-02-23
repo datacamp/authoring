@@ -94,7 +94,7 @@ It's really common to struggle with knowing how much content can fit into a cour
 This step will be reviewed by at least two people other than your Curriculum Lead, possibly including an external reviewer. They will look for the following points.
 
 - Have you clearly described the learning objective?
-- Does the exercise look contain a suitable amount of work for the student to do? (Not too little or too much.)
+- Does the exercise contain a suitable amount of work for the student to do? (Not too little or too much.)
 - Does the exercise look interesting?
 - Is it an authentic task, that a real data scientist would perform?
 - Is it idiomatic code?
