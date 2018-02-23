@@ -384,8 +384,6 @@ since material is usually added, cut, or moved around in earlier steps.
 
 Checkin: course description, learning objectives, and prerequisites.
 
-Note: see the appendix for a discussion of how to write good learning objectives.
-
 ### Running Example
 
 Here are the final deliverables for the design of the Unix shell course.
@@ -443,37 +441,7 @@ what it is trying to achieve and why it is organized the way it is.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Appendix: Writing Good Learning Objectives
 
-Since we can't read minds,
-there's no point using "Student will understand X" as a learning objective for a course.
-Instead,
-a good learning objective should specify what the student will *do*
-to demonstrate what they know.
-The three elements of a good learning objective are therefore:
-
-1. what you want the student to master,
-2. what level of understanding you want them to have, and
-3. what they will do to demonstrate their understanding.
-
-Levels of understanding are often described using [Bloom's Taxonomy][bloom].
-Its six levels and verbs often used in learning objectives at those levels are:
-
-1. Knowledge: recalling learned information
-   (name, define, recall).
-2. Comprehension: explaining the meaning of information
-   (restate, locate, explain, recognize).
-3. Application: applying what one knows to novel, concrete situations
-   (apply, demonstrate, use).
-4. Analysis: breaking down a whole into its component parts
-   and explaining how each part contributes to the whole
-   (differentiate, criticize, compare).
-5. Synthesis: assembling components to form a new and integrated whole
-   (design, construct, organize).
-6. Evaluation: using evidence to make judgments about the relative merits of ideas and materials
-   (choose, rate, select).
-
-[bloom]: https://en.wikipedia.org/wiki/Bloom's_taxonomy
 [huston-teaching]: https://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674035801/
 [lang-teaching]: https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
