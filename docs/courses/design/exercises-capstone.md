@@ -58,7 +58,7 @@ Beginning with the final exercise helps you to clarify the point of the course a
 
 ### How big should the exercise be?
 
-Each exercise (including the final ones) should make the student complete one to four instructions, which usually roughly corresponds to writing one to four lines of code. Exercises can also contain "scaffolding code" that runs before the student sees the exercise, or appears when the exercise begins. In total, you typically want 12 lines of code or less in an exercise.
+Each exercise (including the final ones) should make the student complete one to four instructions, which roughly corresponds to writing one to four lines of code. Exercises can also contain "scaffolding code" that runs before the student sees the exercise, or appears when the exercise begins. In total, you typically want 12 lines of code or less in an exercise.
 
 To provide enough context about what is happening, the final exercise can show a little more than this, as long as you are clear that it would actually constitute multiple exercises at the end of the course.
 
