@@ -102,25 +102,24 @@ Checkin: a rough scope for the course that you have agreed with your CL.
 
 The questions and answers for the Unix shell course are:
 
-1. *What problem(s) will student learn how to solve?*
+1. *What problem(s) will student learn how to solve?*  
    How to combine existing/legacy tools;
    how to make analyses reproducible.
-2. *What techniques or concepts will students learn?*
+2. *What techniques or concepts will students learn?*  
    History; pipes; shell scripts.
-3. *What technologies, packages, or functions will students use?*
+3. *What technologies, packages, or functions will students use?*  
    Bash shell; basic Unix commands (`cd`, `ls`); basic data manipulation commands (`head`, `cut`, `grep`).
-4. *What terms or jargon will you define?*
+4. *What terms or jargon will you define?*  
    Filesystem; redirection; pipe; wildcard.
-5. *What analogies will you use to explain concepts?*
+5. *What analogies or heuristics will you use to explain concepts?*  
    Command-line pipeline is like chemistry pipeline;
    shell scripts are like snippets of command history.
-6. *What heuristics will help students understand things?*
    Use filenames that are easy to match with tab completion and wildcards;
    build pipelines step by step.
-7. *What mistakes or misconceptions do you expect?*
+6. *What mistakes or misconceptions do you expect?*  
    That the shell shows the same files and folders as the GUI interface they're used to;
    definition vs. use of variables (especially loop variables).
-8. *What datasets will you use?*
+7. *What datasets will you use?*  
    dental records.
 
 <!-- -------------------------------------------------------------------------------- -->
