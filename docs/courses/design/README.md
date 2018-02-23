@@ -21,6 +21,10 @@ You will frequently go back to revise earlier work
 as you learn something from your answer to a later question
 or realize that your initial plan isn't going to play out the way you first thought.**
 
+## Technical help
+
+You need to have basic competence at writing markdown documents and using github. See the [technical help resources](/courses/design/technical-help-resources.md) page for advice on getting started. Your Curriculum Lead will also provide technical help if you need it.
+
 ## Terminology and Structure
 
 - A **course** is a self-contained module with its own top-level entry in our catalog,
