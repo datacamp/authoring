@@ -23,7 +23,7 @@ please speak with your Curriculum Lead.*
 
 ## Step 2: [Who Is This Course for?](https://authoring.datacamp.com/courses/design/#step-2-who-is-this-course-for)
 
-*Read the [learner personas](personas.md) and [advice](](https://authoring.datacamp.com/courses/design/choose-learner-personas.md), then choose the two best fits for the course and describe why you chose them.*
+*Read the [learner personas](personas.md) and [advice](https://authoring.datacamp.com/courses/design/choose-learner-personas.md), then choose the two best fits for the course and describe why you chose them.*
 
 * Student 1: discussion.
 * Student 2: discussion.
