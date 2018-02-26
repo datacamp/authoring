@@ -163,7 +163,7 @@ since we will update them as we gather more data on our learners.
 Instead,
 link to them and comment on how the course relates to them.
 
-More details [here](/courses/design/choose-learner-personas.md).
+More advice [here](/courses/design/choose-learner-personas.md).
 
 ### Running Example
 
@@ -195,6 +195,8 @@ designers work backward from concrete examples of where their students are going
 Doing this also helps uncover technical requirements
 that might otherwise not be found until uncomfortably late in the lesson development process.
 
+More advice on [capstone exercises](/courses/design/exercises-capstone.md).
+
 To complement the full exercise descriptions,
 you should also write brief point-form descriptions of one or two exercises per chapter
 to show how quickly you expect learners to progress.
@@ -204,6 +206,8 @@ and help uncover technical requirements.)
 One way to create these "extra" exercises
 is to make a point-form list of the skills needed to solve the major exercises
 and create an exercise that targets each.
+
+More advice on [example exercises](/courses/design/exercises-examples.md).
 
 Checkin: 1-2 fully explained exercises that use the skills the student is to learn,
 plus half a dozen point-form exercise outlines.
@@ -356,6 +360,8 @@ Note:
   or to modify datasets to make them shareable.
 - You are likely to discover things you forgot to list earlier during this stage,
   so don't be surprised if you have to double back a few times.
+  
+  More advice on [lesson flow](/courses/design/lesson-flow.md).
 
 ### Running Example
 
