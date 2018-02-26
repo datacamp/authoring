@@ -1,11 +1,14 @@
 # **Course Title**<br/>by **Course Author**
 
+Specs deadline: YYYY-MM-DD
+
 *Please read the [course design process description](https://authoring.datacamp.com/courses/design)
 and complete these steps in the `README.md` file in your course repository.
 If you need assistance,
 please speak with your Curriculum Lead.*
 
 ## Step 1: [Brainstorming](https://authoring.datacamp.com/courses/design/#step-1-brainstorming)
+
 
 ### 1. [What problem(s) will students learn how to solve?](https://authoring.datacamp.com/courses/design/brainstorming-problems.md)
 

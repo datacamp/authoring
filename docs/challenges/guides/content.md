@@ -1,4 +1,4 @@
-# Guidelines
+# Challenge Content
 
 Here are the recommended guidelines to be followed when creating challenges.
 
