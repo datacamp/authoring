@@ -46,7 +46,7 @@ Heuristics are sometimes called "rules of thumb". They are practical rules that 
 
 ### This is hard. Can I skip it?
 
-You are not alone. Many instructors struggle with this. If you are stuck, come back to this question after you've written the rest of the spec. You should try and write something here eventually, since it's important to try and find non-technical explanations for the concepts in your course.
+You are not alone. Many instructors struggle with this. If you are stuck, come back to this question after you've written the rest of the spec. You should try and write something here eventually, since it's important to try to find non-technical explanations for the concepts in your course.
 
 
 ## Good ideas
