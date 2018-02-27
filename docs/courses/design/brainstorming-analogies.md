@@ -55,6 +55,9 @@ You are not alone. Many instructors struggle with this. If you are stuck, come b
 
 Many heuristics are the things that you do in your day job, but don't write down because you just know them. Many DataCamp students don't know these things yet, so now is them time to write them!
 
+### Be opinionated
+
+It's OK to have opinions, and to tell the students what they are (and why). Why do you use one package over another? Do you have an aversion to support vector machines? Explain why! Does p-hacking irritate you? Let it off your chest.
 
 ## Common problems and their solutions
 
