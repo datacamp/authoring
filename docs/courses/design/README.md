@@ -2,11 +2,17 @@
 
 Please see <https://www.datacamp.com/teach/> for your course's dashboard.
 
+## How to read this document
+
+This document provides much of the information that is required to write a good course spec. There is a lot of information to assimilate, so it is best to read it in small pieces.
+
+- Before you write any of the course spec, read everything up to [Step 1 - Brainstorming](/courses/design/#step-1-brainstorming).
+- As you begin each step (or sub-step), read the documentation for that step only.
+
 ## Introduction
 
 Designing a good course is as hard as designing good software.
-To help you,
-this document describes a process based on evidence-based teaching practices:
+To help you, this document describes a process based on evidence-based teaching practices:
 
 - It lays out a step-by-step progression to help you figure out what to think about in what order.
 - It provides spaced check-in points so you and your Curriculum Lead (CL) can re-scope or redirect effort.
@@ -22,8 +28,9 @@ You will frequently go back to revise earlier work
 as you learn something from your answer to a later question
 or realize that your initial plan isn't going to play out the way you first thought.**
 
-Please copy [this template](template.md) to `README.md` in the root directory of your course repository
-and fill it in to design your own course.
+## Technical help
+
+You need to have basic competence at writing markdown documents and using github. See the [technical help resources](/courses/design/technical-help-resources.md) page for advice on getting started. Your Curriculum Lead will also provide technical help if you need it.
 
 ## Terminology and Structure
 
@@ -44,6 +51,16 @@ A typical breakdown is:
 - Chapter 4: 10-16 exercises
 - Chapter 5 (optional): 10-16 exercises
 
+## Types of courses
+
+There are three types of course:
+
+1. Technology courses. These focus on teaching the features of a particular package or technology. This is how we teach plotting, for example, we have courses on ggplot2 and Bokeh, not courses on scatterplots and histograms.
+1. Technique courses. These focus on how, why, and when to use a technique. This is how we teach statistics, for example, we have courses on cluster analysis and network analysis, not courses on the packages that implement them.
+1. Application courses. These start with a business problem or scientific problem, and explain what the problem is, what the data looks like, and how to solve the problem. 
+
+The type of course you are going to make affects the relative importance of different elements in the course spec. Ask your Curriculum Lead if you aren't sure of the type.
+
 <!-- -------------------------------------------------------------------------------- -->
 
 ## Step 1: Brainstorming
@@ -56,34 +73,33 @@ You aren't expected to answer all of them,
 and you may pose and answer others if you and your CL think it's helpful,
 but you should always include a couple of answers to the first.
 
-1. **What problem(s) will student learn how to solve?**
+Click the links on each question to see more details about how to write an answer.
+
+1. [**What problem(s) will student learn how to solve?**](/courses/design/brainstorming-problems.md)
    E.g., "how to draw plots using `ggplot2`"
    or "how to forecast product demand".
 
-2. **What concepts and techniques will students learn?**
+2. [**What concepts and techniques will students learn?**](/courses/design/brainstorming-concepts.md)
    E.g., "the split-train-model-predict workflow"
    or "rolling back Git commits".
 
-3. **What technologies, packages, or functions will students use?**
+3. [**What technologies, packages, or functions will students use?**](/courses/design/brainstorming-technologies.md)
    E.g., "`ggplot2` for drawing plots".
 
-4. **What terms or jargon will you define?**
+4. [**What terms or jargon will you define?**](/courses/design/brainstorming-jargon.md)
    E.g., "boosting versus bagging"
    or "block/factor/sequential designs".
 
-5. **What analogies will you use to explain concepts?**
-   E.g., "ggplots are like Lego for graphics".
+5. [**What analogies or heuristics will you use to explain concepts?**](/courses/design/brainstorming-analogies.md)
+   E.g., "ggplots are like Lego for graphics"
+   or "draw a simple plot then add elements one by one"
    (See [Gelman & Nolan][teaching-statistics] for more ideas here.)
 
-6. **What heuristics will help students understand things?**
-   E.g., "draw a simple plot then add elements one by one"
-   or "don't use Holt-Winters if your demand spikes on holidays".
-
-7. **What mistakes or misconceptions do you expect?**
+6. [**What mistakes or misconceptions do you expect?**](/courses/design/brainstorming-mistakes.md)
    E.g., "changing colors works differently if the color argument is inside an aesthetic or not"
    or "overfitting models to the data".
 
-8. **What datasets will you use?**
+7. [**What datasets will you use?**](/courses/design/brainstorming-datasets.md)
    E.g., "anything but the diamonds and mtcars datasets"
    or "something from the UCI Archive".
 
@@ -97,25 +113,24 @@ Checkin: a rough scope for the course that you have agreed with your CL.
 
 The questions and answers for the Unix shell course are:
 
-1. *What problem(s) will student learn how to solve?*
+1. *What problem(s) will student learn how to solve?*  
    How to combine existing/legacy tools;
    how to make analyses reproducible.
-2. *What techniques or concepts will students learn?*
+2. *What techniques or concepts will students learn?*  
    History; pipes; shell scripts.
-3. *What technologies, packages, or functions will students use?*
+3. *What technologies, packages, or functions will students use?*  
    Bash shell; basic Unix commands (`cd`, `ls`); basic data manipulation commands (`head`, `cut`, `grep`).
-4. *What terms or jargon will you define?*
+4. *What terms or jargon will you define?*  
    Filesystem; redirection; pipe; wildcard.
-5. *What analogies will you use to explain concepts?*
+5. *What analogies or heuristics will you use to explain concepts?*  
    Command-line pipeline is like chemistry pipeline;
    shell scripts are like snippets of command history.
-6. *What heuristics will help students understand things?*
    Use filenames that are easy to match with tab completion and wildcards;
    build pipelines step by step.
-7. *What mistakes or misconceptions do you expect?*
+6. *What mistakes or misconceptions do you expect?*  
    That the shell shows the same files and folders as the GUI interface they're used to;
    definition vs. use of variables (especially loop variables).
-8. *What datasets will you use?*
+7. *What datasets will you use?*  
    dental records.
 
 <!-- -------------------------------------------------------------------------------- -->
@@ -148,6 +163,8 @@ since we will update them as we gather more data on our learners.
 Instead,
 link to them and comment on how the course relates to them.
 
+More advice [here](/courses/design/choose-learner-personas.md).
+
 ### Running Example
 
 - [Alex](personas.md#advanced-alex)
@@ -178,6 +195,8 @@ designers work backward from concrete examples of where their students are going
 Doing this also helps uncover technical requirements
 that might otherwise not be found until uncomfortably late in the lesson development process.
 
+More advice on [capstone exercises](/courses/design/exercises-capstone.md).
+
 To complement the full exercise descriptions,
 you should also write brief point-form descriptions of one or two exercises per chapter
 to show how quickly you expect learners to progress.
@@ -187,6 +206,8 @@ and help uncover technical requirements.)
 One way to create these "extra" exercises
 is to make a point-form list of the skills needed to solve the major exercises
 and create an exercise that targets each.
+
+More advice on [example exercises](/courses/design/exercises-examples.md).
 
 Checkin: 1-2 fully explained exercises that use the skills the student is to learn,
 plus half a dozen point-form exercise outlines.
@@ -339,6 +360,8 @@ Note:
   or to modify datasets to make them shareable.
 - You are likely to discover things you forgot to list earlier during this stage,
   so don't be surprised if you have to double back a few times.
+  
+  More advice on [lesson flow](/courses/design/lesson-flow.md).
 
 ### Running Example
 
@@ -378,16 +401,14 @@ The datasets are:
 You can now summarize everything you have created
 by writing a high-level course overview that consists of:
 
-- a one-paragraph description (i.e., a sales pitch to students)
-- half a dozen learning objectives
-- a summary of prerequisites
+- [a one-paragraph description](/courses/design/overview-description.md) (i.e., a sales pitch to students)
+- [half a dozen learning objectives](/courses/design/overview-objectives.md)
+- [a summary of prerequisites](/courses/design/overview-prerequisites.md)
 
 Doing this earlier often wastes effort,
 since material is usually added, cut, or moved around in earlier steps.
 
 Checkin: course description, learning objectives, and prerequisites.
-
-Note: see the appendix for a discussion of how to write good learning objectives.
 
 ### Running Example
 
@@ -446,37 +467,7 @@ what it is trying to achieve and why it is organized the way it is.
 
 <!-- -------------------------------------------------------------------------------- -->
 
-## Appendix: Writing Good Learning Objectives
 
-Since we can't read minds,
-there's no point using "Student will understand X" as a learning objective for a course.
-Instead,
-a good learning objective should specify what the student will *do*
-to demonstrate what they know.
-The three elements of a good learning objective are therefore:
-
-1. what you want the student to master,
-2. what level of understanding you want them to have, and
-3. what they will do to demonstrate their understanding.
-
-Levels of understanding are often described using [Bloom's Taxonomy][bloom].
-Its six levels and verbs often used in learning objectives at those levels are:
-
-1. Knowledge: recalling learned information
-   (name, define, recall).
-2. Comprehension: explaining the meaning of information
-   (restate, locate, explain, recognize).
-3. Application: applying what one knows to novel, concrete situations
-   (apply, demonstrate, use).
-4. Analysis: breaking down a whole into its component parts
-   and explaining how each part contributes to the whole
-   (differentiate, criticize, compare).
-5. Synthesis: assembling components to form a new and integrated whole
-   (design, construct, organize).
-6. Evaluation: using evidence to make judgments about the relative merits of ideas and materials
-   (choose, rate, select).
-
-[bloom]: https://en.wikipedia.org/wiki/Bloom's_taxonomy
 [huston-teaching]: https://www.amazon.com/Teaching-What-You-Dont-Know/dp/0674035801/
 [lang-teaching]: https://www.amazon.com/Small-Teaching-Everyday-Lessons-Learning/dp/1118944496/
 [tdd]: https://en.wikipedia.org/wiki/Test-driven_development
