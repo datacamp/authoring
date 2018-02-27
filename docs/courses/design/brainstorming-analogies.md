@@ -60,7 +60,7 @@ Many heuristics are the things that you do in your day job, but don't write down
 
 ### I can't think of anything
 
-- Try reading [Statistical Teaching: Bag of Tricks](http://www.stat.columbia.edu/%7Egelman/bag-of-tricks/) for inspiration.
+- Try looking in [Statistical Teaching: Bag of Tricks](http://www.stat.columbia.edu/%7Egelman/bag-of-tricks/) for inspiration.
 - Watch some YouTube [videos of Richard Feynman](https://www.youtube.com/results?search_query=richard+feynman).
 - Pick an object you can see in front of you. Can you use that to explain something in your course? No? Pick another object.
 
