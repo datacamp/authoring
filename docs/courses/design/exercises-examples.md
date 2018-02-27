@@ -110,5 +110,6 @@ This step will be reviewed by at least two people other than your Curriculum Lea
 - Does the exercise look interesting?
 - Is it an authentic task, that a real data scientist would perform?
 - Is it idiomatic code?
+- Are the concepts/theories/etc. communicated clearly?
 
 
