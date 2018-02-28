@@ -10,30 +10,30 @@ please speak with your Curriculum Lead.*
 ## Step 1: [Brainstorming](https://authoring.datacamp.com/courses/design/#step-1-brainstorming)
 
 
-### 1. [What problem(s) will students learn how to solve?](https://authoring.datacamp.com/courses/design/brainstorming-problems.md)
+### 1. [What problem(s) will students learn how to solve?](https://authoring.datacamp.com/courses/design/brainstorming-problems.html)
 
-### 2. [What techniques or concepts will students learn?](https://authoring.datacamp.com/courses/design/brainstorming-concepts.md)
+### 2. [What techniques or concepts will students learn?](https://authoring.datacamp.com/courses/design/brainstorming-concepts.html)
 
-### 3. [What technologies, packages, or functions will students use?](https://authoring.datacamp.com/courses/design/brainstorming-technologies.md)
+### 3. [What technologies, packages, or functions will students use?](https://authoring.datacamp.com/courses/design/brainstorming-technologies.html)
 
-### 4. [What terms or jargon will you define?](https://authoring.datacamp.com/courses/design/brainstorming-jargon.md)
+### 4. [What terms or jargon will you define?](https://authoring.datacamp.com/courses/design/brainstorming-jargon.html)
 
-### 5. [What analogies or heuristics will you use?](https://authoring.datacamp.com/courses/design/brainstorming-analogies.md)
+### 5. [What analogies or heuristics will you use?](https://authoring.datacamp.com/courses/design/brainstorming-analogies.html)
 
-### 6. [What mistakes or misconceptions do you expect?](https://authoring.datacamp.com/courses/design/brainstorming-mistakes.md)
+### 6. [What mistakes or misconceptions do you expect?](https://authoring.datacamp.com/courses/design/brainstorming-mistakes.html)
 
-### 7. [What datasets will you use?](https://authoring.datacamp.com/courses/design/brainstorming-datasets.md)
+### 7. [What datasets will you use?](https://authoring.datacamp.com/courses/design/brainstorming-datasets.html)
 
 ## Step 2: [Who Is This Course for?](https://authoring.datacamp.com/courses/design/#step-2-who-is-this-course-for)
 
-*Read the [learner personas](personas.md) and [advice](https://authoring.datacamp.com/courses/design/choose-learner-personas.md), then choose the two best fits for the course and describe why you chose them.*
+*Read the [learner personas](personas.md) and [advice](https://authoring.datacamp.com/courses/design/choose-learner-personas.html), then choose the two best fits for the course and describe why you chose them.*
 
 * Student 1: discussion.
 * Student 2: discussion.
 
 ## Step 3: [What Will Learners Do Along the Way?](https://authoring.datacamp.com/courses/design/#step-3-what-will-learners-do-along-the-way)
 
-*Write full descriptions of a couple of [significant exercises](https://authoring.datacamp.com/courses/design/exercises-capstone.md) to show how far learners are likely to get.*
+*Write full descriptions of a couple of [significant exercises](https://authoring.datacamp.com/courses/design/exercises-capstone.html) to show how far learners are likely to get.*
 
 ### Title of Exercise
 
@@ -48,7 +48,7 @@ It should typically be 2 or 3 lines.
 
 ### Other Exercises
 
-*Write brief descriptions of 10 to 15 [more exercises](https://authoring.datacamp.comhttps://authoring.datacamp.com/courses/design/exercises-examples.md) throughout the course.
+*Write brief descriptions of 10 to 15 [more exercises](https://authoring.datacamp.com/courses/design/exercises-examples.html) throughout the course.
 After this step you should have a clear idea of the flow of the course.*
 
 #### Exercise title 1
@@ -95,17 +95,17 @@ The datasets are:
 
 ## Step 5: [Course Overview](https://authoring.datacamp.com/courses/design/#step-5-course-overview)
 
-[**Course Description**](https://authoring.datacamp.com/courses/design/overview-description.md)
+[**Course Description**](https://authoring.datacamp.com/courses/design/overview-description.html)
 
 One-paragraph description of the course.
 
-[**Learning Objectives**](https://authoring.datacamp.com/courses/design/#overview-objectives.md)
+[**Learning Objectives**](https://authoring.datacamp.com/courses/design/#overview-objectives.html)
 
 - Objective 1
 - Objective 2
 - Objective 3
 
-[**Prerequisites**](https://authoring.datacamp.com/courses/design/#overview-prerequisites.md)
+[**Prerequisites**](https://authoring.datacamp.com/courses/design/#overview-prerequisites.html)
 
 - Prerequisite 1
 - Prerequisite 2
