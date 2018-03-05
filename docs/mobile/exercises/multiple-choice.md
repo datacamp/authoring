@@ -8,7 +8,7 @@ The student has to choose one or more correct answers.
 - type: MultipleChoice
   context: "Lambda is useful for creating anonymous functions! 😏"
   question: "Which of the following are correct?"
-  solution:
+  text:
     - "Lambda is useful for creating anonymous functions"
     - "Lambda functions do not contain a return statement"
   distractor_text:
