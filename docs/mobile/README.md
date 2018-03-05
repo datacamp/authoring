@@ -1,15 +1,26 @@
 # DataCamp for Mobile
 
-## Mobile courses
+DataCamp for Mobile allows students to engage with their data science learning
+content anytime, anywhere (even [on the
+toilet](https://www.datacamp.com/community/blog/mobile-data-science)).
 
-A mobile course is 4 to 5 chapters.
+A course is clearly subdivided into chapters, and lessons. A mobile course
+consists of 4 to 5 chapters, mapping to one major concept of a course (eg
+"Plotting in Matplotlib" or "SELECT clause"), which in turn consist of 2 to 5
+lessons (eg "Histograms" or "the COUNT() function"). Each mobile lesson
+comprises 8 to 15 exercises, which are the fundamental building block of mobile
+content.
 
-A mobile chapter is 2 to 5 lessons.
+This philosophy of using the exercise as an exclusive building block
+distinguishes mobile content from desktop content. Rather than alternating
+between exposition (in the form of videos or written lessons), and interactive
+exercises, exposition should be kept to a bare minimum. Always prefer showing
+over telling. It is also
 
-A mobile lesson is 8 to 15 exercises.
-
-The last lesson in a chapter is a practice lesson, which is 10 - 25 exercises.
-
-## Mobile practice
-
-TODO
+The last lesson in every chapter is a practice lesson, which is 10 - 25
+exercises. The only material difference between a practice lesson and a course
+lesson is that practice lesson exercises usually provide little to no background
+context, and should theoretically be doable by anyone who has completed the
+course lessons in a given chapter. These pools of practice content are currently
+embedded within courses, but will eventually be extracted into a full
+practice-only mode, as well.
