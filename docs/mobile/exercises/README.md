@@ -221,8 +221,14 @@ how to render the asset. Currently only `file` and `table` are supported.
 
 # Summary of available blocks
 
+:ok: Allowed
+
+:heavy_check_mark: Required
+
+:x: Not Allowed
+
 | Block             | Reorder            | Tap                | Select Code        | Select Output      | Select Table       | Multiple Choice    |
-|-------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------|
+|-------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
 | key               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | context           | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
 | question          | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
