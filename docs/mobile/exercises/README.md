@@ -2,11 +2,11 @@
 
 Writing a DataCamp for Mobile is quite different than writing a DataCamp
 [desktop course](../../courses/readme.md). The upside is that you can reach a
-much broader audience because the convenience is much higher while the barrier
-to entry is much lower. The challenge is that there are many more
-constraints. Primary among these are the restricted screen real estate and the
-lack of an interactive interpreter. These constraints require you to think
-carefully about the way you introduce concepts and the examples that you use.
+much broader audience because the convenience is higher and the barrier to entry
+is lower. The challenge is that there are many more constraints to work
+within. Primary among these are the restricted screen real estate and the lack
+of an interactive interpreter. These constraints require you to think carefully
+about the way you introduce concepts and the examples that you use.
 
 # Basic exercise structure
 
@@ -39,7 +39,7 @@ Let's dig into each blocks...
 
 Even though it's not part of the exercise itself, it's a very good idea to
 comment your exercises so you can quickly remind yourself what each exercise is
-supposed to teach or test. In fact, it can be helpful to start by outlining a
+designed to teach or test. In fact, it can be helpful to start by outlining a
 whole lesson with a scaffolding of comments before expanding the exercises.
 
 ## key
@@ -110,10 +110,10 @@ will be a select output exercise.
 Other distractor types will result in different exercise types:
 
 - distractor_output -> [Select Output](select-output.md)
-- distractor_code -> [Select Code](select-code.md)
+- distractor_code   -> [Select Code](select-code.md)
 - distractor_blanks -> [Tap](tap.md)
-- distractor_text -> [Multiple Choice](multiple-choice.md)
-- distractor_table -> Select Table
+- distractor_text   -> [Multiple Choice](multiple-choice.md)
+- distractor_table  -> [Select Table](select-table.md)
 
 The only exercise type that does not require a distractor field is the
 [Reorder](reorder.md) .
@@ -125,16 +125,43 @@ message that students will see if they incorrectly choose that distractor.
 
 # Other available blocks
 
-## complex context
+## table
 
 ```yaml
-
+table:
+  data: |-
+    name     ,birthdate
+    50 Cent  ,1975-07-06
+    Aaliyah  ,1979-01-16
+    Aaron Yoo,1979-05-12
+  message: "Showing 3 out of 537 rows"
 ```
+
+You can opt to use a `table` block instead of an `output` block, for example
+when displaying the output of a SQL query, which is more appropriate as a
+table. The table field has two subfields. First is `data`, which contains the
+actual table data as comma separated values. They needn't be aligned, but they
+can be and sometimes this improves readability.  The second is `message`, which
+contains a short string of text that is displayed in the footer of the
+table. The most common use for the table message is to indicate row truncation,
+because tables should not be displayed with more than 5 rows as a general rule.
+
+## image
+
+```yaml
+image: my-cool-plot
+```
+
+You can put image assets into your exercises! In this example, `my-cool-plot` is
+a reference to an image asset specified in the [course
+manifest](../repo-structure.md).
+
+## complex context
 
 The `context` block can be more complex than a simple string. Sometimes you need
 to introduce a table, image, multi-line code snippet, or output in the context,
-*before* the actual exercise code. This really starts to stretch the limits of
-what can be displayed on a single screen, so simple text context should always be
+*before* the question block. This really starts to stretch the limits of what
+can be displayed on a single screen, so simple text context should always be
 strongly preferred.
 
 For example, to include an image such as a plot:
@@ -145,45 +172,67 @@ context:
   image: my-cool-plot
 ```
 
-In this example, `my-cool-plot` is a reference to an asset specified in the
-[course manifest](../repo-structure.md).
+To include a table:
 
-
-
-    text?: Text,
-    image?: Image,
-    table?: Table,
-    code?: Code,
-    output?: Output,
-
-## table
-
-## image
+```yaml
+context:
+  text: Study the table below to answer the following question.
+  table: |-
+    foo, bar, baz
+    1  ,2   ,3
+    4  ,5   ,6
+```
 
 ## feedback
 
+The `feedback` field is the message that is displayed when a student gets the
+exercise correct. These aren't required. In fact, you should never put any
+critical pedagogical information here. If you want to put in a message of
+encouragement or jubilation however, feel free!
+
 ## feedback_wrong
+
+```yaml
+feedback_wrong: "Don't forget that R is 1-indexed, not 0-indexed like Python."
+```
+
+The `feedback_wrong` field is the fallback feedback message when a particular
+distractor hasn't been supplied with one. Usually, you should be giving specific
+feedback for each individual distractor, because specific, enlightening feedback
+messages are one of the most effective ways of teaching on DataCamp for
+Mobile. If you find that the same feedback message is appropriate for multiple
+distrators, however, this field is provided for convenience.
 
 ## tabs
 
+```yaml
+tabs:
+  - key: people
+    type: table
+```
+
 Tabs appear in the top right of the exercise and serve as a way to display
-datasets or
+datasets or files. The appropriate asset must be defined in the [course
+manifest](../repo-structure.md). A tab field has two subfields: `key`, which is
+the alias for the asset as defined in the manifest, and `type`, which specifies
+how to render the asset. Currently only `file` and `table` are supported.
 
 # Summary of available blocks
 
 | Block             | Reorder | Tap   | Select Code | Select Output | Select Table | Multiple Choice |
 |-------------------+---------+-------+-------------+---------------+--------------+-----------------|
-| context           | :ok:    | :ok:  | :ok:        | :ok:          |              | :ok:            |
-| question          | :ok:    | :ok:  | :ok:        | :ok:          |              | :ok:            |
-| key               | :req:   | :req: | :req:       | :req:         |              | :req:           |
-| code              | :req:   | :req: | :req:       | :ok:          |              | :ok:            |
-| output            | :ok:    | :ok:  | :ok:        | :req:         |              | :ok:            |
-| distractor_blanks | :x:     | :req: | :x:         | :x:           |              | :x:             |
-| distractor_code   | :x:     | :x:   | :req:       | :x:           |              | :x:             |
-| distractor_output | :x:     | :x:   | :x:         | :req:         |              | :x:             |
+| context           | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
+| question          | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
+| key               | :req:   | :req: | :req:       | :req:         | :req:        | :req:           |
+| code              | :req:   | :req: | :req:       | :ok:          | :ok:         | :ok:            |
+| output            | :ok:    | :ok:  | :ok:        | :req:         | :ok:         | :ok:            |
+| distractor_blanks | :x:     | :req: | :x:         | :x:           | :x:          | :x:             |
+| distractor_code   | :x:     | :x:   | :req:       | :x:           | :x:          | :x:             |
+| distractor_output | :x:     | :x:   | :x:         | :req:         | :x:          | :x:             |
 | distractor_table  | :x:     | :x:   | :x:         | :x:           | :req:        | :x:             |
 | distractor_text   | :x:     | :x:   | :x:         | :x:           | :x:          | :req:           |
-
+| feedback          | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
+| feedback_wrong    | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
 
 # YAML tips and tricks
 
