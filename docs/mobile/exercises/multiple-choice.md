@@ -4,7 +4,7 @@ The student has to choose one or more correct answers.
 
 ## Example
 
-```yml
+```yaml
 - type: MultipleChoice
   context: "Lambda is useful for creating anonymous functions! 😏"
   question: "Which of the following are correct?"

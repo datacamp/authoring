@@ -49,6 +49,14 @@ The best workflow is generally to open an appropriate interpreter side by side
 with the content file, so that you can play with code and quickly insert it into
 your exercises. This might be IPython, R, or a SQL client like `psql` or `sqlite`
 
+Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
+manually. This annoyance can be alleviated by finding a UUID generator package
+for your text editor or IDE of choice. Some examples:
+
+* [Emac](https://github.com/kanru/uuidgen-el)
+* [Vim](https://github.com/kburdett/vim-nuuid)
+* [Sublime Text](https://github.com/SublimeText/GenerateUUID)
+
 ## Linting
 
 Before pushing (or - preferably - committing) updates to your content, you
@@ -95,7 +103,9 @@ content.
 
 1. Merge your content branch into the *development* branch on GitHub.
 
-2. Check that the build passes on [CircleCI](https://circleci.com/gh/datacamp/workflows).
+2. Check that the build passes on
+   [CircleCI](https://circleci.com/gh/datacamp/workflows). This should take a
+   few minutes or less.
 
 3. Download the latest development build of DataCamp for Mobile.
 

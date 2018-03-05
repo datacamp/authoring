@@ -292,3 +292,8 @@ output: |-5
 See the [YAML spec](http://yaml.org/spec/1.2/spec.html) for more advanced YAML
 features that might come in handy, but literal scalar blocks will be what you
 need 99% of the time.
+
+[This online YAML parser](https://yaml-online-parser.appspot.com) can also be
+useful for diagnosing bugs in YAML. [The `mobile-teach`
+linter](../development.md) should be able to clearly pinpoint 100% of errors,
+however.
