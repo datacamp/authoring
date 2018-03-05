@@ -1,0 +1,37 @@
+# Select Table
+
+A Select Table exercise is essentially identical to a [Select Output
+exercise](select-output.md), but instead of a mandatory `output` block, there is
+a mandatory `table` block. This is ideal for exercises when the output of a code
+block is better represented as a table - SQL queries, for example.
+
+```yaml
+- key: 680a2682-4177-4d87-a404-c8044153d57f
+  code: "SELECT * FROM team_mobile"
+  table:
+    data: |-
+      Name   ,Awesomeness,Role
+      Spencer,100        ,Content
+      Boris  ,100        ,Product
+      Jens   ,100        ,Code
+    message: "Showing 3 out of 3 rows."
+  distractor_table:
+    - option:
+        data: |-
+          Name   ,Awesomeness,Role
+          Spencer,0          ,Content
+          Boris  ,100        ,Product
+          Jens   ,100        ,Code
+        message: "Showing 3 out of 3 rows."
+      feedback: "Spencer is also awesome."
+    - option: |-
+        Name   ,Awesomeness,Role
+        Spencer,100        ,Content
+        Boris  ,0          ,Product
+        Jens   ,100        ,Code
+      feedback: "Boris is also awesome."
+```
+
+Both the `table` and the `options` under `distractor_feedback` have a similar
+structure. Each are composed of a `data` field of comma separated values and a
+`message` field.
