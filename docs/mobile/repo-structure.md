@@ -75,14 +75,14 @@ The manifest file `manifest.yml` is what ties everything together. It lays out
 the locations of your chapters, lessons, and assets.
 
 | Field              | Sub Field     | Sub Field     | Explanation                                               |
-|--------------------+---------------+---------------+-----------------------------------------------------------|
+|--------------------|---------------|---------------|-----------------------------------------------------------|
 | `authoringVersion` |               |               | Should be set to `2` the current authoring format version |
 | `title`            |               |               | Title of the mobile course                                |
 | `description`      |               |               | Description of the course                                 |
 | `key`              |               |               | A unique UUID for the course                              |
 | `badge_url`        |               |               | URL of the course badge image                             |
-| `status`           |               |               | Set to `LIVE` when the course is ready to be launched  |
-| `technology_key`   |               |               | One of `PYTHON`, `SQL`, or `R`                            |
+| `status`           |               |               | Set to `LIVE` when the course is ready to be launched     |
+| `technology_key`   |               |               |                                                           |
 | `assets`           | `type`        |               |                                                           |
 |                    | `key`         |               |                                                           |
 |                    | `url`         |               |                                                           |

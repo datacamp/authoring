@@ -29,7 +29,7 @@ various blocks in the following structure:
       feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
 
-Let's dig into each blocks...
+Let's dig into each of the blocks...
 
 ## topic
 
@@ -221,20 +221,20 @@ how to render the asset. Currently only `file` and `table` are supported.
 
 # Summary of available blocks
 
-| Block             | Reorder | Tap   | Select Code | Select Output | Select Table | Multiple Choice |
-|-------------------+---------+-------+-------------+---------------+--------------+-----------------|
-| context           | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
-| question          | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
-| key               | :req:   | :req: | :req:       | :req:         | :req:        | :req:           |
-| code              | :req:   | :req: | :req:       | :ok:          | :ok:         | :ok:            |
-| output            | :ok:    | :ok:  | :ok:        | :req:         | :ok:         | :ok:            |
-| distractor_blanks | :x:     | :req: | :x:         | :x:           | :x:          | :x:             |
-| distractor_code   | :x:     | :x:   | :req:       | :x:           | :x:          | :x:             |
-| distractor_output | :x:     | :x:   | :x:         | :req:         | :x:          | :x:             |
-| distractor_table  | :x:     | :x:   | :x:         | :x:           | :req:        | :x:             |
-| distractor_text   | :x:     | :x:   | :x:         | :x:           | :x:          | :req:           |
-| feedback          | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
-| feedback_wrong    | :ok:    | :ok:  | :ok:        | :ok:          | :ok:         | :ok:            |
+| Block             | Reorder       | Tap           | Select Code   | Select Output | Select Table  | Multiple Choice |
+|-------------------|---------------|---------------|---------------|---------------|---------------|-----------------|
+| context           | :ok:          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:            |
+| question          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:            |
+| key               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| code              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :ok:          | :ok:          | :ok:            |
+| output            | :ok:          | :ok:          | :ok:          | :heavy_check_mark: | :ok:          | :ok:            |
+| distractor_blanks | :x:           | :heavy_check_mark: | :x:           | :x:           | :x:           | :x:             |
+| distractor_code   | :x:           | :x:           | :heavy_check_mark: | :x:           | :x:           | :x:             |
+| distractor_output | :x:           | :x:           | :x:           | :heavy_check_mark: | :x:           | :x:             |
+| distractor_table  | :x:           | :x:           | :x:           | :x:           | :heavy_check_mark: | :x:             |
+| distractor_text   | :x:           | :x:           | :x:           | :x:           | :x:           | :heavy_check_mark: |
+| feedback          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:            |
+| feedback_wrong    | :ok:          | :ok:          | :ok:          | :ok:          | :ok:          | :ok:            |
 
 # YAML tips and tricks
 
