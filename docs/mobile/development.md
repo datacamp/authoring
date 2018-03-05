@@ -11,10 +11,20 @@ git clone git@github.com:datacamp/mobile-courses-example-course.git
 ```
 
 The suite of development tools available for authoring mobile content on
-DataCamp is provided as an NPM package. You can download and install it using
-NPM. [Install NPM](https://www.npmjs.com/get-npm), then:
+DataCamp is provided as an NPM package. If you don't have NPM yet, you will need
+to [download and install it](https://www.npmjs.com/get-npm).
 
 ```sh
+npm cache clean -f
+
+# update node
+npm install -g n
+sudo n stable
+
+# update npm
+npm install -g npm
+
+# install DataCamp mobile development tools
 npm install -g @datacamp/mobile-teach
 ```
 
