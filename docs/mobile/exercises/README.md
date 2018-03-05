@@ -297,3 +297,6 @@ need 99% of the time.
 useful for diagnosing bugs in YAML. [The `mobile-teach`
 linter](../development.md) should be able to clearly pinpoint 100% of errors,
 however.
+
+You don't need to use quotes in your key-value pairs unless the value itself
+contains a single or double quote.
