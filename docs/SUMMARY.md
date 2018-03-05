@@ -21,7 +21,6 @@
        - [SQL Example](courses/exercises/examples/md/sql/BulletExercise.md)
        - [R Example](courses/exercises/examples/md/r/BulletExercise.md)
        - [Python Example](courses/exercises/examples/md/python/BulletExercise.md)
-   - [Guidelines](courses/guidelines.md)
    - [Experience Points](courses/xp.md)
    - [Assets](courses/assets.md)
    - [Slides](courses/slides.md)
