@@ -144,7 +144,9 @@ actual table data as comma separated values. They needn't be aligned, but they
 can be and sometimes this improves readability.  The second is `message`, which
 contains a short string of text that is displayed in the footer of the
 table. The most common use for the table message is to indicate row truncation,
-because tables should not be displayed with more than 5 rows as a general rule.
+because tables should not be displayed with more than 5 rows as a general
+rule. If you *are* truncating the result, the `message` field is mandatory,
+otherwise it is not.
 
 ## image
 
@@ -239,9 +241,9 @@ how to render the asset. Currently only `file` and `table` are supported.
 You will often be writing code blocks or output blocks that span multiple
 lines. You *can* use explicit newlines `\n`, but the easier and more readable
 option is to use a feature of the YAML spec known as **literal scalar
-blocks**. Just put `|-` after the semicolon `;` of a field and then indent the
-following lines by two spaces. Everything in the indented block will be rendered
-verbatim, including newlines and all quotes.
+blocks**. Just put `|-` after the colon `:` of a field and then indent the
+following lines by another two spaces. Everything in the indented block will be
+rendered verbatim, including newlines and all quotes.
 
 Instead of this:
 

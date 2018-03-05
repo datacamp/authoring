@@ -12,7 +12,7 @@ git clone git@github.com:datacamp/mobile-courses-example-course.git
 
 The suite of development tools available for authoring mobile content on
 DataCamp is provided as an NPM package. You can download and install it using
-NPM:
+NPM. [Install NPM](https://www.npmjs.com/get-npm), then:
 
 ```sh
 npm install -g @datacamp/mobile-teach
@@ -35,6 +35,10 @@ It can be helpful to use an IDE that allows you to expand snippets, and to write
 a snippet expansion for different exercise types. Bonus points if your IDE of
 choice allows you to automatically generate UUIDs for your exercises.
 
+The best workflow is generally to open an appropriate interpreter side by side
+with the content file, so that you can play with code and quickly insert it into
+your exercises. This might be IPython, R, or a SQL client like `psql` or `sqlite`
+
 ## Linting
 
 Before pushing (or - preferably - committing) updates to your content, you
@@ -45,10 +49,18 @@ should run the mobile-teach linter. The linter does two things:
 recommendations](guidelines.md), and errors when it exceeds hard limits.
 
 The linter will provide exercise UUIDs to mark where problems are occurring and
-explicit messages about what is wrong.
+explicit messages about what is wrong. You can either specify the path to a
+course directory...
 
 ```sh
 mobile-teach check /path/to/mobile-courses-example-course
+```
+
+...or simply run the check from within a course directory:
+
+```sh
+cd /path/to/mobile-courses-example-course
+mobile-teach check
 ```
 
 ## Preview
@@ -57,7 +69,7 @@ Often it's useful to see how your content will render on a phone screen. The
 `mobile-teach preview` subcommand will serve your content on port 8080:
 
 ```sh
-mobile-teach preview /path/to/mobile-courses-example-course
+mobile-teach preview /path/to/lesson-file.yml
 ```
 
 You can then open a web browser to `http://localhost:8080`. Open the browser tools

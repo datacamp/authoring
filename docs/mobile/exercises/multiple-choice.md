@@ -11,7 +11,7 @@ The student has to choose one or more correct answers.
   solution:
     - "Lambda is useful for creating anonymous functions"
     - "Lambda functions do not contain a return statement"
-  distractors:
+  distractor_text:
     - option: "Lambda is not useful for creating anonymous functions"
       feedback: "Shame on you!"
     - option: "Lambda functions contain a return statement"

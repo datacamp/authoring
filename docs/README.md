@@ -54,7 +54,7 @@ Projects allow students to apply what they've learned in a more open-ended and r
 DataCamp for Mobile makes it possible for students to engage with their learning
 anytime and anywhere. It is available for both
 [Android](https://play.google.com/store/apps/details?id=com.datacamp) and
-[Apple](https://itunes.apple.com/us/app/datacamp-learn-r-python/id1263413087). There
+[iOS](https://itunes.apple.com/us/app/datacamp-learn-r-python/id1263413087). There
 are two types of mobile content: full mobile courses (more like a desktop
 course), and mobile practice content (more like desktop challenges).
 

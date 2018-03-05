@@ -14,13 +14,15 @@ content.
 This philosophy of using the exercise as an exclusive building block
 distinguishes mobile content from desktop content. Rather than alternating
 between exposition (in the form of videos or written lessons), and interactive
-exercises, exposition should be kept to a bare minimum. Always prefer showing
-over telling. It is also
+exercises, exposition should be kept to a bare minimum - always prefer showing
+over telling.
 
 The last lesson in every chapter is a practice lesson, which is 10 - 25
 exercises. The only material difference between a practice lesson and a course
 lesson is that practice lesson exercises usually provide little to no background
 context, and should theoretically be doable by anyone who has completed the
-course lessons in a given chapter. These pools of practice content are currently
-embedded within courses, but will eventually be extracted into a full
+course lessons in a given chapter. Practice lessons presented to students in a
+random order (in contrast to course lesson exercises, which are always shown in
+the order specified in their YAML files). These pools of practice content are
+currently embedded within courses, but will eventually be extracted into a full
 practice-only mode, as well.
