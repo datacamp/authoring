@@ -82,11 +82,7 @@ content.
 
 ## Release
 
-1. Merge your content branch into the *development* branch.
-
-```sh
-git merge development
-```
+1. Merge your content branch into the *development* branch on GitHub.
 
 2. Check that the build passes on [CircleCI](https://circleci.com/gh/datacamp/workflows).
 
@@ -99,11 +95,7 @@ git merge development
 4. Check out your new content on the development app, make sure everything looks
    good.
 
-5. Merge your content branch into the *master* branch.
-
-```sh
-git merge master
-```
+5. Merge your content branch into the *master* branch on GitHub.
 
 7. Tag the `master` branch in GitHub `release-1.0.0` as appropriate. We
    recommend using [semantic versioning](https://semver.org/), but the only rule
