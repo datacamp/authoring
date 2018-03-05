@@ -11,11 +11,8 @@ lessons (eg "Histograms" or "the COUNT() function"). Each mobile lesson
 comprises 8 to 15 exercises, which are the fundamental building block of mobile
 content.
 
-This philosophy of using the exercise as an exclusive building block
-distinguishes mobile content from desktop content. Rather than alternating
-between exposition (in the form of videos or written lessons), and interactive
-exercises, exposition should be kept to a bare minimum - always prefer showing
-over telling.
+> #### info::Note
+> This philosophy of using the exercise as an exclusive building block distinguishes mobile content from desktop content. Rather than alternating between exposition (in the form of videos or written lessons), and interactive exercises, exposition should be kept to a bare minimum - always prefer showing over telling.
 
 The last lesson in every chapter is a practice lesson, which is 10 - 25
 exercises. The only material difference between a practice lesson and a course
