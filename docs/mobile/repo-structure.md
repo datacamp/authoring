@@ -37,7 +37,7 @@ An overview of what each of this does is:
 | :--------------------         | :-------------------------------------------------------------------------                                        |
 | `assets*/`                    | Folder containing all datasets or images you may want to use in your lessons (eg. csv / python/ R / image files). |
 | `chapter*/`                   | Contains all the lessons for a particular chapter. This is a convention, not a strict requirement.                |
-| `.gitignore`                  | Files and folders which should be ignored by Git                                                                  |
+| `.gitignore`                  | Files and folders which should be ignored by Git.                                                                 |
 | `README.md`                   | A readme file with a list of resources more explanation to get started.                                           |
 | [`manifest.yml`](manifest.md) | A manifest file specifying metadata about the course, chapters, lessons, and assets.                              |
 
@@ -151,7 +151,7 @@ breakdown:
 |                    | `url`         |               | The path to the asset (relative to the root directory)    |
 |                    | `tabs`        | `file`        |                                                           |
 |                    |               | `table`       |                                                           |
-| `chapters`         | `key`         |               | A unique UID for the chapter                           |
+| `chapters`         | `key`         |               | A unique UID for the chapter                              |
 |                    | `title`       |               |                                                           |
 |                    | `description` |               |                                                           |
 |                    | `status`      |               |                                                           |
