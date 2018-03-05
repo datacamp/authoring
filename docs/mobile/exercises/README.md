@@ -1,19 +1,26 @@
 # Mobile exercises
 
-Writing a DataCamp for Mobile is quite different than writing a DataCamp
-[desktop course](../../courses/readme.md). The upside is that you can reach a
-much broader audience because the convenience is higher and the barrier to entry
-is lower. The challenge is that there are many more constraints to work
-within. Primary among these are the restricted screen real estate and the lack
-of an interactive interpreter. These constraints require you to think carefully
-about the way you introduce concepts and the examples that you use.
+Writing a DataCamp for Mobile unique. The upside of the mobile platform is that
+you can reach a much broader audience because the convenience is higher and the
+barrier to entry is lower. The challenge is that there are many more constraints
+to work within. Primary among these are the restricted screen real estate and
+the lack of an interactive interpreter. These constraints require you to think
+carefully about the way you introduce concepts and the examples that you use.
 
 # Basic exercise structure
 
 There are roughly 5 exercise types available to you as an author on DataCamp
-Mobile, but they all share a similar structure. In general (with a few
-exceptions), you can think of an exercise as a short code vignette comprising
-various blocks in the following structure:
+Mobile:
+
+* [Select Output](select-output.md)
+* [Select Code](select-code.md)
+* [Tap](tap.md)
+* [Multiple Choice](multiple-choice.md)
+* [Select Table](select-table.md)
+
+...but they all share a similar structure. In general (with a few exceptions),
+you can think of an exercise as a short code vignette comprising various blocks
+in the following sequence:
 
 ```yaml
 # print()
@@ -122,6 +129,10 @@ Regardless of the exercise type, the distractor field is always a list of
 distractors (AKA wrong answers). Each individual distractor in the list has two
 elements: `option`, the incorrect answer itself, and `feedback`, the feedback
 message that students will see if they incorrectly choose that distractor.
+
+[Reorder](reorder.md) and [Tap](tap.md) exercises in particular have special
+requirements. Refer to the documentation pages of those exercise types for more
+information.
 
 # Other available blocks
 
