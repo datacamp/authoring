@@ -82,10 +82,11 @@ Often it's useful to see how your content will render on a phone screen. The
 mobile-teach preview /path/to/lesson-file.yml
 ```
 
-You can then open a web browser to `http://localhost:8080`. Open the browser tools
-(usually `Command-Option-j`) and click the phone icon to simulate a phone view
-port. You can even specify which phone you want to simulate (eg iPhone, Nexus,
-Galaxy, etc.)
+You can then open a web browser to `http://localhost:8080`. Open the browser
+tools (usually `Command-Option-j`) and click the phone icon to simulate a phone
+view port. You can even specify which phone you want to simulate (eg iPhone,
+Nexus, Galaxy, etc). If you are having trouble finding these browser tools, we
+recommend updating Firefox to at least version 58.0.
 
 The simulator preview will update in real time as you make changes to your
 content.
