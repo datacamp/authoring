@@ -244,22 +244,22 @@ how to render the asset. Currently only `file` and `table` are supported.
 
 :x: Not Allowed
 
-| Block             | Reorder            | Tap                | Select Code        | Select Output      | Select Table       | Multiple Choice    |
-|-------------------|--------------------|--------------------|--------------------|--------------------|--------------------|--------------------|
-| key               | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| context           | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
-| question          | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
-| image             | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
-| code              | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :ok:               | :ok:               | :ok:               |
-| output            | :ok:               | :ok:               | :ok:               | :heavy_check_mark: | :ok:               | :ok:               |
-| table             | :ok:               | :ok:               | :ok:               | :ok:               | :heavy_check_mark: | :ok:               |
-| distractor_blanks | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                | :x:                |
-| distractor_code   | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                | :x:                |
-| distractor_output | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                | :x:                |
-| distractor_table  | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: | :x:                |
-| distractor_text   | :x:                | :x:                | :x:                | :x:                | :x:                | :heavy_check_mark: |
-| feedback          | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
-| feedback_wrong    | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               | :ok:               |
+| Block               | Reorder              | Tap                  | Select Code          | Select Output        | Select Table         | Multiple Choice      |
+| :------------------ | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- |
+| key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
+| context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| code                | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :ok:                 | :ok:                 | :ok:                 |
+| output              | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   | :ok:                 | :ok:                 |
+| table               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   | :ok:                 |
+| distractor_blanks   | :x:                  | :heavy_check_mark:   | :x:                  | :x:                  | :x:                  | :x:                  |
+| distractor_code     | :x:                  | :x:                  | :heavy_check_mark:   | :x:                  | :x:                  | :x:                  |
+| distractor_output   | :x:                  | :x:                  | :x:                  | :heavy_check_mark:   | :x:                  | :x:                  |
+| distractor_table    | :x:                  | :x:                  | :x:                  | :x:                  | :heavy_check_mark:   | :x:                  |
+| distractor_text     | :x:                  | :x:                  | :x:                  | :x:                  | :x:                  | :heavy_check_mark:   |
+| feedback            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| feedback_wrong      | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 
 # YAML tips and tricks
 
