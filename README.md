@@ -79,6 +79,7 @@ There are a few folders and files which have special meaning / tasks:
 - `docs/courses` - All the content related to courses
 - `docs/projects` - All the content related to projects
 - `docs/challenges` - All the content related to challenges
+- `docs/mobile` - All the content related to mobile
 - `docs/interface` - All the content related to the teach interface
 - `docs/image` - All the image files should be placed in this folder depending on the content type (`courses`, `projects`, etc..)
 - `SUMMARY.md` - Represents the left menu and the structure of the content. Usually nicely maps with `docs/` structure.
@@ -89,7 +90,7 @@ Before you start working locally on your gitbook **be sure** to branch out to a 
 
 Flow for creating content:
 
-1. Create a markdown file in one of folders (`docs/courses`, `docs/projects`, `docs/challenges`, `docs/interface`)
+1. Create a markdown file in one of folders (`docs/courses`, `docs/projects`, `docs/challenges`, `docs/mobile`, `docs/interface`)
 2. Add the markdown
 3. If you want to add the markdown file to the left menu edit the [docs/SUMMARY.md](docs/SUMMARY.md)
 

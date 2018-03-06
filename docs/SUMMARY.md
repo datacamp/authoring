@@ -73,6 +73,16 @@
      - [Test examples](projects/projects-test-examples.md)
    - [File Structure](projects/projects-repo-structure.md)
    - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
+* [Mobile](mobile/README.md)
+   - [Repo Structure](mobile/repo-structure.md)
+   - [Exercises](mobile/exercises/README.md)
+      - [Tap](mobile/exercises/tap.md)
+      - [Multiple Choice](mobile/exercises/multiple-choice.md)
+      - [Reorder](mobile/exercises/reorder.md)
+      - [Select Code](mobile/exercises/select-code.md)
+      - [Select Output](mobile/exercises/select-output.md)
+   - [Development Process](mobile/development.md)
+   - [Guidelines](mobile/guidelines.md)
 
 ## Teach Interface
 
