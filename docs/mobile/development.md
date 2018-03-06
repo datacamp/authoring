@@ -33,21 +33,26 @@ preview your content.
 
 ## Write
 
-You are free to use whatever editing tools you like on your local repository, eg
-Sublime, Vim, Emacs, etc. You should author content on a feature branch, *not*
-on the `master` branch:
+Create and checkout a feature branch to write your course in.
 
 ```sh
 git checkout -c chapter-1
 ```
 
-It can be helpful to use an IDE that allows you to expand snippets, and to write
-a snippet expansion for different exercise types. Bonus points if your IDE of
-choice allows you to automatically generate UUIDs for your exercises.
+> #### info::Note
+> You should author content on a feature branch, *not* on the `master` or
+> `development` branches!
+
+You are free to use whatever editing tools you like on your local repository, eg
+Sublime, Vim, Emacs, etc. It can be helpful to use an IDE that allows you to
+expand snippets, and to write a snippet expansion for different exercise
+types. Bonus points if your IDE of choice allows you to automatically generate
+UUIDs for your exercises.
 
 The best workflow is generally to open an appropriate interpreter side by side
 with the content file, so that you can play with code and quickly insert it into
-your exercises. This might be IPython, R, or a SQL client like `psql` or `sqlite`
+your exercises. This might be IPython, R, or a SQL client like `psql` or
+`sqlite`.
 
 Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
 manually. This annoyance can be alleviated by finding a UUID generator package
