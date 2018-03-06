@@ -116,10 +116,10 @@ content.
 4. Check out your new content on the development app, make sure everything looks
    good.
 
-5. Merge your content branch into the *master* branch on GitHub.
+5. When you are ready for a full release, open a pull request with your content
+   branch into the *master* branch on GitHub.
 
-7. Tag the `master` branch in GitHub `release-1.0.0` as appropriate. We
-   recommend using [semantic versioning](https://semver.org/), but the only rule
-   is that the tag/release must begin with `release-`.
+7. DataCamp will review and approve the pull request, and tag the `master`
+   branch in GitHub for release.
 
 8. Your content is now live to the world!
