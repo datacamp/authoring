@@ -130,6 +130,12 @@ distractors (AKA wrong answers). Each individual distractor in the list has two
 elements: `option`, the incorrect answer itself, and `feedback`, the feedback
 message that students will see if they incorrectly choose that distractor.
 
+> #### info::Note
+> The distractors are one of the most important pieces of a mobile exercise. An
+> effective mobile exercise predicts the mistakes that a student is likely to
+> make, and then provides useful `feedback` explaining why that distractor is
+> wrong!
+
 [Reorder](reorder.md) and [Tap](tap.md) exercises in particular have special
 requirements. Refer to the documentation pages of those exercise types for more
 information.
