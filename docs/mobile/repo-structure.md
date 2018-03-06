@@ -132,8 +132,8 @@ assets:
         title: Roles
 ```
 
-The [`mobile-teach` linter](development.md) will flag any mistakes made in the
-manifest.
+The [`mobile-teach` check](development.md) command will flag any mistakes made
+in the manifest.
 
 There are 4 key components to the manifest:
 

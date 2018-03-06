@@ -36,6 +36,10 @@ in the following sequence:
       feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
 
+> #### info:Note
+> The exercise type is automatically inferred from the type of distrator
+> provided. More on that in the distractor section below.
+
 Let's dig into each of the blocks...
 
 ## topic
@@ -110,9 +114,11 @@ session.
       feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
 
-The rendered exercise type depends largely on the distractors block. In the
-example above, the use of the `distractor_output` field indicates this exercise
-will be a select output exercise.
+> #### info:Note
+> The rendered exercise type depends on the distractors block.
+
+In the example above, the use of the `distractor_output` field indicates this
+exercise will be a select output exercise.
 
 Other distractor types will result in different exercise types:
 
