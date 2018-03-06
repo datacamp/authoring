@@ -185,7 +185,7 @@ chapters:
 ```
 
 * `key` is the unique UUID for the chapter.
-* `title` and `description` will be dipsplayed at the chapter level in the app.
+* `title` and `description` will be displayed at the chapter level in the app.
 * `status` should be kept as `foo` until it is ready to be launched, at which
   point it will be set to `LIVE`.
 * If there is a corresponding desktop course, it is denoted with the `main_id`
@@ -217,7 +217,7 @@ lessons:
 ```
 
 * `key` is the unique UUID for the chapter.
-* `title` and `description` will be dipsplayed at the chapter level in the app.
+* `title` and `description` will be displayed at the chapter level in the app.
 * `practice` is a Boolean: is this a practice lesson or not?
 * `fileName` is the path to the lesson file from the root of the course
   repository.
