@@ -83,7 +83,6 @@
       - [Tap](mobile/exercises/tap.md)
       - [Multiple Choice](mobile/exercises/multiple-choice.md)
       - [Reorder](mobile/exercises/reorder.md)
-   - [Guidelines](mobile/guidelines.md)
 
 ## Teach Interface
 
