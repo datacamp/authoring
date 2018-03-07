@@ -1,8 +1,12 @@
 # Select Code
 
 In a Select Code exercise, students are asked to select the block of code that
-produces a provided output. Select Code exercises require a code block (because
-the code block is the correct solution), and a `distractor_code` field.
+will produce a given output. Select Code exercises require a code block (because
+the code block is the correct solution), and a `distractor_code` field. In a
+sense, Select Code is the reverse of a [Select Output](select-output.md)
+exercise. In fact, all it takes to convert a Select Output exercise to a Select
+Code exercise is to remove or comment the `distractor_output` field and add a
+`distractor_code` field.
 
 ```yaml
 # subtraction
