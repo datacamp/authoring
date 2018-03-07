@@ -1,15 +1,5 @@
 # Mobile exercises
 
-Writing a DataCamp for Mobile course is a unique experience. The upside of the
-mobile platform is that you can reach a much broader audience because the
-convenience is higher and the barrier to entry is lower. The challenge is that
-there are many more constraints to work within. Primary among these are the
-restricted screen real estate and the lack of an interactive interpreter. These
-constraints require you to think carefully about the way you introduce concepts
-and the examples that you use.
-
-# Basic exercise structure
-
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
@@ -139,7 +129,9 @@ distractor_output:
 Regardless of the exercise type, the distractor field is always a list of
 distractors (AKA wrong answers). Each individual distractor in the list has two
 elements: `option`, the incorrect answer itself, and `feedback`, the feedback
-message that students will see if they incorrectly choose that distractor.
+message that students will see if they incorrectly choose that distractor. Try
+not to ask questions or use exclamation marks in feedback messages - they should
+be clear but not aggressive.
 
 > #### info::Note
 > The distractors are one of the most important pieces of a mobile exercise. Not
