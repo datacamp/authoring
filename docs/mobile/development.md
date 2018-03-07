@@ -56,6 +56,9 @@ expand snippets, and to write a snippet expansion for different exercise
 types. Bonus points if your IDE of choice allows you to automatically generate
 UUIDs for your exercises.
 
+Visit the [exercises documentation](exercises/readme.md) to see how exercises
+are written and see some examples.
+
 The best workflow is generally to open an appropriate interpreter side by side
 with the content file, so that you can play with code and quickly insert it into
 your exercises. This might be IPython, R, or a SQL client like `psql` or
