@@ -174,7 +174,8 @@ contains a short string of text that is displayed in the footer of the
 table. The most common use for the table message is to indicate row truncation,
 because tables should not be displayed with more than 5 rows as a general
 rule. If you *are* truncating the result, the `message` field is mandatory,
-otherwise it is not.
+otherwise it is not. The standard format for indicating truncation is the one
+featured in the example above: `"Showing n out of N rows"`.
 
 ## image
 
