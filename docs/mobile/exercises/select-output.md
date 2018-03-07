@@ -4,7 +4,8 @@ Select output exercises require a code block (because the output block is the
 correct solution).
 
 ```yaml
-- key: af0b5d3f-629e-4575-8822-3486b898f5be
+# subtraction
+- key: # generate me!
   context: "You can use `-` to subtract numbers, just like a calculator."
   output: "3"
   code: "print(8 - 5)"

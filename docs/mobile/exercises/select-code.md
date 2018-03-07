@@ -1,10 +1,12 @@
 # Select Code
 
-Select code exercises require a code block (because the code block is the
-correct solution).
+In a Select Code exercise, students are asked to select the block of code that
+produces a provided output. Select Code exercises require a code block (because
+the code block is the correct solution), and a `distractor_code` field.
 
 ```yaml
-- key: af0b5d3f-629e-4575-8822-3486b898f5be
+# subtraction
+- key: # generate me!
   context: "You can use `-` to subtract numbers, just like a calculator."
   output: "3"
   code: "print(8 - 5)"

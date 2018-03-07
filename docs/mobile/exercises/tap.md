@@ -19,6 +19,7 @@ The default `question` block for a Tap exercise is `Complete the code to
 generate the output`.
 
 ```yaml
+# print()
 - key: # generate me!
   context: "You can use the `print` function to display things in the console."
   code: |-
@@ -39,6 +40,7 @@ is not supported. You can (and should!) still use a fallback `feedback_wrong`
 field, however.
 
 ```yaml
+# print()
 - key: # generate me!
   context: "You can use the `print` function to display things in the console."
   code: |-

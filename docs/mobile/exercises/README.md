@@ -12,21 +12,24 @@ carefully about the way you introduce concepts and the examples that you use.
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
-* [Select Output](select-output.md)
-* [Select Code](select-code.md)
-* [Tap](tap.md)
-* [Multiple Choice](multiple-choice.md)
-* [Select Table](select-table.md)
+| Type                                  | Description                                             |
+| :----                                 | :----------                                             |
+| [Select Output](select-output.md)     | What is the output of this code? Console output         |
+| [Select Table](select-table.md)       | What is the output of this code? Formatted table output |
+| [Select Code](select-code.md)         | Select the code to return the output.                   |
+| [Tap](tap.md)                         | Complete the code to return the output.                 |
+| [Multiple Choice](multiple-choice.md) | Answer the multiple choice question.                    |
+| [Reorder](reorder.md)                 | Reorder the code to return the output.                  |
 
-...but they all share a similar structure. In general (with a few exceptions),
-you can think of an exercise as a short code vignette comprising various blocks
-in the following sequence:
+...but they all share a similar structure. In general, you can think of an
+exercise as a short code vignette comprising various blocks in the following
+sequence:
 
 ```yaml
 # print()
-- key: c11dbdf1-49c9-408a-a1e4-885431af2196
+-  key: # generate me!
   context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
-  question: "" # this is the default
+  question: "What is the output of this code?" # this is the default
   code: "print(42)"
   output: "42"
   distractor_output:
@@ -36,9 +39,18 @@ in the following sequence:
       feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
 
-> #### info:Note
-> The exercise type is automatically inferred from the type of distrator
-> provided. More on that in the distractor section below.
+In the example above, the use of the `distractor_output` field indicates this
+exercise will be a select output exercise. Other distractor types will result in
+different exercise types:
+
+* distractor_output -> [Select Output](select-output.md)
+* distractor_table  -> [Select Table](select-table.md)
+* distractor_code   -> [Select Code](select-code.md)
+* distractor_blanks -> [Tap](tap.md)
+* distractor_text   -> [Multiple Choice](multiple-choice.md)
+
+The only exercise type that does not require a distractor field is the
+[Reorder](reorder.md) exercise.
 
 Let's dig into each of the blocks...
 
@@ -48,45 +60,54 @@ Let's dig into each of the blocks...
 # print()
 ```
 
-Even though it's not part of the exercise itself, it's a very good idea to
-comment your exercises so you can quickly remind yourself what each exercise is
-designed to teach or test. In fact, it can be helpful to start by outlining a
-whole lesson with a scaffolding of comments before expanding the exercises.
+Even though it's not part of the exercise itself, it's a good idea to comment
+your exercises so you can quickly remind yourself what each exercise is designed
+to teach or test. In fact, it can be helpful to start by outlining a whole
+lesson with a scaffolding of comments before expanding the exercises.
 
 ## key
 
 ```yaml
-- key: c11dbdf1-49c9-408a-a1e4-885431af2196
+key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
 This is a unique UUID for the exercise.
 
+Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
+manually. This annoyance can be alleviated by finding a UUID generator package
+for your text editor or IDE of choice. Some examples:
+
+* [Emac](https://github.com/kanru/uuidgen-el)
+* [Vim](https://github.com/kburdett/vim-nuuid)
+* [Sublime Text](https://github.com/SublimeText/GenerateUUID)
+
 ## context
 
 ```yaml
-  context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
+context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
 ```
 
 This is where you can provide exposition necessary to introduce a new
 concept. It should be kept as minimal as possible (no longer than 150
 characters). It's good to shoot for a lighter, more informal feel here than on
 desktop. This field supports markdown elements like `inline code` and
-**emboldening**. Emojis are not just supported, they're encouraged!
+***emboldening***. Emojis are not just supported, they're encouraged!
 
 ## question
 
 ```yaml
-  question: "" # this is the default
+question: "" # this is the default
 ```
 
 This field is always optional. It will override the default question for the
-relevant exercise type. Don't change this unless you absolutely need to for an
+relevant exercise type. You can see the default question for each exercise type
+in the table above. Don't change this unless you absolutely need to for an
 exercise to make sense.
 
 ## code
 
 ```yaml
-  code: "print(42)"
+code: "print(42)"
 ```
 
 This is the code! Anything you here should be syntactically correct, executable
@@ -97,7 +118,7 @@ exercise types to get the details.
 ## output
 
 ```yaml
-  output: "42"
+output: "42"
 ```
 
 This is the output generated by the code in a code block. That means anything
@@ -107,29 +128,12 @@ session.
 ## distractors
 
 ```yaml
-  distractor_output:
-    - option: "4"
-      feedback: "`print()` will output all of whatever is between the parentheses, not just the first part."
-    - option: "2"
-      feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
+distractor_output:
+  - option: "4"
+    feedback: "`print()` will output all of whatever is between the parentheses, not just the first part."
+  - option: "2"
+    feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
-
-> #### info:Note
-> The rendered exercise type depends on the distractors block.
-
-In the example above, the use of the `distractor_output` field indicates this
-exercise will be a select output exercise.
-
-Other distractor types will result in different exercise types:
-
-- distractor_output -> [Select Output](select-output.md)
-- distractor_code   -> [Select Code](select-code.md)
-- distractor_blanks -> [Tap](tap.md)
-- distractor_text   -> [Multiple Choice](multiple-choice.md)
-- distractor_table  -> [Select Table](select-table.md)
-
-The only exercise type that does not require a distractor field is the
-[Reorder](reorder.md) .
 
 Regardless of the exercise type, the distractor field is always a list of
 distractors (AKA wrong answers). Each individual distractor in the list has two
@@ -137,7 +141,8 @@ elements: `option`, the incorrect answer itself, and `feedback`, the feedback
 message that students will see if they incorrectly choose that distractor.
 
 > #### info::Note
-> The distractors are one of the most important pieces of a mobile exercise. An
+> The distractors are one of the most important pieces of a mobile exercise. Not
+> only does the distractors block determine the rendered exercise type, but an
 > effective mobile exercise predicts the mistakes that a student is likely to
 > make, and then provides useful `feedback` explaining why that distractor is
 > wrong!
@@ -174,12 +179,11 @@ otherwise it is not.
 ## image
 
 ```yaml
-image: my-cool-plot
+image: assets/images/my-cool-plot.png
 ```
 
-You can put image assets into your exercises! In this example, `my-cool-plot` is
-a reference to an image asset specified in the [course
-manifest](../repo-structure.md).
+You can insert an image block into your exercise simply by specifying the path
+to a PNG file. This is useful for things like teaching about plotting.
 
 ## complex context
 
@@ -194,7 +198,7 @@ For example, to include an image such as a plot:
 ```yaml
 context:
   text: Study the plot below to answer the following question.
-  image: my-cool-plot
+  image: assets/images/my-cool-plot.png
 ```
 
 To include a table:
@@ -253,6 +257,7 @@ how to render the asset. Currently only `file` and `table` are supported.
 | Block               | Reorder              | Tap                  | Select Code          | Select Output        | Select Table         | Multiple Choice      |
 | :------------------ | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- |
 | key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
+| tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 |                      |                      |
 | context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
