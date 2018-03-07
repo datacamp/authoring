@@ -130,19 +130,18 @@ badge_url: https://s3.amazonaws.com/assets.datacamp.com/mobile/course_badges/SQL
 technology_key: SQL
 ```
 
-* `authoringVersion` should always be 2 (version 1 of the authoring format is
-  deprecated and only exists for the first 4 courses' backwards compatibility:
-  Intro SQL, Intro R, Intro Python and Intermediate Python).
-* `title` and `description` will be displayed at the course level in the app.
-* `key` is the unique UUID for the course.
-* If there is a corresponding desktop course, it is denoted with the `main_id`
-  field. You needn't worry about this.
-* `badge_url` points to the course logo. You needn't worry about this either.
-* `status` can be one of `HIDDEN`, `COMING_SOON`, `BETA`, `LIVE`, or
-  `PREMIUM`. It should generally stay set to `LIVE` unless asked otherwise.
-* `technology_key`: Currently, one of `R`, `PYTHON`, or `SQL`.
+| field              | description                                                                                                                                                                                      |
+| :----              | :----------                                                                                                                                                                                      |
+| `authoringVersion` | Should always be 2 (version 1 of the authoring format is deprecated and only exists for the first 4 courses' backwards compatibility: Intro SQL, Intro R, Intro Python and Intermediate Python). |
+| `title`            | Displayed at the course level in the app.                                                                                                                                                        |
+| `description`      | Displayed at the course level in the app.                                                                                                                                                        |
+| `key`              | The unique UUID for the course.                                                                                                                                                                  |
+| `main_id`          | The ID of the corresponding desktop course, if any. You needn't worry about this.                                                                                                                |
+| `badge_url`        | Points to the course logo. You needn't worry about this either.                                                                                                                                  |
+| `status`           | Can be one of `HIDDEN`, `COMING_SOON`, `BETA`, `LIVE`, or `PREMIUM`. It should generally stay set to `LIVE` unless asked otherwise.                                                              |
+| `technology_key`   | Currently, one of `R`, `PYTHON`, or `SQL`.                                                                                                                                                       |
 
-## Chapter/lesson metadata
+## Chapter metadata
 
 A chapter will not appear in your course unless it is specified here explicitly.
 
@@ -157,14 +156,14 @@ chapters:
       ...
 ```
 
-* `key` is the unique UUID for the chapter.
-* `title` and `description` will be displayed at the chapter level in the app.
-* `status` should be kept as `foo` until it is ready to be launched, at which
-  point it will be set to `LIVE`.
-* If there is a corresponding desktop course, it is denoted with the `main_id`
-  field.
-* `lessons` is a list of all the lessons in the chapter and *their* associated
-  metadata:
+| field         | description                                                                        |
+| :----         | :----------                                                                        |
+| `key`         | The unique UUID for the chapter.                                                   |
+| `title`       | Displayed at the chapter level in the app.                                         |
+| `description` | Displayed at the chapter level in the app.                                         |
+| `status`      | Can be one of `HIDDEN`, `COMING_SOON`, `BETA`, `LIVE`, or `PREMIUM`.               |
+| `main_id`     | The ID of the corresponding desktop chapter, if any. You needn't worry about this. |
+| `lessons`     | A list of all the lessons in the chapter and *their* associated metadata.          |
 
 ## Lessons metadata
 
@@ -189,11 +188,13 @@ lessons:
     fileName: chapter1/practice.yml
 ```
 
-* `key` is the unique UUID for the chapter.
-* `title` and `description` will be displayed at the chapter level in the app.
-* `practice` is a Boolean: is this a practice lesson or not?
-* `fileName` is the path to the lesson file from the root of the course
-  repository.
+| field         | description                                                         |
+| :----         | :----------                                                         |
+| `key`         | The unique UUID for the chapter.                                    |
+| `title`       | Displayed at the lesson level in the app.                           |
+| `description` | Displayed at the lesson level in the app.                           |
+| `practice`    | Boolean - is this a practice lesson or not?                         |
+| `fileName`    | The path to the lesson file from the root of the course repository. |
 
 ### Assets metadata
 
@@ -219,12 +220,9 @@ assets:
         title: Films
 ```
 
-* `type`, specified as `dataset`.
-* `key`, the alias for the asset.
-* `url`, the path to the asset from the root of the course repository.
-* `tabs`, with one entry for every possible tab-type, currently either `file` or
-  `table`. Every tab-type requires the sub-field `title`, which will determine
-  the name of the tab when the asset is rendered as the respective type. In the
-  example above, the asset `films_small.csv` will have the title `films.csv`
-  when rendered as a CSV file, and the title `Films` when rendered as a
-  formatted table.
+| field  | description                                                                                                                                                                                                                                                                                                                                                                                         |
+| :----  | :----------                                                                                                                                                                                                                                                                                                                                                                                         |
+| `type` | Currently, only `dataset` is supported.                                                                                                                                                                                                                                                                                                                                                             |
+| `key`  | The alias for the asset.                                                                                                                                                                                                                                                                                                                                                                            |
+| `url`  | The path to the asset from the root of the course repository.                                                                                                                                                                                                                                                                                                                                       |
+| `tabs` | One entry for every possible tab-type, currently either `file` or `table`. Every tab-type requires the sub-field `title`, which will determine the name of the tab when the asset is rendered as the respective type. In the example above, the asset `films_small.csv` will have the title `films.csv` when rendered as a CSV file, and the title `Films` when rendered as a formatted table. |

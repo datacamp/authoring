@@ -4,7 +4,7 @@ There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
 | Type                                  | Description                                             |
-| :----                                 | :----------                                             |
+| :---                                  | :----------                                             |
 | [Select Output](select-output.md)     | What is the output of this code? Console output         |
 | [Select Table](select-table.md)       | What is the output of this code? Formatted table output |
 | [Select Code](select-code.md)         | Select the code to return the output.                   |
