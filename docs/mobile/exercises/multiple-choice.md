@@ -3,7 +3,8 @@
 The student has to choose one or more correct answers. The `text` field contains
 the correct answers, and `distractor_text` contains the incorrect answers.
 
-For a single correct answer, `text` can be a string:
+For a single correct answer, `text` can be a string. In this case, the student
+is only permitted to select one option.
 
 ```yaml
 - type: MultipleChoice
@@ -17,8 +18,9 @@ For a single correct answer, `text` can be a string:
       feedback: "Lambda functions contain an expression which is returned!"
 ```
 
-For multiple correct answers, text can be an array of strings. The exercise will
-be considered incorrect unless the student selects *all* the correct answers.
+For multiple correct answers, text can be an array of strings. In this case, the
+student will be allowed to select multiple options, and the exercise will be
+considered incorrect unless the student selects *all* the correct answers.
 
 ```yaml
 - type: MultipleChoice
