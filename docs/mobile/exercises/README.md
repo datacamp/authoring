@@ -251,7 +251,7 @@ how to render the asset. Currently only `file` and `table` are supported.
 | Block               | Reorder              | Tap                  | Select Code          | Select Output        | Select Table         | Multiple Choice      |
 | :------------------ | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- |
 | key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
-| tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 |                      |                      |
+| tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
