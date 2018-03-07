@@ -31,12 +31,19 @@ npm install -g @datacamp/mobile-teach
 This will create the `mobile-teach` executable, which you will use to lint and
 preview your content.
 
-## Write
-
-Create and checkout a feature branch to write your course in.
+You may periodically need to update the `mobile-teach` package in the
+future. You can achieve this by simply running the installation command again:
 
 ```sh
-git checkout -c chapter-1
+npm install -g @datacamp/mobile-teach
+```
+
+## Write
+
+Create and checkout a feature branch to write your course in. For example:
+
+```sh
+git checkout -b chapter-1
 ```
 
 > #### info::Note
@@ -152,14 +159,23 @@ Often it's useful to see how your content will render on a phone screen. The
 mobile-teach preview /path/to/lesson-file.yml
 ```
 
-You can then open a web browser to `http://localhost:8080`. Open the browser
-tools (usually `Command-Option-j`) and click the phone icon to simulate a phone
-view port. You can even specify which phone you want to simulate (eg iPhone,
-Nexus, Galaxy, etc). If you are having trouble finding these browser tools, we
-recommend updating Firefox to at least version 58.0.
+You can then open a web browser (we recommend Firefox version 58 or later) to
+`http://localhost:8080`. Open the browser tools (`Command-Option-i` for Firefox)
+and click the phone icon to simulate a phone view port. You can even specify
+which phone you want to simulate (eg iPhone, Nexus, Galaxy, etc) by clicking the
+bar at the top of the viewport and selecting a device model. We recommend
+previewing on the smallest phone supported by DataCamp for Mobile - the iPhone
+SE.
 
 The simulator preview will update in real time as you make changes to your
-content.
+content, so try setting it up side by side with your content and editing in
+real-time! Note that although the real mobile app will randomize possible
+answers in every exercise, the preview will always place the correct answer(s)
+first, so that it's easy to power through a lesson for testing purposes.
+
+A known upstream bug in the React framework prevents datasets from rendering in
+tabs on the mobile preview. Don't worry - these will render properly on a real
+mobile device.
 
 ## Release
 
