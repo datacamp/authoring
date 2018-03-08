@@ -10,6 +10,9 @@ and the examples that you use.
 
 ## Getting started
 
+First, get your repo and development tools set up according to the [development
+process documentation](../development.md).
+
 Create and checkout a feature branch to write your course in. For example:
 
 ```sh
