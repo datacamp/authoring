@@ -75,6 +75,10 @@ try to vary the exercise types in a lesson.
 
 ## Working with YAML
 
+All mobile content is currently written in the YAML (Yet Another Markdown
+Language) format. If you need a YAML crash course or refresher, we recommend
+[this tutorial](https://gettaurus.org/docs/YAMLTutorial/).
+
 You will often be writing code blocks or output blocks that span multiple
 lines. You *can* use explicit newlines `\n`, but the easier and more readable
 option is to use a feature of the YAML spec known as **literal scalar
