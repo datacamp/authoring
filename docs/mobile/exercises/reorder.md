@@ -26,7 +26,7 @@ If there are multiple possible solutions, you can specify them all in a list.
 ```yaml
 # comments
 - key: # generate me!
-  context: "Anything that comes after the `#` character is a comment and won't affect the code around it."
+  context: "Anything that comes after the `#` character is a comment and is not interpreted as code."
   code:
     - |-
       # this is a comment
