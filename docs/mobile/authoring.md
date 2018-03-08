@@ -37,14 +37,6 @@ with the content file, so that you can play with code and quickly insert it into
 your exercises. This might be IPython, R, or a SQL client like `psql` or
 `sqlite`.
 
-Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
-manually. This annoyance can be alleviated by finding a UUID generator package
-for your text editor or IDE of choice. Some examples:
-
-* [Emac](https://github.com/kanru/uuidgen-el)
-* [Vim](https://github.com/kburdett/vim-nuuid)
-* [Sublime Text](https://github.com/SublimeText/GenerateUUID)
-
 ## Strategy
 
 It's a good idea to start a lesson by creating a scaffold. First write a one
@@ -130,3 +122,13 @@ need 99% of the time.
 useful for diagnosing bugs in YAML. [The `mobile-teach`
 linter](../development.md#linting) should be able to clearly pinpoint 100% of
 errors, however.
+
+## Working with UUIDs
+
+Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
+manually. This annoyance can be alleviated by finding a UUID generator package
+for your text editor or IDE of choice. Some examples:
+
+* [Emacs](https://github.com/kanru/uuidgen-el)
+* [Vim](https://github.com/kburdett/vim-nuuid)
+* [Sublime Text](https://github.com/SublimeText/GenerateUUID)

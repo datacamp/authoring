@@ -62,15 +62,8 @@ lesson with a scaffolding of comments before expanding the exercises.
 key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
-This is a unique UUID for the exercise.
-
-Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
-manually. This annoyance can be alleviated by finding a UUID generator package
-for your text editor or IDE of choice. Some examples:
-
-* [Emac](https://github.com/kanru/uuidgen-el)
-* [Vim](https://github.com/kburdett/vim-nuuid)
-* [Sublime Text](https://github.com/SublimeText/GenerateUUID)
+This is a unique UUID for the exercise. You can find some tips for working
+with/generating UUIDs [here](../authoring.md/#working-with-uuids).
 
 ## context
 
