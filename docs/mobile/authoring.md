@@ -124,8 +124,8 @@ need 99% of the time.
 
 [This online YAML parser](https://yaml-online-parser.appspot.com) can also be
 useful for diagnosing bugs in YAML. [The `mobile-teach`
-linter](../development.md) should be able to clearly pinpoint 100% of errors,
-however.
+linter](../development.md#linting) should be able to clearly pinpoint 100% of
+errors, however.
 
 You don't need to use quotes in your key-value pairs unless the value itself
 contains a single or double quote.
