@@ -31,7 +31,7 @@ sequence:
 ```
 
 In the example above, the use of the `distractor_output` field indicates this
-exercise will be a select output exercise. Other distractor types will result in
+exercise will be a Select Output exercise. Other distractor types will result in
 different exercise types:
 
 * distractor_output -> [Select Output](select-output.md)
