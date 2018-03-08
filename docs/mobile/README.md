@@ -30,11 +30,11 @@ practice-only mode, as well.
 
 # Where do I start?
 
-First, get go through the [development process documentation](development.md) to
-get set up with your course repository and development tools.
+First, go through the [development process documentation](development.md) to get
+set up with your course repository and development tools.
 
-Second, set up the structure of your course repository according to the
+Then, set up the structure of your course repository according to the
 [documented repository structure](repo-structure.md).
 
-Read the [authoring](authoring.md) page and familiarize yourself with [mobile
-exercises](exercises/README.md) to get started writing your course!
+Finally, read the [authoring](authoring.md) page and familiarize yourself with
+[mobile exercises](exercises/README.md) to get started writing your course!
