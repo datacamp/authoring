@@ -160,7 +160,7 @@ table:
 
 You can opt to use a `table` block instead of an `output` block, for example
 when displaying the output of a SQL query, which is more appropriate as a
-table. The table field has two subfields. First is `data`, which contains the
+table. A table field has two subfields. First is `data`, which contains the
 actual table data as comma separated values. They needn't be aligned, but they
 can be and sometimes this improves readability.  The second is `message`, which
 contains a short string of text that is displayed in the footer of the

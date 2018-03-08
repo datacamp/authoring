@@ -38,12 +38,6 @@ queries, for example.
       feedback: "Boris is also awesome."
 ```
 
-Both the `table` and the `options` under `distractor_feedback` have a similar
-structure. Each are composed of two subfields. First is `data`, which contains
-the actual table data as comma separated values. They needn't be aligned as they
-are in the example above, but sometimes this improves readability for yourself.
-The second is `message`, which contains a short string of text that is displayed
-in the footer of the table. The most common use for the table message is to
-indicate row truncation, because tables should not be displayed with more than 5
-rows as a general rule. If you *are* truncating the result, the `message` field
-is mandatory, otherwise it is not.
+The `option`s in the `distractor_table` block have a structure identical to that
+of a `table` block (because they are also tables). Refer to the [documentation
+for `table` blocks](README.md/#table) for more information.
