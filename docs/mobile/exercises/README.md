@@ -237,10 +237,11 @@ tabs:
 ```
 
 Tabs appear in the top right of the exercise and serve as a way to display
-datasets or files. The appropriate asset must be defined in the [course
-manifest](../repo-structure.md#manifest). A tab field has two subfields: `key`, which is
-the alias for the asset as defined in the manifest, and `type`, which specifies
-how to render the asset. Currently only `file` and `table` are supported.
+datasets or files. The appropriate asset must be defined in the [`assets`
+section of the course manifest](../repo-structure.md#assets-metadata). A tab
+field has two subfields: `key`, which is the alias for the asset as defined in
+the manifest, and `type`, which specifies how to render the asset. Currently
+only `file` and `table` are supported.
 
 # Summary of available blocks
 
