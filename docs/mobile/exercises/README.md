@@ -1,32 +1,26 @@
 # Mobile exercises
 
-Writing a DataCamp for Mobile unique. The upside of the mobile platform is that
-you can reach a much broader audience because the convenience is higher and the
-barrier to entry is lower. The challenge is that there are many more constraints
-to work within. Primary among these are the restricted screen real estate and
-the lack of an interactive interpreter. These constraints require you to think
-carefully about the way you introduce concepts and the examples that you use.
-
-# Basic exercise structure
-
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
-* [Select Output](select-output.md)
-* [Select Code](select-code.md)
-* [Tap](tap.md)
-* [Multiple Choice](multiple-choice.md)
-* [Select Table](select-table.md)
+| Type                                  | Description                                             |
+| :---                                  | :----------                                             |
+| [Select Output](select-output.md)     | What is the output of this code? Console output         |
+| [Select Table](select-table.md)       | What is the output of this code? Formatted table output |
+| [Select Code](select-code.md)         | Select the code to return the output.                   |
+| [Tap](tap.md)                         | Complete the code to return the output.                 |
+| [Multiple Choice](multiple-choice.md) | Answer the multiple choice question.                    |
+| [Reorder](reorder.md)                 | Reorder the code to return the output.                  |
 
-...but they all share a similar structure. In general (with a few exceptions),
-you can think of an exercise as a short code vignette comprising various blocks
-in the following sequence:
+...but they all share a similar structure. In general, you can think of an
+exercise as a short code vignette comprising various blocks in the following
+sequence:
 
 ```yaml
 # print()
-- key: c11dbdf1-49c9-408a-a1e4-885431af2196
+-  key: # generate me!
   context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
-  question: "" # this is the default
+  question: "What is the output of this code?" # this is the default
   code: "print(42)"
   output: "42"
   distractor_output:
@@ -36,9 +30,18 @@ in the following sequence:
       feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
 
-> #### info:Note
-> The exercise type is automatically inferred from the type of distrator
-> provided. More on that in the distractor section below.
+In the example above, the use of the `distractor_output` field indicates this
+exercise will be a Select Output exercise. Other distractor types will result in
+different exercise types:
+
+* distractor_output -> [Select Output](select-output.md)
+* distractor_table  -> [Select Table](select-table.md)
+* distractor_code   -> [Select Code](select-code.md)
+* distractor_blanks -> [Tap](tap.md)
+* distractor_text   -> [Multiple Choice](multiple-choice.md)
+
+The only exercise type that does not require a distractor field is the
+[Reorder](reorder.md) exercise.
 
 Let's dig into each of the blocks...
 
@@ -48,45 +51,47 @@ Let's dig into each of the blocks...
 # print()
 ```
 
-Even though it's not part of the exercise itself, it's a very good idea to
-comment your exercises so you can quickly remind yourself what each exercise is
-designed to teach or test. In fact, it can be helpful to start by outlining a
-whole lesson with a scaffolding of comments before expanding the exercises.
+Even though it's not part of the exercise itself, it's a good idea to comment
+your exercises so you can quickly remind yourself what each exercise is designed
+to teach or test. In fact, it can be helpful to start by outlining a whole
+lesson with a scaffolding of comments before expanding the exercises.
 
 ## key
 
 ```yaml
-- key: c11dbdf1-49c9-408a-a1e4-885431af2196
+key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
-This is a unique UUID for the exercise.
+This is a unique UUID for the exercise. You can find some tips for working
+with/generating UUIDs [here](../authoring.md/#working-with-uuids).
 
 ## context
 
 ```yaml
-  context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
+context: "`print()` outputs to the screen. Whatever you put between the parentheses will be output! E.g. `print(5)` will output `5`!"
 ```
 
 This is where you can provide exposition necessary to introduce a new
 concept. It should be kept as minimal as possible (no longer than 150
 characters). It's good to shoot for a lighter, more informal feel here than on
 desktop. This field supports markdown elements like `inline code` and
-**emboldening**. Emojis are not just supported, they're encouraged!
+***emboldening***. Emojis are not just supported, they're encouraged!
 
 ## question
 
 ```yaml
-  question: "" # this is the default
+question: "" # this is the default
 ```
 
 This field is always optional. It will override the default question for the
-relevant exercise type. Don't change this unless you absolutely need to for an
+relevant exercise type. You can see the default question for each exercise type
+in the table above. Don't change this unless you absolutely need to for an
 exercise to make sense.
 
 ## code
 
 ```yaml
-  code: "print(42)"
+code: "print(42)"
 ```
 
 This is the code! Anything you here should be syntactically correct, executable
@@ -97,7 +102,7 @@ exercise types to get the details.
 ## output
 
 ```yaml
-  output: "42"
+output: "42"
 ```
 
 This is the output generated by the code in a code block. That means anything
@@ -107,37 +112,23 @@ session.
 ## distractors
 
 ```yaml
-  distractor_output:
-    - option: "4"
-      feedback: "`print()` will output all of whatever is between the parentheses, not just the first part."
-    - option: "2"
-      feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
+distractor_output:
+  - option: "4"
+    feedback: "`print()` will output all of whatever is between the parentheses, not just the first part."
+  - option: "2"
+    feedback: "`print()` will output all of whatever is between the parentheses, not just the last part."
 ```
-
-> #### info:Note
-> The rendered exercise type depends on the distractors block.
-
-In the example above, the use of the `distractor_output` field indicates this
-exercise will be a select output exercise.
-
-Other distractor types will result in different exercise types:
-
-- distractor_output -> [Select Output](select-output.md)
-- distractor_code   -> [Select Code](select-code.md)
-- distractor_blanks -> [Tap](tap.md)
-- distractor_text   -> [Multiple Choice](multiple-choice.md)
-- distractor_table  -> [Select Table](select-table.md)
-
-The only exercise type that does not require a distractor field is the
-[Reorder](reorder.md) .
 
 Regardless of the exercise type, the distractor field is always a list of
 distractors (AKA wrong answers). Each individual distractor in the list has two
 elements: `option`, the incorrect answer itself, and `feedback`, the feedback
-message that students will see if they incorrectly choose that distractor.
+message that students will see if they incorrectly choose that distractor. Try
+not to ask questions or use exclamation marks in feedback messages - they should
+be clear but not aggressive.
 
 > #### info::Note
-> The distractors are one of the most important pieces of a mobile exercise. An
+> The distractors are one of the most important pieces of a mobile exercise. Not
+> only does the distractors block determine the rendered exercise type, but an
 > effective mobile exercise predicts the mistakes that a student is likely to
 > make, and then provides useful `feedback` explaining why that distractor is
 > wrong!
@@ -162,24 +153,26 @@ table:
 
 You can opt to use a `table` block instead of an `output` block, for example
 when displaying the output of a SQL query, which is more appropriate as a
-table. The table field has two subfields. First is `data`, which contains the
+table. A table field has two subfields. First is `data`, which contains the
 actual table data as comma separated values. They needn't be aligned, but they
 can be and sometimes this improves readability.  The second is `message`, which
 contains a short string of text that is displayed in the footer of the
 table. The most common use for the table message is to indicate row truncation,
 because tables should not be displayed with more than 5 rows as a general
 rule. If you *are* truncating the result, the `message` field is mandatory,
-otherwise it is not.
+otherwise it is not. The standard format for indicating truncation is the one
+featured in the example above: `"Showing n out of N rows"`.
 
 ## image
 
 ```yaml
-image: my-cool-plot
+image: assets/images/my-cool-plot.png
 ```
 
-You can put image assets into your exercises! In this example, `my-cool-plot` is
-a reference to an image asset specified in the [course
-manifest](../repo-structure.md).
+You can insert an image block into your exercise simply by specifying the path
+to a PNG file. This is useful when teaching things like plotting. Be mindful of
+image asset size, because these images will be downloaded to students' phones,
+often over a cellular data connection.
 
 ## complex context
 
@@ -194,7 +187,7 @@ For example, to include an image such as a plot:
 ```yaml
 context:
   text: Study the plot below to answer the following question.
-  image: my-cool-plot
+  image: assets/images/my-cool-plot.png
 ```
 
 To include a table:
@@ -237,10 +230,11 @@ tabs:
 ```
 
 Tabs appear in the top right of the exercise and serve as a way to display
-datasets or files. The appropriate asset must be defined in the [course
-manifest](../repo-structure.md). A tab field has two subfields: `key`, which is
-the alias for the asset as defined in the manifest, and `type`, which specifies
-how to render the asset. Currently only `file` and `table` are supported.
+datasets or files. The appropriate asset must be defined in the [`assets`
+section of the course manifest](../repo-structure.md#assets-metadata). A tab
+field has two subfields: `key`, which is the alias for the asset as defined in
+the manifest, and `type`, which specifies how to render the asset. Currently
+only `file` and `table` are supported.
 
 # Summary of available blocks
 
@@ -253,6 +247,7 @@ how to render the asset. Currently only `file` and `table` are supported.
 | Block               | Reorder              | Tap                  | Select Code          | Select Output        | Select Table         | Multiple Choice      |
 | :------------------ | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- | :------------------- |
 | key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
+| tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
@@ -266,60 +261,3 @@ how to render the asset. Currently only `file` and `table` are supported.
 | distractor_text     | :x:                  | :x:                  | :x:                  | :x:                  | :x:                  | :heavy_check_mark:   |
 | feedback            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | feedback_wrong      | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
-
-# YAML tips and tricks
-
-You will often be writing code blocks or output blocks that span multiple
-lines. You *can* use explicit newlines `\n`, but the easier and more readable
-option is to use a feature of the YAML spec known as **literal scalar
-blocks**. Just put `|-` after the colon `:` of a field and then indent the
-following lines by another two spaces. Everything in the indented block will be
-rendered verbatim, including newlines and all quotes.
-
-Instead of this:
-
-```yaml
-solution: "v <- c(4, 9, 3, 5)\norder(v)"
-```
-
-Try this:
-
-```yaml
-
-solution: |-
-  v <- c(4, 9, 3, 5)
-  order(v)
-```
-
-A small wrench is thrown into things when the first line of the literal scalar
-block needs to start with blank space. When that happens, you need to count the
-number of blank spaces at the beginning of the first line `N`, and put that number
-`N` after the `|-`. Then, indent the whole block an extra `N` characters. This
-is easier demonstrated than explained.
-
-Instead of this:
-
-```yaml
-output: "[,1] [,2]\n[1,]    1    3\n[2,]    2    4"
-```
-
-Try this:
-
-```yaml
-output: |-5
-            [,1] [,2]
-       [1,]    1    3
-       [2,]    2    4
-```
-
-See the [YAML spec](http://yaml.org/spec/1.2/spec.html) for more advanced YAML
-features that might come in handy, but literal scalar blocks will be what you
-need 99% of the time.
-
-[This online YAML parser](https://yaml-online-parser.appspot.com) can also be
-useful for diagnosing bugs in YAML. [The `mobile-teach`
-linter](../development.md) should be able to clearly pinpoint 100% of errors,
-however.
-
-You don't need to use quotes in your key-value pairs unless the value itself
-contains a single or double quote.

@@ -27,3 +27,14 @@ random order (in contrast to course lesson exercises, which are always shown in
 the order specified in their YAML files). These pools of practice content are
 currently embedded within courses, but will eventually be extracted into a full
 practice-only mode, as well.
+
+# Where do I start?
+
+First, go through the [development process documentation](development.md) to get
+set up with your course repository and development tools.
+
+Then, set up the structure of your course repository according to the
+[documented repository structure](repo-structure.md).
+
+Finally, read the [authoring](authoring.md) page and familiarize yourself with
+[mobile exercises](exercises/README.md) to get started writing your course!

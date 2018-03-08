@@ -7,7 +7,9 @@ output. Reorder exercises do **not** require distractors.
 By default every individual line is reorderable:
 
 ```yaml
-- key: e3956121-94ec-c134-d3eb-03192b3b3941
+# data.frame()
+- key: # generate me!
+  context: "You can create a data frame with the `data.frame` function."
   code:
     df <- data.frame(a = 1:100, b = 101:200)
     df <- subset(df, b > 170)
@@ -22,7 +24,9 @@ By default every individual line is reorderable:
 If there are multiple possible solutions, you can specify them all in a list.
 
 ```yaml
-- key: 20fe593a-caf0-46de-b457-cc147f4bd609
+# comments
+- key: # generate me!
+  context: "Anything that comes after the `#` character is a comment and is not interpreted as code."
   code:
     - |-
       # this is a comment
@@ -36,29 +40,30 @@ If there are multiple possible solutions, you can specify them all in a list.
       x <- 400
       x
       # this is a comment
-  output:
-    - "[1] 400"
+  output: "[1] 400"
 
 ```
 
 If you'd like the student to reorder blocks of code that are longer than 1 line,
-you can use 4 dash `-` symobls to mark the blocks.
+you can use 4 dash `-` symbols to mark the blocks.
 
 ```yaml
-- key: cd3ea9c8-3b90-407c-a46e-676559af9dbd
+# while loop
+- key: # generate me!
+  context: ""
   code:
     - |-
       offset = -2
       ----
       while offset != 0:
       ----
-        if offset > 0:
-          offset = offset - 1
+          if offset > 0:
+              offset = offset - 1
       ----
-        else:
-          offset = offset + 1
+          else:
+              offset = offset + 1
       ----
-        print(offset)
+          print(offset)
   output: |-
     -1
     0

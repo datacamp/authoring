@@ -31,45 +31,22 @@ npm install -g @datacamp/mobile-teach
 This will create the `mobile-teach` executable, which you will use to lint and
 preview your content.
 
-## Write
-
-Create and checkout a feature branch to write your course in.
+You may periodically need to update the `mobile-teach` package in the
+future. You can achieve this by simply running the installation command again:
 
 ```sh
-git checkout -c chapter-1
+npm install -g @datacamp/mobile-teach
 ```
-
-> #### info::Note
-> You should author content on a feature branch, *not* on the `master` or
-> `development` branches!
-
-You are free to use whatever editing tools you like on your local repository, eg
-Sublime, Vim, Emacs, etc. It can be helpful to use an IDE that allows you to
-expand snippets, and to write a snippet expansion for different exercise
-types. Bonus points if your IDE of choice allows you to automatically generate
-UUIDs for your exercises.
-
-The best workflow is generally to open an appropriate interpreter side by side
-with the content file, so that you can play with code and quickly insert it into
-your exercises. This might be IPython, R, or a SQL client like `psql` or
-`sqlite`.
-
-Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
-manually. This annoyance can be alleviated by finding a UUID generator package
-for your text editor or IDE of choice. Some examples:
-
-* [Emac](https://github.com/kanru/uuidgen-el)
-* [Vim](https://github.com/kburdett/vim-nuuid)
-* [Sublime Text](https://github.com/SublimeText/GenerateUUID)
 
 ## Linting
 
 Before pushing (or - preferably - committing) updates to your content, you
 should run the mobile-teach linter. The linter does two things:
 
-1. It ensures that there are no errors in your YAML that will break the build.
-2. It supplies warning when your content exceeds [guideline
-recommendations](guidelines.md), and errors when it exceeds hard limits.
+1. It validates your YAML's schema to ensure that there are no errors break the
+   build.
+2. It supplies a warning when your content exceeds guideline recommendations and
+   errors when it exceeds hard limits.
 
 The linter will provide exercise UUIDs to mark where problems are occurring and
 explicit messages about what is wrong. You can either specify the path to a
@@ -86,6 +63,12 @@ cd /path/to/mobile-courses-example-course
 mobile-teach check
 ```
 
+If you want to run *only* the schema validation:
+
+```sh
+mobile-teach check --exclude content-guidelines-validator
+```
+
 ## Preview
 
 Often it's useful to see how your content will render on a phone screen. The
@@ -95,14 +78,23 @@ Often it's useful to see how your content will render on a phone screen. The
 mobile-teach preview /path/to/lesson-file.yml
 ```
 
-You can then open a web browser to `http://localhost:8080`. Open the browser
-tools (usually `Command-Option-j`) and click the phone icon to simulate a phone
-view port. You can even specify which phone you want to simulate (eg iPhone,
-Nexus, Galaxy, etc). If you are having trouble finding these browser tools, we
-recommend updating Firefox to at least version 58.0.
+You can then open a web browser (we recommend Firefox version 58 or later) to
+`http://localhost:8080`. Open the browser tools (`Command-Option-i` for Firefox)
+and click the phone icon to simulate a phone view port. You can even specify
+which phone you want to simulate (eg iPhone, Nexus, Galaxy, etc) by clicking the
+bar at the top of the viewport and selecting a device model. We recommend
+previewing on the smallest phone supported by DataCamp for Mobile - the iPhone
+SE.
 
 The simulator preview will update in real time as you make changes to your
-content.
+content, so try setting it up side by side with your content and editing in
+real-time! Note that although the real mobile app will randomize possible
+answers in every exercise, the preview will always place the correct answer(s)
+first, so that it's easy to power through a lesson for testing purposes.
+
+A known upstream bug in the React framework prevents datasets from rendering in
+tabs on the mobile preview. Don't worry - these will render properly on a real
+mobile device.
 
 ## Release
 
