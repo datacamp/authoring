@@ -43,9 +43,10 @@ npm install -g @datacamp/mobile-teach
 Before pushing (or - preferably - committing) updates to your content, you
 should run the mobile-teach linter. The linter does two things:
 
-1. It ensures that there are no errors in your YAML that will break the build.
-2. It supplies warning when your content exceeds [guideline
-recommendations](guidelines.md), and errors when it exceeds hard limits.
+1. It validates your YAML's schema to ensure that there are no errors break the
+   build.
+2. It supplies a warning when your content exceeds guideline recommendations and
+   errors when it exceeds hard limits.
 
 The linter will provide exercise UUIDs to mark where problems are occurring and
 explicit messages about what is wrong. You can either specify the path to a
@@ -60,6 +61,12 @@ mobile-teach check /path/to/mobile-courses-example-course
 ```sh
 cd /path/to/mobile-courses-example-course
 mobile-teach check
+```
+
+If you want to run *only* the schema validation:
+
+```sh
+mobile-teach check --exclude content-guidelines-validator
 ```
 
 ## Preview
