@@ -174,33 +174,6 @@ to a PNG file. This is useful when teaching things like plotting. Be mindful of
 image asset size, because these images will be downloaded to students' phones,
 often over a cellular data connection.
 
-## complex context
-
-The `context` block can be more complex than a simple string. Sometimes you need
-to introduce a table, image, multi-line code snippet, or output in the context,
-*before* the question block. This really starts to stretch the limits of what
-can be displayed on a single screen, so simple text context should always be
-strongly preferred.
-
-For example, to include an image such as a plot:
-
-```yaml
-context:
-  text: Study the plot below to answer the following question.
-  image: assets/images/my-cool-plot.png
-```
-
-To include a table:
-
-```yaml
-context:
-  text: Study the table below to answer the following question.
-  table: |-
-    foo, bar, baz
-    1  ,2   ,3
-    4  ,5   ,6
-```
-
 ## feedback
 
 The `feedback` field is the message that is displayed when a student gets the
