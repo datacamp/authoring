@@ -77,8 +77,11 @@ When you've come up with a topic for your Project the next step is to complete a
 
 The Project spec should be self-explanatory and is available here:
 
-* [Project spec notebook for python](notebooks/datacamp_python_project_spec.ipynb).  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_python_project_spec.ipynb).
-* [Project spec notebook for R](notebooks/datacamp_r_project_spec.ipynb).  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_r_project_spec.ipynb).
+
+
+
+* <a target="_blank" href="notebooks/datacamp_python_project_spec.ipynb">Project spec notebook for python</a>.  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_python_project_spec.ipynb).
+* <a target="_blank" href="notebooks/datacamp_r_project_spec.ipynb">Project spec notebook for R</a>.  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_r_project_spec.ipynb).
 
 When you've completed the Project spec just e-mail it to your DataCamp contact. Make sure to include all external resources (like datasets, images, etc.) as e-mail attachments, or put them online and link to them from the notebook. 
 
