@@ -57,7 +57,7 @@ You need enough detail that you and your Curriculum Lead will be convinced that 
 
 ### Rework Step 3 as you go
 
-By the time you get to this step, you should have a reasonable sense of what topics you want to teach in what order. You may not have felt like that when you started step 3. As you describe the flow of the course, don't feel bound to make it match the example exercises that you created. If you can think of a better flow, wrtie that here and reorder cor change the exercises in Step 3.
+By the time you get to this step, you should have a reasonable sense of what topics you want to teach in what order. You may not have felt like that when you started step 3. As you describe the flow of the course, don't feel bound to make it match the example exercises that you created. If you can think of a better flow, write that here and reorder or change the exercises in Step 3.
 
 ### End Chapter 1 with a cliffhanger
 
