@@ -79,12 +79,12 @@ mobile-teach preview /path/to/lesson-file.yml
 ```
 
 You can then open a web browser (we recommend Firefox version 58 or later) to
-`http://localhost:8080`. Open the browser tools (`Command-Option-i` for Firefox)
-and click the phone icon to simulate a phone view port. You can even specify
-which phone you want to simulate (eg iPhone, Nexus, Galaxy, etc) by clicking the
-bar at the top of the viewport and selecting a device model. We recommend
-previewing on the smallest phone supported by DataCamp for Mobile - the iPhone
-SE.
+[`localhost:8080`](http://localhost:8080). Open the browser tools
+(`Command-Option-i` for Firefox) and click the phone icon to simulate a phone
+view port. You can even specify which phone you want to simulate (eg iPhone,
+Nexus, Galaxy, etc) by clicking the bar at the top of the viewport and selecting
+a device model. We recommend previewing on the smallest phone supported by
+DataCamp for Mobile - the iPhone SE.
 
 The simulator preview will update in real time as you make changes to your
 content, so try setting it up side by side with your content and editing in
