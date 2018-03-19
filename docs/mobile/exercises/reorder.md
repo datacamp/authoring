@@ -11,10 +11,11 @@ By default every individual line is reorderable:
 - key: # generate me!
   context: "You can create a data frame with the `data.frame` function."
   code:
-    df <- data.frame(a = 1:100, b = 101:200)
-    df <- subset(df, b > 170)
-    df <- df[1:2, ]
-    df
+    - |-
+      df <- data.frame(a = 1:100, b = 101:200)
+      df <- subset(df, b > 170)
+      df <- df[1:2, ]
+      df
   output: |-4
             a   b
         71 71 171
