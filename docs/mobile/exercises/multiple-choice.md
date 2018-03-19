@@ -22,6 +22,8 @@ this case, the student is only permitted to select one option.
       feedback: "Lambda functions contain an expression which is returned!"
 ```
 
+![Multiple Choice exercise with one option](../../images/mobile/multi-choice-one-option.png)
+
 For multiple correct answers, text can be an array of strings. In this case, the
 student will be allowed to select multiple options, and the exercise will be
 considered incorrect unless the student selects *all* the correct answers.
@@ -40,3 +42,5 @@ considered incorrect unless the student selects *all* the correct answers.
     - option: "Lambda functions contain a return statement"
       feedback: "Lambda functions contain an expression which is returned!"
 ```
+
+![Multiple Choice exercise with multiple option](../../images/mobile/multi-choice-multi-option.png)

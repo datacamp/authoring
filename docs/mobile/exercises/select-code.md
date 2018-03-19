@@ -20,3 +20,5 @@ Code exercise is to remove or comment the `distractor_output` field and add a
     - option: "print(10 - 1)"
       feedback: "Careful, that would give you `9`."
 ```
+
+![Select Code exercise](../../images/mobile/select-code.png)

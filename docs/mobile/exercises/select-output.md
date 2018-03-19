@@ -20,3 +20,5 @@ exercise to a Select Output exercise is to remove or comment the
     - option: "8 - 5"
       feedback: "The mathematical expression will be evaluated before it is printed."
 ```
+
+![Select Output exercise](../../images/mobile/select-output.png)

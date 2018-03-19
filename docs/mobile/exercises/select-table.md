@@ -38,6 +38,8 @@ queries, for example.
       feedback: "Boris is also awesome."
 ```
 
+![Select Table exercise](../../images/mobile/select-table.png)
+
 The `option`s in the `distractor_table` block have a structure identical to that
 of a `table` block (because they are also tables). Refer to the [documentation
 for `table` blocks](README.md/#table) for more information.
