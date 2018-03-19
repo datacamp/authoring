@@ -175,7 +175,7 @@ teaching things like plotting. Be mindful of image asset size, because these
 images will be downloaded to students' phones, often over a cellular data
 connection.
 
-![Example image](../../images/mobile/image.png)
+![Example image](../../images/mobile/image-small.png)
 
 ## feedback
 
@@ -197,7 +197,7 @@ messages are one of the most effective ways of teaching on DataCamp for
 Mobile. If you find that the same feedback message is appropriate for multiple
 distrators, however, this field is provided for convenience.
 
-[An example of a feedback message](../../images/mobile/feedback-wrong.png)
+[An example of a feedback message](../../images/mobile/feedback-wrong-small.png)
 
 ## tabs
 
@@ -214,11 +214,11 @@ field has two subfields: `key`, which is the alias for the asset as defined in
 the manifest, and `type`, which specifies how to render the asset. Currently
 only `file` and `table` are supported.
 
-![A tab from the exercise screen](../../images/mobile/tabs-dataset-table.png)
+![A tab from the exercise screen](../../images/mobile/tabs-dataset-table-small.png)
 
-![Opened dataset tab](../../images/mobile/tabs-dataset-table-open.png)
+![Opened dataset tab](../../images/mobile/tabs-dataset-table-open-small.png)
 
-![Opened file tab](../../images/mobile/tabs-file-open.png)
+![Opened file tab](../../images/mobile/tabs-file-open-small.png)
 
 # Summary of available blocks
 

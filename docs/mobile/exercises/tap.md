@@ -35,7 +35,7 @@ generate the output`.
       feedback: "That's how it works in JavaScript, not Python."
 ```
 
-![Tap exercise with one blank](../../images/mobile/tap-one-blank.png)
+![Tap exercise with one blank](../../images/mobile/tap-one-blank-small.png)
 
 If there is more than one blank, customized feedback for individual distractors
 is not supported. You can (and should!) still use a fallback `feedback_wrong`
@@ -59,4 +59,4 @@ field, however.
   feedback_wrong: "We want to `print` the results of an expression that adds up to `18`."
 ```
 
-![Tap exercise with multiple blanks](../../images/mobile/tap-multi-blank.png)
+![Tap exercise with multiple blanks](../../images/mobile/tap-multi-blank-small.png)
