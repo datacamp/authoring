@@ -170,9 +170,10 @@ image: assets/images/my-cool-plot.png
 ```
 
 You can insert an image block into your exercise simply by specifying the path
-to a PNG file. This is useful when teaching things like plotting. Be mindful of
-image asset size, because these images will be downloaded to students' phones,
-often over a cellular data connection.
+to a PNG file. The image will be placed below the question. This is useful when
+teaching things like plotting. Be mindful of image asset size, because these
+images will be downloaded to students' phones, often over a cellular data
+connection.
 
 ## feedback
 
