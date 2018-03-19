@@ -102,7 +102,7 @@ is easier demonstrated than explained.
 Instead of this:
 
 ```yaml
-output: "[,1] [,2]\n[1,]    1    3\n[2,]    2    4"
+output: "     [,1] [,2]\n[1,]    1    3\n[2,]    2    4"
 ```
 
 Try this:
