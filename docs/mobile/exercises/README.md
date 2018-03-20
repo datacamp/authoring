@@ -177,6 +177,21 @@ connection.
 
 ![Example image](/images/mobile/image-small.png)
 
+## context image
+
+```yaml
+context:
+  text: "Below is a line plot of life expectancy for different countries against their GDP per capita."
+  image: assets/gdp-life-line.png
+```
+
+If you want your image to appear _above_ the question, you can use a
+**multi-part** context block rather than a simple text one. To do so, put the
+text of your context into a subfield called `text`, and then add nest `image`
+field into `context` as well, as demonstrated above.
+
+![Example context image](/images/mobile/image-context-small.png)
+
 ## feedback
 
 The `feedback` field is the message that is displayed when a student gets the
