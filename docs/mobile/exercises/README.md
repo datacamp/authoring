@@ -144,9 +144,9 @@ pages of those exercise types for more information.
 ```yaml
 table:
   data: |-
-    name     ,birthdate
-    50 Cent  ,1975-07-06
-    Aaliyah  ,1979-01-16
+    name,birthdate
+    50 Cent,1975-07-06
+    Aaliyah,1979-01-16
     Aaron Yoo,1979-05-12
   message: "Showing 3 out of 537 rows"
 ```

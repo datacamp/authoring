@@ -16,25 +16,25 @@ represented as a table - SQL queries, for example.
   code: "SELECT * FROM team_mobile"
   table:
     data: |-
-      Name   ,Awesomeness,Role
-      Spencer,100        ,Content
-      Boris  ,100        ,Product
-      Jens   ,100        ,Code
+      Name,Awesomeness,Role
+      Spencer,100,Content
+      Boris,100,Product
+      Jens,100,Code
     message: "Showing 3 out of 3 rows."
   distractor_table:
     - option:
         data: |-
-          Name   ,Awesomeness,Role
-          Spencer,0          ,Content
-          Boris  ,100        ,Product
-          Jens   ,100        ,Code
+          Name,Awesomeness,Role
+          Spencer,0,Content
+          Boris,100,Product
+          Jens,100,Code
         message: "Showing 3 out of 3 rows."
       feedback: "Spencer is also awesome."
     - option: |-
-        Name   ,Awesomeness,Role
-        Spencer,100        ,Content
-        Boris  ,0          ,Product
-        Jens   ,100        ,Code
+        Name,Awesomeness,Role
+        Spencer,100,Content
+        Boris,0,Product
+        Jens,100,Code
       feedback: "Boris is also awesome."
 ```
 
