@@ -212,7 +212,7 @@ messages are one of the most effective ways of teaching on DataCamp for
 Mobile. If you find that the same feedback message is appropriate for multiple
 distrators, however, this field is provided for convenience.
 
-[An example of a feedback message](/images/mobile/feedback-wrong-small.png)
+![An example of a feedback message](/images/mobile/feedback-wrong-small.png)
 
 ## tabs
 
