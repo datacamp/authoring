@@ -34,11 +34,11 @@ In the example above, the use of the `distractor_output` field indicates this
 exercise will be a Select Output exercise. Other distractor types will result in
 different exercise types:
 
-* distractor_output -> [Select Output](/mobile/exercises/select-output.md)
-* distractor_table  -> [Select Table](/mobile/exercises/select-table.md)
-* distractor_code   -> [Select Code](/mobile/exercises/select-code.md)
-* distractor_blanks -> [Tap](/mobile/exercises/tap.md)
-* distractor_text   -> [Multiple Choice](/mobile/exercises/multiple-choice.md)
+* `distractor_output` -> [Select Output](/mobile/exercises/select-output.md)
+* `distractor_table`  -> [Select Table](/mobile/exercises/select-table.md)
+* `distractor_code`   -> [Select Code](/mobile/exercises/select-code.md)
+* `distractor_blanks` -> [Tap](/mobile/exercises/tap.md)
+* `distractor_text`   -> [Multiple Choice](/mobile/exercises/multiple-choice.md)
 
 The only exercise type that does not require a distractor field is the
 [Reorder](/mobile/exercises/reorder.md) exercise.
