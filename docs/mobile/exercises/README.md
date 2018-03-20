@@ -229,9 +229,11 @@ field has two subfields: `key`, which is the alias for the asset as defined in
 the manifest, and `type`, which specifies how to render the asset. Currently
 only `file` and `table` are supported.
 
-![A tab from the exercise screen](/images/mobile/tabs-dataset-table-small.png)
+An example of a `dataset` rendered as a `table`:
 
-![Opened dataset tab](/images/mobile/tabs-dataset-table-open-small.png)
+![A tab from the exercise screen](/images/mobile/tabs-dataset-table-small.png) ![Opened dataset tab](/images/mobile/tabs-dataset-table-open-small.png)
+
+An example of a rendered `file` tab:
 
 ![Opened file tab](/images/mobile/tabs-file-open-small.png)
 
