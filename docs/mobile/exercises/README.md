@@ -3,14 +3,14 @@
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
-| Type                                  | Description                                             |
-| :---                                  | :----------                                             |
-| [Select Output](select-output.md)     | What is the output of this code? Console output         |
-| [Select Table](select-table.md)       | What is the output of this code? Formatted table output |
-| [Select Code](select-code.md)         | Select the code to return the output.                   |
-| [Tap](tap.md)                         | Complete the code to return the output.                 |
-| [Multiple Choice](multiple-choice.md) | Answer the multiple choice question.                    |
-| [Reorder](reorder.md)                 | Reorder the code to return the output.                  |
+| Type                                                    | Description                                             |
+| :---                                                    | :----------                                             |
+| [Select Output](/mobile/exercises/select-output.md)     | What is the output of this code? Console output         |
+| [Select Table](/mobile/exercises/select-table.md)       | What is the output of this code? Formatted table output |
+| [Select Code](/mobile/exercises/select-code.md)         | Select the code to return the output.                   |
+| [Tap](/mobile/exercises/tap.md)                         | Complete the code to return the output.                 |
+| [Multiple Choice](/mobile/exercises/multiple-choice.md) | Answer the multiple choice question.                    |
+| [Reorder](/mobile/exercises/reorder.md)                 | Reorder the code to return the output.                  |
 
 ...but they all share a similar structure. In general, you can think of an
 exercise as a short code vignette comprising various blocks in the following
@@ -34,14 +34,14 @@ In the example above, the use of the `distractor_output` field indicates this
 exercise will be a Select Output exercise. Other distractor types will result in
 different exercise types:
 
-* distractor_output -> [Select Output](select-output.md)
-* distractor_table  -> [Select Table](select-table.md)
-* distractor_code   -> [Select Code](select-code.md)
-* distractor_blanks -> [Tap](tap.md)
-* distractor_text   -> [Multiple Choice](multiple-choice.md)
+* distractor_output -> [Select Output](/mobile/exercises/select-output.md)
+* distractor_table  -> [Select Table](/mobile/exercises/select-table.md)
+* distractor_code   -> [Select Code](/mobile/exercises/select-code.md)
+* distractor_blanks -> [Tap](/mobile/exercises/tap.md)
+* distractor_text   -> [Multiple Choice](/mobile/exercises/multiple-choice.md)
 
 The only exercise type that does not require a distractor field is the
-[Reorder](reorder.md) exercise.
+[Reorder](/mobile/exercises/reorder.md) exercise.
 
 Let's dig into each of the blocks...
 
@@ -63,7 +63,7 @@ key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
 This is a unique UUID for the exercise. You can find some tips for working
-with/generating UUIDs [here](../authoring.md/#working-with-uuids).
+with/generating UUIDs [here](/mobile/authoring.md/#working-with-uuids).
 
 ## context
 
@@ -133,9 +133,9 @@ be clear but not aggressive.
 > make, and then provides useful `feedback` explaining why that distractor is
 > wrong!
 
-[Reorder](reorder.md) and [Tap](tap.md) exercises in particular have special
-requirements. Refer to the documentation pages of those exercise types for more
-information.
+[Reorder](/mobile/exercises/reorder.md) and [Tap](/mobile/exercises/tap.md)
+exercises in particular have special requirements. Refer to the documentation
+pages of those exercise types for more information.
 
 # Other available blocks
 
@@ -175,7 +175,7 @@ teaching things like plotting. Be mindful of image asset size, because these
 images will be downloaded to students' phones, often over a cellular data
 connection.
 
-![Example image](../../images/mobile/image-small.png)
+![Example image](/images/mobile/image-small.png)
 
 ## feedback
 
@@ -197,7 +197,7 @@ messages are one of the most effective ways of teaching on DataCamp for
 Mobile. If you find that the same feedback message is appropriate for multiple
 distrators, however, this field is provided for convenience.
 
-[An example of a feedback message](../../images/mobile/feedback-wrong-small.png)
+[An example of a feedback message](/images/mobile/feedback-wrong-small.png)
 
 ## tabs
 
@@ -209,16 +209,16 @@ tabs:
 
 Tabs appear in the top right of the exercise and serve as a way to display
 datasets or files. The appropriate asset must be defined in the [`assets`
-section of the course manifest](../repo-structure.md#assets-metadata). A tab
+section of the course manifest](/mobile/repo-structure.md#assets-metadata). A tab
 field has two subfields: `key`, which is the alias for the asset as defined in
 the manifest, and `type`, which specifies how to render the asset. Currently
 only `file` and `table` are supported.
 
-![A tab from the exercise screen](../../images/mobile/tabs-dataset-table-small.png)
+![A tab from the exercise screen](/images/mobile/tabs-dataset-table-small.png)
 
-![Opened dataset tab](../../images/mobile/tabs-dataset-table-open-small.png)
+![Opened dataset tab](/images/mobile/tabs-dataset-table-open-small.png)
 
-![Opened file tab](../../images/mobile/tabs-file-open-small.png)
+![Opened file tab](/images/mobile/tabs-file-open-small.png)
 
 # Summary of available blocks
 

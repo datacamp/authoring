@@ -22,7 +22,7 @@ By default every individual line is reorderable:
         72 72 172
 ```
 
-![Reorder exercise with one solution](../../images/mobile/reorder-one-solution-small.png)
+![Reorder exercise with one solution](/images/mobile/reorder-one-solution-small.png)
 
 If there are multiple possible solutions, you can specify them all in a list.
 
@@ -47,7 +47,7 @@ If there are multiple possible solutions, you can specify them all in a list.
 
 ```
 
-![Reorder exercise with multiple solutions](../../images/mobile/reorder-multi-solutions-small.png)
+![Reorder exercise with multiple solutions](/images/mobile/reorder-multi-solutions-small.png)
 
 If you'd like the student to reorder blocks of code that are longer than 1 line,
 you can use 4 dash `-` symbols to mark the blocks.
@@ -74,4 +74,4 @@ you can use 4 dash `-` symbols to mark the blocks.
     0
 ```
 
-![Reorder exercise with multi-line blocks](../../images/mobile/reorder-multi-line-small.png)
+![Reorder exercise with multi-line blocks](/images/mobile/reorder-multi-line-small.png)
