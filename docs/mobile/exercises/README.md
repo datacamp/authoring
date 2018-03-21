@@ -250,7 +250,7 @@ An example of a rendered `file` tab:
 | key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
 | tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
-| question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   |
 | image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | code                | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :ok:                 | :ok:                 | :ok:                 |
 | output              | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   | :ok:                 | :ok:                 |
