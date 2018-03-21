@@ -125,9 +125,13 @@ of errors, however.
 
 ## Working with UUIDs
 
-Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
-manually. This annoyance can be alleviated by finding a UUID generator package
-for your text editor or IDE of choice. Some examples:
+Currently, UUIDs must be generated manually to serve as the unique key for every
+[course](/mobile/repo-structure.md#course-metadata),
+[chapter](/mobile/repo-structure.md#chapter-metadata),
+[lesson](/mobile/repo-structure.md#lesson-metadata), and
+[exercise](/mobile/exercises/README.md#key). This can alleviate this annoyance
+by finding a UUID generator package for your text editor or IDE of choice. Some
+examples:
 
 * [Emacs](https://github.com/kanru/uuidgen-el)
 * [Vim](https://github.com/kburdett/vim-nuuid)
