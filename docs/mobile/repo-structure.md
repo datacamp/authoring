@@ -166,7 +166,7 @@ chapters:
 | `main_id`     | The ID of the corresponding desktop chapter, if any. You needn't worry about this. |
 | `lessons`     | A list of all the lessons in the chapter and *their* associated metadata.          |
 
-## Lessons metadata
+## Lesson metadata
 
 Lesson metadata looks similar to course & chapter metadata.
 
