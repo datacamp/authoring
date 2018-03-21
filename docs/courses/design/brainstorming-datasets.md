@@ -69,6 +69,10 @@ Bigger datasets are not always better. In many cases, having a dataset that is s
 
 ## Common problems and their solutions
 
+### Using the iris dataset
+
+This dataset is very overused. Please choose a different one.
+
 ### The dataset doesn't give the answer I wanted
 
 Sometimes datasets give unexpected answers, and this can make the narrative in the exercise tricky or confusing. It is best to develop a reasonable familiarity with your datasets during course speccing phase, when it is easiest to swap the dataset for a different one.
