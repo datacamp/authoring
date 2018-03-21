@@ -192,13 +192,6 @@ field into `context` as well, as demonstrated above.
 
 ![Example context image](/images/mobile/image-context-small.png)
 
-## feedback
-
-The `feedback` field is the message that is displayed when a student gets the
-exercise correct. These aren't required. In fact, you should never put any
-critical pedagogical information here. If you want to put in a message of
-encouragement or jubilation however, feel free!
-
 ## feedback_wrong
 
 ```yaml
