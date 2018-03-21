@@ -3,14 +3,14 @@
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
-| Type                                                    | Description                                             |
-| :---                                                    | :----------                                             |
-| [Select Output](/mobile/exercises/select-output.md)     | What is the output of this code? Console output         |
-| [Select Table](/mobile/exercises/select-table.md)       | What is the output of this code? Formatted table output |
-| [Select Code](/mobile/exercises/select-code.md)         | Select the code to return the output.                   |
-| [Tap](/mobile/exercises/tap.md)                         | Complete the code to return the output.                 |
-| [Multiple Choice](/mobile/exercises/multiple-choice.md) | Answer the multiple choice question.                    |
-| [Reorder](/mobile/exercises/reorder.md)                 | Reorder the code to return the output.                  |
+| Type                                                    | Description                                                               |
+| :---                                                    | :----------                                                               |
+| [Select Output](/mobile/exercises/select-output.md)     | What is the output of this code?                                          |
+| [Select Table](/mobile/exercises/select-table.md)       | What is the output of this code? (When the output is a table, eg for SQL) |
+| [Select Code](/mobile/exercises/select-code.md)         | Select the code to return the output.                                     |
+| [Tap](/mobile/exercises/tap.md)                         | Complete the code to return the output.                                   |
+| [Multiple Choice](/mobile/exercises/multiple-choice.md) | Answer the multiple choice question.                                      |
+| [Reorder](/mobile/exercises/reorder.md)                 | Reorder the code to return the output.                                    |
 
 ...but they all share a similar structure. In general, you can think of an
 exercise as a short code vignette comprising various blocks in the following
