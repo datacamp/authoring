@@ -4,6 +4,7 @@
 
 - [Welcome](README.md)
 - [Getting Started](welcome/getting-started.md)
+- [Proposing a Project or Course](welcome/proposing-content.md)
 
 ## Creating Content
 
