@@ -54,7 +54,7 @@ The manifest file `manifest.yml` is what ties everything together. It lays out
 the locations of your chapters, lessons, and assets. For example:
 
 ```yaml
-authoringVersion: 1
+authoringVersion: 2
 title: Introduction to SQL
 description: "Master the basics of querying databases with SQL, the world's most popular databasing language."
 key: # generate me!
