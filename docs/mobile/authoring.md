@@ -11,7 +11,7 @@ and the examples that you use.
 ## Getting started
 
 First, get your repo and development tools set up according to the [development
-process documentation](../development.md).
+process documentation](/mobile/development.md).
 
 Create and checkout a feature branch to write your course in. For example:
 
@@ -29,8 +29,8 @@ expand snippets, and to write a snippet expansion for different exercise
 types. Bonus points if your IDE of choice allows you to automatically generate
 UUIDs for your exercises.
 
-Visit the [exercises documentation](exercises/readme.md) to see how exercises
-are written and see some examples.
+Visit the [exercises documentation](/mobile/exercises/README.md) to see how
+exercises are written and see some examples.
 
 The best workflow is generally to open an appropriate interpreter side by side
 with the content file, so that you can play with code and quickly insert it into
@@ -58,8 +58,8 @@ line comment for each topic that you want to address in the lesson. For example:
 
 Then write an exercise for each topic. You can familiarize yourself with how
 exercises work by perusing the [exercises
-documentation](exercises/readme.md). Don't be afraid to split one topic into 2
-or even 3+ exercises if it's difficult to teach something in a single
+documentation](/mobile/exercises/README.md). Don't be afraid to split one topic
+into 2 or even 3+ exercises if it's difficult to teach something in a single
 exercise. One great strategy is to hit the same topic from multiple angles by
 using different exercise types back to back. You will find that certain subjects
 naturally lend themselves to certain exercise types, but in general you should
@@ -102,7 +102,7 @@ is easier demonstrated than explained.
 Instead of this:
 
 ```yaml
-output: "[,1] [,2]\n[1,]    1    3\n[2,]    2    4"
+output: "     [,1] [,2]\n[1,]    1    3\n[2,]    2    4"
 ```
 
 Try this:
@@ -120,14 +120,18 @@ need 99% of the time.
 
 [This online YAML parser](https://yaml-online-parser.appspot.com) can also be
 useful for diagnosing bugs in YAML. [The `mobile-teach`
-linter](../development.md#linting) should be able to clearly pinpoint 100% of
-errors, however.
+linter](/mobile/development.md#linting) should be able to clearly pinpoint 100%
+of errors, however.
 
 ## Working with UUIDs
 
-Currently, all UUIDs (eg for chapters, lessons, and exercises) must be generated
-manually. This annoyance can be alleviated by finding a UUID generator package
-for your text editor or IDE of choice. Some examples:
+Currently, UUIDs must be generated manually to serve as the unique key for every
+[course](/mobile/repo-structure.md#course-metadata),
+[chapter](/mobile/repo-structure.md#chapter-metadata),
+[lesson](/mobile/repo-structure.md#lesson-metadata), and
+[exercise](/mobile/exercises/README.md#key). This can alleviate this annoyance
+by finding a UUID generator package for your text editor or IDE of choice. Some
+examples:
 
 * [Emacs](https://github.com/kanru/uuidgen-el)
 * [Vim](https://github.com/kburdett/vim-nuuid)

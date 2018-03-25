@@ -58,7 +58,7 @@ anytime and anywhere. It is available for both
 are two types of mobile content: full mobile courses (more like a desktop
 course), and mobile practice content (more like desktop challenges).
 
-![DataCamp for Mobile](images/mobile/play-store.png "DataCamp for Mobile")
+![DataCamp for Mobile](/images/mobile/play-store-small.png "DataCamp for Mobile")
 
 > #### info::Note
 > Mobile authoring is only available to invited instructors at the moment, but should be available to everyone in the near future. If you're interested in creating a mobile course or mobile practice exercises for your existing desktop course, please contact [spencer@datacamp.com](mailto:spencer@datacamp.com) for more info!
