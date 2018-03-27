@@ -22,7 +22,7 @@ If you would like to propose something:
    and a couple of short code fragments to show what learners will do,
    similar to [the examples given here](../projects/projects-process.html#projects-writing-specification).
 
-5. Email your idea to FIXME.
+5. Email your idea to [create@datacamp.com](mailto:create@datacamp.com?subject=Content%20Proposal).
    Please include a one- or two-sentence description of yourself
    and links to your personal website or your LinkedIn profile.
    Please also include a one- or two-sentence summary of the idea
