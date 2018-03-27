@@ -54,7 +54,7 @@ The manifest file `manifest.yml` is what ties everything together. It lays out
 the locations of your chapters, lessons, and assets. For example:
 
 ```yaml
-authoringVersion: 1
+authoringVersion: 2
 title: Introduction to SQL
 description: "Master the basics of querying databases with SQL, the world's most popular databasing language."
 key: # generate me!
@@ -105,8 +105,9 @@ assets:
         title: "films.csv"
 ```
 
-All the key names are case sensitive. The [`mobile-teach` check](development.md)
-command will flag any mistakes or missing fields in the manifest.
+All the key names are case sensitive. The [`mobile-teach`
+check](/mobile/development.md) command will flag any mistakes or missing fields
+in the manifest.
 
 There are 4 key components to the manifest:
 
@@ -165,7 +166,7 @@ chapters:
 | `main_id`     | The ID of the corresponding desktop chapter, if any. You needn't worry about this. |
 | `lessons`     | A list of all the lessons in the chapter and *their* associated metadata.          |
 
-## Lessons metadata
+## Lesson metadata
 
 Lesson metadata looks similar to course & chapter metadata.
 

@@ -3,14 +3,14 @@
 There are roughly 5 exercise types available to you as an author on DataCamp
 Mobile:
 
-| Type                                  | Description                                             |
-| :---                                  | :----------                                             |
-| [Select Output](select-output.md)     | What is the output of this code? Console output         |
-| [Select Table](select-table.md)       | What is the output of this code? Formatted table output |
-| [Select Code](select-code.md)         | Select the code to return the output.                   |
-| [Tap](tap.md)                         | Complete the code to return the output.                 |
-| [Multiple Choice](multiple-choice.md) | Answer the multiple choice question.                    |
-| [Reorder](reorder.md)                 | Reorder the code to return the output.                  |
+| Type                                                    | Description                                                               |
+| :---                                                    | :----------                                                               |
+| [Select Output](/mobile/exercises/select-output.md)     | What is the output of this code?                                          |
+| [Select Table](/mobile/exercises/select-table.md)       | What is the output of this code? (When the output is a table, eg for SQL) |
+| [Select Code](/mobile/exercises/select-code.md)         | Select the code to return the output.                                     |
+| [Tap](/mobile/exercises/tap.md)                         | Complete the code to return the output.                                   |
+| [Multiple Choice](/mobile/exercises/multiple-choice.md) | Answer the multiple choice question.                                      |
+| [Reorder](/mobile/exercises/reorder.md)                 | Reorder the code to return the output.                                    |
 
 ...but they all share a similar structure. In general, you can think of an
 exercise as a short code vignette comprising various blocks in the following
@@ -34,14 +34,14 @@ In the example above, the use of the `distractor_output` field indicates this
 exercise will be a Select Output exercise. Other distractor types will result in
 different exercise types:
 
-* distractor_output -> [Select Output](select-output.md)
-* distractor_table  -> [Select Table](select-table.md)
-* distractor_code   -> [Select Code](select-code.md)
-* distractor_blanks -> [Tap](tap.md)
-* distractor_text   -> [Multiple Choice](multiple-choice.md)
+* `distractor_output` -> [Select Output](/mobile/exercises/select-output.md)
+* `distractor_table`  -> [Select Table](/mobile/exercises/select-table.md)
+* `distractor_code`   -> [Select Code](/mobile/exercises/select-code.md)
+* `distractor_blanks` -> [Tap](/mobile/exercises/tap.md)
+* `distractor_text`   -> [Multiple Choice](/mobile/exercises/multiple-choice.md)
 
 The only exercise type that does not require a distractor field is the
-[Reorder](reorder.md) exercise.
+[Reorder](/mobile/exercises/reorder.md) exercise.
 
 Let's dig into each of the blocks...
 
@@ -63,7 +63,7 @@ key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
 This is a unique UUID for the exercise. You can find some tips for working
-with/generating UUIDs [here](../authoring.md/#working-with-uuids).
+with/generating UUIDs [here](/mobile/authoring.md/#working-with-uuids).
 
 ## context
 
@@ -133,9 +133,9 @@ be clear but not aggressive.
 > make, and then provides useful `feedback` explaining why that distractor is
 > wrong!
 
-[Reorder](reorder.md) and [Tap](tap.md) exercises in particular have special
-requirements. Refer to the documentation pages of those exercise types for more
-information.
+[Reorder](/mobile/exercises/reorder.md) and [Tap](/mobile/exercises/tap.md)
+exercises in particular have special requirements. Refer to the documentation
+pages of those exercise types for more information.
 
 # Other available blocks
 
@@ -144,9 +144,9 @@ information.
 ```yaml
 table:
   data: |-
-    name     ,birthdate
-    50 Cent  ,1975-07-06
-    Aaliyah  ,1979-01-16
+    name,birthdate
+    50 Cent,1975-07-06
+    Aaliyah,1979-01-16
     Aaron Yoo,1979-05-12
   message: "Showing 3 out of 537 rows"
 ```
@@ -170,43 +170,27 @@ image: assets/images/my-cool-plot.png
 ```
 
 You can insert an image block into your exercise simply by specifying the path
-to a PNG file. This is useful when teaching things like plotting. Be mindful of
-image asset size, because these images will be downloaded to students' phones,
-often over a cellular data connection.
+to a PNG file. The image will be placed below the question. This is useful when
+teaching things like plotting. Be mindful of image asset size, because these
+images will be downloaded to students' phones, often over a cellular data
+connection.
 
-## complex context
+![Example image](/images/mobile/image-small.png)
 
-The `context` block can be more complex than a simple string. Sometimes you need
-to introduce a table, image, multi-line code snippet, or output in the context,
-*before* the question block. This really starts to stretch the limits of what
-can be displayed on a single screen, so simple text context should always be
-strongly preferred.
-
-For example, to include an image such as a plot:
+## context image
 
 ```yaml
 context:
-  text: Study the plot below to answer the following question.
-  image: assets/images/my-cool-plot.png
+  text: "Below is a line plot of life expectancy for different countries against their GDP per capita."
+  image: assets/gdp-life-line.png
 ```
 
-To include a table:
+If you want your image to appear _above_ the question, you can use a
+**multi-part** context block rather than a simple text one. To do so, put the
+text of your context into a subfield called `text`, and then add nest `image`
+field into `context` as well, as demonstrated above.
 
-```yaml
-context:
-  text: Study the table below to answer the following question.
-  table: |-
-    foo, bar, baz
-    1  ,2   ,3
-    4  ,5   ,6
-```
-
-## feedback
-
-The `feedback` field is the message that is displayed when a student gets the
-exercise correct. These aren't required. In fact, you should never put any
-critical pedagogical information here. If you want to put in a message of
-encouragement or jubilation however, feel free!
+![Example context image](/images/mobile/image-context-small.png)
 
 ## feedback_wrong
 
@@ -221,6 +205,8 @@ messages are one of the most effective ways of teaching on DataCamp for
 Mobile. If you find that the same feedback message is appropriate for multiple
 distrators, however, this field is provided for convenience.
 
+![An example of a feedback message](/images/mobile/feedback-wrong-small.png)
+
 ## tabs
 
 ```yaml
@@ -231,10 +217,18 @@ tabs:
 
 Tabs appear in the top right of the exercise and serve as a way to display
 datasets or files. The appropriate asset must be defined in the [`assets`
-section of the course manifest](../repo-structure.md#assets-metadata). A tab
+section of the course manifest](/mobile/repo-structure.md#assets-metadata). A tab
 field has two subfields: `key`, which is the alias for the asset as defined in
 the manifest, and `type`, which specifies how to render the asset. Currently
 only `file` and `table` are supported.
+
+An example of a `dataset` rendered as a `table`:
+
+![A tab from the exercise screen](/images/mobile/tabs-dataset-table-small.png) ![Opened dataset tab](/images/mobile/tabs-dataset-table-open-small.png)
+
+An example of a rendered `file` tab:
+
+![Opened file tab](/images/mobile/tabs-file-open-small.png)
 
 # Summary of available blocks
 
@@ -249,7 +243,7 @@ only `file` and `table` are supported.
 | key                 | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   |
 | tabs                | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | context             | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
-| question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
+| question            | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   |
 | image               | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 | :ok:                 |
 | code                | :heavy_check_mark:   | :heavy_check_mark:   | :heavy_check_mark:   | :ok:                 | :ok:                 | :ok:                 |
 | output              | :ok:                 | :ok:                 | :ok:                 | :heavy_check_mark:   | :ok:                 | :ok:                 |

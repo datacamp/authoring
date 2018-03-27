@@ -11,8 +11,12 @@ git clone git@github.com:datacamp/mobile-courses-example-course.git
 ```
 
 The suite of development tools available for authoring mobile content on
-DataCamp is provided as an NPM package. If you don't have NPM yet, you will need
-to [download and install it](https://www.npmjs.com/get-npm).
+DataCamp is provided as an NPM package. NPM is the package management system for
+Node, a JavaScript framework. It's a bit like CRAN for R or PyPI for Python. You
+don't need to know any Javascript, though - this is just how to download the
+command line tool that contains the DataCamp for Mobile development tools. If
+you don't have NPM yet, you will need to [download and install
+it](https://www.npmjs.com/get-npm).
 
 ```sh
 npm cache clean -f
@@ -79,12 +83,12 @@ mobile-teach preview /path/to/lesson-file.yml
 ```
 
 You can then open a web browser (we recommend Firefox version 58 or later) to
-`http://localhost:8080`. Open the browser tools (`Command-Option-i` for Firefox)
-and click the phone icon to simulate a phone view port. You can even specify
-which phone you want to simulate (eg iPhone, Nexus, Galaxy, etc) by clicking the
-bar at the top of the viewport and selecting a device model. We recommend
-previewing on the smallest phone supported by DataCamp for Mobile - the iPhone
-SE.
+[`localhost:8080`](http://localhost:8080). Open the browser tools
+(`Command-Option-i` for Firefox) and click the phone icon to simulate a phone
+view port. You can even specify which phone you want to simulate (eg iPhone,
+Nexus, Galaxy, etc) by clicking the bar at the top of the viewport and selecting
+a device model. We recommend previewing on the smallest phone supported by
+DataCamp for Mobile - the iPhone SE.
 
 The simulator preview will update in real time as you make changes to your
 content, so try setting it up side by side with your content and editing in
