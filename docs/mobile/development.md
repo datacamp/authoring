@@ -115,22 +115,22 @@ When you want to push to dev:
 
 1. First, make sure everything is working:
 
-```sh
-mobile-teach check
-```
+   ```sh
+   mobile-teach check
+   ```
 
 2. Reset the `development` branch to the content you want to test.
 
-```sh
-## Checkout the development branch
-git checkout -b development
+   ```sh
+   ## Checkout the development branch
+   git checkout -b development
 
-## Reset the development branch to your content
-git reset --hard chapter-2
+   ## Reset the development branch to your content
+   git reset --hard chapter-2
 
-## Force push development
-git push origin development --force
-```
+   ## Force push development
+   git push origin development --force
+   ```
 
 3. Download the development app. Contact spencer@datacamp.com if you don't
    already have it; you will receive an email with download instructions.
@@ -152,9 +152,9 @@ chapter at a time. When your chapter branch is ready to be released to the world
 
 6. Do one last check!
 
-```sh
-mobile-teach check
-```
+   ```sh
+   mobile-teach check
+   ```
 
 1. Open a pull request (PR) for your chapter branch into the `master` branch on
    GitHub.
