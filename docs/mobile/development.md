@@ -102,25 +102,73 @@ mobile device.
 
 ## Release
 
-1. Merge your content branch into the *development* branch on GitHub.
+### Development App
 
-2. Check that the build passes on
-   [CircleCI](https://circleci.com/gh/datacamp/workflows). This should take a
-   few minutes or less.
+At any point, you can preview your content on the development version of the
+DataCamp for Mobile app. This is a second app that you can install alongside the
+real production version of the app. It displays the content that you push to the
+`development` (dev) branch. Only you and DataCamp will be able to see what you
+push to dev. Email spencer@datacamp.com for an invite to the iOS/Android dev
+app.
 
-3. Download the latest development build of DataCamp for Mobile.
+When you want to push to dev:
 
-   * [Android App
-     Center](https://appcenter.ms/users/mobileDCamp/apps/DataCamp-Android/distribute/distribution-groups/Collaborators/releases)
-   * [iTunes TestFlight](https://itunesconnect.apple.com/WebObjects/iTunesConnect.woa/ra/ng/app/1321970315/testflight?section=iosbuilds)
+1. First, make sure everything is working:
 
-4. Check out your new content on the development app, make sure everything looks
+```sh
+mobile-teach check
+```
+
+2. Reset the `development` branch to the content you want to test.
+
+```sh
+## Checkout the development branch
+git checkout -b development
+
+## Reset the development branch to your content
+git reset --hard chapter-2
+
+## Force push development
+git push origin development --force
+```
+
+3. Download the development app. Contact spencer@datacamp.com if you don't
+   already have it; you will receive an email with download instructions.
+
+4. Create a new account through the dev app. You won't be able to log
+
+5. Check out your new content on the development app, make sure everything looks
    good.
 
-5. When you are ready for a full release, open a pull request with your content
-   branch into the *master* branch on GitHub.
+> #### info::Note
+> Never work directly on the `development` branch! You should operate under the
+> assumption that commits you make directly to `development` could disappear at
+> any time.
 
-7. DataCamp will review and approve the pull request, and tag the `master`
-   branch in GitHub for release.
+## Production app
 
-8. Your content is now live to the world!
+Unlike desktop courses, courses on DataCamp for Mobile are typically release one
+chapter at a time. When your chapter branch is ready to be released to the world:
+
+6. Do one last check!
+
+```sh
+mobile-teach check
+```
+
+1. Open a pull request (PR) for your chapter branch into the `master` branch on
+   GitHub.
+
+2. DataCamp will review the PR and make suggestions for revisions.
+
+3. After one or more reviews & revisions, the PR will be approved and DataCamp
+   will generate a new release.
+
+4. Your content is now live to the world!
+
+5. Start a new branch for the next chapter. For example, if you just merged
+   `chapter-1`, create and check out a new branch for `chapter-2`:
+
+   ```sh
+   git checkout -b chapter-2
+   ```
