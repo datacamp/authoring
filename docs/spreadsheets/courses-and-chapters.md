@@ -14,7 +14,7 @@ For now, creating new courses on spreadsheets is closed. You'll have to reach ou
 
 ### Editing course fields
 
-Editing a course happens through the _Course authoring page_:
+Editing a course happens through the _course authoring page_:
 
 <figure>
   <img src="images/course_page.png" alt="Course authoring page">
@@ -58,7 +58,7 @@ Now that you have your course set up, it's time to add some chapters.
 
 ### Creating a chapter
 
-First, you'll need to create new chapters. On the bottom of the _Course authoring page_ at
+First, you'll need to create new chapters. On the bottom of the _course authoring page_ at
 https://spreadsheets.datacamp.com/courses/<course_id_comes_here>, you'll see a big +-sign:
 
 <figure>
@@ -72,8 +72,8 @@ chapter will be created.
 
 ### Editing a chapter
 
-Next to each chapter in the _Course authoring page_, you'll see an 'Edit' button. If you hit this
-button, it will bring you to a new interface, we'll call it the _Chapter authoring page_:
+Next to each chapter in the _course authoring page_, you'll see an 'Edit' button. If you hit this
+button, it will bring you to a new interface, we'll call it the _chapter authoring page_:
 
 <figure>
   <img src="images/chapter_page.png" alt="Chapter authoring page">
