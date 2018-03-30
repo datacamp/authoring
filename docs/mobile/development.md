@@ -135,7 +135,10 @@ When you want to push to dev:
 3. Download the development app. Contact spencer@datacamp.com if you don't
    already have it; you will receive an email with download instructions.
 
-4. Create a new account through the dev app. You won't be able to log
+4. Create a new account through the dev app. You won't be able to log in with
+   your existing DataCamp account because this app runs off DataCamp's
+   development server. Instead, make a new account through the dev app and log
+   in with that.
 
 5. Check out your new content on the development app, make sure everything looks
    good.
