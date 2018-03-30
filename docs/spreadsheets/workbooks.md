@@ -36,6 +36,7 @@ click on 'Add New Workbook' on the left-hand side. This will create a new workbo
 scaffold in it.
 
 > #### warning::Warning
+>
 > Unfortunately there's currently no loader in the UI that shows the system is creating a
 > new workbook, however that doesn't mean the system isn't working. Before hitting the button again,
 > it's best to wait a few seconds and your new workbook should show up.
@@ -55,11 +56,26 @@ from your exercise sheets. You'll see that the Golden Copy sheet is the only she
 data, including styling and such.
 
 > #### info::Note
+>
 > Currently you're limited to using one sheet through the exercises of spreadsheet courses.
 > There are plans to expand this to one 'editable' sheet and N sheets where you can put source data.
 
 ## Editing a workbook
 
-Editing a workbook
+Workbooks are edited through the spreadsheets interface itself. We do this through something called
+the **workbook source**, which contains all information related to a specific workbook and its
+exercises. You can find the workbook source on the right-hand side in the _chapter authoring
+interface_.
 
-## Deleting an interface
+In the workbook source, you'll find the **Golden copy** sheet as mentioned before. You can simply
+edit this sheet, and all of it's content will be copied a sheet named 'Sheet 1' of the student's
+worksheet when they start an exercise of this workbook.
+
+We'll talk about editing exercise sheets in the section about exercises.
+
+## Deleting a workbook
+
+It is currently not possible to delete a workbook. However, keeping it empty will make it not show
+up for the students. If you want to remove it for general housekeeping, reach out to
+[vincent@datacamp.com](mailto:vincent@datacamp.com) for now.
+
