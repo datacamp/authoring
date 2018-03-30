@@ -155,7 +155,7 @@ When you want to push to dev:
 5. Check out your new content on the development app, make sure everything looks
    good.
 
-## Production app
+### Production app
 
 Unlike desktop courses, courses on DataCamp for Mobile are typically released
 one chapter at a time. When your chapter branch is ready to be released to the
