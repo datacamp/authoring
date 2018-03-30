@@ -67,6 +67,12 @@ cd /path/to/mobile-courses-example-course
 mobile-teach check
 ```
 
+If you want to exclude warnings:
+
+```sh
+mobile-teach check | grep -v warning
+```
+
 If you want to run *only* the schema validation:
 
 ```sh
