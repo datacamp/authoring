@@ -60,3 +60,8 @@ field, however.
 ```
 
 ![Tap exercise with multiple blanks](/images/mobile/tap-multi-blank-small.png)
+
+| Guideline                  | Min | Reco Min | Reco Max | Max |
+| :--------                  | :-- | :------- | :------- | :-- |
+| Options in a Tap           |   1 |        2 |        4 |   6 |
+| Characters in a Tap option |   1 |        1 |       15 |  20 |

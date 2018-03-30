@@ -44,3 +44,7 @@ considered incorrect unless the student selects *all* the correct answers.
 ```
 
 ![Multiple Choice exercise with multiple option](/images/mobile/multi-choice-multi-option-small.png)
+
+| Guideline                              | Min | Reco Min | Reco Max | Max |
+| :--------                              | :-- | :------- | :------- | :-- |
+| Characters in a multiple choice option | 1   | 1        | 30       | 60  |

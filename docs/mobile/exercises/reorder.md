@@ -75,3 +75,8 @@ you can use 4 dash `-` symbols to mark the blocks.
 ```
 
 ![Reorder exercise with multi-line blocks](/images/mobile/reorder-multi-line-small.png)
+
+| Guideline                        | Min | Reco Min | Reco Max | Max |
+| :--------                        | :-- | :------- | :------- | :-- |
+| Number of reorder blocks         |   3 |        3 |        5 |   6 |
+| Lines of code in a Reorder block |   1 |        1 |        2 |   3 |

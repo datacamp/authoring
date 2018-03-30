@@ -43,3 +43,7 @@ represented as a table - SQL queries, for example.
 The `option`s in the `distractor_table` block have a structure identical to that
 of a `table` block (because they are also tables). Refer to the [documentation
 for `table` blocks](/mobile/exercises/README.md/#table) for more information.
+
+| Guideline                        | Min | Reco Min | Reco Max | Max |
+| :--------                        | :-- | :------- | :------- | :-- |
+| Distractors in a Select exercise | 1   | 2        | 4        | 5   |
