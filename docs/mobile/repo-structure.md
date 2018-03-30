@@ -227,3 +227,7 @@ assets:
 | `key`  | The alias for the asset.                                                                                                                                                                                                                                                                                                                                                                            |
 | `url`  | The path to the asset from the root of the course repository.                                                                                                                                                                                                                                                                                                                                       |
 | `tabs` | One entry for every possible tab-type, currently either `file` or `table`. Every tab-type requires the sub-field `title`, which will determine the name of the tab when the asset is rendered as the respective type. In the example above, the asset `films_small.csv` will have the title `films.csv` when rendered as a CSV file, and the title `Films` when rendered as a formatted table. |
+
+| Guideline                 | Min | Reco Min | Reco Max | Max |
+| :--------                 | :-- | :------- | :------- | :-- |
+| Characters in a tab title | 1   | 1        | 10       | 10  |

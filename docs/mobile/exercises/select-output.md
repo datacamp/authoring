@@ -22,3 +22,7 @@ comment the `distractor_code` field and add a `distractor_output` field.
 ```
 
 ![Select Output exercise](/images/mobile/select-output-small.png)
+
+| Guideline                        | Min | Reco Min | Reco Max | Max |
+| :--------                        | :-- | :------- | :------- | :-- |
+| Distractors in a Select exercise | 1   | 2        | 4        | 5   |
