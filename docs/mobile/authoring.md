@@ -29,18 +29,26 @@ chapter, it's good practice to dedicate one branch to each chapter.
 You are free to use whatever editing tools you like on your local repository, eg
 Sublime, Vim, Emacs, etc. It can be helpful to use an IDE that allows you to
 expand snippets, and to write a snippet expansion for different exercise
-types. Bonus points if your IDE of choice allows you to automatically generate
-UUIDs for your exercises.
+types. Bonus points if your IDE of choice allows you to automatically [generate
+UUIDs](/mobile/authoring.md#working-with-uuids) for your exercises.
 
-Visit the [exercises documentation](/mobile/exercises/README.md) to see how
-exercises are written and see some examples.
+Visit the [exercises documentation](/mobile/exercises/README.md) to learn what
+exercise types are available, how to write them, and see some examples.
 
 The best workflow is generally to open an appropriate interpreter side by side
 with the content file, so that you can play with code and quickly insert it into
 your exercises. This might be IPython, R, or a SQL client like `psql` or
 `sqlite`.
 
+## Tone
+
+DataCamp for Mobile is designed to be the most fun and casual learning
+experience in the DataCamp ecosystem. Be as fun and playful as you can be while
+still getting the information across. Emoji are encouraged!
+
 ## Strategy
+
+### Course Lessons
 
 It's a good idea to start a lesson by creating a scaffold. First write a one
 line comment for each topic that you want to address in the lesson. For example:
@@ -61,12 +69,43 @@ line comment for each topic that you want to address in the lesson. For example:
 
 Then write an exercise for each topic. You can familiarize yourself with how
 exercises work by perusing the [exercises
-documentation](/mobile/exercises/README.md). Don't be afraid to split one topic
-into 2 or even 3+ exercises if it's difficult to teach something in a single
-exercise. One great strategy is to hit the same topic from multiple angles by
-using different exercise types back to back. You will find that certain subjects
+documentation](/mobile/exercises/README.md).
+
+Because space is so limited, it's extra important to split concepts up into the
+smallest possible unit that can be explained in a single exercise. For example,
+it's often valuable to first demonstrate a concept conceptually with a Multiple
+Choice or Select Output/Table exercise, **before** asking students to produce
+any code with a Select Code or Tap exercise. If you find yourself asking whether
+something should be a single exercise or multiple exercises, the answer is
+usually multiple.
+
+One great strategy is to hit the same topic from multiple angles by using
+different exercise types back to back. You will find that certain subjects
 naturally lend themselves to certain exercise types, but in general you should
-try to vary the exercise types in a lesson.
+vary the exercise types as much as possible in a lesson.
+
+It's a good idea to end a course lesson with several integrative exercises that
+incorporate 2 or more concepts from the lesson.
+
+### Practice Lessons
+
+When writing a chapter practice lesson, assume that the student has successfully
+completed all the course lessons in that chapter. Any covered material is fair
+game for practice.
+
+Keep in mind that practice exercises are presented in a random order, so unlike
+course lessons, you can't build up concepts progressively - each exercise should
+always be completely standalone.
+
+Don't teach new concepts in the practice. The only time you should be include
+context in a practice exercise is when you need to set up a scenario for the
+exercise.
+
+If you use a comment scaffold for the course lessons as [outlined
+above](/mobile/authoring.md#course-lessons), then it's easy to copy and paste
+all the individual topics that you need to hit in the practice. Drilling
+individual concepts in the practice lesson is welcome, but you should also write
+integrative exercises that combine concepts across lessons.
 
 ## Working with YAML
 
