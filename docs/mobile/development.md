@@ -119,13 +119,21 @@ app.
 
 When you want to push to dev:
 
-1. First, make sure everything is working:
+1. Download the development app. Contact spencer@datacamp.com if you don't
+   already have it; you will receive an email with download instructions.
+
+2. Create a new account through the dev app. You won't be able to log in with
+   your existing DataCamp account because this app runs off DataCamp's
+   development server. Instead, make a new account through the dev app and log
+   in with that.
+
+3. First, check that everything is in good shape:
 
    ```sh
    mobile-teach check
    ```
 
-2. Reset the `development` branch to the content you want to test.
+4. Reset the `development` branch to the content you want to test.
 
    ```sh
    ## Checkout the development branch
@@ -135,47 +143,41 @@ When you want to push to dev:
    git reset --hard chapter-2
 
    ## Force push development
-   git push origin development --force
+   git push origin development --force-with-lease
    ```
 
-3. Download the development app. Contact spencer@datacamp.com if you don't
-   already have it; you will receive an email with download instructions.
-
-4. Create a new account through the dev app. You won't be able to log in with
-   your existing DataCamp account because this app runs off DataCamp's
-   development server. Instead, make a new account through the dev app and log
-   in with that.
+   > #### info::Note
+   > This wipes out changes that you've committed directly to `development`so
+   > you should never work directly on the `development` branch! You should
+   > operate under the assumption that commits you make directly to
+   > `development` could disappear at any time.
 
 5. Check out your new content on the development app, make sure everything looks
    good.
 
-> #### info::Note
-> Never work directly on the `development` branch! You should operate under the
-> assumption that commits you make directly to `development` could disappear at
-> any time.
-
 ## Production app
 
-Unlike desktop courses, courses on DataCamp for Mobile are typically release one
-chapter at a time. When your chapter branch is ready to be released to the world:
+Unlike desktop courses, courses on DataCamp for Mobile are typically released
+one chapter at a time. When your chapter branch is ready to be released to the
+world:
 
-6. Do one last check!
+1. Do one last check!
 
    ```sh
    mobile-teach check
    ```
 
-1. Open a pull request (PR) for your chapter branch into the `master` branch on
+2. Open a pull request (PR) for your chapter branch into the `master` branch on
    GitHub.
 
-2. DataCamp will review the PR and make suggestions for revisions.
+3. DataCamp will review the PR and make suggestions for revisions.
 
-3. After one or more reviews & revisions, the PR will be approved and DataCamp
+4. After one or more reviews & revisions, the PR will be approved and DataCamp
    will generate a new release.
 
-4. Your content is now live to the world!
+5. Your content is now live to the world!
 
-5. Start a new branch for the next chapter. For example, if you just merged
+6. Start a new branch for the next chapter. For example, if you just merged
    `chapter-1`, create and check out a new branch for `chapter-2`:
 
    ```sh
