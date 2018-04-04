@@ -7,6 +7,14 @@ instructors should explain how it will or won't help these people,
 and what extra skills or prerequisite knowledge they are assuming their students have
 above and beyond what's included in the persona.
 
+Note: these personas mention some specific technologies or domains,
+such as Python or epidemiology.
+When using these personas,
+replace these by equivalent levels of knowledge about technologies or domains appropriate to your course,
+e.g.,
+novice understanding of R but advanced understanding of medical imaging
+(or vice versa).
+
 ## Advanced Alex
 
 - Age: 34
