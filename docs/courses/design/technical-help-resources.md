@@ -14,4 +14,4 @@ If you want to take your skills further, these resources will help.
 
 - The [Introduction to git for Data Science](https://www.datacamp.com/courses/introduction-to-git-for-data-science) course is suitable for complete beginners (and you get to see some good practices for DataCamp courses as you take it).
 
-- For R users, Jenny Bryan's [Happy git with R](http://happygitwithr.com) is another high quality beginner-friendly resource.
+- For R users, Jenny Bryan's [Happy Git and GitHub for the useR](http://happygitwithr.com) is another high quality beginner-friendly resource.
