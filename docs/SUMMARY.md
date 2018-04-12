@@ -7,6 +7,7 @@
 
 ## Creating Content
 
+- [Our Contract](contract.md)
 - [Courses](courses/README.md)
    - [Repo Structure](courses/repo-structure.md)
    - [Exercises](courses/exercises/README.md)
