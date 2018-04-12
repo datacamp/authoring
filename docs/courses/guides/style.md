@@ -174,7 +174,7 @@ points(point, cex = .5, col = "dark red")
 points(x = point, cex = .5, col = "dark red")
 ~~~~~
 
-- The sample code should run without errors.
+- The solution code should run without errors.
 
 ~~~~~
 # Good
