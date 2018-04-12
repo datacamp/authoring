@@ -44,6 +44,7 @@ On every build attempt, all exercises in your chapters can be tested for correct
 
 If you have administrative permissions, you can add three types of collaborators to a course:
 
-- One or two *instructors* (who are listed on the course's public page when it launches).
-- Any number of *collaborators* (who also have access to the course).
+- An *instructor* (who is shown on the course's public page when it launches).
+- Any number of *collaborators* (who are shown next to the instructor on the course's page).
 - Any number of *silent collaborators* (who have access but aren't displayed publicly).
+  These are typically DataCamp staff who have been helping with technical issues.
