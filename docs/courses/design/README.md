@@ -361,7 +361,7 @@ Note:
 - You are likely to discover things you forgot to list earlier during this stage,
   so don't be surprised if you have to double back a few times.
   
-  More advice on [lesson flow](/courses/design/lesson-flow.md).
+[See here](/courses/design/lesson-flow.md) for more advice on lesson flow.
 
 ### Running Example
 
@@ -404,6 +404,7 @@ by writing a high-level course overview that consists of:
 - [a one-paragraph description](/courses/design/overview-description.md) (i.e., a sales pitch to students)
 - [half a dozen learning objectives](/courses/design/overview-objectives.md)
 - [a summary of prerequisites](/courses/design/overview-prerequisites.md)
+  and a list of any packages or other special technology the course will require.
 
 Doing this earlier often wastes effort,
 since material is usually added, cut, or moved around in earlier steps.
@@ -438,7 +439,7 @@ and show you how to use them efficiently.
 - Combine programs using pipes to process large data sets.
 - Write shell scripts to re-run command pipes with a varying number of command-line arguments.
 
-**Prerequisites**
+**Prerequisites and Packages**
 
 None.
 
