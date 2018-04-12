@@ -36,4 +36,14 @@ The "Most Recent Build" tab is simply an already expanded version of the last bu
 
 Under the "Settings" tab, you can adapt the settings of a particular repository's branch.
 
+### Builds
+
 On every build attempt, all exercises in your chapters can be tested for correctness: it checks whether running the exercise's solution happens without errors and whether the Submission Correctness Test passes, presenting the success message to the student. When you push changes to a branch, by default only the chapters that are updated are tested. This setting can be updated to test all chapters whenever a change is made, or to test no chapters whatsoever. It is suggested to not test chapters when your course is still in early development, and you don't expect the exercises to all work. Later, when your course becomes ready for production, you can switch back to testing the chapters that are updated. Note: Your changes will be updated in the corresponding DataCamp course, even though some exercises might fail.
+
+### Collaborators
+
+If you have administrative permissions, you can add three types of collaborators to a course:
+
+- One or two *instructors* (who are listed on the course's public page when it launches).
+- Any number of *collaborators* (who also have access to the course).
+- Any number of *silent collaborators* (who have access but aren't displayed publicly).
