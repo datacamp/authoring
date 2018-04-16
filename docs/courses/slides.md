@@ -15,6 +15,8 @@ Once you have created a slide, you need to edit it:
 - Give the system a few seconds to start up.
 - Select the slide you want to work on in the slides outline. These slides will be sorted in the order of occurrence in the course and grouped by chapter.
 
+Please keep in mind that slide decks are limited to 600 words, and that we prefer them to be closer to 500.
+
 ## Slide Deck Header
 
 While a chapter file contains a YAML header and a list of exercises, a slide deck file contains a YAML header and a list of slides.
