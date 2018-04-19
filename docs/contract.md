@@ -36,6 +36,8 @@ The contract's key features are:
 
 - Liability is limited in both directions.
 
+- You are paid quarterly.
+
 As the introduction to this page said,
 this is a simplified summary of the actual terms.
 Please take the time to read through the actual contract,
