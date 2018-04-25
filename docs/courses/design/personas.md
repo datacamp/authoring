@@ -34,7 +34,7 @@ novice understanding of R but advanced understanding of medical imaging
 
 Umberto's degree gave him an excellent grounding in economic theory,
 but the only quantitative work he did was with very small data sets
-using Excel and a little bit of copy-and-pase SPSS.  The managers he
+using Excel and a little bit of copy-and-paste SPSS.  The managers he
 worked with so far in his projects used more complex spreadsheets and
 some software packages developed in house; he hasn't yet had much
 exposure to R, Python, SQL, or other stars in the data science
@@ -49,9 +49,9 @@ Umberto doesn't know DataCamp.
 
 **Career Goal**
 
-Aware that his background hasn't given him the samel quantitative
+Aware that his background hasn't given him the same quantitative
 skills as many of his peers, Umberto is set on learning as much as
-possible as quickly as he can. He loves the on the job trainings and
+possible as quickly as he can. He loves the on-the-job trainings and
 wants to build knowledge so he can grow into a project lead role.
 
 > Building analytical reasonings and spreadsheet models from scratch
