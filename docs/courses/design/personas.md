@@ -17,9 +17,9 @@ novice understanding of R but advanced understanding of medical imaging
 
 ## Unaware Umberto
 
-- Age: 27
+- Age: 25
 - Location: London, UK
-- Education: Bachelor in Philosophy & Bachelor in Business  Economics - King's College London
+- Education: Bachelor in Economic History - King's College London
 - Personal: Partially deaf, so prefers materials with closed captioning.
 
 **Previous Job**
@@ -28,15 +28,17 @@ novice understanding of R but advanced understanding of medical imaging
 
 **Current Job**
 
-- Financial analyst at KPMG.
+- Entry-level financial adviser at KPMG.
 
 **Data Science Education Experience**
 
-Having only worked with excel and some SPSS in his studies, Umberto
-learned most of the modelling and analysis techniques on the job. The
-managers he worked with so far in his projects used Excel and custom
-KPMG tools, and he hasn't been in touch with data science tools as of
-now.  He thus doesn't know about them or how they could help him yet.
+Umberto's degree gave him an excellent grounding in economic theory,
+but the only quantitative work he did was with very small data sets
+using Excel and a little bit of copy-and-pase SPSS.  The managers he
+worked with so far in his projects used more complex spreadsheets and
+some software packages developed in house; he hasn't yet had much
+exposure to R, Python, SQL, or other stars in the data science
+constellation, and is only vaguely aware of how they could help him.
 However, Umberto is constantly looking for easier and more efficient
 ways of doing his job tasks-at-hand to move up in his demanding
 career.
@@ -47,11 +49,10 @@ Umberto doesn't know DataCamp.
 
 **Career Goal**
 
-Having a not-so-common education background, Umberto is set on
-learning as much as possible working in consultancy for many different
-clients. He loves the on the job trainings and wants to build
-knowledge so he can grow into a project lead role. In the future, he
-sees himself as lead analyst for a food import/export company.
+Aware that his background hasn't given him the samel quantitative
+skills as many of his peers, Umberto is set on learning as much as
+possible as quickly as he can. He loves the on the job trainings and
+wants to build knowledge so he can grow into a project lead role.
 
 > Building analytical reasonings and spreadsheet models from scratch
 > is what I like and spend most of my time at work doing.
@@ -86,7 +87,7 @@ scientist on her team.
 
 **Data Science Education Experience**
 
-SIndhu came out of university with expert-level knowledge of
+Sindhu came out of university with expert-level knowledge of
 immunology, but only knows basic statistical concepts and
 techniques. However, needing to visualise a lot of her findings,
 Sindhu quickly found that nor Excel and JMP - the tools used in her
@@ -237,12 +238,12 @@ pleasantly surprised to find how much she enjoys programming.
 
 **Previous Jobs**
 
-- Pricing analyst for power distributor.
+- Pricing analyst for a power distributor.
 - Financial analyst at Bank of America.
 
 **Current Job**
 
-- Head quantitative analyst in small hedge fund.
+- Head quantitative analyst in a small hedge fund.
 
 **Career Goal**
 
