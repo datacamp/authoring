@@ -1,6 +1,6 @@
 # Exports
 
-Several types of extra data can be added to video exercises on DataCamp.  These are called **exports**, and Adding them will enhance students' experiences. These exports are closely related to videos built with the Slides Interface, but with some extra steps you can also generate exports for video exercises that don't use that interface (also called "traditional videos"). The following steps are required for exports to work for traditional videos:
+Several types of extra data can be added to video exercises on DataCamp. These so-called **exports** are closely related to videos built with the Slides Interface, but with some extra steps you can also generate exports for video exercises that don't use that interface (also called "traditional videos"). The following steps are required for exports to work for traditional videos:
 
 1. Your course needs to have video exercises for this to have any effect.
 2. Go to the "Settings" tab in the [Content Overview](/interface/content-overview.md) page.
