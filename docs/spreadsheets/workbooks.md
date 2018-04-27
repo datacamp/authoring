@@ -73,6 +73,12 @@ worksheet when they start an exercise of this workbook.
 
 We'll talk about editing exercise sheets in the section about exercises.
 
+Each time you made changes to the **workbook source**, be sure to hit the **Build** button
+afterwards. This goes through your workbook source and (re)builds it into its exercises. Once the
+build is ready, you can preview it hitting the **Preview** button. This will open a new window to
+the rendered chapter you're currently editing. It wil automatically refresh if you build again and
+things have changed.
+
 ## Deleting a workbook
 
 It is currently not possible to delete a workbook. However, keeping it empty will make it not show

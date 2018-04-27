@@ -45,7 +45,7 @@ of texts that can be used in the URL (called slugs). Search engines like it bett
 
 For example, https://spreadsheets.datacamp.com/courses/4/chapters/8/exercises/1 will bring you to
 the same location as
-https://spreadsheets.datacamp.com/courses/introduction-to-data-analysis-with-sheets/chapters/predefined-functions/exercises/1,
+https://spreadsheets.datacamp.com/courses/data-analysis-with-spreadsheets/chapters/predefined-functions/exercises/1,
 but the second one is prettier, right?
 
 These slugs can be generated for you, but for now, you will still need to reach out to
