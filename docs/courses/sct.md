@@ -1,8 +1,8 @@
 ## Submission Correctness Tests
 
-Automated and meaningful feedback is an important aspect of the learning experience on DataCamp. When students make a mistake in a coding exercise, we want to tell them what they are doing wrong. The life and blood of the automated system that points out mistakes and guides students to the correct solution is the Submission Correctness Test, or SCT.
+Automatically checking student submissions and providing meaningful feedback to tell them what they are doing wrong are central to the learning experience on DataCamp. The life and blood of the automated system that points out mistakes and guides students to the correct solution is the Submission Correctness Test, or SCT.
 
-The SCT is a script of custom tests specified for every coding exercise. These custom tests have access to the code students submitted and the output and workspace they created with their code. For every taught language, there is an open-source library that provides a wide range of functions to verify these elements of a student submission. When the functions spot a mistake, they will automatically generate a meaningful feedback message.
+The SCT is a script of custom tests that accompanies every coding exercise. These custom tests have access to the code students submitted and the output and workspace they created with their code. For every taught language, there is an open-source library that provides a wide range of functions to verify these elements of a student submission. When the functions spot a mistake, they will automatically generate a meaningful feedback message.
 
 The table below lists out all of the utlity packages used to write SCTs. If you're authoring R exercises you write your SCT in R. If you're building Python, SQL or Shell exercises, you write your SCT in Python. The documentation pages for each package list out all of its functions, with examples and best practices.
 
@@ -13,9 +13,29 @@ The table below lists out all of the utlity packages used to write SCTs. If you'
 | SQL | Python | [sqlwhat](https://github.com/datacamp/sqlwhat) | [![Build Status](https://travis-ci.org/datacamp/sqlwhat.svg?branch=master)](https://travis-ci.org/datacamp/sqlwhat) | [link](http://sqlwhat.readthedocs.io/en/latest/) |
 | Shell | Python | [shellwhat](https://github.com/datacamp/shellwhat) | [![Build Status](https://travis-ci.org/datacamp/shellwhat.svg?branch=master)](https://travis-ci.org/datacamp/shellwhat) | [link](https://shellwhat.readthedocs.io) |
 
-#### Example
+_In the remainder of this article, when `xwhat` is used, this means that the information applies to all of the SCT packages listed above._
 
-To understand how SCTs are coded up and how they tie in with the student's experience, consider the source code for this R exercise about variable assignment:
+### How it works
+
+When a student starts an exercise on DataCamp, the coding backend:
+
+- Starts a student coding process, and executes the `pre_execute_code` in this process. This code initializes the process with data, loads relevant packages,e tc, so that students can focus on the topic at hand.
+- Starts a solution coding process at the same time, in which both the `pre_Exercise_code` and the `solution` are executed. This coding process represents the 'ideal final state' of an exercise.
+
+When students click `Submit Answer`, the coding backend:
+
+- Executes the submitted code in the student coding process and records any outputs or errors that are generated.
+- Tells `xwhat` to check the submitted code, by calling the `test_exercise()` function that is available in all 4 of the SCT packages. Along with the SCT (the R/Python script with custom tests), the backend also passes the following information:
+    + The student submission and the solution as text.
+    + A reference to the student process and the solution process.
+    + The output and errors that were generated when executing the student code.
+
+  If there is a failing test in the SCT, `xwhat` marks the submitted code as incorrect and automatically generates a feedback message. If all tests pass, `xwhat` marks the submitted code as correct, and generates a success message. This information is relayed back to the coding backend.
+- Bundles the code output and the correctness information, so it can be shown in the learning interface.
+
+### Example
+
+To understand how SCTs affect the student's experience, consider the markdown source for an R exercise about variable assignment:
 
     ## Create a variable
 
@@ -26,34 +46,36 @@ To understand how SCTs are coded up and how they tie in with the student's exper
     In this exercise, you'll assign your first variable.
 
     `@instructions`
-
     Create a variable `m`, equal to 5.
 
-    `@hint`
-
-    Use `<-` to assign a variable in R.
-
     `@sample_code`
-
     ```{r}
     # Create m
 
     ```
 
     `@solution`
-
     ```{r}
     # Create m
     m <- 5
     ```
 
     `@sct`
-
     ```{r}
     ex() %>% check_object("m") %>% check_equal()
     success_msg("Well done!")
     ```
 
-- When students submit `a <- 4` when taking this exercise, a feedback box will appear in the learning interface with the message "Did you define the variable `m` without errors?". This message is generated by `check_object()`, that checks if `m` was defined in the workspace.
-- If students fix the variable name but not the value assigned and submit `x <- 4`, their submission will fail again: "The contents of the variable `m` aren't correct.". This message was generated by `check_equal()`, that compares the value of `m` in the student workspace with the value of `m` in the solution workspace (a parallel environment in which the solution code was executed). Notice that there was no need to repeat the value `5` in the SCT; `testwhat` inferred it.
--  If students submit the right answer, `m <- 5`, all checks pass, the exercise is marked as complete, and the message "Well done!" is shown, as specified in `success_msg()`.
+- Student submits `a <- 4`
+    + Feedback box appears: "Did you define the variable `m` without errors?".
+    + This message is generated by `check_object()`, that checks if `m` was defined in the student coding session.
+- Student submits `m <- 4` (correct variable name, incorrect value)
+    + Feedback box appears: "The contents of the variable `m` aren't correct.".
+    + This message was generated by `check_equal()`, that compares the value of `m` in the student coding session with the value of `m` in the solution coding session.
+    + Notice that there was no need to repeat the value `5` in the SCT; `testwhat` inferred it.
+- Student submits `m <- 5` (correct answer)
+    + All checks pass, and the message "Well done!" is shown, as specified in `success_msg()`.
+
+### Concept of state
+
+All `xwhat` libraries operate with a State concept. TODO add more here.
