@@ -6,12 +6,12 @@ The SCT is a script of custom tests that accompanies every coding exercise. Thes
 
 The table below lists out all of the utlity packages used to write SCTs. If you're authoring R exercises you write your SCT in R. If you're building Python, SQL or Shell exercises, you write your SCT in Python. The documentation pages for each package list out all of its functions, with examples and best practices.
 
-| Exercise Language | SCT language | GitHub | Build Status | Documentation |
-|:------------------|:-------------|:-------|:------------:|:-------------:|
-| R | R | [testwhat](https://github.com/datacamp/testwhat) | [![Build Status](https://travis-ci.org/datacamp/testwhat.svg?branch=master)](https://travis-ci.org/datacamp/testwhat) | [link](https://github.com/datacamp/testwhat/wiki) |
-| Python | Python | [pythonwhat](https://github.com/datacamp/pythonwhat) | [![Build Status](https://travis-ci.org/datacamp/pythonwhat.svg?branch=master)](https://travis-ci.org/datacamp/pythonwhat) | [link](http://pythonwhat.readthedocs.io/en/latest/) |
-| SQL | Python | [sqlwhat](https://github.com/datacamp/sqlwhat) | [![Build Status](https://travis-ci.org/datacamp/sqlwhat.svg?branch=master)](https://travis-ci.org/datacamp/sqlwhat) | [link](http://sqlwhat.readthedocs.io/en/latest/) |
-| Shell | Python | [shellwhat](https://github.com/datacamp/shellwhat) | [![Build Status](https://travis-ci.org/datacamp/shellwhat.svg?branch=master)](https://travis-ci.org/datacamp/shellwhat) | [link](https://shellwhat.readthedocs.io) |
+| Exercise Language | SCT language | GitHub | Documentation | Build Status  |
+|:------------------|:-------------|:-------|:-------------:|:-------------:|
+| R | R | [testwhat](https://github.com/datacamp/testwhat) | [link](https://datacamp.github.io/testwhat) | [![Build Status](https://travis-ci.org/datacamp/testwhat.svg?branch=master)](https://travis-ci.org/datacamp/testwhat) |
+| Python | Python | [pythonwhat](https://github.com/datacamp/pythonwhat) | [link](http://pythonwhat.readthedocs.io/en/latest/) | [![Build Status](https://travis-ci.org/datacamp/pythonwhat.svg?branch=master)](https://travis-ci.org/datacamp/pythonwhat) |
+| SQL | Python | [sqlwhat](https://github.com/datacamp/sqlwhat) | [link](http://sqlwhat.readthedocs.io/en/latest/) | [![Build Status](https://travis-ci.org/datacamp/sqlwhat.svg?branch=master)](https://travis-ci.org/datacamp/sqlwhat) |
+| Shell | Python | [shellwhat](https://github.com/datacamp/shellwhat) | [link](https://shellwhat.readthedocs.io) | [![Build Status](https://travis-ci.org/datacamp/shellwhat.svg?branch=master)](https://travis-ci.org/datacamp/shellwhat) |
 
 _In the remainder of this article, when `xwhat` is used, this means that the information applies to all of the SCT packages listed above._
 
@@ -78,4 +78,57 @@ To understand how SCTs affect the student's experience, consider the markdown so
 
 ### Concept of state
 
-All `xwhat` libraries operate with a State concept. TODO add more here.
+As you could see in the example above, `testwhat` uses [`magrittr`'s pipe operator](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) to 'chain together' SCT functions. Every chain starts with the `ex()` function call, which holds the exercise state. This exercise state contains the pieces of information mentioned ealier, such as the student submission and solution as text, a reference to the student and solution process, etc. As SCT functions are chained together, the exercise state is copied and adapted to zoom in on particular parts of the code. Consider the following example:
+
+```R
+# Solution to check
+x <- TRUE
+if (x) {
+  print("x is TRUE!")
+}
+
+# SCT
+if_state <- ex() %>% check_if_else()
+if_state %>% check_cond() %>% check_code("x")
+if_state %>% check_if() %>% check_function("print") %>% check_arg("x") %>% check_equal()
+
+# Same SCT, less verbose
+if_state <- ex() %>% check_if_else() %>% {
+    check_cond(.) %>% check_code("x")
+    check_if(.) %>% check_function("print") %>% check_arg("x") %>% check_equal()
+}
+```
+
+`check_if_else()` will check whether an `if` statement was coded, and will afterwards 'zoom in' on the if loop only. `check_cond()` will consequently zoom in on the condition part of the `if` statement. Hence, `check_code()` is will only look for the occurence of `"x"` inside the condition of the `if` statement. Similarly, `check_if()` starts from the `if` statement, and zooms in on the body of the `if` statement, after which `check_function()` will only look for the `print` call inside the body, ignoring anything outside of it.
+
+The other Python-based SCT libraries also feature the concept of state, the concept of state works the same way, but has slightly different syntax because of language internals. The root state is stored in `Ex()`, `.` is used for chaining, and `multi()` for branching of into multiple chains of tests.
+
+The Python equivalent of the variable assignment example would look as follows:
+
+```Python
+# Solution to check
+m = 5
+
+# SCT
+Ex().check_object('m').has_equal_value()
+```
+
+The Python equivalent of the `if` statement example would look as follows:
+
+```Python
+# Solution to check
+x = True
+if x: print('x is TRUE!')
+
+# SCT
+Ex().check_if_exp(0).check_body().test_student_typed('x'),
+Ex().check_if_exp(0).check_test().check_function('print').check_args('value').has_equal_value()()
+
+# SCT (less verbose, more performant)
+Ex().check_if_exp(0).multi(
+        check_body().test_student_typed('x'),
+        check_test().check_function('print').check_args('value').has_equal_value()()
+        )
+```
+
+Similar to how it is done in R, every `.` means 'stepping into a sub state', that only looks at parts of the code and parts of the student and solution processes when running the following checks.
