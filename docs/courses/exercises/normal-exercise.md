@@ -24,7 +24,7 @@ This chapter contains one `NormalExercise` for R.  Each block is described in de
     description : This is chapter 1 description
     ---
 
-    ## Interactive Exercise Title
+    ## Normal Exercise Title
 
     ```yaml
     type: NormalExercise
@@ -69,7 +69,7 @@ This chapter contains one `NormalExercise` for R.  Each block is described in de
 
 A `NormalExercise` starts with `## Title`, followed by a `metadata` block and a context block that describes the exercise.
 
-    ### Interactive Exercise Title
+    ## Normal Exercise Title
 
     ```yaml
     type: NormalExercise
