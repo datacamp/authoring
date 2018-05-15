@@ -25,7 +25,11 @@ From a course on human resource analytics:
 
 ### How many items should I list?
 
-Many courses list four or five problems to solve. This helps to divide the course up into chapters later on. 
+Many courses list four or five problems to solve. This helps to divide the course up into chapters later on.
+
+### How long should items be?
+
+No more than a sentence, and often just a phrase.
 
 ### Can I break that rule?
 
