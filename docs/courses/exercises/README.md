@@ -112,13 +112,3 @@ Exercises may contain the following kinds of blocks:
 - `possible_answers`: a list of possible answers and a correct answer (`PureMultipleChoiceExercise` only). See [How to create PureMultipleChoiceExercise](multiple-choice-exercise.md#pure-mce) for details.
 - `feedbacks`: a list with feedback for each possible answer (`PureMultipleChoiceExercise` only). See [How to create PureMultipleChoiceExercise](multiple-choice-exercise.md#pure-mce) for details.
 
-### Submission correctness tests (SCTs)
-
-`NormalExercise` and `MultipleChoiceExercise` require you to write *Submission Correctness Tests* (SCTs) to assess whether the student gave the correct answer. Writing good SCTs is challenging, so DataCamp has developed technology-specific packages to simplify the task:
-
-| Language | Source                                               | Documentation |
-|----------|------------------------------------------------------|---------------|
-| R        | [testwhat](https://github.com/datacamp/testwhat)     | [GitHub wiki](https://github.com/datacamp/testwhat/wiki) |
-| Python   | [pythonwhat](https://github.com/datacamp/pythonwhat) | [ReadTheDocs](https://pythonwhat.readthedocs.io/en/latest/) |
-| SQL      | [sqlwhat](https://github.com/datacamp/sqlwhat)       | [ReadTheDocs](https://sqlwhat.readthedocs.io/en/latest/) |
-| Shell    | [shellwhat](https://github.com/datacamp/shellwhat)   | [ReadTheDocs](https://shellwhat.readthedocs.io/en/latest/) |
