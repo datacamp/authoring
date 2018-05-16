@@ -27,6 +27,7 @@
    - [Slides](courses/slides.md)
    - [Course Exports](courses/exports.md)
    - [Guidelines](courses/guidelines/README.md)
+     - [Course Naming Rules](courses/guidelines/course-naming.md)
      - [Course Content](courses/guidelines/content.md)
      - [Course Style](courses/guidelines/style.md)
      - [Tab vs. Bullet Exercises](courses/guidelines/tab-vs-bullet-exercises.md)
