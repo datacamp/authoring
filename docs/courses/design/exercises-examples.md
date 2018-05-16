@@ -74,6 +74,10 @@ You need to include
 
 Each exercise should make the student complete one to four instructions, which roughly corresponds to writing one to four lines of code. Exercises can also contain "scaffolding code" that runs before the student sees the exercise, or appears when the exercise begins. In total, you should have 12 lines of code or less in an exercise.
 
+### Can I write in a different file?
+
+Yes! Some instructors find that drafting all the exercises in the README gets confusing. If you find it easier, feel free to write the exercises in other files. One common approach is to have one code script/Jupyter notebook/R markdown file per chapter. There are two caveats: Firstly, don't call them `chapter1.md`, ..., `chapter 5.md`, since those names are reserved. Secondly, please link to the files from the README to make them easily discoverable.
+
 ## Good ideas
 
 ### Spread the example exercises throughout the course
