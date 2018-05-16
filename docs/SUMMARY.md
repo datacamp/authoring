@@ -48,7 +48,7 @@
      - [Course Content](courses/guidelines/content.md)
      - [Course Style](courses/guidelines/style.md)
      - [Tab vs. Bullet Exercises](courses/guidelines/tab-vs-bullet-exercises.md)
-   - [Assets](courses/assets.md)
+   - [Assets: Images & Datasets](courses/assets.md)
    - [Course Exports](courses/exports.md)
    - [FAQ](faq/README.md)
 - [Challenges](challenges/README.md)

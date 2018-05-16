@@ -1,4 +1,4 @@
-# Assets
+# Assets: Images & Datasets
 
 A DataCamp course has a badge, and your exercises will typically use datasets, so you can add these assets to your course through our platform or through GitHub.
 
