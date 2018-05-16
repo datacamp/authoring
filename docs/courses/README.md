@@ -15,7 +15,16 @@ To create a new course, click the "Add Course +" button.  The following dialog w
 ![DataCamp for Teachers - Dashboard](/images/courses/teach-dashboard-add-course.png)
 _DataCamp for Teachers - Create Course dialog_
 
-Give your course a `name` and specify the technology it will use (one of R, Python, SQL, or Shell). Names must be all lower-case with dashes instead of spaces, such as `best-course`.  When you are done, click "Create".
+Give your course a `name` and specify the technology it will use (one of R, Python, SQL, or Shell). Names must be all lower-case with dashes instead of spaces; when you are done, click "Create".  We prefer courses to be named as follows:
+
+* Avoid an `Introduction to` prefix.
+* Use an `in R/Python/SQL` suffix whenever possible.
+* Please keep names shorter than 50 characters.
+* Be as specific as possible.
+* Use [title case](http://www.grammar-monster.com/lessons/capital_letters_title_case.htm).
+* Avoid terms that are locale-specific (i.e., 'Stats 101' doesn't mean anything to people outside the US).
+* Avoid abbreviations like 'datavis'.
+* For multi-part courses, use `Course Title (Part 1)`, etc.
 
 > #### info::NOTE
 > Creating the course can take a few moments.
