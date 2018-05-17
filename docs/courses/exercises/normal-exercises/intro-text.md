@@ -41,7 +41,7 @@ It is useful to consider [what you want the students to learn](courses/exercises
 
 ### Keep it short
 
-The [Content Guidelines](courses/guidelines/content.html#normal-exercise) limit the number of characters in the intro text to 480 characters, which is less than two Tweets. Be ruthless about editing!
+The [Content Guidelines](courses/guidelines/content.html#normal-exercise) limit the number of characters in the intro text to 780 characters, which is less than three Tweets. Be ruthless about editing!
 
 ### Motivate the problem
 
@@ -57,7 +57,7 @@ Showing the shape of the code that the student needs to write, or an example usi
 
 ### Include a diagram
 
-If pictures are a thousand words, they can explain much more than 480 characters of text!
+If pictures are a thousand words, they can explain much more than 780 characters of text!
 
 
 ## Common problems and their solutions
@@ -70,4 +70,4 @@ It is very tempting to write down everything you know about a subject. Experienc
 
 ### Omitting the "why"
 
-If a student can't see the point of an exercise, they are less likely to complete it. This section should favor explaing "why" over explaining "how".
+If a student can't see the point of an exercise, they are less likely to complete it. This section should favor explaining "why" over explaining "how".
