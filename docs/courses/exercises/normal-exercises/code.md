@@ -69,20 +69,39 @@ Solution code:
 >     # Print head of DataFrame df
 >     print(df.head())
 
+
 ## FAQs
 
-### TODO
+### How much code can I include?
 
-???
+The [content guidelines](courses/guidelines/content.html#normal-exercise) limit you to 15 lines of code per exercise. It's also a good idea to keep lines of code under 60 characters, so the code displays nicely on smaller laptops and tablets.
+
+### How should I write comments?
+
+Comments should be sentence case (only the first word and proper nouns are capitalized), and kept under 60 characters.
+
 
 ## Good ideas
 
-### TODO
+### Write the solution code first
 
-???
+It is typically easier to write the solution code then delete portions to create the sample code (rather than writing the sample code first then completing it to create the solution).
+
+## Match comments to instructions
+
+Usually there should be exactly one code comment per instruction.
+
+## Use human-readable variable names
+
+Clarity is more important than brevity. Descriptive variable names are the easiest way to make the code more human-readable.
+
 
 ## Common problems and their solutions
 
-### TODO
+### Too many possible solutions
 
-???
+If there are lots of possible solutions to a problem, in can become difficult to test that the student got the correct answer. In that case, you may need to provide give explicit instructions to the students on how to solve the exercise, or provide additional code scaffolding to enourage the students in a particular direction. Ask your Content Developer for advice.
+
+### Too much scaffolding
+
+In order to make an exercise easier to solve, it is tempting to provide a lot of scaffolding in the sample code. This is may be acceptable for beginner courses, or where a lot of code is unavoidable. However, eccessive sacafolding risks turning the exercise into a simple "fill-in-the-blanks" situation that discourages the students from bothering to understand the code as a whole.
