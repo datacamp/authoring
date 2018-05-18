@@ -1,4 +1,4 @@
-# Exercise-level Learning Objectives
+# Writing Exercise-level Learning Objectives
 
 Decide upon a *single* measurable learning objective for an exercise. The learning objective of an exercise is typically that the student understand some syntax, a workflow, a concept, or a result.
 

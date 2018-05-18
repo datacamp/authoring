@@ -1,4 +1,4 @@
-# Exercise Title
+# Writing Exercise Titles
 
 Write the exercise title. This should be
 
