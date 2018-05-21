@@ -36,7 +36,7 @@ The first time new syntax is introduced, it's OK to give a detailed, hand-holdin
 
 ### Make sure the student is prepared
 
-Any code that the student has to write should have been introduced at least twice before the student has to use it (in a video, and in the intro text).
+Any code that the student has to write should have been introduced at least twice before the student has to use it (in a video, and in the assignment text).
 
 ### Mention the setup
 

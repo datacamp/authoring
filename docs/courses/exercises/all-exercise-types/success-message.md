@@ -43,7 +43,7 @@ By highlighting a problem with something in the exercise, you can motivate the c
 
 ### Pretend it's a footnote
 
-Remember those extra sentences you cut from the exercise's intro text in order to fit the content guidelines? The success message is an ideal place to include the digressions and heuristics that weren't quite important enough to fit into the main exercise.
+Remember those extra sentences you cut from the exercise's assignment text in order to fit the content guidelines? The success message is an ideal place to include the digressions and heuristics that weren't quite important enough to fit into the main exercise.
 
 ## Common problems and their solutions
 

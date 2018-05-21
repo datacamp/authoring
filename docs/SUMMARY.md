@@ -39,7 +39,7 @@
        - [Review Rubric](courses/exercises/video-exercises/review-rubric.md]
        - [Creating Slides](courses/exercises/video-exercises/creating-slides.md)
      - [Normal Exercise](courses/exercises/normal-exercises/README.md)
-       - [Intro text](courses/exercises/normal-exercises/intro-text.md)
+       - [Intro text](courses/exercises/normal-exercises/assignment-text.md)
        - [Instructions](courses/exercises/normal-exercises/instructions.md)
        - [Code](courses/exercises/normal-exercises/code.md)
        - [Review Rubric](courses/exercises/normal-exercises/review-rubric.md)

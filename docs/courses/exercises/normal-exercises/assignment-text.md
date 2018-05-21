@@ -1,4 +1,4 @@
-# Writing `NormalExercise` Intro Text 
+# Writing `NormalExercise` Assignment Text 
 
 This page gives advice on how to write good introductory text for `NormalExercise`s.
 
@@ -41,7 +41,7 @@ It is useful to consider [what you want the students to learn](courses/exercises
 
 ### Keep it short
 
-The [Content Guidelines](courses/guidelines/content.html#normalexercise) limit the number of characters in the intro text to 780 characters, which is less than three Tweets. Be ruthless about editing!
+The [Content Guidelines](courses/guidelines/content.html#normalexercise) limit the number of characters in the assignment text to 780 characters, which is less than three Tweets. Be ruthless about editing!
 
 ### Motivate the problem
 

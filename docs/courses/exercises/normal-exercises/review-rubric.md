@@ -11,7 +11,7 @@ To ensure that a `NormalExercise` is suitably high quality for DataCamp, make su
 1. Is it written in sentence case?
 1. Is it informative?
 
-## Intro text
+## Assignment text
 
 1. Does the text describe the problem that the exercise is designed to solve?
 1. Does the text introduce all new code that hasn't already been covered in another non-video exercise?
