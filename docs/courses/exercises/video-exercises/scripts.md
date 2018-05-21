@@ -48,7 +48,7 @@ Unlike the coding and multiple choice exercises that students can take at their 
 
 ### Being too formal
 
-When you write the script, it is easy to slip into a "technical writing voice" that is more formal than when you speak. Then when you come to say the words out loud, it can come across as unnatural. You don't have to 
+When you write the script, it is easy to slip into a "technical writing voice" that is more formal than your spoken voice. Then when you come to say the words out loud, it can come across as unnatural. Try saying your script out loud to another person (or rubber duck, if no-one is available).
 
 ### Using local phrases without explanation
 
