@@ -1,4 +1,4 @@
-# Writing `MultipleChoiceExercise`s and `PureMultipleChoiceExercise`s
+# Writing `MultipleChoiceExercise` and `PureMultipleChoiceExercise` Questions
 
 This page provides guidance on writing good multiple choice questions.
 
@@ -13,6 +13,13 @@ From [Understanding your data](https://campus.datacamp.com/courses/deep-learning
 > The target variable you'll be predicting is `wage_per_hour`. Some of the predictor variables are binary indicators, where a value of 1 represents `True`, and 0 represents `False`.
 > 
 > Of the 9 predictor variables in the DataFrame, how many are binary indicators? The min and max values as shown by `.describe()` will be informative here. How many binary indicator predictors are there?
+
+From [Variance and covariance by looking](https://campus.datacamp.com/courses/statistical-thinking-in-python-part-1/quantitative-exploratory-data-analysis?ex=13) in "Statistical Thinking in Python (Part 1)". The question forces the students to inspect and interpret a plot drawn onscreen.
+
+> Consider four scatter plots of x-y data, appearing to the right. Which has, respectively,
+> - the highest variance in the variable x,
+> - the highest covariance,
+> - negative covariance?
 
 From [The Final Countdown](https://campus.datacamp.com/courses/object-oriented-programming-in-r-s3-and-r6/advanced-r6-usage?ex=9) in "Object-Oriented Programming in R: S3 & R6". This is notable for its use of a "choose all that apply" format.
 
@@ -61,3 +68,6 @@ Multiple choice questions are naturally tend towards being easier than coding qu
 
 In order to compensate for the "easiness" problem, it can be tempting to word the question in an overly complex way, in order to make it difficult. It is typically better to ask a harder question in a clearer manner.
 
+### Using "negative questions"
+
+A common, special case of the previous point is to use [negative questions](https://www.englishgrammar.org/negative-questions). These often implicitly lead the students towards an answer, so it is recommended to rephrase them positively.
