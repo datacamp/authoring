@@ -14,6 +14,21 @@ From [How does the shell compare to a graphical user interface?](https://campus.
 > - The shell is part of the operating system, while the file explorer is separate.
 > - They are both interfaces for issuing commands to the operating system.
 
+From [Review inner join using on](https://campus.datacamp.com/courses/joining-data-in-postgresql/introduction-to-joins?ex=6) in "Joining Data in PostgreSQL". The question is more easily answered if the student runs the code block. Each wrong answer corresponds to a potential misunderstanding about inner joins.
+
+> Why does the following code result in an error?
+> 
+>     SELECT c.name AS country, l.name AS language
+>     FROM countries AS c
+>     INNER JOIN languages AS l;
+> 
+> Possible answers
+> - The languages table has more rows than the countries table.
+> - There are multiple languages spoken in many countries.
+> - INNER JOIN requires a specification of the key field (or fields) in each table.
+> - Join queries may not be followed by a semi-colon.
+
+
 ## FAQs
 
 ### How many responses should I have?
