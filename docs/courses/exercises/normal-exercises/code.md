@@ -105,3 +105,7 @@ If there are lots of possible solutions to a problem, in can become difficult to
 ### Too much scaffolding
 
 In order to make an exercise easier to solve, it is tempting to provide a lot of scaffolding in the sample code. This is may be acceptable for beginner courses, or where a lot of code is unavoidable. However, eccessive sacafolding risks turning the exercise into a simple "fill-in-the-blanks" situation that discourages the students from bothering to understand the code as a whole.
+
+### Overwriting variables
+
+If you overwrite the values of a variable in an exercise, and a student runs the code several times, it has the potential to break that exercise. Try to give unique names to assigned variables.
