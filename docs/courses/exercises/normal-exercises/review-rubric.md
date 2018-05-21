@@ -4,7 +4,7 @@ To ensure that a `NormalExercise` is suitably high quality for DataCamp, make su
 
 ## Guidelines
 
-1. Does the exercise pass all content guidelines, as shown in the build log?
+1. Does the exercise pass all [content guidelines](courses/guidelines/content.html#normalexercise), as shown in the build log?
 
 ## Title
 

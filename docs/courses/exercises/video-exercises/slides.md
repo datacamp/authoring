@@ -40,3 +40,7 @@ Videos need to be understandable in real-time, so err on the side of simplifying
 ### Speech and slide mismatches
 
 While complementary speech and slides provide a boost to learning (see "Use dual coding" point), having mismatched speech and slides detracts from learning, since the student has to decifer which to the two media is the one to pay attention to.
+
+### Using "meme" images
+
+These often get dated incredibly quickly, and detract from the premium feel of the content.

@@ -4,7 +4,7 @@ To ensure that a `MultipleChoiceExercise` or `PureMultipleChoiceExercise` is sui
 
 ## Guidelines
 
-1. Does the exercise pass all content guidelines, as shown in the build log?
+1. Does the exercise pass all [content guidelines](courses/guidelines/content.html#multiplechoiceexercise), as shown in the build log?
 
 ## Title
 
