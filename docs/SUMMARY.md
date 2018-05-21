@@ -33,14 +33,20 @@
        - [Title](courses/exercises/all-exercise-types/title.md)
        - [Hints](courses/exercises/all-exercise-types/hints.md)
        - [Success Message](courses/exercises/all-exercise-types/success-message.md)
-     - [Video Exercise](courses/exercises/video-exercise.md)
-       - [Slides](courses/exercises/slides.md)
+     - [Video Exercise](courses/exercises/video-exercises/README.md)
+       - [Scripts](courses/exercises/video-exercises/scripts.md]
+       - [Slides](courses/exercises/video-exercises/slides.md]
+       - [Review Rubric](courses/exercises/video-exercises/review-rubric.md]
+       - [Creating Slides](courses/exercises/video-exercises/creating-slides.md)
      - [Normal Exercise](courses/exercises/normal-exercises/README.md)
        - [Intro text](courses/exercises/normal-exercises/intro-text.md)
        - [Instructions](courses/exercises/normal-exercises/instructions.md)
        - [Code](courses/exercises/normal-exercises/code.md)
        - [Review Rubric](courses/exercises/normal-exercises/review-rubric.md)
-     - [Multiple Choice Exercise](courses/exercises/multiple-choice-exercise.md)
+     - [Multiple Choice Exercise](courses/exercises/multiple-choice-exercises/README.md)
+       - [Questions](courses/exercises/multiple-choice-exercises/questions.md)
+       - [Responses](courses/exercises/multiple-choice-exercises/responses.md)
+       - [Review Rubric](courses/exercises/multiple-choice-exercises/review-rubric.md)
      - [Tab Exercise](courses/exercises/tab-exercise.md)
        - [SQL Example](courses/exercises/examples/md/sql/TabExercise.md)
        - [R Example](courses/exercises/examples/md/r/TabExercise.md)
