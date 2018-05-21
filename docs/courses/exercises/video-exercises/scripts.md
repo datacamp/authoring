@@ -1,5 +1,7 @@
 # Writing `VideoExercise` Scripts
 
+This page provides guidance on writing good video scripts.
+
 ## Examples
 
 From [Putting stringr together](https://campus.datacamp.com/courses/string-manipulation-in-r-with-stringr/string-basics?ex=9) in "String Manipulation in R with stringr". This gradually builds up code to generate the lyrics to the song "Old MacDonald had a farm". The novelty value (including a singing instructor) and use of pop culture make it highly memorable. The way that a complex output is generated from repeated use of a single, simple function is also rather powerful.
@@ -43,4 +45,12 @@ You have to speak the script out loud, all the way through, preferably in one or
 ### Explaining everything
 
 Unlike the coding and multiple choice exercises that students can take at their own pace, video exercises run at a fixed speed, so they have to be understandable in real-time. (You can't assume that students will watch videos multiple times.) This means that they need to be kept fairly simple.
+
+### Being too formal
+
+When you write the script, it is easy to slip into a "technical writing voice" that is more formal than when you speak. Then when you come to say the words out loud, it can come across as unnatural. You don't have to 
+
+### Using local phrases without explanation
+
+If you are a native English speaker, you need to bear in mind that the DataCamp audience is international, and that many students will not understand slang phrases or idioms without explanation. If you want to say "red herring", you need to explain that term.
 
