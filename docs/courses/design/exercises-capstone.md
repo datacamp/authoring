@@ -62,6 +62,15 @@ Each exercise (including the final ones) should make the student complete one to
 
 To provide enough context about what is happening, the final exercise can show a little more than this, as long as you are clear that it would actually constitute multiple exercises at the end of the course.
 
+### How hard should the exercise be?
+
+To quote DataCamp instructor Melinda Higgins:
+
+> When designing introductory courses, if you are bored to tears with the material, 
+> you've probably pitched it at the right level. If you find it interesting, it's too hard.
+
+For more advanced courses, you are allowed to interest yourself! Bear in mind that the majority of DataCamp students are relative beginners, so entry-level material typically gets a larger audience.
+
 ### How much detail is necessary?
 
 The exercise should explain what the learning objectives are, explain any background knowledge that you are assuming, and provide the code that you expect the students to write. Err on the side or more detail rather than less.
