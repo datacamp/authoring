@@ -45,6 +45,7 @@
        - [Experience Points (XP)](courses/exercises/technical-details/xp.md)
        - [Unified Authoring API](courses/exercises/technical-details/unified-authoring-api.md)
    - [Exercise Guidelines](courses/guidelines/README.md)
+     - [Course Naming Rules](courses/guidelines/course-naming.md)
      - [Course Content](courses/guidelines/content.md)
      - [Course Style](courses/guidelines/style.md)
      - [Tab vs. Bullet Exercises](courses/guidelines/tab-vs-bullet-exercises.md)
