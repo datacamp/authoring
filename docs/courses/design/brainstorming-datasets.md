@@ -33,6 +33,8 @@ One dataset per chapter is typical. Some courses use a single dataset throughout
 
 Here are a few data sources to get you started.
 
+- DataCamp can provide access to the datasets curated by [ThinkNum](https://www.thinknum.com). Ask your Curriculum Lead for details.
+
 - For small, reasonably clean datasets, [Wikipedia](https://en.wikipedia.org/wiki/Main_Page) tables are excellent.
 
 - There are also many R packages that contain datasets. You can generate a list of CRAN packages that contain datasets using [`finddatasetpkgs`](https://github.com/datacamp/finddatasetpkgs)`::get_dataset_pkgs()`. Bioconductor has [its own list](https://bioconductor.org/packages/release/BiocViews.html#___ExperimentData).
