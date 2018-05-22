@@ -19,8 +19,8 @@ _In the remainder of this article, when `xwhat` is used, this means that the inf
 
 When a student starts an exercise on DataCamp, the coding backend:
 
-- Starts a student coding process, and executes the `pre_execute_code` in this process. This code initializes the process with data, loads relevant packages,e tc, so that students can focus on the topic at hand.
-- Starts a solution coding process at the same time, in which both the `pre_Exercise_code` and the `solution` are executed. This coding process represents the 'ideal final state' of an exercise.
+- Starts a student coding process, and executes the `pre_exercise_code` in this process. This code initializes the process with data, loads relevant packages,e tc, so that students can focus on the topic at hand.
+- Starts a solution coding process at the same time, in which both the `pre_exercise_code` and the `solution` are executed. This coding process represents the 'ideal final state' of an exercise.
 
 When students click `Submit Answer`, the coding backend:
 
@@ -75,60 +75,3 @@ To understand how SCTs affect the student's experience, consider the markdown so
     + Notice that there was no need to repeat the value `5` in the SCT; `testwhat` inferred it.
 - Student submits `m <- 5` (correct answer)
     + All checks pass, and the message "Well done!" is shown, as specified in `success_msg()`.
-
-### Concept of state
-
-As you could see in the example above, `testwhat` uses [`magrittr`'s pipe operator](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html) to 'chain together' SCT functions. Every chain starts with the `ex()` function call, which holds the exercise state. This exercise state contains the pieces of information mentioned ealier, such as the student submission and solution as text, a reference to the student and solution process, etc. As SCT functions are chained together, the exercise state is copied and adapted to zoom in on particular parts of the code. Consider the following example:
-
-```R
-# Solution to check
-x <- TRUE
-if (x) {
-  print("x is TRUE!")
-}
-
-# SCT
-if_state <- ex() %>% check_if_else()
-if_state %>% check_cond() %>% check_code("x")
-if_state %>% check_if() %>% check_function("print") %>% check_arg("x") %>% check_equal()
-
-# Same SCT, less verbose
-if_state <- ex() %>% check_if_else() %>% {
-    check_cond(.) %>% check_code("x")
-    check_if(.) %>% check_function("print") %>% check_arg("x") %>% check_equal()
-}
-```
-
-`check_if_else()` will check whether an `if` statement was coded, and will afterwards 'zoom in' on the if loop only. `check_cond()` will consequently zoom in on the condition part of the `if` statement. Hence, `check_code()` is will only look for the occurence of `"x"` inside the condition of the `if` statement. Similarly, `check_if()` starts from the `if` statement, and zooms in on the body of the `if` statement, after which `check_function()` will only look for the `print` call inside the body, ignoring anything outside of it.
-
-The other Python-based SCT libraries also feature the concept of state, the concept of state works the same way, but has slightly different syntax because of language internals. The root state is stored in `Ex()`, `.` is used for chaining, and `multi()` for branching of into multiple chains of tests.
-
-The Python equivalent of the variable assignment example would look as follows:
-
-```Python
-# Solution to check
-m = 5
-
-# SCT
-Ex().check_object('m').has_equal_value()
-```
-
-The Python equivalent of the `if` statement example would look as follows:
-
-```Python
-# Solution to check
-x = True
-if x: print('x is TRUE!')
-
-# SCT
-Ex().check_if_exp(0).check_body().test_student_typed('x'),
-Ex().check_if_exp(0).check_test().check_function('print').check_args('value').has_equal_value()()
-
-# SCT (less verbose, more performant)
-Ex().check_if_exp(0).multi(
-        check_body().test_student_typed('x'),
-        check_test().check_function('print').check_args('value').has_equal_value()()
-        )
-```
-
-Similar to how it is done in R, every `.` means 'stepping into a sub state', that only looks at parts of the code and parts of the student and solution processes when running the following checks.
