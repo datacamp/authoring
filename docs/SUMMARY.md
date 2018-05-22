@@ -4,6 +4,7 @@
 
 - [Welcome](README.md)
 - [Getting Started](welcome/getting-started.md)
+- [Creating Your Audition Video](courses/audition.md)
 
 ## Creating Content
 
@@ -95,13 +96,6 @@
   - [Create Content Dialog](interface/create-content-dialog.md)
   - [Content Overview](interface/content-overview.md)
 - [Teach Editor](interface/teach-editor.md)
-
-## Premium Courses
-
-- [Creating Your Audition Video](courses/audition.md)
-- [Design](courses/design/README.md)
-  - [Design Template](courses/design/template.md)
-  - [Learner Personas](courses/design/personas.md)
 - [Development Process](premium-course-process.md)
   - [Course specs](premium-course-process.md#course-specs)
   - [Exercises](premium-course-process.md#exercises)
