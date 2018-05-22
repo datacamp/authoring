@@ -9,6 +9,9 @@
 ## Creating Content
 
 - [Courses](courses/README.md)
+   - [Teach Dashboard](interface/dashboard.md)
+     - [Create Content Dialog](interface/create-content-dialog.md)
+     - [Content Overview](interface/content-overview.md)
    - [Repo Structure](courses/repo-structure.md)
    - [Design](courses/design/README.md)
      - [Design template](courses/design/template.md)
@@ -45,9 +48,6 @@
        - [Submission Correctness Tests](courses/exercises/technical-details/sct.md)
        - [Experience Points (XP)](courses/exercises/technical-details/xp.md)
        - [Unified Authoring API](courses/exercises/technical-details/unified-authoring-api.md)
-      - [Teach Dashboard](interface/dashboard.md)
-        - [Create Content Dialog](interface/create-content-dialog.md)
-        - [Content Overview](interface/content-overview.md)
       - [Teach Editor](interface/teach-editor.md)
       - [Development Process](premium-course-process.md)
         - [Course specs](premium-course-process.md#course-specs)
