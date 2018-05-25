@@ -70,4 +70,4 @@ In order to compensate for the "easiness" problem, it can be tempting to word th
 
 ### Using "negative questions"
 
-A common, special case of the previous point is to use [negative questions](https://www.englishgrammar.org/negative-questions). These often implicitly lead the students towards an answer, so it is recommended to rephrase them positively.
+Negative questions, where you ask students to find an incorrect statement are [frowned upon](https://radiopaedia.org/articles/negative-questions-multiple-choice-questions), on the grounds that falsehoods are often either hard to prove, or obviously wrong. It is recommended to rephrase the questions positively.
