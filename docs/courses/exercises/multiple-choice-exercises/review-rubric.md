@@ -22,4 +22,4 @@ To ensure that a `MultipleChoiceExercise` or `PureMultipleChoiceExercise` is sui
 1. Does each distractor sounds plausible?
 1. Does each distractor provide insight as to what the student did wrong?
 1. Are "All of the above" and "None of the above" *not* provided as responses?
-1. Does each response has roughly the same amount of text?
+1. Does each response have roughly the same amount of text?

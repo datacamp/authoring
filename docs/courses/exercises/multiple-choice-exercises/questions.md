@@ -62,7 +62,7 @@ This means that students have to be able to ascertain the truth of every respons
 
 ### Asking trivial questions
 
-Multiple choice questions are naturally tend towards being easier than coding questions. This can be compounded be asking trivial questions, for example those with a "yes or no" response.
+Multiple choice questions naturally tend towards being easier than coding questions. This can be compounded be asking trivial questions, for example those with a "yes or no" response.
 
 ### Using obtuse grammar
 

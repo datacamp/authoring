@@ -35,7 +35,7 @@ Failing that, try a thesaurus!
 
 ### Draw attention to the results
 
-For exercises that get the students to calculate results or draw a plot, it's very easy for the student to complete the exercise then not actually look at what they've just done. A success message that highlights an interesting results can be used to get the students to go back and look what what they just made.
+For exercises that get the students to calculate results or draw a plot, it's very easy for the student to complete the exercise then not actually look at what they've just done. A success message that highlights interesting results can be used to get the students to go back and look at what they just made.
 
 ### Motivate the next exercise
 
