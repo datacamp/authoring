@@ -4,7 +4,7 @@ This page provides guidance on writing good multiple choice questions.
 
 ## Examples
 
-From [Understanding your data](https://campus.datacamp.com/courses/deep-learning-in-python/building-deep-learning-models-with-keras?ex=2) in "Deep Learning in Python". This provides context around the workflow (you should explore your dataset before you start modeling it), and requires that the students type some code, and actually look at the dataset in order to answer.
+From [Understanding your data](https://campus.datacamp.com/courses/deep-learning-in-python/building-deep-learning-models-with-keras?ex=2) in "Deep Learning in Python". This provides context around the workflow (you should explore your dataset before you start modeling it), and requires that the students type some code, and actually look at the dataset in order to answer. Note that the text is a little too verbose (and exceeds current DataCamp guidelines).
 
 > You will soon start building models in Keras to predict wages based on various professional and demographic factors. Before you start building a model, it's good to understand your data by performing some exploratory analysis.
 > 
