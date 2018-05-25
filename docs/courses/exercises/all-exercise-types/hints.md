@@ -24,7 +24,7 @@ A good heuristic is that the hint should get the student half way to the answer.
 
 ### How many hints should I provide?
 
-Often, one hint per instruction is appropriate.
+One hint per instruction is a good starting point. For easier exercises, this may reveal too much of the solution, and for harder exercises it may not cover all the common problems that students have, so you are free to use your judgement and have greater or fewer hints if necessary.
 
 
 ## Good ideas
