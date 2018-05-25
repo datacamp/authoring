@@ -26,6 +26,9 @@ get_sentiments() %>% arrange(desc(score))
 
 Failing that, try a thesaurus!
 
+### How long should the success message be?
+
+The message should consist of a few words of praise followed by one of two sentences of something informative. Do not write an essay here!
 
 ## Good ideas
 
@@ -40,10 +43,6 @@ For exercises that get the students to calculate results or draw a plot, it's ve
 ### Motivate the next exercise
 
 By highlighting a problem with something in the exercise, you can motivate the contents of the next exercise (where you solve that problem).
-
-### Pretend it's a footnote
-
-Remember those extra sentences you cut from the exercise's assignment text in order to fit the content guidelines? The success message is an ideal place to include the digressions and heuristics that weren't quite important enough to fit into the main exercise.
 
 ## Common problems and their solutions
 
