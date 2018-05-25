@@ -41,6 +41,10 @@ Four or five.
 
 The distractors ("wrong answers") should ideally provide insight as to what went wrong. That is, they should be the answer a student expects if they have made a common error or misunderstanding.
 
+### Provide feedback messages that give insight
+
+The feedback message that a student receives should explain why the answer is wrong. Don't just say "Try again", or "Incorrect".
+
 ### Make the student do something
 
 Rather than just asking them a question to test their knowledge, you can make the student actively do something in order to answer the question. For example, You can make them write some code to explore a dataset, or make them look at and interpret a plot or diagram.
