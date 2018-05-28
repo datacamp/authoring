@@ -1,5 +1,31 @@
 ## SCT functions
 
+The following document describes all SCT functions in detail. Please first read [the part about SCTs
+in the general exercises document](general.html#sct).
+
+Each SCT function can be used with zero or more arguments. There's two arguments that can always be
+used:
+
+* `message`: overwrite the generated feedback message. This message will be shown to the user on
+  mistake.
+* `suggestion`: append the generated feedback message. This message will be shown in combination
+  with the generated feedback message.
+
+Note that when using arguments, the SCT system requires you to used named arguments. So the
+following will never result in a working SCT:
+
+```
+? check_value("A better feedback message")
+```
+
+Instead, always use named variables:
+
+```
+? check_value(message = "A better feedback message")
+```
+
+If there are multiple arguments, you can separate them by a comma (`,`).
+
 #### check_value
 
 ```
@@ -9,12 +35,23 @@ check_value(
 )
 ```
 
+Compares the calculated value at this cell with what's defined in the solution. There will be a
+margin of error that's allowed for numeric values.
+
 Examples:
 
 ```
+? check_value
+```
+
+```
 ? check_value(
-  message = "This is a feedback_message")
+  message = "This is a feedback_message"
 )
+```
+
+```
+? check_value(suggestion="Have you tried to do it differently?")
 ```
 
 #### check_formula
@@ -26,11 +63,18 @@ check_formula(
 )
 ```
 
+Compares the formula of the user in this cell with what's defined in the solution. The formula will
+be normalized, meaning capitalization and spaces won't matter.
+
 Examples:
 
 ```
+? check_formula
+```
+
+```
 ? check_formula(
-  message = "This is a feedback_message")
+  suggestion = "Read the instructions again."
 )
 ```
 
@@ -38,16 +82,27 @@ Examples:
 
 ```
 check_regex(
+  pattern = string,
   message = string,
   suggestion = string
 )
 ```
 
-Examples:
+Checks a [regular expression](https://en.wikipedia.org/wiki/Regular_expression) against the user's
+content in a cell. The non-calculated value will be compared with the regex.
+
+Since you're defining the regex in a string, you need to use double backslashes for regex-specific
+characters. E.g. `"\\s"` to match spaces. Make sure you feel comortable using regexes when using
+this.
+
+**Note:** for this SCT, the solution is not used
+
+Example:
 
 ```
 ? check_regex(
-  message = "This is a feedback_message")
+  pattern = "1\\.1\\s*-\\s*1",
+  message = "Please subtract one from `1.1`."
 )
 ```
 
@@ -55,34 +110,69 @@ Examples:
 
 ```
 check_function(
+  function = string,
   message = string,
   suggestion = string
 )
 ```
 
-Examples:
+Checks whether the user used a certain function. The functions are normalized, so capitalization is
+not an issue. A more tailored feedback message will be used automatically, so this function can
+often be used without any specific `message` or `suggestion`.
+
+**Note:** for this SCT, the solution is not used
+
+Example:
 
 ```
-? check_function(
-  message = "This is a feedback_message")
-)
+? check_function(function = "SUM")
 ```
 
 #### check_operator
 
 ```
 check_operator(
+  operator = string,
   message = string,
   suggestion = string
+```
+
+Checks whether the user used a certain operator. A more tailored feedback message will be used
+automatically, so this function can often be used without any specific `message` or `suggestion`.
+
+**Note:** for this SCT, the solution is not used
+
+Example:
 
 ```
+? check_operator(operator = "+")
+```
+#### check_reference
+
+```
+check_reference(
+  reference = string,
+  message = string,
+  suggestion = string
+)
+```
+
+Checks whether the user used a certain reference. A more tailored feedback message will be used
+automatically, so this function can often be used without any specific `message` or `suggestion`.
+
+
+**Note:** for this SCT, the solution is not used. However, this function can often be replaced by
+the more convenient `check_references` or `check_absolute_references`, which **do** look at the
+solution.
 
 Examples:
 
 ```
-? check_operator(
-  message = "This is a feedback_message")
-)
+? check_reference(reference = "B3")
+```
+
+```
+? check_reference(reference = "$A$27")
 ```
 
 
@@ -95,30 +185,15 @@ check_references(
 )
 ```
 
-Examples:
+Similarly to `check_reference`, check whether the correct references are used in a cell. However,
+this function will compare the user's input to the solution. It will check whether all references
+that are used in the solution, are also used in the user's input. Does not match absolute
+references. It can often be used without arguments.
+
+Example:
 
 ```
-? check_references(
-  message = "This is a feedback_message")
-)
-```
-
-
-#### check_reference
-
-```
-check_reference(
-  message = string,
-  suggestion = string
-)
-```
-
-Examples:
-
-```
-? check_reference(
-  message = "This is a feedback_message")
-)
+? check_references
 ```
 
 
@@ -131,35 +206,59 @@ check_absolute_references(
 )
 ```
 
-Examples:
+Does exactly the same as `check_references`, but for absolute references.
+
+Example:
 
 ```
-? check_operator(
-  message = "This is a feedback_message")
-)
-```
-
-Examples:
-
-```
-? check_operator(
-  message = "This is a feedback_message")
-)
+? check_absolute_references
 ```
 
 #### check_correct
 
 ```
 check_correct(
-  message = string,
-  suggestion = string
+  check = string,
+  diagnose = string
 )
 ```
+
+This is the only **meta** SCT function. `check_correct` accepts 2 arguments: `check` and `diagnose`
+and both of them are SCTs themselves.
+
+The function will first check whether the SCT in `check` passes. If it passes, the SCT in `diagnose`
+is never executed and the SCT passes. If `check` fails, `diagnose` is ran and will generally give
+the user better feedback messages using this SCT.
+
+`check_correct` is very useful in situations where you want to make a forgiving SCT, where you first
+check a value and only if that value is not correct, will run more specific SCTs. You'll often see
+the `check` being a simple `check_value` and the diagnose having functions like `check_function`.
+This way we accept students arriving to the correct solution, without being obliged to use the exact
+same method as we expect them to do.
+
+It's worth nothing here that `diagnose` often contains multiple SCT functions. If that's the case,
+we can group them by putting them between curly brackets (`{...}`) and splitting them with
+semicolons: `;`.
 
 Examples:
 
 ```
 ? check_correct(
-  message = "This is a feedback_message")
+  check = check_value,
+  diagnose = {
+    check_references;
+    check_function(function = "SUM");
+  }
+)
+```
+
+```
+? check_correct(
+  check = check_value,
+  diagnose = {
+    check_operator(operator = "/");
+    check_references;
+    check_absolute_references;
+  }
 )
 ```

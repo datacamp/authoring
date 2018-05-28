@@ -164,6 +164,32 @@ Exercise <exercise_number> - SCT
 ```
 
 The SCT (Submission Correctness Test) sheet holds all information necessary to test a solution to an
-exercise.
+exercise. We developed a designated language in order to express what you want to test for each
+exercise. If you've built R or Python courses for DataCamp before, you might recognize elements from
+`testwhat` or `pythonwhat` in this language. There's a whole section on how to write SCTs, but
+here's an example of how a simple SCT could look:
 
+<iframe
+  src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRi2lqbMZa5jjQgCcSNjyvDWg8v-NYuQ2cj9Vut-0PbUc2an2BIDk-q6R53f6zzAaFquH_MYV-Y2aKp/pubhtml?gid=790829783&single=true"
+  style="width:100%;height:385px;border:none"
+></iframe>
 
+A few things you can already notice here are:
+
+* An SCT is defined in a certain cell. This means the check will be done on this cell in the user's
+  solution. Specifically in our example, the value in `F2` will be checked.
+* An SCT starts with a question mark `? ...`. If there are multiple SCTS in a cell, they all start
+  on a separate line and each line starts with `?`. Note that one SCT can cover multiple lines. A
+  more complex example would be:
+
+      ? check_formula(
+          suggestion="Better check the instructions again"
+        )
+      ? check_value
+
+* All SCT  functions (unless defined otherwise in the specific function's documentation) will
+  compare a value in the user's sheet with values in the solution. In our example, the value of the
+  user in `F2` is compared with the value in that cell in the solution.
+* SCT functions can have arguments, but a lot of them can be used without any arguments. If there
+  are no arguments, you are not required to use parentheses: `check_value` or `check_value()` are
+  equivalent.
