@@ -9,7 +9,7 @@ Write the exercise title. This should be
 
 ## Examples
 
-[Introduction to Spark in R using sparkly](https://www.datacamp.com/courses/introduction-to-spark-in-r-using-sparklyr) mostly contains sensible, informative exercise titles. However, the course uses the [Million Song Dataset](https://labrosa.ee.columbia.edu/millionsong), so a small number of exercises have pun titles, where they are named after songs. For example, An exercise on "select helper functions" is called "Mother's Little Helper" after the Rolling Stones hit.
+[Introduction to Spark in R using sparkly](https://www.datacamp.com/courses/introduction-to-spark-in-r-using-sparklyr) mostly contains sensible, informative exercise titles. However, the course uses the [Million Song Dataset](https://labrosa.ee.columbia.edu/millionsong), so a small number of exercises have pun titles, where they are named after songs. For example, an exercise on "select helper functions" is called "Mother's Little Helper" after the Rolling Stones hit.
 
 ## FAQs
 
