@@ -22,7 +22,7 @@ From [Computing the covariance](https://campus.datacamp.com/courses/statistical-
 
 ### What if there are several ways to solve an exercise?
 
-If the learning objective of the exercise is to teach the use of a particular function or bit of code, your instructions should ask the student to use that. In general however, you should be too prescriptive about how the student solves the task. This is particularly true in courses targeting more [advanced students](courses/design/personas.html#advanced-alex).
+If the learning objective of the exercise is to teach the use of a particular function or bit of code, your instructions should ask the student to use that. In general however, you should not be too prescriptive about how the student solves the task. This is particularly true in courses targeting more [advanced students](courses/design/personas.html#advanced-alex).
 
 ## Good ideas
 
