@@ -22,3 +22,19 @@ One or two funny titles per chapter is good; more than that is not.
 ### Include important keywords in the title
 
 The student ought to be able to get a rough idea of the course's flow by looking at the list of exercise titles on the contents page. That means that keywords should be included in the title.
+
+### Pretend it's a newspaper headline
+
+Newspaper headlines are chosen with two criteria in mind:
+
+- They should provide the reader with some idea of what the story is about.
+- They should entice the reader to actually read the story. 
+
+These ideas are equally applicable to exercise titles.
+
+## Common problems and their solutions
+
+## Duplicates
+
+Exercise titles should be unique throughout the course.
+
