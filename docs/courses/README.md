@@ -39,9 +39,9 @@ You can now learn about:
 
 -   [Course repository structure](repo-structure.md)
 -   [Exercises](exercises/README.md)
--   [Slides](slides.md)
+-   [Slides](exercises/video-exercises/creating-slides.md)
 -   [Assets](assets.md)
--   [Experience Points](xp.md)
+-   [Experience Points](exercises/technical-details/xp.md)
 -   [Course Design](design/README.md)
     -   [Learner Personas](design/personas.md)
     -   [Course Design Template](design/template.md)

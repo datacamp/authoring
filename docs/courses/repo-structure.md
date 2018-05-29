@@ -79,7 +79,7 @@ datasets:
 
 ### `chapterX.(R)md`
 
-A course is organized into chapters, each of which contains one or more exercises.
+A course is organized into chapters, each of which contains several exercises.
 Chapter files must be called `chapter1.md`, `chapter2.md`, and so on,
 and must start with a YAML header inside triple-dashed lines containing information about the chapter:
 

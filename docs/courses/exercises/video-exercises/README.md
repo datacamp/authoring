@@ -24,6 +24,6 @@ This minimal chapter contains a single short video exercise:
     ```
 
 See also:
-- [Creating slides and videos](/courses/slides.md)
+- [Creating slides and videos](/courses/exercises/video-exercises/creating-slides.md)
 - [Exercises](/courses/exercises/README.md)
-- [Experience Points](/courses/xp.md)
+- [Experience Points](/courses/exercises/technical-details/xp.md)

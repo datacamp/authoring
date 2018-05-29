@@ -80,7 +80,7 @@ resulting videos significantly more polished and professional.
 
 You will create all slides and scripts in the 'Slide Editing' mode of
 the [course editor](http://www.datacamp.com/teach). Detailed documentation on
-this process can be found [here](/courses/slides.md).
+this process can be found [here](/courses/exercises/video-exercises/creating-slides.md).
 
 A few pieces of advice before you get started:
 
