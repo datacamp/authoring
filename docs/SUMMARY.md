@@ -34,9 +34,9 @@
       - [Hints](courses/exercises/all-exercise-types/hints.md)
       - [Success Message](courses/exercises/all-exercise-types/success-message.md)
     - [Video Exercise](courses/exercises/video-exercises/README.md)
-      - [Scripts](courses/exercises/video-exercises/scripts.md]
-      - [Slides](courses/exercises/video-exercises/slides.md]
-      - [Review Rubric](courses/exercises/video-exercises/review-rubric.md]
+      - [Scripts](courses/exercises/video-exercises/scripts.md)
+      - [Slides](courses/exercises/video-exercises/slides.md)
+      - [Review Rubric](courses/exercises/video-exercises/review-rubric.md)
       - [Creating Slides](courses/exercises/video-exercises/creating-slides.md)
     - [Normal Exercise](courses/exercises/normal-exercises/README.md)
       - [Intro text](courses/exercises/normal-exercises/assignment-text.md)
