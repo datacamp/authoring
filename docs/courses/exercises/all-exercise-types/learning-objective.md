@@ -58,4 +58,4 @@ LO: The student knows how to ...
 
 ## See Also
 
-There is some related advice, including more pedagogic theory, in [Course-level learning objectives](courses/design/overview-objectives.md)
+There is some related advice, including more pedagogic theory, in [Course-level learning objectives](courses/design/overview-objectives.md).
