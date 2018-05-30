@@ -19,7 +19,7 @@ _In the remainder of this article, when `xwhat` is used, this means that the inf
 
 When a student starts an exercise on DataCamp, the coding backend:
 
-- Starts a student coding process, and executes the `pre_exercise_code` in this process. This code initializes the process with data, loads relevant packages,e tc, so that students can focus on the topic at hand.
+- Starts a student coding process, and executes the `pre_exercise_code` in this process. This code initializes the process with data, loads relevant packages, etc., so that students can focus on the topic at hand.
 - Starts a solution coding process at the same time, in which both the `pre_exercise_code` and the `solution` are executed. This coding process represents the 'ideal final state' of an exercise.
 
 When students click `Submit Answer`, the coding backend:
