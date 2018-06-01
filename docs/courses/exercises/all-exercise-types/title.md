@@ -2,9 +2,9 @@
 
 Write the exercise title. This should be
 
-1. Written in sentence case: only the first word and pronouns are capitalized.
+1. Written in sentence case: only the first word and proper nouns are capitalized.
 1. In American English.
-1. Less than 60 characters.
+1. Less than 50 characters.
 1. Informative as to the exercise's contents.
 
 ## Examples
