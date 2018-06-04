@@ -8,6 +8,7 @@
 ## Creating Content
 
 - [Courses](courses/README.md)
+<<<<<<< HEAD
   - [Repo Structure](courses/repo-structure.md)
   - [Design](courses/design/README.md)
     - [Design template](courses/design/template.md)
@@ -84,6 +85,68 @@
         - [Content guidelines](courses/spreadsheets/exercises/content-guidelines.md)
      - [Limitations](courses/spreadsheets/limitations.md)
   - [FAQ](faq/README.md)
+=======
+   - [Repo Structure](courses/repo-structure.md)
+   - [Design](courses/design/README.md)
+     - [Design template](courses/design/template.md)
+     - [Technical Help Resources](courses/design/technical-help-resources.md)
+     - [Step 1.1 Brainstorming Problems](courses/design/brainstorming-problems.md)
+     - [Step 1.2 Brainstorming Concepts](courses/design/brainstorming-concepts.md)
+     - [Step 1.3 Brainstorming Technologies](courses/design/brainstorming-technologies.md)
+     - [Step 1.4 Brainstorming Jargon](courses/design/brainstorming-jargon.md)
+     - [Step 1.5 Brainstorming Analogies](courses/design/brainstorming-analogies.md)
+     - [Step 1.6 Brainstorming Mistakes](courses/design/brainstorming-mistakes.md)
+     - [Step 1.7 Brainstorming Datasets](courses/design/brainstorming-datasets.md)
+     - [Learner Personas](courses/design/personas.md)
+     - [Step 2 Choose Learner Personas](courses/design/choose-learner-personas.md)
+     - [Step 3.1 Capstone Exercises](courses/design/exercises-capstone.md)
+     - [Step 3.2 Example Exercises](courses/design/exercises-examples.md)
+     - [Step 4 Lesson Flow](courses/design/lesson-flow.md)
+     - [Step 5.1 Course Description](courses/design/overview-description.md)
+     - [Step 5.2 Learning Objectives](courses/design/overview-objectives.md)
+     - [Step 5.3 Prerequisites](courses/design/overview-prerequisites.md)
+   - [Writing Exercises](courses/exercises/README.md)
+     - [Video Exercise](courses/exercises/video-exercise.md)
+       - [Slides](courses/exercises/slides.md)
+     - [Normal Exercise](courses/exercises/normal-exercise.md)
+     - [Multiple Choice Exercise](courses/exercises/multiple-choice-exercise.md)
+     - [Tab Exercise](courses/exercises/tab-exercise.md)
+       - [SQL Example](courses/exercises/examples/md/sql/TabExercise.md)
+       - [R Example](courses/exercises/examples/md/r/TabExercise.md)
+       - [Python Example](courses/exercises/examples/md/python/TabExercise.md)
+     - [Bullet Exercise](courses/exercises/bullet-exercise.md)
+       - [SQL Example](courses/exercises/examples/md/sql/BulletExercise.md)
+       - [R Example](courses/exercises/examples/md/r/BulletExercise.md)
+       - [Python Example](courses/exercises/examples/md/python/BulletExercise.md)
+     - [Technical Details](courses/exercises/technical-details/README.md)
+       - [Submission Correctness Tests](courses/exercises/technical-details/sct.md)
+       - [Experience Points (XP)](courses/exercises/technical-details/xp.md)
+       - [Unified Authoring API](courses/exercises/technical-details/unified-authoring-api.md)
+   - [Exercise Guidelines](courses/guidelines/README.md)
+     - [Course Naming Rules](courses/guidelines/course-naming.md)
+     - [Course Content](courses/guidelines/content.md)
+     - [Course Style](courses/guidelines/style.md)
+     - [Tab vs. Bullet Exercises](courses/guidelines/tab-vs-bullet-exercises.md)
+   - [Assets: Images & Datasets](courses/assets.md)
+   - [Course Exports](courses/exports.md)
+   - [Spreadsheets](courses/spreadsheets/README.md)
+     - [Technology](courses/spreadsheets/technology.md)
+     - [Course structure](courses/spreadsheets/course-structure.md)
+     - [Courses and chapters](courses/spreadsheets/courses-and-chapters.md):
+     - [Workbooks](courses/spreadsheets/workbooks.md):
+     - [Exercises](courses/spreadsheets/exercises.md):
+        - [General](courses/spreadsheets/exercises/general.md):
+        - [Meta Sheet](courses/spreadsheets/exercises/meta.md):
+        - [Solution Sheet](courses/spreadsheets/exercises/solution.md):
+        - [Sample Sheet](courses/spreadsheets/exercises/sample.md):
+        - [SCT Sheet](courses/spreadsheets/exercises/sct.md):
+        - [Video Exercises](courses/spreadsheets/exercises/video.md)
+        - [Multiple Choice Exercises](courses/spreadsheets/exercises/multiple-choice.md)
+        - [Content guidelines](courses/spreadsheets/exercises/content-guidelines.md):
+     - [Limitations](courses/spreadsheets/limitations.md):
+
+   - [FAQ](faq/README.md)
+>>>>>>> docs(spreadsheets): incorporate Richie's comments
 - [Challenges](challenges/README.md)
   - [Repo Structure](challenges/repo-structure.md)
   - [Content](challenges/content/README.md)
@@ -109,6 +172,7 @@
   - [File Structure](projects/projects-repo-structure.md)
   - [Enforced Guidelines](projects/projects-enforced-guidelines.md)
 - [Mobile](mobile/README.md)
+<<<<<<< HEAD
   - [Development Process](mobile/development.md)
   - [Repo Structure](mobile/repo-structure.md)
   - [Authoring](mobile/authoring.md)
@@ -120,6 +184,19 @@
     - [Multiple Choice](mobile/exercises/multiple-choice.md)
     - [Reorder](mobile/exercises/reorder.md)
   - [Guidelines](mobile/guidelines.md)
+=======
+   - [Development Process](mobile/development.md)
+   - [Repo Structure](mobile/repo-structure.md)
+   - [Authoring](mobile/authoring.md)
+   - [Exercises](mobile/exercises/README.md)
+      - [Select Output](mobile/exercises/select-output.md)
+      - [Select Table](mobile/exercises/select-table.md)
+      - [Select Code](mobile/exercises/select-code.md)
+      - [Tap](mobile/exercises/tap.md)
+      - [Multiple Choice](mobile/exercises/multiple-choice.md)
+      - [Reorder](mobile/exercises/reorder.md)
+   - [Guidelines](mobile/guidelines.md)
+>>>>>>> docs(spreadsheets): incorporate Richie's comments
 
 ## Teach Interface
 

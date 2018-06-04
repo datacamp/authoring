@@ -44,21 +44,19 @@ scaffold in it.
 ## Golden copy
 
 In the scaffold **workbook source**, you'll see a few sheets. The first sheet is called _Golden
-Copy_. This is the data you'll be using throughout the exercise of that workbook. The golden copy is
-the only sheet in your workbook source that will be copied fully to each student's workbook for that
-exercise. This means that you can put your styling, number formatting, and so on in this sheet and
-it will appear exactly as that in a sheet called 'Sheet 1' for each student that starts the
-exercise.
+Copy_. This is the data you'll be using throughout the exercise of that workbook. The golden copy
+will be copied fully to each student's workbook copy for that exercise. This means that you can put
+your styling, number formatting, and so on in this sheet and it will appear exactly as that in a
+sheet called 'Sheet 1' for each student that starts the exercise.
 
-The other sheets in the workbook source all start with 'Exercise ...'. We call these sheets the
-exercise sheets. Later in the sections about exercises, we'll talk about which data is preserved
-from your exercise sheets. You'll see that the Golden Copy sheet is the only sheet that retains all
-data, including styling and such.
+Sheets in the workbook source that start with 'Exercise ...' are called the exercise sheets. Later
+in the sections about exercises, we'll talk about which data is preserved from your exercise sheets.
+You'll see that the Golden Copy sheet, in contrast to exercise sheets, retains all data, including
+styling and such. The reason we use this technique is because it enabled us to implement a better
+user experience in transitioning between exercises in the same workbook, using the same Golden Copy.
 
-> #### info::Note
->
-> Currently you're limited to using one sheet through the exercises of spreadsheet courses.
-> There are plans to expand this to one 'editable' sheet and N sheets where you can put source data.
+Other than the Golden Copy and exercise sheets, you can add read-only sheets to your workbook
+source. These can contain source data, that can be used throughout the exercises of a workbook.
 
 ## Editing a workbook
 
@@ -70,6 +68,10 @@ interface_.
 In the workbook source, you'll find the **Golden copy** sheet as mentioned before. You can simply
 edit this sheet, and all of it's content will be copied a sheet named 'Sheet 1' of the student's
 worksheet when they start an exercise of this workbook.
+
+Between the Golden Copy and the first exercise sheet, you can add an arbitrary amount of read-only
+sheets. These will be copied to the user's workbook copy when they open an exercise. Remember that
+these sheets can not change througout the exercises of the workbook.
 
 We'll talk about editing exercise sheets in the section about exercises.
 

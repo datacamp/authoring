@@ -1,8 +1,8 @@
-# DataCamp spreadsheets
+# Spreadsheet courses
 
-[DataCamp spreadsheets](https://spreadsheets.datacamp.com) is a new way to teach your students
-spreadsheets. Since there are substantial difference between spreadsheets content and other content
-on DataCamp, this document will guide you through the authoring process of DataCamp spreadsheet
+[Spreadsheet courses](https://spreadsheets.datacamp.com) are an interactive way to teach your
+students how to use spreadsheets. Since there are substantial difference between spreadsheets
+courses and other content, this document will guide you through the authoring process of spreadsheet
 courses.
 
 Use the navigation on the left to browse to the topics related to spreadsheet course authoring. The
