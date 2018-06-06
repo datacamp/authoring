@@ -123,5 +123,5 @@ A `NormalExercise` starts with `## Title`, followed by a `metadata` block and a 
     ```
 
 See also:
-- [Exercises](/courses/exercises/README.md#exercise-blocks) page.
-- [Experience Points](/courses/xp.md)
+- [Exercises](/courses/exercises/technical-details/exercise-blocks.md) page.
+- [Experience Points](/courses/exercises/technical-details/xp.md)
