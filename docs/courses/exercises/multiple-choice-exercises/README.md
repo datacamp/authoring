@@ -102,13 +102,13 @@ Regardless of technology, the `test_mc()` function takes in two required argumen
 
 See also:
 - [Exercises](/courses/exercises/README.md#exercise-blocks)  
-- [Experience Points](/courses/xp.md)
+- [Experience Points](/courses/exercises/technical-details/xp.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 
 ![Pure Multiple Choice Exercise](/images/PlainMultipleChoiceExerciseR.png)
 
-A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question that does not display a console, i.e., does not have any coding.  Instead of using `test_mc` inside an `sct` block, you use a `feedbacks` block.
+A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question that does not display a console, i.e., does not have any coding.  Instead of using `test_mc` inside an `sct` block, you use a `feedback` block.
 
 ### Example
 
@@ -136,7 +136,7 @@ This chapter contains one `PureMultipleChoiceExercise`.  All of the blocks are e
     - C
     - D
 
-    `@feedbacks`
+    `@feedback`
 
     - A is not correct
     - B is correct!
@@ -168,11 +168,11 @@ This block lists the answers the student can choose from. The correct answer is 
     - C
     - D
 
-#### Feedbacks
+#### Feedback
 
 This block has a list corresponding to `@possible_answers` with feedback for each possible answer (including the correct one).
 
-    `@feedbacks`
+    `@feedback`
 
     - A is not correct
     - B is correct!

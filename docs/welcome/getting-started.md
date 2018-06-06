@@ -2,9 +2,7 @@
 
 In order to start creating courses, challenges and/or projects on the DataCamp platform you need to have a DataCamp account and a GitHub account. For courses and challenges (but not projects) you also need to authorize DataCamp to manage your GitHub account.
 
-The remainder of this page will walk you step-by-step through the setup process. Alternatively, you can follow along with this video:
-
-{% vimeo %}153250442{% endvimeo %}
+The remainder of this page will walk you step-by-step through the setup process.
 
 ## Create a DataCamp account
 
