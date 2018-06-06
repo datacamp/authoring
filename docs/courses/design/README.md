@@ -404,7 +404,8 @@ by writing a high-level course overview that consists of:
 - [a one-paragraph description](/courses/design/overview-description.md) (i.e., a sales pitch to students)
 - [half a dozen learning objectives](/courses/design/overview-objectives.md)
 - [a summary of prerequisites](/courses/design/overview-prerequisites.md)
-  and a list of any packages or other special technology the course will require.
+  and a finalized list of the datasets, special packages, or other items the course will require
+  that you have agreed with your CL.
 
 Doing this earlier often wastes effort,
 since material is usually added, cut, or moved around in earlier steps.
@@ -439,9 +440,13 @@ and show you how to use them efficiently.
 - Combine programs using pipes to process large data sets.
 - Write shell scripts to re-run command pipes with a varying number of command-line arguments.
 
-**Prerequisites and Packages**
+**Prerequisites**
 
 None.
+
+**Packages and Datasets**
+
+- Seasonal dental data CSV files.
 
 <!-- -------------------------------------------------------------------------------- -->
 
