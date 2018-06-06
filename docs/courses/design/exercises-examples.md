@@ -76,7 +76,7 @@ Each exercise should make the student complete one to four instructions, which r
 
 ### Can I write in a different file?
 
-Yes! Some instructors find that drafting all the exercises in the README gets confusing. If you find it easier, feel free to write the exercises in other files. One common approach is to have one code script/Jupyter notebook/R markdown file per chapter. There are two caveats: Firstly, don't call them `chapter1.md`, ..., `chapter 5.md`, since those names are reserved. Secondly, please link to the files from the README to make them easily discoverable.
+Yes! Some instructors find that drafting all the exercises in the README gets confusing. If you find it easier, feel free to write the exercises in other files. One common approach is to have one code script/Jupyter notebook/R markdown file per chapter. There are two caveats: Firstly, don't call them `chapter1.md`, ..., `chapter5.md`, since those names are reserved. Secondly, please link to the files from the README to make them easily discoverable.
 
 ## Good ideas
 
