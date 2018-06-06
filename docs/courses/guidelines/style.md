@@ -192,6 +192,7 @@ x <-
 ## Comments
 
 - Start each comment on a new line. The comment should begin with the comment symbol and a single space: `#`.
+- Capitalize the first letter of every comment.
 - If you have multiple sentences in your comment, end each with a period. If you have one sentence, no `.` is required.
 
 ~~~~~
