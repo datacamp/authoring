@@ -68,7 +68,7 @@ The type of course you are going to make affects the relative importance of diff
 The first step is to throw together some rough ideas
 so that you and your CL can make sure your thoughts about the course are aligned.
 To do this,
-write some point-form answers to three or four of the questions listed below.
+write some *short* point-form answers to three or four of the questions listed below.
 You aren't expected to answer all of them,
 and you may pose and answer others if you and your CL think it's helpful,
 but you should always include a couple of answers to the first.

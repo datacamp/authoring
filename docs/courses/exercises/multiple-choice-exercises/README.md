@@ -102,7 +102,7 @@ Regardless of technology, the `test_mc()` function takes in two required argumen
 
 See also:
 - [Exercises](/courses/exercises/README.md#exercise-blocks)  
-- [Experience Points](/courses/xp.md)
+- [Experience Points](/courses/exercises/technical-details/xp.md)
 
 ## Pure Multiple Choice Exercise {#pure-mce}
 

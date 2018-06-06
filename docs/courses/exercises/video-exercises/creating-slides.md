@@ -1,4 +1,4 @@
-# Slides
+# Creating Slides
 
 Each [VideoExercise](exercises/video-exercise.md) can have a slide deck associated with it. You can create slides for your course using the Teach Editor.
 
@@ -15,7 +15,7 @@ Once you have created a slide, you need to edit it:
 - Give the system a few seconds to start up.
 - Select the slide you want to work on in the slides outline. These slides will be sorted in the order of occurrence in the course and grouped by chapter.
 
-Please keep in mind that slide decks are limited to 600 words, and that we prefer them to be closer to 500.
+Please keep in mind that slide decks are limited to 600 words, and that we prefer them to be less than 400.
 
 ## Slide Deck Header
 

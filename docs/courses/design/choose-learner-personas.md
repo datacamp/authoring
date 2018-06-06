@@ -1,15 +1,25 @@
 # Step 2 - Who Is This Course for?
 
-Read the page of [sample learner personas](/courses/design/personas.html) and choose 1 or 2 of them as the most likely to benefit from your course. Write a sentence about the ones you chose stating how good a fit you think they might be.
+Read the page of [sample learner personas](/courses/design/personas.html) and choose 1 or 2 of them as the most likely to benefit from your course. Write a sentence about the ones you chose stating how good a fit you think they might be.  In brief, the five personas are:
 
+- Unaware Umberto: is new to statistics, programming, and the domain he's working in.
+- Starting Sindhu: has domain expertise, but not as much programming or statistics.
+- Coder Chen: is a strong programmer, but lacks domain expertise and statistical background.
+- Mathematical Marta: strong mathematical and statistical background, a little programming, completely new to the domain.
+- Advanced Alex: has all three kinds of knowledge.
+
+Note: the [full description of these personas](/courses/design/personas.html) mention specific technologies or domains,
+such as Python or epidemiology.
+When using these personas,
+replace these by equivalent levels of knowledge about technologies or domains appropriate to your course,
+e.g.,
+novice understanding of R but advanced understanding of medical imaging.
 
 ## Examples
 
-From a course on RNA-Seq analysis. After discussion with the Curriculum Lead, it was decided that the target audiences didn't exactly fit the sample personas, and that the trick to the course was balancing students with biology knowledge that wanted to learn R, and students who knew R but wanted to learn the biological application. 
+1. The author of an introductory course on data visualization with Python chose Marta, Sindhu, and Umberto as her audience.  Her reasoning is that Chen and Alex (who are both strong programmers) will be able to pick up the programming on their own without a course, but the other three all need a course to show them how code can create pictures.
 
-- Biologist. He/She works in a biology lab and generates data. Very little knowledge about R, it is the hard part.
-- Statistician with no prior knowledge about biology/scRNA-seq. He/She knows basic R.
-
+2. The author of a course on RNA-Seq analysis decided that her target audience included people who know biology but are lacking R and/or statistics.  She therefore picked Sindhu as the main learner persona for her course, and Alex as an additional persona.
 
 ## FAQs
 
@@ -19,8 +29,7 @@ You can comment on how good a fit the other personas would be for your course, b
 
 ### Can I invent my own personas?
 
-Yes! If you have a specific target audience in mind for your course, feel free to describe them in this step. You can discuss the new persona with your Curriculum Lead to decide whether or not it constitutes a realistic DataCamp student. 
-
+If necessary, but please discuss with your Curriculum Lead first to decide whether or not it constitutes a realistic DataCamp student.
 
 ## Good ideas
 

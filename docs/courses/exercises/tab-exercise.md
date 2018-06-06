@@ -8,7 +8,7 @@ A `TabExercise` presents an exercise as a series of short sub-exercises, which m
 2. [Tab Exercise in R](examples/md/r/TabExercise.md)
 3. [Tab Exercise in Python](examples/md/python/TabExercise.md)
 
-Please read [this article](/courses/guides/tab-vs-bullet-exercises.html) to understand how to choose between a `TabExercise` and a `BulletExercise`.
+Please read [this article](/courses/guidelines/tab-vs-bullet-exercises.html) to understand how to choose between a `TabExercise` and a `BulletExercise`.
 
 ## Authoring
 
