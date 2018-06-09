@@ -20,4 +20,5 @@ These types of exercises are currently supported:
 | [`BulletExercise`](bullet-exercise.md)                               | A series of connected sub-exercises |   
 
 
-
+![DataCamp for Teachers - Dashboard](/images/exercise-decision-tree.png)
+_What Exercise Should I Use?_
