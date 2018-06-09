@@ -8,6 +8,7 @@
 
 ## Creating Content
 
+- [Our Contract](contract.md)
 - [Courses](courses/README.md)
   - [Teach Dashboard](interface/dashboard.md)
     - [Create Content Dialog](interface/create-content-dialog.md)
