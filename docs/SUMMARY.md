@@ -33,7 +33,7 @@
     - [Step 5.2 Learning Objectives](courses/design/overview-objectives.md)
     - [Step 5.3 Prerequisites](courses/design/overview-prerequisites.md)
   - [Writing Exercises](courses/exercises/README.md)
-    - [Ideas for all Exercise Types](courses/exercises/all-exercise-types/README.md)
+    - [Ideas for All Exercise Types](courses/exercises/all-exercise-types/README.md)
       - [Learning Objective](courses/exercises/all-exercise-types/learning-objective.md)
       - [Title](courses/exercises/all-exercise-types/title.md)
       - [Hints](courses/exercises/all-exercise-types/hints.md)
