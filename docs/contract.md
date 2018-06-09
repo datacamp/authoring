@@ -27,13 +27,13 @@ The contract's key features are:
   The "non-exclusive" part means that you can use the material elsewhere,
   e.g., in other courses or workshops.
   However, if you provide it through another online course platform,
-  your revenue share from DataCamp will be reduced.
+  your revenue share from DataCamp may be reduced.
 
 - We pay you an advance upon delivery of the course,
   and then pay a royalty each quarter based on how many people complete the course.
   once the advance has been fully paid out.
   We're happy to talk one-to-one about the amounts,
-  and paying for course completions helps keep us both focused on course quality and engagement.
+  and paying for course completions helps maintain a focus on course quality and engagement.
 
 - The contract defines a timeline for delivering materials
   (typically six months for a full course, and less for projects and other kinds of content).
@@ -59,4 +59,6 @@ The contract's key features are:
   we can bring in someone else to do the updates
   and split the revenue between you and them according to the proportion of work done.
 
-- Liability is limited in both directions.
+- Liability is limited in both directions
+  with an exception in the case of infringement of intellectual property rights.
+  We take IP rights seriously and we expect the same from course instructors we collaborate with.
