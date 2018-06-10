@@ -65,6 +65,8 @@
       - [Course Content](courses/guidelines/content.md)
       - [Course Style](courses/guidelines/style.md)
       - [Tab vs. Bullet Exercises](courses/guidelines/tab-vs-bullet-exercises.md)
+      - [Exercise Critique: R](courses/guidelines/exercise-critique-r.md)
+      - [Exercise Critique: Python](courses/guidelines/exercise-critique-python.md)
     - [Technical Details](courses/exercises/technical-details/README.md)
       - [Submission Correctness Tests](courses/exercises/technical-details/sct.md)
       - [Experience Points (XP)](courses/exercises/technical-details/xp.md)
