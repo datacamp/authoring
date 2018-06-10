@@ -9,6 +9,10 @@ This document provides much of the information that is required to write a good 
 - Before you write any of the course spec, read everything up to [Step 1 - Brainstorming](/courses/design/#step-1-brainstorming).
 - As you begin each step (or sub-step), read the documentation for that step only.
 
+To help you understand what this design process is supposed to produce,
+we have included [several examples of well-written courses specs](/courses/design/examples/README.md)
+that you can refer to as you write your own.
+
 ## Introduction
 
 Designing a good course is as hard as designing good software.

@@ -16,6 +16,10 @@
   - [Repo Structure](courses/repo-structure.md)
   - [Design](courses/design/README.md)
     - [Design template](courses/design/template.md)
+    - [Course Design Examples](courses/design/examples/README.md)
+      - [Dimensionality Reduction](courses/design/examples/dimensionality-reduction.md)
+      - [Image Segmentation with Python](courses/design/examples/image-segmentation.md)
+      - [Stochastic Processes in R](courses/design/examples/stochastic-processes.md) by Dave Robinson
     - [Technical Help Resources](courses/design/technical-help-resources.md)
     - [Step 1.1 Brainstorming Problems](courses/design/brainstorming-problems.md)
     - [Step 1.2 Brainstorming Concepts](courses/design/brainstorming-concepts.md)
