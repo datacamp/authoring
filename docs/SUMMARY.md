@@ -5,6 +5,7 @@
 - [Welcome](README.md)
 - [Getting Started](welcome/getting-started.md)
 - [Creating Your Audition Video](courses/audition.md)
+- [Instructor Sales Referral Program](sales-referral.md)
 
 ## Creating Content
 
