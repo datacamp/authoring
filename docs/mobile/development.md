@@ -70,7 +70,7 @@ mobile-teach check
 If you want to exclude warnings:
 
 ```sh
-mobile-teach check | grep -v warning
+mobile-teach check --no-warnings
 ```
 
 If you want to run *only* the schema validation:
@@ -133,26 +133,16 @@ When you want to push to dev:
    mobile-teach check
    ```
 
-4. Reset the `development` branch to the content you want to test.
+4. Push your latest content to GitHub:
 
    ```sh
-   ## Checkout the development branch
-   git checkout -b development
-
-   ## Reset the development branch to your content
-   git reset --hard chapter-2
-
-   ## Force push development
-   git push origin development --force-with-lease
+   git checkout development
+   git push origin development
    ```
 
-   > #### info::Note
-   > This wipes out changes that you've committed directly to `development`so
-   > you should never work directly on the `development` branch! You should
-   > operate under the assumption that commits you make directly to
-   > `development` could disappear at any time.
+5. Wait just a few minutes to allow the development app to update.
 
-5. Check out your new content on the development app, make sure everything looks
+6. Check out your new content on the development app, make sure everything looks
    good.
 
 ### Production app
@@ -167,8 +157,8 @@ world:
    mobile-teach check
    ```
 
-2. Open a pull request (PR) for your chapter branch into the `master` branch on
-   GitHub.
+2. Open a pull request (PR) for the `development` branch into the `master`
+   branch on GitHub.
 
 3. DataCamp will review the PR and make suggestions for revisions.
 
@@ -176,10 +166,3 @@ world:
    will generate a new release.
 
 5. Your content is now live to the world!
-
-6. Start a new branch for the next chapter. For example, if you just merged
-   `chapter-1`, create and check out a new branch for `chapter-2`:
-
-   ```sh
-   git checkout -b chapter-2
-   ```

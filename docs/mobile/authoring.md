@@ -13,18 +13,16 @@ and the examples that you use.
 First, get your repo and development tools set up according to the [development
 process documentation](/mobile/development.md).
 
-Create and checkout a chapter branch to write your course in. For example:
+Create and checkout a `development` branch to write your course in. For example:
 
 ```sh
-git checkout -b chapter-1
+git checkout -b development
 ```
 
-Because mobile course content is typically reviewed and launched chapter by
-chapter, it's good practice to dedicate one branch to each chapter.
-
-> #### info::Note
-> You should author content on a chapter branch, *not* on the `master` or
-> `development` branches!
+> #### info::Note You should author content on the `development` branch, *not*
+> on the `master` branch. The `development` branch is linked to the [development
+> app](/mobile/development.md#development-app), while the `master` branch is
+> linked to the [live production app](/mobile/development.md#production-app)!
 
 You are free to use whatever editing tools you like on your local repository, eg
 Sublime, Vim, Emacs, etc. It can be helpful to use an IDE that allows you to
