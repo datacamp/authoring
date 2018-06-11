@@ -1,10 +1,10 @@
 # Courses
 
-Course consists of series of videos, slides, and different types of exercises. Each course combines brief lectures with hands-on coding and other exercises.
+A course consists of series of videos, slides, and different types of exercises. A typical premium course combines brief video lectures with hands-on coding exercises.
 
 ## Creating a Course
 
-In order to create a course make sure you are signed in to your [DataCamp](https://www.datacamp.com) account.
+To create a course make sure you are signed in to your [DataCamp](https://www.datacamp.com) account.
 Once you are signed in, go to [DataCamp for Teachers](https://www.datacamp.com/teach).
 
 ![DataCamp for Teachers - Dashboard](/images/courses/teach-dashboard.png)
@@ -39,9 +39,9 @@ You can now learn about:
 
 -   [Course repository structure](repo-structure.md)
 -   [Exercises](exercises/README.md)
--   [Slides](slides.md)
+-   [Slides](exercises/video-exercises/creating-slides.md)
 -   [Assets](assets.md)
--   [Experience Points](xp.md)
+-   [Experience Points](exercises/technical-details/xp.md)
 -   [Course Design](design/README.md)
     -   [Learner Personas](design/personas.md)
     -   [Course Design Template](design/template.md)

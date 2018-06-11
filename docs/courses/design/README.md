@@ -9,6 +9,10 @@ This document provides much of the information that is required to write a good 
 - Before you write any of the course spec, read everything up to [Step 1 - Brainstorming](/courses/design/#step-1-brainstorming).
 - As you begin each step (or sub-step), read the documentation for that step only.
 
+To help you understand what this design process is supposed to produce,
+we have included [several examples of well-written courses specs](/courses/design/examples/README.md)
+that you can refer to as you write your own.
+
 ## Introduction
 
 Designing a good course is as hard as designing good software.
@@ -68,7 +72,7 @@ The type of course you are going to make affects the relative importance of diff
 The first step is to throw together some rough ideas
 so that you and your CL can make sure your thoughts about the course are aligned.
 To do this,
-write some point-form answers to three or four of the questions listed below.
+write some *short* point-form answers to three or four of the questions listed below.
 You aren't expected to answer all of them,
 and you may pose and answer others if you and your CL think it's helpful,
 but you should always include a couple of answers to the first.
@@ -361,7 +365,7 @@ Note:
 - You are likely to discover things you forgot to list earlier during this stage,
   so don't be surprised if you have to double back a few times.
   
-  More advice on [lesson flow](/courses/design/lesson-flow.md).
+[See here](/courses/design/lesson-flow.md) for more advice on lesson flow.
 
 ### Running Example
 
@@ -404,6 +408,8 @@ by writing a high-level course overview that consists of:
 - [a one-paragraph description](/courses/design/overview-description.md) (i.e., a sales pitch to students)
 - [half a dozen learning objectives](/courses/design/overview-objectives.md)
 - [a summary of prerequisites](/courses/design/overview-prerequisites.md)
+  and a finalized list of the datasets, special packages, or other items the course will require
+  that you have agreed with your CL.
 
 Doing this earlier often wastes effort,
 since material is usually added, cut, or moved around in earlier steps.
@@ -441,6 +447,10 @@ and show you how to use them efficiently.
 **Prerequisites**
 
 None.
+
+**Packages and Datasets**
+
+- Seasonal dental data CSV files.
 
 <!-- -------------------------------------------------------------------------------- -->
 

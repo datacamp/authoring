@@ -22,7 +22,7 @@ The title of an exercise needs to be concise and fit within a line in the interf
 
 ####### E1. All Exercises should have a title of length 5 - 50 characters (recommended is 30) {#E1}
 
-### Normal Exercise
+### NormalExercise
 
 Interactive coding exercises are the most commonly used exercise type on the platform. They consist of seven components: __assignment__, __instructions__, __pre_exercise_code__, __sample_code__, __solution__, __hint__, and __sct__. In this section, we will discuss guidelines and rules for these components.
 
