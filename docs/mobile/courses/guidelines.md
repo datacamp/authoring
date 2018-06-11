@@ -1,7 +1,7 @@
 # Guidelines
 
 This page is an exhaustive list of the content guidelines enforced by the
-[`mobile-teach` linter](/mobile/development.md#linting).
+[`mobile-teach` linter](/mobile/courses/development.md#linting).
 
 ## Chapter guidelines
 

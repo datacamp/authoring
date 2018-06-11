@@ -106,7 +106,7 @@ assets:
 ```
 
 All the key names are case sensitive. The [`mobile-teach`
-check](/mobile/development.md) command will flag any mistakes or missing fields
+check](/mobile/courses/development.md) command will flag any mistakes or missing fields
 in the manifest.
 
 There are 4 key components to the manifest:

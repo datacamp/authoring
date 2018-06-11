@@ -1,10 +1,10 @@
 # Tap
 
-Tap exercises are similar to a [Select Code](/mobile/exercises/select-code.md)
-exercise, in that student's are asked to produce the code that generates a given
-output. In a Tap exercise, however, the framework for the code block is provided
-with 1 or more blanks, and students only need to fill in the blanks from a set
-of possibilities.
+Tap exercises are similar to a [Select
+Code](/mobile/courses/exercises/select-code.md) exercise, in that student's are
+asked to produce the code that generates a given output. In a Tap exercise,
+however, the framework for the code block is provided with 1 or more blanks, and
+students only need to fill in the blanks from a set of possibilities.
 
 In order to specify the location of blanks, Tap exercises require a special
 `code` block - it must include at least one `??` placeholder. Each `??`
