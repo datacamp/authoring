@@ -5,12 +5,12 @@ Mobile:
 
 | Type                                                    | Description                                                               |
 | :---                                                    | :----------                                                               |
-| [Select Output](/mobile/exercises/select-output.md)     | What is the output of this code?                                          |
-| [Select Table](/mobile/exercises/select-table.md)       | What is the output of this code? (When the output is a table, eg for SQL) |
-| [Select Code](/mobile/exercises/select-code.md)         | Select the code to return the output.                                     |
-| [Tap](/mobile/exercises/tap.md)                         | Complete the code to return the output.                                   |
-| [Multiple Choice](/mobile/exercises/multiple-choice.md) | Answer the multiple choice question.                                      |
-| [Reorder](/mobile/exercises/reorder.md)                 | Reorder the code to return the output.                                    |
+| [Select Output](/mobile/courses/exercises/select-output.md)     | What is the output of this code?                                          |
+| [Select Table](/mobile/courses/exercises/select-table.md)       | What is the output of this code? (When the output is a table, eg for SQL) |
+| [Select Code](/mobile/courses/exercises/select-code.md)         | Select the code to return the output.                                     |
+| [Tap](/mobile/courses/exercises/tap.md)                         | Complete the code to return the output.                                   |
+| [Multiple Choice](/mobile/courses/exercises/multiple-choice.md) | Answer the multiple choice question.                                      |
+| [Reorder](/mobile/courses/exercises/reorder.md)                 | Reorder the code to return the output.                                    |
 
 ...but they all share a similar structure. In general, you can think of an
 exercise as a short code vignette comprising various blocks in the following
@@ -34,14 +34,14 @@ In the example above, the use of the `distractor_output` field indicates this
 exercise will be a Select Output exercise. Other distractor types will result in
 different exercise types:
 
-* `distractor_output` -> [Select Output](/mobile/exercises/select-output.md)
-* `distractor_table`  -> [Select Table](/mobile/exercises/select-table.md)
-* `distractor_code`   -> [Select Code](/mobile/exercises/select-code.md)
-* `distractor_blanks` -> [Tap](/mobile/exercises/tap.md)
-* `distractor_text`   -> [Multiple Choice](/mobile/exercises/multiple-choice.md)
+* `distractor_output` -> [Select Output](/mobile/courses/exercises/select-output.md)
+* `distractor_table`  -> [Select Table](/mobile/courses/exercises/select-table.md)
+* `distractor_code`   -> [Select Code](/mobile/courses/exercises/select-code.md)
+* `distractor_blanks` -> [Tap](/mobile/courses/exercises/tap.md)
+* `distractor_text`   -> [Multiple Choice](/mobile/courses/exercises/multiple-choice.md)
 
 The only exercise type that does not require a distractor field is the
-[Reorder](/mobile/exercises/reorder.md) exercise.
+[Reorder](/mobile/courses/exercises/reorder.md) exercise.
 
 Let's dig into each of the blocks...
 
@@ -63,7 +63,7 @@ key: c11dbdf1-49c9-408a-a1e4-885431af2196
 ```
 
 This is a unique UUID for the exercise. You can find some tips for working
-with/generating UUIDs [here](/mobile/authoring.md/#working-with-uuids).
+with/generating UUIDs [here](/mobile/courses/authoring.md/#working-with-uuids).
 
 ## context
 
@@ -148,7 +148,7 @@ be clear but not aggressive.
 > make, and then provides useful `feedback` explaining why that distractor is
 > wrong!
 
-[Reorder](/mobile/exercises/reorder.md) and [Tap](/mobile/exercises/tap.md)
+[Reorder](/mobile/courses/exercises/reorder.md) and [Tap](/mobile/courses/exercises/tap.md)
 exercises in particular have special requirements. Refer to the documentation
 pages of those exercise types for more information.
 
@@ -241,7 +241,7 @@ tabs:
 
 Tabs appear in the top right of the exercise and serve as a way to display
 datasets or files. The appropriate asset must be defined in the [`assets`
-section of the course manifest](/mobile/repo-structure.md#assets-metadata). A tab
+section of the course manifest](/mobile/courses/repo-structure.md#assets-metadata). A tab
 field has two subfields: `key`, which is the alias for the asset as defined in
 the manifest, and `type`, which specifies how to render the asset. Currently
 only `file` and `table` are supported.

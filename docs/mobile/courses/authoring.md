@@ -11,28 +11,26 @@ and the examples that you use.
 ## Getting started
 
 First, get your repo and development tools set up according to the [development
-process documentation](/mobile/development.md).
+process documentation](/mobile/courses/development.md).
 
-Create and checkout a chapter branch to write your course in. For example:
+Create and checkout a `development` branch to write your course in. For example:
 
 ```sh
-git checkout -b chapter-1
+git checkout -b development
 ```
 
-Because mobile course content is typically reviewed and launched chapter by
-chapter, it's good practice to dedicate one branch to each chapter.
-
-> #### info::Note
-> You should author content on a chapter branch, *not* on the `master` or
-> `development` branches!
+> #### info::Note You should author content on the `development` branch, *not*
+> on the `master` branch. The `development` branch is linked to the [development
+> app](/mobile/courses/development.md#development-app), while the `master` branch is
+> linked to the [live production app](/mobile/courses/development.md#production-app)!
 
 You are free to use whatever editing tools you like on your local repository, eg
 Sublime, Vim, Emacs, etc. It can be helpful to use an IDE that allows you to
 expand snippets, and to write a snippet expansion for different exercise
 types. Bonus points if your IDE of choice allows you to automatically [generate
-UUIDs](/mobile/authoring.md#working-with-uuids) for your exercises.
+UUIDs](/mobile/courses/authoring.md#working-with-uuids) for your exercises.
 
-Visit the [exercises documentation](/mobile/exercises/README.md) to learn what
+Visit the [exercises documentation](/mobile/courses/exercises/README.md) to learn what
 exercise types are available, how to write them, and see some examples.
 
 The best workflow is generally to open an appropriate interpreter side by side
@@ -69,7 +67,7 @@ line comment for each topic that you want to address in the lesson. For example:
 
 Then write an exercise for each topic. You can familiarize yourself with how
 exercises work by perusing the [exercises
-documentation](/mobile/exercises/README.md).
+documentation](/mobile/courses/exercises/README.md).
 
 Because space is so limited, it's extra important to split concepts up into the
 smallest possible unit that can be explained in a single exercise. For example,
@@ -102,7 +100,7 @@ context in a practice exercise is when you need to set up a scenario for the
 exercise.
 
 If you use a comment scaffold for the course lessons as [outlined
-above](/mobile/authoring.md#course-lessons), then it's easy to copy and paste
+above](/mobile/courses/authoring.md#course-lessons), then it's easy to copy and paste
 all the individual topics that you need to hit in the practice. Drilling
 individual concepts in the practice lesson is welcome, but you should also write
 integrative exercises that combine concepts across lessons.
@@ -162,16 +160,16 @@ need 99% of the time.
 
 [This online YAML parser](https://yaml-online-parser.appspot.com) can also be
 useful for diagnosing bugs in YAML. [The `mobile-teach`
-linter](/mobile/development.md#linting) should be able to clearly pinpoint 100%
+linter](/mobile/courses/development.md#linting) should be able to clearly pinpoint 100%
 of errors, however.
 
 ## Working with UUIDs
 
 Currently, UUIDs must be generated manually to serve as the unique key for every
-[course](/mobile/repo-structure.md#course-metadata),
-[chapter](/mobile/repo-structure.md#chapter-metadata),
-[lesson](/mobile/repo-structure.md#lesson-metadata), and
-[exercise](/mobile/exercises/README.md#key). This can alleviate this annoyance
+[course](/mobile/courses/repo-structure.md#course-metadata),
+[chapter](/mobile/courses/repo-structure.md#chapter-metadata),
+[lesson](/mobile/courses/repo-structure.md#lesson-metadata), and
+[exercise](/mobile/courses/exercises/README.md#key). This can alleviate this annoyance
 by finding a UUID generator package for your text editor or IDE of choice. Some
 examples:
 
