@@ -11,7 +11,9 @@
 
 - [Our Contract](contract.md)
 - [Courses](courses/README.md)
-  - [Teach Dashboard](interface/dashboard.md)
+  - [Teach](interface/dashboard.md)
+    - [Onboarding](interface/onboarding.md)
+    - [Dashboard](interface/dashboard.md)
     - [Create Content Dialog](interface/create-content-dialog.md)
     - [Content Overview](interface/content-overview.md)
   - [Repo Structure](courses/repo-structure.md)
@@ -148,6 +150,7 @@
 ## Teach Interface
 
 - [Teach Dashboard](interface/dashboard.md)
+  - [Onboarding](interface/onboarding.md)
   - [Create Content Dialog](interface/create-content-dialog.md)
   - [Content Overview](interface/content-overview.md)
 - [Teach Editor](interface/teach-editor.md)
