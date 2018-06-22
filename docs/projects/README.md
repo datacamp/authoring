@@ -5,7 +5,7 @@ A DataCamp Project is an exciting new teaching format that allow students to fle
 
 If you've never seen a DataCamp project then you'll quickly get the gist by watching this intro video:
 
-<center><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W86aAYmcsSM?rel=0" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/HpVDKV2KALw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 > #### info::WANT TO CREATE A PROJECT? 
 > Currently only invited creators can create Projects on DataCamp, but we're always looking for engaged professionals and academics who want to help us teach Data Science. If you want to create a Project, please contact david.venturi@datacamp.com for more info!
