@@ -4,17 +4,24 @@ We designed our learning platform and product to realize a vision. Content plays
 
 ## Courses
 
-Shorter courses have higher completion rates. A reasonable target for courses should be that they are completable within 2.5 to 3.5 hours. The following guidelines are in place to ensure that courses are short.
+Shorter courses are more digestible and have higher completion rates. A reasonable target for courses should be that they are completable within 4 hours. The following guidelines are in place to ensure that courses enable learners to apply their learning as quickly as possible.
 
-####### C1. A course should should consist of 4 - 5 chapters. {#C1}
-####### C2. A course should consist of 40 - 60 exercises. {#C2}
+####### C1. A course should should consist of 4 chapters. {#C1} 
+####### C2. A chapter should consist of 4 lessons (except for chapter 1 which always has 3 lessons). {#C2} 
+####### C3. A course should consist of 40 - 60 exercises. {#C3} 
+
+As a reminder, each lesson is comprised of:
+
+- a video lesson with slides, e.g. sample video lesson 
+- one multiple choice exercise following the video 
+- 2-4 coding exercises 
 
 ## Chapters
 
 Completing a chapter gives the user a sense of success. In particular, the first chapter should be short and concise, as it sets the tone for the course, and is at the top of the funnel. The following guidelines are in place to ensure that chapters are short, and completeable within 30 - 45 minutes.
 
-####### CH1. Chapter 1 should consist of 8 - 12 exercises (recommended is 10) {#CH1}
-####### CH2. Chapters 2 - 5 should consist of 10 - 16 exercises (recommended is 15) {#CH2}
+####### CH1. Chapter 1 should consist of 3 lessons with a total 8 - 12 exercises (recommended is 10). {#CH1} 
+####### CH2. Chapters 2 - 4 should consist of 10 - 16 exercises (recommended is 15). {#CH2} 
 
 ## Exercises
 
@@ -77,6 +84,8 @@ The following guidelines are in place to ensure that MultipleChoiceExercises are
 ####### MC1. A MultipleChoiceExercise should have assignment text of length 30 - 600 characters (recommended is 540) {#MC1}
 ####### MC2. A MultipleChoiceExercise should have options of length 10 - 300 characters (recommended is 240, this is the aggregate length across all options in the exercise) {#MC2}
 ####### MC3. A MultipleChoiceExercise should have between 3 - 5 options (recommended is 4) {#MC3}
+
+*Please note* that we do not allow for more than 5 multiple choice exercises in an entire course. We also do not allow back to back multiple choice questions. This ensures learners do most of their learning by doing in our coding exercises.
 
 ### BulletExercise
 
