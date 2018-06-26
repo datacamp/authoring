@@ -381,7 +381,6 @@ The chapter and lesson outline for the Unix shell course is:
    1. What a shell is; how it compares to a graphical interface.
    2. Basic commands (`whoami`; `pwd`; `ls`).
    3. Moving around (cd; the special paths `.` and `..`).
-   4. Creating, deleting, and renaming (`cp`; `mv`; `rm`; `mkdir`; `rmdir`).
 2. Manipulating Data
    1. Getting rows (`head`; `tail`).
    2. Getting columns (`cut`)
@@ -397,7 +396,7 @@ The chapter and lesson outline for the Unix shell course is:
    2. Permissions; using `!#`.
    3. Using arguments in shell scripts.
    4. Shell variables.
-   5. Loops.
+   
 
 The datasets are:
 
