@@ -45,15 +45,21 @@ You need to have basic competence at writing markdown documents and using github
 - Chapters are made up of **lessons**,
   each of which has a short video and a handful of **exercises**.
 
-A course typically has about the same amount of content as a half-day conference workshop,
-and contains 44-60 exercises (including videos) and 4-5 chapters.
+A DataCamp course typically has about the same amount of content as a half-day conference workshop (about 4 hours),
+and contains 4 chapters, 15 lessons, and approximately 44-60 exercises (including videos).
+
 A typical breakdown is:
 
-- Chapter 1: 8-12 exercises
-- Chapter 2: 10-16 exercises
-- Chapter 3: 10-16 exercises
-- Chapter 4: 10-16 exercises
-- Chapter 5 (optional): 10-16 exercises
+- Chapter 1 has 3 lessons. This chapter is shorter than the rest since it serves as an introduction to the topic.
+- Chapter 2 has 4 lessons. 
+- Chapter 3 has 4 lessons.
+- Chapter 4 has 4 lessons. 
+
+Each lesson is comprised of:
+
+- a video lesson with slides, e.g. [sample video lesson](https://campus.datacamp.com/courses/supervised-learning-with-scikit-learn/classification?ex=9) 
+- one multiple choice exercise following the video
+- 2-4 coding exercises
 
 ## Types of courses
 
