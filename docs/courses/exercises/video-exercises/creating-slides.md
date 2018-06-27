@@ -62,6 +62,7 @@ The header of each slide holds the `type` of that slide and can have two extra f
 
 - `disable_transition`: disables the transition to the slide if its value is `true`.
 - `center_content`: centers all content in a slide if its value is `true`.
+- `code_zoom`: a percentage scaling value for enlarging code content (e.g., `120` means "20% bigger than normal").
 
 ### Previewing Slides
 
