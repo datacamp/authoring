@@ -41,8 +41,6 @@ You can add several types of slides to your course:
 
 - `TitleSlide`: typically the first slide of a slide deck. It contains the title of the slide and the course name.
 - `FullSlide`: the most basic slide. It has a title and one big container for content underneath.
-- `FullImageSlide`: a slide which has no title, only an image. It's filled in the most appropriate way automatically.
-- `FullCodeSlide`: similar to `FullSlide`, but with a special option `code_zoom` described below.
 - `TwoColumns`: a slide containing a title and two columns for content.
 - `TwoRows`: a slide containing a title and two rows for content.
 - `TwoRowsTwoColumns`: a slide containing a title and a 2x2 grid for content.
@@ -64,7 +62,6 @@ The header of each slide holds the `type` of that slide and can have two extra f
 
 - `disable_transition`: disables the transition to the slide if its value is `true`.
 - `center_content`: centers all content in a slide if its value is `true`.
-- `code_zoom` (only for `FullCodeSlide`): a percentage scaling value for enlarging code content (e.g., `120` means "20% bigger than normal").
 
 ### Previewing Slides
 
