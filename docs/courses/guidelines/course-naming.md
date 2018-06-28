@@ -39,7 +39,7 @@ Good: "Big Data in Spark using SparkR"
 
 ## Use internationally understandable names
 
-In particular, avoid things the US university course numbering scheme (`101`, etc.).
+In particular, avoid the US university course numbering scheme (`101`, etc.).
 
 Bad: "Exploring Pitch Data in R"  
 Good: "Exploring Baseball Pitch Data in R"
