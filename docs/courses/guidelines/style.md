@@ -20,7 +20,7 @@ Bad: We  are going to run a regression model.
 
 ### Use parentheses after function/method names
 
-It helps to distunguish from variable names.
+It helps to distinguish from variable names.
 
 Good: Call the `mean()` function.   
 Bad: Call the `mean` function.
