@@ -11,7 +11,7 @@ The USA contains our largest group of students.
 Good: This standardizes the modeling of colors.  
 Bad: This standardises the modelling of colours.  
 
-### Use "you" rather than "we'
+### Use "you" rather than "we"
 
 Supposedly it's empowering.
 
