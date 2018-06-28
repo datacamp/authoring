@@ -1,6 +1,6 @@
 # Course Style
 
-The main purpose of the DataCamp's style guidelines is to build out a course library that has a consistent look and feel for students.
+Please follow DataCamp's style guidelines, to help create a consistent look and feel for students.
 
 ## Text
 
@@ -120,7 +120,7 @@ Bad:
 y <- sum(x)
 ~~~~~
 
-### Don't use backticks or quotes to refer to variables or functions inside comments:
+### Don't use backticks or quotes to refer to variables or functions inside comments
 
 Good: 
 
