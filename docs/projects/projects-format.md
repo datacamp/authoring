@@ -26,7 +26,7 @@ After that follows around 8 - 10 *tasks*, where each task consists of the follow
 2. `@context` : `markdown` - The context for the task. Will be part of the student's notebook.
 3. `@instructions` : `markdown` - The instructions for the task. Will be displayed in the sidebar.
 4. `@hint` : `markdown` - The hint that will be displayed at the bottom of the sidebar.
-5. `@sample_code` : `code` - The code scaffold that the student will edit in the live project. 
+5. `@sample_code` : `code` - The code scaffold that the student will edit in the live project.
 6. `@solution` : `code` - The solution to the task, it's currently not shown in the live project.
 7. `@tests` : `code` - Tests that check if the student is doing the right thing in the task.
 
@@ -39,7 +39,7 @@ This image does not show the `@solution` and `@tests` cells as these are never s
 You are free to include any other cells in a Project notebook (for example to store material you're not using or for a todo list), but *all extra cells* -- except those having the tags above -- will be filtered away and will not be part of the final live project.
 
 
-> #### info::Check out a live project! 
+> #### info::Check out a live project!
 > Maybe the easiest way of understanding the structure of a DataCamp Project notebook is to check out an already existing Project. For example, download and take a look at the `project.ipynb` in *Dr. Semmelweis and the discovery of handwashing*. Here is the [python GitHub repo](https://github.com/datacamp/projects-discovery-of-handwashing-python) (and [live project](https://projects.datacamp.com/projects/20)), here is the [R GitHub repo](https://github.com/datacamp/projects-discovery-of-handwashing-r) (and [live project](https://projects.datacamp.com/projects/49)).
 
 The format of the different cells
@@ -48,7 +48,7 @@ The format of the different cells
  > `type:NotebookTask` : `markdown` < {#notebooktask}
  ----------------------------------------------------
 
-This is the `markdown` cell that marks the beginning of a new task. It should contain a one-line, second lever header (H2), with the title of the task. In markdown a second lever header is written like this: 
+This is the `markdown` cell that marks the beginning of a new task. It should contain a one-line, second lever header (H2), with the title of the task. In markdown a second lever header is written like this:
 
 ```
 ## A H2 header in markdown
@@ -119,7 +119,7 @@ The `@instructions` to the first task should include a "Good to know" section wh
 > `@hint` : `markdown` < {#hint}
 ---------------------------------
 
-This is the `markdown` cell that populates the *hint tab* at the bottom of the instructions sidebar. While the `@instructions` can also include help and hints, the hint tab is meant for Students who are *stuck*. 
+This is the `markdown` cell that populates the *hint tab* at the bottom of the instructions sidebar. While the `@instructions` can also include help and hints, the hint tab is meant for Students who are *stuck*.
 
 **Style guide:**
 
@@ -135,26 +135,26 @@ This is the `markdown` cell that populates the *hint tab* at the bottom of the i
 > `@sample_code` : `code` < {#sample-code}
 -------------------------------------------
 
-This is the `code` cell that will show up in the student's notebook. It should have the same disposition as the `@solution` but with parts or all of the code missing. The purpose of the `@sample_code` is to give the student enough structure and code scaffolding to be able to complete the task. 
+This is the `code` cell that will show up in the student's notebook. It should have the same disposition as the `@solution` but with parts or all of the code missing. The purpose of the `@sample_code` is to give the student enough structure and code scaffolding to be able to complete the task.
 
-**Style guide:**  
+**Style guide:**
 
 - It should consist of between 1 to 10 lines of code and comments.
 - The student should have to complete between 1 to 5 lines of code.
 - Use `...` in python and `....` in R to indicate that code needs to be filled in.
-  - For code within a line: 
+  - For code within a line:
     ```
     # For Python
     horse_data = ...
-    
+
     # For R
     horse_data <- ....
     ```
   - For code where one or more lines are missing:
     ```
     # For Python
-    # ... YOUR CODE FOR TASK 3 ... 
-    
+    # ... YOUR CODE FOR TASK 3 ...
+
     # For R
     # .... YOUR CODE FOR TASK 3 ....
     ```
@@ -182,7 +182,7 @@ This is the `code` cell that is the completed version of the corresponding `@sam
 - For R
   - Use `underscore_separated` identifiers.
   - Use "double quotes for strings.
-  - Use the `<-` arrow for assignment. 
+  - Use the `<-` arrow for assignment.
 
 
 **python example**
@@ -207,14 +207,21 @@ This is the `code` cell that checks the Student's solution to the task. The main
 
 ### Tests for python ###
 
-For python, the tests are written using [the nose testing framework](http://nose.readthedocs.io/en/latest/#installation-and-quick-start) and uses the [`ipython_nose` magic](https://github.com/akaihola/ipython_nose). Every `@tests` cell needs to start with the [ipython_nose magic](https://github.com/akaihola/ipython_nose) `%%nose`. 
+For python, the tests are written using [the nose testing framework](http://nose.readthedocs.io/en/latest/#installation-and-quick-start) and uses the [`ipython_nose` magic](https://github.com/akaihola/ipython_nose). Every `@tests` cell needs to start with the [ipython_nose magic](https://github.com/akaihola/ipython_nose) `%%nose`.
 
 [**Click here for examples of different python tests and for how to install nose and ipython_nose**](projects-test-examples.md/#tests-python).
 
 **python example:**
 ![](media/python_tests_example.png)
 
+### Tests for Bash ###
 
+For Bash, the tests also use ipython_nose like python, the only difference that as well as the `%%nose` needed at the start of the test cell, it also needs to include `#DC_GRADE`.
+
+[**Click here for examples of different bash tests and for how to install nose and ipython_nose**](projects-test-examples.md/#tests-bash).
+
+**bash example:**
+![](media/bash_tests_example.png)
 
 ### Tests for R ###
 
