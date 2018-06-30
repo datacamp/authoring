@@ -16,7 +16,7 @@ You should receive an invitation to join Asana from DataCamp. Follow the instruc
 
 3. Go to your Course project in Asana.
 
-Here you'll see all of the tasks involved in creating your content on DataCamp. Take some time to preview some of the tasks that will lead you to your content launch.
+Here you'll see all of the *tasks* involved in creating your content on DataCamp. Take some time to preview some of the tasks that will lead you to your content launch.
 
 ![screenshot3](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-project-view.png)
 
@@ -26,7 +26,7 @@ You can also preview the various stages in the content development by clicking o
 
 4. Asana Tips and Tricks
 
-* Tasks assigned to me
+#### Tasks assigned to me
 
 You can see the tasks assigned to you in multiple places:
 
@@ -41,25 +41,25 @@ Make sure to click into your tasks to see subtasks (if applicable).
 
 ![screenshot7](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-subtasks.png)
 
-* Tasks have due dates
+#### Tasks have due dates
 
 When you are assigned a task, make sure to take note of the due date associated with it. 
 
 ![screenshot8](https://github.com/datacamp/authoring/blob/Asana-instructions/Assigning-duedates.png)
 
-* Completing tasks
+#### Complete tasks
 
 Once you complete a task, you can click on the checkmark to alert all project members that you've completed it. That way, you won't get reminders if you've already done what you've been assigned!
 
 ![screenshot9](https://github.com/datacamp/authoring/blob/Asana-instructions/Completing-tasks-in-Asana.png)
 
-* Add comments to tasks
+#### Add comments to tasks
 
 If you have questions or comments about tasks, feel free to use the comment feature. You can make sure people are alerted of your comment by using *@*followed by the person's name.
 
 ![screenshot10](https://github.com/datacamp/authoring/blob/Asana-instructions/Comments.png)
 
-For more information on how to use Asana, watch their [product overview video](https://www.youtube.com/watch?v=IMAFWVLGFyw).
+For more information on how to use Asana, watch their product overview video [here](https://www.youtube.com/watch?v=IMAFWVLGFyw).
 
 # Set up your accounts
 
