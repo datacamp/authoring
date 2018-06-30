@@ -1,21 +1,47 @@
-# Getting started
+# Getting started with Asana
+
+In order to ensure we deliver your course, project, or practice content as successfully and effectively as possible, we use Asana, a project management tool, to track all the work involved. This way, all work is organized, tracked, and transparent to all.
+
+### So, how do I get started?
+
+1. Check your email inbox. 
+
+You should receive an invitation to join Asana from DataCamp. Follow the instructions to join your particular course/project/practice's project.
+
+2. Create your Asana account.
+
+3. Go to your Course project in Asana.
+
+Here you'll see all of the tasks involved in creating your content on DataCamp. 
+
+4. Asana Tips and Tricks
+
+* Assign tasks to people
+
+* Assign due dates to tasks
+
+* Add comments to tasks
+
+For more information on how to use Asana, watch their [product overview video](https://www.youtube.com/watch?v=IMAFWVLGFyw).
+
+# Set up your accounts
 
 In order to start creating courses, challenges and/or projects on the DataCamp platform you need to have a DataCamp account and a GitHub account. For courses and challenges (but not projects) you also need to authorize DataCamp to manage your GitHub account.
 
 The remainder of this page will walk you step-by-step through the setup process.
 
-## Create a DataCamp account
+## 1. Create a DataCamp account
 
 If you don't already have a DataCamp account, visit [datacamp.com](https://www.datacamp.com/), enter your email address, and choose a password. You can also log in using your LinkedIn, Facebook, or Google+ account.
 
 ![Create DataCamp account](/images/prerequisites/create-datacamp-account.png)
 Once you have created your DataCamp account you can proceed with creating your GitHub account.
 
-## Create a GitHub Account
+## 2. Create a GitHub Account
 
 DataCamp uses GitHub behind the scenes for hosting, versioning, and collaborating on content. In case you're not familiar with Git (the version control technology behind GitHub) we highly recommend you check out the [official documentation](https://git-scm.com/documentation) or our [Introduction to Git for Data Science](https://www.datacamp.com/courses/introduction-to-git-for-data-science) course on DataCamp!
 
-### Creating the new account
+### 3. Creating the new account
 
 To create a new account visit the [GitHub registration](https://github.com/join?source=header-home) page and complete the three steps process.
 
