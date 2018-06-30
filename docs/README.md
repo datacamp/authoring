@@ -61,6 +61,6 @@ course), and mobile practice content (more like desktop challenges).
 ![DataCamp for Mobile](/images/mobile/play-store-small.png "DataCamp for Mobile")
 
 > #### info::Note
-> Mobile authoring is only available to invited instructors at the moment, but should be available to everyone in the near future. If you're interested in creating a mobile course or mobile practice exercises for your existing desktop course, please contact [spencer@datacamp.com](mailto:spencer@datacamp.com) for more info!
+> Mobile authoring is only available to invited instructors at the moment, but should be available to everyone in the near future. If you're interested in creating a mobile course or mobile practice exercises for your existing desktop course, please contact [create@datacamp.com](mailto:create@datacamp.com) for more info!
 >
 > In the meantime, you can browse the relevant [documentation](projects/README.md).
