@@ -25,6 +25,11 @@ It helps to distinguish from variable names.
 Good: Call the `mean()` function.   
 Bad: Call the `mean` function.
 
+### Format package names as code
+
+Good: `seaborn` makes pretty plots.  
+Bad: *seaborn* makes pretty plots.  
+
 ## Code
 
 Follow these standard style guides, unless you have a really good reason not to.
