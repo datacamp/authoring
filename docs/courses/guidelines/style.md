@@ -27,10 +27,10 @@ Bad: Call the `mean` function.
 
 ### Format package names as code
 
-This is true for all technologies.
+Likewise modules and libraries (depending upon the technology being used).
 
-Good: The Python package `seaborn` produces pretty plots.  
-Bad: The Python package *seaborn* produces pretty plots.  
+Good: The Python package `pandas` produces pretty plots.  
+Bad: The Python package *pandas* produces pretty plots.  
 
 ## Code
 
