@@ -25,6 +25,13 @@ It helps to distinguish from variable names.
 Good: Call the `mean()` function.   
 Bad: Call the `mean` function.
 
+### Format package names as code
+
+Likewise modules and libraries (depending upon the technology being used).
+
+Good: The Python package `pandas` produces pretty plots.  
+Bad: The Python package *pandas* produces pretty plots.  
+
 ## Code
 
 Follow these standard style guides, unless you have a really good reason not to.
