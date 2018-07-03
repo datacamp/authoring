@@ -8,21 +8,21 @@ In order to ensure we deliver your course, project, or practice content as succe
 
 You should receive an invitation to join Asana from DataCamp. Follow the instructions to join your particular course/project/practice's project. Click on 'View Project'.
 
-![screenshot1](https://github.com/datacamp/authoring/blob/Asana-instructions/Welcome%20Email.png)
+![screenshot1](/images/Welcome%20Email.png)
 
 2. Create your Asana account.
 
-![screenshot2](https://github.com/datacamp/authoring/blob/Asana-instructions/Set-up-Asana-account.png)
+![screenshot2](/images/Set-up-Asana-account.png)
 
 3. Go to your Course project in Asana.
 
 Here you'll see all of the *tasks* involved in creating your content on DataCamp. Take some time to preview some of the tasks that will lead you to your content launch.
 
-![screenshot3](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-project-view.png)
+![screenshot3](/images/Asana-project-view.png)
 
 You can also preview the various stages in the content development by clicking on the Timeline feature at the top of your project. This will allow you to visualize your project's timeline and help you plan ahead.
 
-![screenshot4](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-timeline.png)
+![screenshot4](/images/Asana-timeline.png)
 
 4. Asana Tips and Tricks
 
@@ -31,33 +31,33 @@ You can also preview the various stages in the content development by clicking o
 You can see the tasks assigned to you in multiple places:
 
 In your project:
-![screenshot5](https://github.com/datacamp/authoring/blob/Asana-instructions/Mytasks.png)
+![screenshot5](/images/Mytasks.png)
 
 By clicking on "My Tasks":
 
-![screenshot6](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-mytasks.png)
+![screenshot6](/images/Asana-mytasks.png)
 
 Make sure to click into your tasks to see subtasks (if applicable).
 
-![screenshot7](https://github.com/datacamp/authoring/blob/Asana-instructions/Asana-subtasks.png)
+![screenshot7](/images/Asana-subtasks.png)
 
 #### Tasks have due dates
 
 When you are assigned a task, make sure to take note of the due date associated with it. 
 
-![screenshot8](https://github.com/datacamp/authoring/blob/Asana-instructions/Assigning-duedates.png)
+![screenshot8](/images/Assigning-duedates.png)
 
 #### Complete tasks
 
 Once you complete a task, you can click on the checkmark to alert all project members that you've completed it. That way, you won't get reminders if you've already done what you've been assigned!
 
-![screenshot9](https://github.com/datacamp/authoring/blob/Asana-instructions/Completing-tasks-in-Asana.png)
+![screenshot9](/images/Completing-tasks-in-Asana.png)
 
 #### Add comments to tasks
 
 If you have questions or comments about tasks, feel free to use the comment feature. You can make sure people are alerted of your comment by using *@*followed by the person's name.
 
-![screenshot10](https://github.com/datacamp/authoring/blob/Asana-instructions/Comments.png)
+![screenshot10](/images/Comments.png)
 
 For more information on how to use Asana, watch their product overview video [here](https://www.youtube.com/watch?v=IMAFWVLGFyw).
 
