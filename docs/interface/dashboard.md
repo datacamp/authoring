@@ -11,6 +11,6 @@ The content overview page consists of two parts: a filterable and paginated tabl
 - **Last edited**: time when the last update has been done to the content
 - **Edit action**: opens editor for editing the content
 
-For premium content some columns are redefined:
 
-- **Edit action**: allows advanced administration of branches and content
+> #### info::Note
+> _For accounts which have linked their GitHub account the Edit action is providing an option to manage the content branches_ 
