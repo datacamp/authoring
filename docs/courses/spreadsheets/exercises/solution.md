@@ -31,6 +31,8 @@ recorded in solution/sample data of exercises.
   * differences in values
   * differences in formulas
   * differences in number format
+  * pivot tables
+  * charts
 
 This means that font or border styles, for example, need to be in the **Golden Copy** for the user
 to be able to see it. If you change the style in a sample or solution sheet, and it's not reflected
