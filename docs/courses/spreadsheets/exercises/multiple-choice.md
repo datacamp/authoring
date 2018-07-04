@@ -4,8 +4,8 @@ Similar to video exercises, it is also not yet possible to create multiple choic
 the spreadsheets authoring interface. There are however some guidelines to be forward compatible:
 
 For the multiple choice exercises, add a Meta sheet and add a field `type` with value
-`MultipleChoiceExercise`. You can use the regular `title`, `assignment`, `hint` and
-`success_message` fields described [here](./meta.md). Two extra fields should be added as well:
+`MultipleChoiceExercise`. You can use the regular `title`, `assignment` and `hint`
+fields described [here](./meta.md). Two extra fields should be added as well:
 `options` and `feedback`:
 
 - `options` is a markdown list of choices that the user will have to choose from. The correct option
@@ -25,5 +25,5 @@ The corresponding `feedback` could be:
       - Correct!
 
 This means your meta sheet for a multiple choice exercise can have up until 7 fields: `type`,
-`title`, `assignment`, `hint`, `success_message`, `options` and `feedback`. There is no sample,
+`title`, `assignment`, `hint`, `options` and `feedback`. There is no sample,
 solution or SCT sheet for multiple choice exercises.
