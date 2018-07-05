@@ -40,7 +40,7 @@ If there are other file extensions that you want to upload, please contact suppo
 
 ### Handling Larger Datasets
 
-If your course repeatedly uses large datasets, it may make sense to add these to your course image rather than downloading them repeatedly.  To do this, put appropriate instructions in the `requirements.r` or `requirements.sh` file.  For example, to make `iris.csv available at `/usr/local/share/datasets/iris.csv` in an R course, you can add this to `requirements.r`:
+If your course repeatedly uses large datasets, it may make sense to add these to your course image rather than downloading them repeatedly.  To do this, put appropriate instructions in the `requirements.r` or `requirements.sh` file.  For example, to make `iris.csv` available at `/usr/local/share/datasets/iris.csv` in an R course, you can add this to `requirements.r`:
 
 ```r
 data_dir <- "/usr/local/share/datasets"
@@ -57,4 +57,39 @@ For a Python, SQL, or Shell course, you can add these lines to `requirements.sh`
 DATADIR=/usr/local/share/datasets/
 mkdir -p $DATADIR
 wget -O $DATADIR/iris.csv http://s3.amazonaws.com/assets.datacamp.com/staging/course_2406/datasets/iris.csv
+```
+
+### Populate database for SQL courses
+
+The command [`sqlcmd`](https://docs.microsoft.com/en-us/sql/tools/sqlcmd-utility?view=sql-server-2017) is available in the `requirements.sh` file for courses based on `msft-sql-base-prod`. CSV format is an option to seed the database. As described above, consider the file `data.csv` to be uploaded as a dataset:
+
+```csv
+ID,VendorID,PickupDate,DropoffDate,PassengerCount
+1216,2,1/1/17 6:53 AM,1/1/17 7:18 AM,1
+1314,2,1/1/17 6:54 AM,1/1/17 7:03 AM,5
+1384,2,1/1/17 6:55 AM,1/1/17 7:08 AM,1
+1709,1,1/1/17 7:00 AM,1/1/17 7:11 AM,2
+```
+
+Do the same with a SQL script named `script.sql` in charge of seeding the database:
+
+```sql
+CREATE DATABASE tripdata;
+GO
+USE tripdata;
+GO
+CREATE TABLE YellowTripData (ID INT, VendorID INT, PickupDate DATETIME2, DropoffDate DATETIME2, PassengerCount INT);
+GO
+BULK INSERT YellowTripData FROM '/home/repl/data.csv' WITH(FIELDTERMINATOR =',', ROWTERMINATOR = '\n', FIRSTROW = 2);
+GO
+```
+
+And finally, add these lines in `requirements.sh`:
+
+```bash
+wget https://s3.amazonaws.com/assets.datacamp.com/production/course_**COURSEID**/datasets/data.csv
+wget https://s3.amazonaws.com/assets.datacamp.com/production/course_**COURSEID**/datasets/script.sql
+
+./start_server.sh
+sqlcmd -b -i ./script.sql
 ```
