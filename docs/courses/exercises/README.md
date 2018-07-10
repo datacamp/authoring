@@ -13,7 +13,7 @@ These types of exercises are currently supported:
 | Type                                                                 | Description |
 |:---------------------------------------------------------------------|:------------|
 | [`VideoExercise`](video-exercise.md)                                 | Displays a video exercise |
-| [`NormalExercise`](normal-exercise)                                  | Instructions, exercise, code editor, and console |
+| [`NormalExercise`](normal-exercises)                                  | Instructions, exercise, code editor, and console |
 | [`MultipleChoiceExercise`](multiple-choice-exercise.md)              | Multiple choice question and console |
 | [`PureMultipleChoiceExercise`](multiple-choice-exercise.md#pure-mce) | Multiple choice question without a console |
 | [`TabExercise`](tab-exercise.md)                                     | A series of connected sub-exercises |

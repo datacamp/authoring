@@ -17,15 +17,15 @@ Following are currently supported types of challenge types you can create on Dat
 Each challenge starts with a header which consists of YAML properties defining the challenge.  
 
 {% codetabs name="OutputChallenge", type="py" -%}
-```yaml
+```{yaml}
 type: OutputChallenge
 ```
 {%- language name="BlanksChallenge", type="py" -%}
-```yaml
+```{yaml}
 type: BlanksChallenge
 ```
 {%- language name="MultipleChoiceChallenge", type="py" -%}
-```yaml
+```{yaml}
 type: MultipleChoiceChallenge
 ```
 {%- endcodetabs %}
@@ -57,7 +57,7 @@ Creating challenges is based around building blocks.
 
 In some cases, you might want to specify a bit more context with the challenge at hand. You can do this by optionally specifying a `context` block. This context part will be parsed as markdown, and shown in a simple div at the top of the view.
 
-    ```yaml
+    ```{yaml}
     type: BlanksChallenge 
     ```
 
