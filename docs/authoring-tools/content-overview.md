@@ -1,11 +1,11 @@
 # Content Overview
 
-Once you have created your first course as explained in [Creating courses](/courses/README.md) wiki page a new course is going to appear on your [Dashboard](/interface/dashboard.md):
+Once you have created your first course as explained in [Creating courses](/courses/README.md) wiki page a new course is going to appear on your [Dashboard](/authoring-tools/dashboard.md):
 
 
 By clicking on a course name you can access the `Content Overview` you should be seeing a page similar to:
 
-![Content overview example](/images/interface/content-overview.png)  
+![Content overview example](/images/authoring-tools/content-overview.png)  
 *Content overview example*
 
 ## Context
@@ -22,12 +22,12 @@ Each 'branch overview' shows you the title, author, course image and author badg
 
 Whenever you make a change to a particular branch on your GitHub repository, DataCamp notices and starts a build attempt. It fetches all the course files from the branch, parses them, performs validity checks on them, and uploads them to DataCamp's databases, so that they are available on the learning platform.
 
-![Content overview build status](/images/interface/content-overview-build-status.png)  
+![Content overview build status](/images/authoring-tools/content-overview-build-status.png)  
 *An example of current build status*
 
 Each such build attempts is listed in the Build History tab. The collapsed view shows the state of the attempt (in progress, warning, passed or failed), the time and last contributor to the changes. You can click the "Show Details" link to display all commit messages (you can click the commit hashes to inspect them on GitHub) and the build logs that are produced by building the course. If something went wrong during the build, it is here that you can figure out what went wrong and make appropriate changes. Some of the build logs will be clickable and will guide you towards the place where you should correct your markdown files.
 
-![Content overview build example](/images/interface/content-overview-build-example.png)  
+![Content overview build example](/images/authoring-tools/content-overview-build-example.png)  
 *An example of current detailed build*
 
 The "Most Recent Build" tab is simply an already expanded version of the last build attempt you've made, with the exact same information.

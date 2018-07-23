@@ -8,7 +8,7 @@ To create a course make sure you are signed in to your [DataCamp](https://www.da
 Once you are signed in, go to [DataCamp for Teachers](https://www.datacamp.com/teach).
 
 ![DataCamp for Teachers - Dashboard](/images/courses/teach-dashboard.png)
-_[DataCamp for Teachers - Dashboard](/interface/dashboard.md)_ 
+_[DataCamp for Teachers - Dashboard](/authoring-tools/dashboard.md)_ 
 
 To create a new course, click the "Add Course +" button.  The following dialog will appear:
 

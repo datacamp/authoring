@@ -4,11 +4,11 @@ A DataCamp course has a badge, and your exercises will typically use datasets, s
 
 ## Images
 
-When you create a course with the "[Create a DataCamp Course](/interface/create-content-dialog.md)" dialog, DataCamp creates an `img/` folder with a template course shield image called `shield_image.png`. You can replace the course shield image with your own so long as you use the same name and keep the file's size under 1Mb. As soon as you push the changes to GitHub, your course's image will be updated.
+When you create a course with the "[Create a DataCamp Course](/authoring-tools/create-content-dialog.md)" dialog, DataCamp creates an `img/` folder with a template course shield image called `shield_image.png`. You can replace the course shield image with your own so long as you use the same name and keep the file's size under 1Mb. As soon as you push the changes to GitHub, your course's image will be updated.
 
 ## Datasets
 
-The recommended way of uploading your assets is by using the [Teach editor assets interface](/interface/teach-editor.md#editor-upload-assets).  However, you can also add files directly to the `datasets` folder in the root of your course's repository (and create the folder if it doesn't exist). Every file in the `datasets` folder with a recognized extension will be uploaded whenever you push the changes to GitHub. The build logs in the repository overview will inform that they have been uploaded to DataCamp's S3 servers and provide a link you can use in `requirements.r`, `requirements.sh`, or the `pre_exercise_code` block of your exercises to download the file.
+The recommended way of uploading your assets is by using the [Teach editor assets interface](/authoring-tools/teach-editor.md#editor-upload-assets).  However, you can also add files directly to the `datasets` folder in the root of your course's repository (and create the folder if it doesn't exist). Every file in the `datasets` folder with a recognized extension will be uploaded whenever you push the changes to GitHub. The build logs in the repository overview will inform that they have been uploaded to DataCamp's S3 servers and provide a link you can use in `requirements.r`, `requirements.sh`, or the `pre_exercise_code` block of your exercises to download the file.
 
 For example, to load an RData file in an R exercise:
 

@@ -2,7 +2,7 @@
 
 Courses can be edited using the Teach Editor, an editor specifically built to create DataCamp courses. This editor can be reached by clicking the **Edit this Course** button on the [Content Overview](content-overview.md) page.
 
-![Teach editor interface](/images/interface/teach-editor.png)  
+![Teach editor interface](/images/authoring-tools/teach-editor.png)  
 *Teach editor interface example*
 
 ## How-To Videos (Classic Edition)
@@ -53,7 +53,7 @@ The Teach Editor provides several features to aid content creation.
 
 ### Navigation bar
 
-![Teach editor navigation bar](/images/interface/teach-editor-nav-bar.png)  
+![Teach editor navigation bar](/images/authoring-tools/teach-editor-nav-bar.png)  
 *Teach editor navigation bar example*
 
 - **Save** You can use the save button to persist all your changes to Github
@@ -87,7 +87,7 @@ By using preview you can make sure that the content and exercises are behaving a
 
 The editor lets you upload images and datasets with a point-and-click interface:
 
-![Teach editor upload assets interface](/images/interface/teach-editor-upload-assets-interface.png)  
+![Teach editor upload assets interface](/images/authoring-tools/teach-editor-upload-assets-interface.png)  
 *Upload assets interface*
 
 Once your assets are uploaded they are placed in the `/datasets` folder.

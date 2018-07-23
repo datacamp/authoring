@@ -79,7 +79,7 @@ There are a few folders and files which have special meaning / tasks:
 - `docs/projects` - All the content related to projects
 - `docs/challenges` - All the content related to challenges
 - `docs/mobile` - All the content related to mobile
-- `docs/interface` - All the content related to the teach interface
+- `docs/authoring-tools` - All the content related to the teach interface
 - `docs/image` - All the image files should be placed in this folder depending on the content type (`courses`, `projects`, etc..)
 - `SUMMARY.md` - Represents the left menu and the structure of the content. Usually nicely maps with `docs/` structure.
 - `books.json` - Lists all the plugins gitbook is currently using. (emojis etc.)
@@ -90,7 +90,7 @@ Before you start working locally on your gitbook **be sure** to branch out to a 
 
 Flow for creating content:
 
-1. Create a markdown file in one of folders (`docs/courses`, `docs/projects`, `docs/challenges`, `docs/mobile`, `docs/interface`)
+1. Create a markdown file in one of folders (`docs/courses`, `docs/projects`, `docs/challenges`, `docs/mobile`, `docs/authoring-tools`)
 2. Add the markdown
 3. If you want to add the markdown file to the left menu edit the [docs/SUMMARY.md](docs/SUMMARY.md)
 
@@ -103,7 +103,7 @@ Linking should always be absolute, which means that you should specify the whole
 Examples on how to import images or create links:
 
 ```
-![Image description](/images/interface/teach-editor.png) # Will create an image
+![Image description](/images/authoring-tools/teach-editor.png) # Will create an image
 [A link](/courses/README.md) # Will create a link
 A link to [part of the page](/courses/exercises/multiple-choice-exercise.md#pure-mce) # Will link to exercises page scrolling down to pure multiple choice exercise
 ```
