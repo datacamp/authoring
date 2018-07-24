@@ -74,7 +74,7 @@ Solution code:
 
 ### How much code can I include?
 
-The [content guidelines](courses/guidelines/content.html#normalexercise) limit you to 15 lines of code per exercise. It's also a good idea to keep lines of code under 60 characters, so the code displays nicely on smaller laptops and tablets.
+The [content guidelines](/courses/guidelines/content.html#normalexercise) limit you to 15 lines of code per exercise. It's also a good idea to keep lines of code under 60 characters, so the code displays nicely on smaller laptops and tablets.
 
 ### How should I write comments?
 
