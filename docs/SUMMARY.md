@@ -145,13 +145,6 @@
      - [Guidelines](mobile/courses/guidelines.md)
   - [Practice](mobile/practice/README.md)
 
-## Teach Interface
-
-- [Teach Dashboard](interface/dashboard.md)
-  - [Create Content Dialog](interface/create-content-dialog.md)
-  - [Content Overview](interface/content-overview.md)
-- [Teach Editor](interface/teach-editor.md)
-
 ## Premium Courses
 
 - [Creating Your Audition Video](courses/audition.md)
