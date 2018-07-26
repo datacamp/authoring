@@ -11,9 +11,6 @@
 
 - [Our Contract](contract.md)
 - [Courses](courses/README.md)
-  - [Teach Dashboard](interface/dashboard.md)
-    - [Create Content Dialog](interface/create-content-dialog.md)
-    - [Content Overview](interface/content-overview.md)
   - [Repo Structure](courses/repo-structure.md)
   - [Design](courses/design/README.md)
     - [Design template](courses/design/template.md)
@@ -79,7 +76,6 @@
       - [Exercise Headers](courses/exercises/technical-details/exercise-headers.md)
       - [Exercise Blocks](courses/exercises/technical-details/exercise-blocks.md)
       - [Unified Authoring API](courses/exercises/technical-details/unified-authoring-api.md)
-      - [Teach Editor](interface/teach-editor.md)
   - [Development Process](premium-course-process.md)
     - [Course specs](premium-course-process.md#course-specs)
     - [Exercises](premium-course-process.md#exercises)
