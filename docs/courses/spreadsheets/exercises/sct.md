@@ -251,6 +251,50 @@ Example:
 ? check_absolute_references
 ```
 
+### check_pivot
+
+```
+check_pivot(
+  message = string,
+  suggestion = string
+)
+```
+
+Checks whether the pivot table defined by the user is the same as the one in the solution.
+The system tries to do smart checks so you normally don't have to use this SCT with arguments.
+It will generate a detailed feedback message automatically. `check_pivot` should be defined
+on the address of the upper-left corner of the pivot table in the solution.
+
+To handle newly created pivot tables (i.e. not in 'Sheet1'), `check_pivot` will look through
+all sheets to find the first sheet that contains a pivot table and does the checks on that
+sheet.
+
+Example:
+
+```
+? check_pivot
+```
+
+### check_chart
+
+```
+check_chart(
+  message = string,
+  suggestion = string
+)
+```
+
+This function is still under development, but you can already use it to do a simple check
+on whether a chart in the solution is the same as the one the user defined. The message
+will be very simple, but you'll have the possiblitiy to show some debugging information.
+
+Example:
+
+```
+? check_chart
+```
+
+
 ### check_correct
 
 ```

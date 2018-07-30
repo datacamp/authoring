@@ -47,7 +47,7 @@ In the scaffold **workbook source**, you'll see a few sheets. The first sheet is
 Copy_. This is the data you'll be using throughout the exercise of that workbook. The golden copy
 will be copied fully to each student's workbook copy for that exercise. This means that you can put
 your styling, number formatting, and so on in this sheet and it will appear exactly as that in a
-sheet called 'Sheet 1' for each student that starts the exercise.
+sheet called 'Sheet1' for each student that starts the exercise.
 
 Sheets in the workbook source that start with 'Exercise ...' are called the exercise sheets. Later
 in the sections about exercises, we'll talk about which data is preserved from your exercise sheets.
@@ -57,6 +57,15 @@ user experience in transitioning between exercises in the same workbook, using t
 
 Other than the Golden Copy and exercise sheets, you can add read-only sheets to your workbook
 source. These can contain source data, that can be used throughout the exercises of a workbook.
+
+If you delete the Golden Copy sheet and have (a) read-only sheet(s), those will be the only ones
+that are shown to the student. This can for example be useful when the student needs to create
+a new pivot table in an exercise. The student starts out with only a read-only sheet and creates
+a pivot table from that. The correctness checker for SCTs (`check_pivot`) will automatically
+check the newly created pivot table.
+
+If you delete the Golden Copy sheet and have no read-only sheets, the student will see a blank
+sheet called 'Sheet1'. This because a workbook can not be completely empty, without sheets.
 
 ## Editing a workbook
 
@@ -86,4 +95,3 @@ things have changed.
 It is currently not possible to delete a workbook. However, keeping it empty will make it not show
 up for the students. If you want to remove it for general housekeeping, reach out to
 [vincent@datacamp.com](mailto:vincent@datacamp.com) for now.
-
