@@ -131,32 +131,6 @@ We recommend that you regularly preview how your project will appear on datacamp
 
 When you have completed the Project notebook your DataCamp contact will send out the Project to a small group of DataCamp subscribers that will complete the Project and give feedback on it. When you've incorporated the feedback into the Project, it is ready for release on DataCamp.com!
 
-### Making a Project introduction video
-
-As part of the Project launch, you'll make a 20 to 30 sec. video that introduces the Project. This is an opportunity to let the student know a bit about you and to make students excited to do your Project. Here is an example introduction video for the python Project *Dr. Semmelweis and the discovery of handwashing*:
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NzsaLfZ-QfA?rel=0" frameborder="0" allowfullscreen></iframe> 
-
-<br>
-
-*Introduction video style guide:*
-
-* The introduction video is meant to be informal and relaxed. The idea is to talk directly to the student as if you were in a video meeting.
-* The video should be around 20 - 30 seconds long.
-* It can be filmed using your laptop's web camera or using a high-end mobile phone. Here are guides for recording your web camera on [macOS](http://osxdaily.com/2016/12/04/record-video-mac/), [Windows](https://support.microsoft.com/en-us/help/17444/windows-camera-app-webcams-help), and [Linux/GNU](https://help.ubuntu.com/community/Webcam).
-* Make sure that you are in a quiet environment and that the lighting is good.
-* Don't worry if you don't get started right away in the video. Your DataCamp contact will trim the beginning and end of the video for you. 
-* The video should introduce you and your Project. Here is a handy template script you can follow:
-```text
-Hi, I'm {name} and I'm {current position}.
-I've made a DataCamp project where you {get to use a skill/package}.
-{One or two sentences about what you'll get to analyze in the Project}.
-I hope you'll enjoy it. {Good luck! / Cheers! / Bye! }
-```
-
-When you've recorded the video upload it by following this link: https://www.dropbox.com/request/8FPVPgIPGLU0Gddd1pxl
-
-
 ### Maintaining your Project
 
 Even though your Project has been beta tested, there might still be bugs/mistakes to iron out. The DataCamp subscribers doing your Project can leave feedback and report issues.Your DataCamp contact will collect these issues and report them to you at three points in time: (1) When your Project is released, (2) two weeks after release, and (3) two months after release. As the author of the Project, it is then your responsibility to make sure that DataCamp subscribers can complete and enjoy the Project.
