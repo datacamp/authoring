@@ -1,7 +1,7 @@
 The Project creation process
 =============================================
 
-This page details steps you go through when you create a *premium* DataCamp Project. If you're interested in creating a premium Project, please contact rasmus@datacamp.com for more info!
+This page details steps you go through when you create a *premium* DataCamp Project. If you're interested in creating a premium Project, please contact david.venturi@datacamp.com for more info!
 
 Overview
 --------------
@@ -67,8 +67,15 @@ To this end, here are some guidelines for what makes a good Project:
 - **A Project should be doable during a Lunch break.** While the name "Project" signals a large undertaking, this should not be the case. A DataCamp student should be able to complete a Project in less than an hour, and "short case study" would be a more fitting description. 
 - **Students should be able to apply what they've learned in DataCamp courses.** Students on the DataCamp platform learn new tools in courses and apply these tools in Projects. A challenge with creating a Project is to make sure that Students can learn the skills required to complete it from a DataCamp course. If you are uncertain what's covered in DataCamp courses, then your DataCamp contact will help you with this. 
 
-It is generally no problem if you want to re-purpose already existing material (such as a blog post or existing case study) as a DataCamp project. 
+It is generally no problem if you want to re-purpose already existing material (such as a blog post or existing case study) as a DataCamp project.
 
+Fill out the following information and email it to david.venturi@datacamp.com:
+
+- **Dataset description**: 1 sentence describing the dataset and the file type. Example: "A CSV file that contains anonymized patient blood sugar level data."
+- **Dataset size**: the size of the dataset in MB or GB. Example: “300 MB."
+- **Link to dataset**: please attach the dataset in the email, send it via Google Drive, send me a link to where it is hosted online, etc.
+- **Overview of Project tasks**: a comma-separated list of tasks the students will perform in the Project. Example: "Import data, clean data, visualize data."
+- **Packages used**: the packages used in the Project. Example: “dplyr and ggplot2.”
 
 ## 3. Writing the Project specification {#projects-writing-specification} ##
 
