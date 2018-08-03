@@ -45,7 +45,7 @@ Projects allow students to apply what they've learned in a more open-ended and r
 <!-- Ready to create a project? **[Get started now!](projects/README.md)** -->
 
 > #### info::Note
-> Project authoring is only available to invited instructors at the moment, but should be available to everyone in the near future. If you're interested in creating a project, please contact [rasmus@datacamp.com](mailto:rasmus@datacamp.com) for more info!
+> Project authoring is only available to invited instructors at the moment, but should be available to everyone in the near future. If you're interested in creating a project, please email [projects@datacamp.com](mailto:projects@datacamp.com) for more info!
 >
 > In the meantime, you can browse the relevant [documentation](projects/README.md).
 
