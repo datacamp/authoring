@@ -1,7 +1,7 @@
 The Project creation process
 =============================================
 
-This page details steps you go through when you create a *premium* DataCamp Project. If you're interested in creating a premium Project, please email projects@datacamp.com for more info!
+This page details steps you go through when you create a *premium* DataCamp Project. If you're interested in creating a premium Project, please email [projects@datacamp.com](mailto:projects@datacamp.com) for more info!
 
 Overview
 --------------
