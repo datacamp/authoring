@@ -26,25 +26,25 @@ From a course on clinical trials analysis. There is a little too much content (C
   Descriptions, examples. MCQ on interpretation.
   - Lesson 2.4: BIOEQUIVALENCE TRIALS 
   Descriptions, examples. PK, concentration profiles, AUC. R exercises to plot concentration profiles and generate PK summary stats.  
- - Chapter 3: SAMPLE SIZE AND POWER
-   - Lesson 3.1: FUNDAMENTALS   
+- Chapter 3: SAMPLE SIZE AND POWER
+  - Lesson 3.1: FUNDAMENTALS   
   Definitions, relationships among effect size, alpha, beta, etc. Mean difference, proportions. R exercises for mean difference and proportions.
-   - Lesson 3.2: ADJUSTMENTS    
+  - Lesson 3.2: ADJUSTMENTS    
   Unequal group sizes, unequal variances, loss to FU. R exercises.
-   - Lesson 3.3: INTERIM ANALYSES AND GROUP SEQUENTIAL DESIGNS  
+  - Lesson 3.3: INTERIM ANALYSES AND GROUP SEQUENTIAL DESIGNS  
   Descriptions, examples. R exercise.
-   - Lesson 3.4: ALTERNATIVE TRIAL DESIGNS  
+  - Lesson 3.4: ALTERNATIVE TRIAL DESIGNS  
   Descriptions, examples for cluster randomized trials, time-to-event, equivalence. R exercise.  
-  - Chapter 4: STATISTICAL ANALYSES  
-    - Lesson 4.1: ANALYSIS SETS AND SUBGROUPS   
+- Chapter 4: STATISTICAL ANALYSES  
+  - Lesson 4.1: ANALYSIS SETS AND SUBGROUPS   
     ITT and PP. Subgroups. R exercise for subgroups.  
-    - Lesson 4.2: COVARIATES  
+  - Lesson 4.2: COVARIATES  
   Confounding. Adjustments for baseline, covariates. Regression analysis. R exercise for regression.  
-    - Lesson 4.3: INTERACTIONS 
+  - Lesson 4.3: INTERACTIONS 
     Description, examples.  R exercise. MCQ for interpretation.  
-    - Lesson 4.4: MULTIPLICITY  
+  - Lesson 4.4: MULTIPLICITY  
   Multiple endpoints, combined endpoints, alpha adjustments.  R exercises.
-    - Lesson 4.5: FURTHER TOPICS  
+  - Lesson 4.5: FURTHER TOPICS  
    Time-to-event data, longitudinal data, missing data. Last handout slide for links to ICH E9, R packages, R guidance for regulated CTs.
 
 ## FAQS
