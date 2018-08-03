@@ -39,6 +39,8 @@ Follow these standard style guides, unless you have a really good reason not to.
 - R: [The tidyverse style guide](http://style.tidyverse.org)
 - Python: [PEP 8](https://www.python.org/dev/peps/pep-0008)
 - SQL: [Holywell's SQL Style guide](https://www.sqlstyle.guide)
+- Shell: [Shell Style Guide](https://google.github.io/styleguide/shell.xml)
+- C++ (for `rcpp`): [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 
 See also [Writing NormalExercise code](/courses/exercises/normal-exercises/code.html).
 
