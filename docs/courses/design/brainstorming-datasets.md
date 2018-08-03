@@ -1,9 +1,11 @@
 # Step 1.7 - What datasets will you use?
------
-Write a list of datasets that you will in the course, a short description of the dataset (if it's not clear from the title), and include a reference to their source(s).
+Write a list of datasets that you will in the course, a short description of each dataset (if it's not clear from the title), how you intend to use it, and include a link to its source(s).
+
+Before settling on a dataset, it is best to develop a reasonable familiarity with the data as sometimes datasets give unexpected answers, and this can make the narrative in an exercise tricky or confusing. **It is best to do this during the course speccing phase, when it is easiest to swap the dataset for a different one.** Think about the types of variables in the dataset and how the data will work with the concepts you plan to teach. If you are doing a course on categorical data, make sure you have a dataset with plenty of it! If your course has a modeling component, make sure the results of the model with your chosen dataset make sense.
+
+You may think that a simple solution is to use a massive dataset that covers everything, but bigger datasets are not always better. In many cases, having a dataset that is small enough that the students can easily understand it in its entirety is beneficial. If you have a great dataset, but it's really large, use a subset of it. In fact, **be ruthless about shrinking your dataset when you prepare it.**
 
 ## Examples
------
 - Wikipedia's list of [100m sprint world records since 1977](https://en.wikipedia.org/wiki/Men%27s_100_metres_world_record_progression#Records_from_1977). It has a few different data types for converting.
 
 - A subset of [Ecdat::Benefits](https://www.rdocumentation.org/packages/Ecdat/topics/Benefits). Good for doing logical manipulation. Will delete a few values in order to talk about missing data and errors.
@@ -15,7 +17,6 @@ Write a list of datasets that you will in the course, a short description of the
 - [Census income data from UCI](http://archive.ics.uci.edu/ml/datasets/Census-Income+%28KDD%29)
 
 ## FAQs
------
 ### How many datasets do I need?
 
 One dataset per chapter is typical. Some courses use a single dataset throughout. In this case it has to be a fairly rich and interesting dataset in order to keep student's attentions over the whole course. A few courses use multiple datasets in each chapter, but you have to be careful in this case that you don't spend all the time introducing datasets instead of teaching other concepts.
@@ -54,12 +55,13 @@ Yes, but only if you can't find a real or semi-synthetic dataset. Students reall
 
 Semi-synthetic datasets are the data equivalent of a "based on a true story" movie. If you have a dataset that is not suitable for use on DataCamp due to licensing issues, (for example, if it is commercially sensitive) then it is sometimes possible to anonymize it and change enough numbers that it retains the spirit of the original data, but does not reveal anything commercially sensitive. 
 
+### Can I use an API in my course?
 
-### Use the simplest dataset that will get your point across
+Not exactly...
 
-Bigger datasets are not always better. In many cases, having a dataset that is small enough that the students can easily understand it in it's entirety is beneficial. Be ruthless about shrinking your dataset when you prepare it.
+### Datasets to avoid
 
-### Forbidden datasets
+These datasets are overused and feedback from our students suggests that the following should be avoided at all costs.
 
 * Iris dataset
 * mtcars
@@ -67,10 +69,5 @@ Bigger datasets are not always better. In many cases, having a dataset that is s
 * wine dataset
 * Wisconsin breast cancer
 
-### The dataset doesn't give the answer I wanted
-
-Sometimes datasets give unexpected answers, and this can make the narrative in the exercise tricky or confusing. It is best to develop a reasonable familiarity with your datasets during course speccing phase, when it is easiest to swap the dataset for a different one.
-
 ## How will this be reviewed?
------
 Your Curriculum Lead will discuss your responses to the brainstorming questions. They will not be formally reviewed (though they provide important context for reviewers).
