@@ -43,7 +43,7 @@ time_needed: "45 minutes" # "30/45/60 minutes".
 instructors: # DataCamp connected email of the creator of the Project
   - horse.mcponyface@horsemail.com
 collaborators: # DataCamp connected email of people that helped with the Project
-  - rasmus@datacamp.com
+  - david.venturi@datacamp.com
 ```
 
 Except for these fields, there are also a number of fields with technical details specific to the DataCamp platform. These will most often be filled in by your DataCamp contact:
