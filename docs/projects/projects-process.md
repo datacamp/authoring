@@ -69,7 +69,7 @@ To this end, here are some guidelines for what makes a good Project:
 
 It is generally no problem if you want to re-purpose already existing material (such as a blog post or existing case study) as a DataCamp project.
 
-Fill out the following information and email it to david.venturi@datacamp.com:
+Fill out the following information and email it to projects@datacamp.com:
 
 - **Dataset description**: 1 sentence describing the dataset and the file type. Example: "A CSV file that contains anonymized patient blood sugar level data."
 - **Dataset size**: the size of the dataset in MB or GB. Example: “300 MB."
