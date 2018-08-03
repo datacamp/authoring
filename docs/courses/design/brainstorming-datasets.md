@@ -1,7 +1,7 @@
 # Step 1.7 - What datasets will you use?
 
 
-Write a list of datasets that you will use as a basis for exercises in the course, including references to their sources.
+Write a list of datasets that you will in the course, including references to their sources.
 
 
 ## Examples
@@ -71,9 +71,13 @@ Bigger datasets are not always better. In many cases, having a dataset that is s
 
 ## Common problems and their solutions
 
-### Using the iris dataset
+### Forbidden datasets
 
-This dataset is very overused. Please choose a different one.
+* Iris dataset
+* mtcars
+* Gapminder
+* wine dataset
+* Wisconsin breast cancer
 
 ### The dataset doesn't give the answer I wanted
 
