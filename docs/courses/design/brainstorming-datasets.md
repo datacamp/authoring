@@ -68,6 +68,8 @@ These datasets are overused and feedback from our students suggests that the fol
 * Gapminder
 * wine dataset
 * Wisconsin breast cancer
+* Titanic
+* Boston housing
 
 ## How will this be reviewed?
 Your Curriculum Lead will discuss your responses to the brainstorming questions. They will not be formally reviewed (though they provide important context for reviewers).
