@@ -26,7 +26,7 @@ From a course on clinical trials analysis. There is a little too much content (C
   Descriptions, examples. MCQ on interpretation.
   - Lesson 2.4: BIOEQUIVALENCE TRIALS 
   Descriptions, examples. PK, concentration profiles, AUC. R exercises to plot concentration profiles and generate PK summary stats.  
- - Chapter 3: SAMPLE SIZE AND POWER
+- Chapter 3: SAMPLE SIZE AND POWER
    - Lesson 3.1: FUNDAMENTALS   
   Definitions, relationships among effect size, alpha, beta, etc. Mean difference, proportions. R exercises for mean difference and proportions.
    - Lesson 3.2: ADJUSTMENTS    
@@ -35,7 +35,7 @@ From a course on clinical trials analysis. There is a little too much content (C
   Descriptions, examples. R exercise.
    - Lesson 3.4: ALTERNATIVE TRIAL DESIGNS  
   Descriptions, examples for cluster randomized trials, time-to-event, equivalence. R exercise.  
-  - Chapter 4: STATISTICAL ANALYSES  
+- Chapter 4: STATISTICAL ANALYSES  
     - Lesson 4.1: ANALYSIS SETS AND SUBGROUPS   
     ITT and PP. Subgroups. R exercise for subgroups.  
     - Lesson 4.2: COVARIATES  
