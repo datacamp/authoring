@@ -8,7 +8,7 @@ Shorter courses are more digestible and have higher completion rates. A reasonab
 
 ####### C1. A course should should consist of 4 chapters. {#C1} 
 ####### C2. A chapter should consist of 4 lessons (except for chapter 1 which always has 3 lessons). {#C2} 
-####### C3. A course should consist of 40 - 60 exercises. {#C3} 
+####### C3. A course should consist of 44 - 60 exercises. {#C3} 
 
 As a reminder, each lesson is comprised of:
 
