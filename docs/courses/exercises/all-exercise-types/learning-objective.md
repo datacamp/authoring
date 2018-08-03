@@ -44,6 +44,12 @@ An interesting thing found in the dataset being explored.
 
 In general, an exercise should teach the student exactly one thing. If you want to have multiple learning objectives, it's a warning sign that you are trying to cram too much into a single exercise. That said, if you have several simple learning objectives, a multi-step exercise can be appropriate.
 
+## Common problems and their solutions
+
+### The exercise doesn't test the learning objectives
+
+It is important that the exercise meets the objective. One common danger is that you start writing code and somehow the exercise ends up being completely different to what you originally intended. This can be fine, but make sure that you are teaching the things that students will need to know for future exercises.
+
 ## Good ideas
 
 ### Write it down
