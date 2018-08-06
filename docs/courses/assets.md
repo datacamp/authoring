@@ -27,13 +27,7 @@ and to load a CSV file in a Python exercise with Pandas:
     df = pd.read_csv('http://assets.datacamp.com/production/course_234/gapminder.csv', index_col = 0)
     ```
 
-Datasets can be up to 10Mb in size. The following extensions are supported for upload:
-
-| `RProfile` | `R`        | `Rda` | `Rdata`   | `Rds`    | `Rhistory` | `Rmd`  | `csv` | `db3`  |
-| `db3`      | `dta`      | `gif` | `hdf5`    | `jpeg`   | `jpg`      | `json` | `mat` | `p`    |
-| `png`      | `sas7bdat` | `sav` | `sqlite3` | `sqlite` | `tsv`      | `txt`  | `xls` | `xlsx` |
-
-If there are other file extensions that you want to upload, please contact support.
+Datasets can be up to 10Mb in size. 
 
 > #### info::NOTE
 > Don't use an RData file to store functions that you want to make available in your R exercises: because our submission checking system executes student and solution code in separate environments, this causes issues. Instead, put the functions in a script in your datasets folder and use `eval(parse("link_to_script_url"))` in your pre-exercise code to make the functions available.
