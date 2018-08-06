@@ -6,8 +6,6 @@ In general, the repository contains:
 
 ```text
 |- datasets/
-|- img
-|  |- shield_image.png
 |- .gitignore
 |- README.md
 |- chapter1.md
@@ -30,7 +28,6 @@ An overview of what each of this does is:
 | File/Folder            | Description |
 |:-----------------------|:------------|
 | `datasets/*`           | Contains all datasets you may want to use in your course (e.g., CSV files) |
-| `img/shield_image.png` | Logo image for the course |
 | `scripts/*`            | Contains all the narrative for the course's slides and videos |
 | `slides/*`             | Contains the Markdown slides for your course's videos |
 | `.gitignore`           | Specifies files and folders that Git should ignore |
