@@ -75,7 +75,7 @@ Submission correctness test defines the test which verifies whether the solution
 The following guidelines are in place:
 
 ####### NE13. Every exercise needs to have a submission correctness test. {#NE13}
-####### NE14. Every exercise submission correctness test needs to call the `sucess_msg` method. {#NE14}
+####### NE14. Every exercise submission correctness test needs to call the `success_msg` method. {#NE14}
 
 ### MultipleChoiceExercise
 
