@@ -8,7 +8,7 @@ If you've never seen a DataCamp project then you'll quickly get the gist by watc
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/HpVDKV2KALw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 > #### info::WANT TO CREATE A PROJECT? 
-> Currently only invited creators can create Projects on DataCamp, but we're always looking for engaged professionals and academics who want to help us teach Data Science. If you want to create a Project, please email [projects@datacamp.com](mailto:projects@datacamp.com) for more info!
+> We're always looking for engaged professionals and academics who want to help us teach Data Science. If you want to create a Project, please email [projects@datacamp.com](mailto:projects@datacamp.com) for more info!
 
 
 Overview of Projects documentation
