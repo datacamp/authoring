@@ -45,9 +45,7 @@ Projects allow students to apply what they've learned in a more open-ended and r
 <!-- Ready to create a project? **[Get started now!](projects/README.md)** -->
 
 > #### info::Note
-> If you're interested in creating a Project, please browse the relevant [documentation](projects/README.md), follow steps 1 and 2 [here](https://authoring.datacamp.com/projects/projects-process.html), then email [projects@datacamp.com](mailto:projects@datacamp.com) with your Project idea.
->
-> In the meantime, you can browse the relevant [documentation](projects/README.md).
+> If you're interested in creating a Project, please browse the relevant [documentation](projects/README.md), follow steps 1 and 2 [here](projects/projects-process.md), then email [projects@datacamp.com](mailto:projects@datacamp.com) with your Project idea.
 
 ### Mobile
 
