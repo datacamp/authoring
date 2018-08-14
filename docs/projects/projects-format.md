@@ -92,7 +92,7 @@ This is the `markdown` cell that will be part of the instructions sidebar. It ca
 - The `@instructions` should
   - Start with a short sentence stating what the task is.
   - Then have a bullet list of what the student should do in the task. Max 4 bullets. Rule of thumb: each bullet point in `@instructions` should correspond to a comment in the `@sample_code`.
-  - Have a horisontal ruler tag (`<hr>`.)
+  - Have a horizontal ruler tag (`<hr>`.)
   - After that follows (optional) help / hints / links to relevant documentation / stackoverflow / etc.
 - Ideally, the student should not need to scroll to view the instructions. That means max 800 characters.
 - The instructions are directed directly to the student. They should be concrete and concise.
