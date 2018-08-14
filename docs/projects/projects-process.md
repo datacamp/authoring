@@ -1,12 +1,12 @@
-The Project creation process
+The Project Creation Process
 =============================================
 
-This page details steps you go through when you create a *premium* DataCamp Project. If you're interested in creating a premium Project, please email [projects@datacamp.com](mailto:projects@datacamp.com) for more info!
+This page details steps you go through when you create a DataCamp Project. If you're interested in creating a Project, please follow steps 1 and 2 below and email [projects@datacamp.com](mailto:projects@datacamp.com)!
 
 Overview
 --------------
 
-Here are the steps for creating a DataCamp Project:
+The steps for creating a DataCamp Project are outlined below. The total estimated timeline for instructors is 10-24 hours spread out over 6-8 weeks (the timeline depends on how formed the Project idea is, how experienced the instructor is, etc.).
 
 1. [Prerequisites for making a Project](#projects-prerequisites).
   - Before you can create a DataCamp project, you need access to two tools: Jupyter notebooks and GitHub. You should also check out some example Projects.
@@ -17,7 +17,7 @@ Here are the steps for creating a DataCamp Project:
 4. [Writing the Project notebook](#projects-writing-notebook).
   - When the Project spec is finished, your DataCamp contact will add a scaffold around it, where the instructions and tests will go. With this scaffold in place, you can complete the rest of your Project.
 5. [Launching the Project](#projects-launching).
-  - When the Project notebook is finished, we will beta test it and launch it on DataCamp. As part of the launch, you'll make an unpretentious introduction video to your Project. 
+  - When the Project notebook is finished, we will beta test it and launch it on DataCamp.
 
 During this process, you will work closely with your DataCamp contact, and each step above also includes receiving and integrating feedback from your DataCamp contact.
 
