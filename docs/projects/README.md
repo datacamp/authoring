@@ -14,7 +14,7 @@ If you've never seen a DataCamp Project then you'll quickly get the gist by watc
 Overview of Projects Documentation
 ------------------------------------------
 
-- If you don't know where to start, you should check out the [Project Creation Process](projects-process.md). There you'll find out what you need to create a Project and what each step in the process entails. The estimated creation timeline for instructors is 10-24 hours spread out over 6-8 weeks (the timeline depends on how formed the Project idea is, how experienced the instructor is, etc.)
+- The [Project Creation Process](projects-process.md) pages outlines what each step in the creation process for Projects entails. The estimated creation timeline for instructors is 10-24 hours spread out over 6-8 weeks (the timeline depends on how formed the Project idea is, how experienced the instructor is, etc.).
 <!-- - DataCamp Projects are authored as Jupyter notebooks and the first step is to create the analysis / case study / data narrative the Project is centered around. To do this you need to know about the [Narrative notebook format](projects-narrative-format.md). -->
-- The [Project Notebook Format](projects-format.md) page describes how the Jupyter notebook, which is the authoring tool for DataCamp Projects, is structured.
+- The [Project Notebook Format](projects-format.md) page describes how the Jupyter notebook for Projects, which is the authoring tool for DataCamp Projects, is structured.
 - The [Project File Structure](projects-repo-structure.md) page describes the file structure of the private GitHub repository where all of the contents of the Projects are stored. This repository can only be viewed by DataCamp and the Project's instructor(s).
