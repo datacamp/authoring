@@ -1,10 +1,10 @@
 # Course Content
 
-We designed our learning platform and product to realize a vision. Content plays a central role in user experience. The main objective of these guidelines are to ensure that all the content we develop is in sync with this vision and provides our users with the best possible user experience.
+We designed our learning platform and product to realize a vision. Content plays a central role in user experience. The main objective of these guidelines is to ensure that all the content we develop is in sync with this vision and provides our users with the best possible user experience. All of these guidelines are driven by research into the factors that maximized student engagement in our 150+ desktop courses.
 
 ## Courses
 
-Shorter courses are more digestible and have higher completion rates. A reasonable target for courses should be that they are completable within 4 hours. The following guidelines are in place to ensure that courses enable learners to apply their learning as quickly as possible.
+Shorter courses are more digestible and have higher completion rates. We aim for courses to be completable within 4 hours. The following guidelines are in place to ensure that courses enable learners to apply their learning as quickly as possible.
 
 - A course should should consist of 4 chapters.
 - A chapter should consist of 3-4 lessons.
@@ -78,11 +78,11 @@ The following guidelines are in place to ensure that MultipleChoiceExercises are
 - A MultipleChoiceExercise should have options of length 10 - 300 characters (recommended is 240, this is the aggregate length across all options in the exercise).
 - A MultipleChoiceExercise should have between 3 - 5 options (recommended is 4).
 
-*Please note* that we do not prefer to minimize the number of multiple choice questions in a course to no more than 3 per chapter. We also do not allow back to back multiple choice questions. This ensures learners do most of their learning by doing in our coding exercises.
+*Please note* that we prefer to limit the number of multiple choice questions in a course to no more than 3 per chapter. We also do not allow back to back multiple choice questions. This ensures learners do most of their learning by doing in our coding exercises. Multiple choice questions in which students have to do some coding in the console to identify the solution are preferred to purely conceptual multiple choice questions.
 
 ### BulletExercise
 
-BulletExercises are perfect to help users learn by repetition or faded learning. The guidelines below ensure that the overall length of a bullet exercise is in line with that of  a normal exercise. It also ensures that the bullet exercises appear in a visually appealing manner.
+BulletExercises are perfect to help users learn by repetition or faded learning. The guidelines below ensure that the overall length of a bullet exercise is in line with that of a normal exercise. It also ensures that the bullet exercises appear in a visually appealing manner.
 
 - A BulletExercise should have assignment text of length 10 - 600 characters (recommended is 300).
 - A BulletExercise should have 2 - 4 sub-exercises (recommended is 3).
