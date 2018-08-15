@@ -1,6 +1,7 @@
 # Step 1.7 - What datasets will you use?
 
 Write a list of datasets that you will in the course, a short description of each dataset (if it's not clear from the title), how you intend to use it, and include a link to its source(s). Additionally, upload these datasets to your course on the Teach Editor.
+
 ![teach_editor_datasets_upload](https://user-images.githubusercontent.com/20912644/44154482-d2e04b3a-a078-11e8-8ff9-2944fdcabeae.png)
 
 
