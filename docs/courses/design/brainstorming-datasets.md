@@ -1,6 +1,7 @@
 # Step 1.7 - What datasets will you use?
 
-Write a list of datasets that you will in the course, a short description of each dataset (if it's not clear from the title), how you intend to use it, and include a link to its source(s).
+Write a list of datasets that you will in the course, a short description of each dataset (if it's not clear from the title), how you intend to use it, and include a link to its source(s). Additionally, upload these datasets to your course on the Teach Editor.
+![teach_editor_datasets_upload](https://user-images.githubusercontent.com/20912644/44154482-d2e04b3a-a078-11e8-8ff9-2944fdcabeae.png)
 
 
 ## Examples
@@ -94,7 +95,7 @@ Models can often give weird answers due to quirks of the input dataset. Since th
 
 ### Distinguish datasets for coding exercises and for videos
 
-You can use the same datasets for both the coding exercise and the videos. However, some instructors prefer to have different datasets for each exercise type. If you want to do this, make sure the inducate what you will use each dataset for in the course spec.
+You can use the same datasets for both the coding exercises and the videos. However, some instructors prefer to have different datasets for each exercise type. If you want to do this, make sure to indicate what you will use each dataset for in the course spec.
 
 ## Common problems and their solutions
 
@@ -105,7 +106,7 @@ The following datasets are overused and feedback from our students suggests that
 - Iris
 - mtcars
 - Gapminder
-- wine dataset
+- Wine dataset
 - Wisconsin breast cancer
 - Titanic
 - Boston housing
