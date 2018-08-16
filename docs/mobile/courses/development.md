@@ -114,12 +114,12 @@ At any point, you can preview your content on the development version of the
 DataCamp for Mobile app. This is a second app that you can install alongside the
 real production version of the app. It displays the content that you push to the
 `development` (dev) branch. Only you and DataCamp will be able to see what you
-push to dev. Email spencer@datacamp.com for an invite to the iOS/Android dev
+push to dev. Email boris@datacamp.com for an invite to the iOS/Android dev
 app.
 
 When you want to push to dev:
 
-1. Download the development app. Contact spencer@datacamp.com if you don't
+1. Download the development app. Contact boris@datacamp.com if you don't
    already have it; you will receive an email with download instructions.
 
 2. Create a new account through the dev app. You won't be able to log in with
