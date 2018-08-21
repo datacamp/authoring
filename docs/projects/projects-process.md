@@ -82,22 +82,16 @@ Fill out the following information and email it to [projects@datacamp.com](mailt
 
 When you've come up with a topic for your Project the next step is to complete a *Project specification*: A short document that outlines the topic of your project and the skills necessary to complete it. The Project spec is written as a Jupyter notebook, so to edit it you need to have Jupyter installed on your local machine ([see here](#jupyter-notebooks) for more info).
 
-The Project spec should be self-explanatory and is available here:
+The Project specification should be self-explanatory and is available here:
 
+* <a target="_blank" href="notebooks/datacamp_project_audition.ipynb">Project specification notebook</a>.  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_project_audition.ipynb).
 
-
-
-* <a target="_blank" href="notebooks/datacamp_python_project_spec.ipynb">Project spec notebook for python</a>.  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_python_project_spec.ipynb).
-* <a target="_blank" href="notebooks/datacamp_r_project_spec.ipynb">Project spec notebook for R</a>.  [Preview it on GitHub](https://github.com/datacamp/authoring/blob/master/docs/projects/notebooks/datacamp_r_project_spec.ipynb).
-
-When you've completed the Project spec just e-mail it to your DataCamp contact. Make sure to include all external resources (like datasets, images, etc.) as e-mail attachments, or put them online and link to them from the notebook. 
+When you've completed the Project specification, e-mail it to your DataCamp contact. Make sure to include all external resources (datasets, images, etc.) as e-mail attachments, or put them online and link to them from the notebook. 
 
 When both you and your DataCamp contact have OK'd the Project specification, the Project creation process officially begins:
 
 * You and DataCamp will sign a Project authoring contract. Please ask your DataCamp contact if you have questions about this contract.
 * Your DataCamp contact will set up a GitHub repository for your Project. Until the Project is released, you will work in the `develop` branch of the repository. 
-* Your DataCamp contact will copy the relevant parts of the Project spec into `project.yml` (the metadata of your project) and `project.ipynb`. Here is [more information about the filestructure of a Project](projects-repo-structure.md).
-
 
 ## 4. Writing the Project notebook {#projects-writing-notebook} ##
 
