@@ -13,10 +13,10 @@ Bad: This standardises the modelling of colours.
 
 ### Use "you" rather than "we"
 
-Supposedly it's empowering.
+You should be consistent about the promoun. DataCamp has standardized on "you" in order to empower students.
 
 Good: You are going to run a regression model.  
-Bad: We  are going to run a regression model.  
+Bad: We are going to run a regression model.  
 
 ### Use parentheses after function/method names
 
