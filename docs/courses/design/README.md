@@ -58,8 +58,7 @@ A typical breakdown is:
 Each lesson is comprised of:
 
 - a video lesson with slides, e.g. [sample video lesson](https://campus.datacamp.com/courses/supervised-learning-with-scikit-learn/classification?ex=9) 
-- one multiple choice exercise following the video
-- 2-4 coding exercises
+- 2-4 exercises, of which at least 2 are coding exercises
 
 ## Types of courses
 
