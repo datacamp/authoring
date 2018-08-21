@@ -13,7 +13,7 @@ Bad: This standardises the modelling of colours.
 
 ### Use "you" rather than "we"
 
-You should be consistent about the promoun. DataCamp has standardized on "you" in order to empower students.
+You should be consistent about the pronoun. DataCamp has standardized on "you" in order to empower students.
 
 Good: You are going to run a regression model.  
 Bad: We are going to run a regression model.  
