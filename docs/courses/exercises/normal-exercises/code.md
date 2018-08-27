@@ -87,11 +87,11 @@ Comments should be sentence case (only the first word and proper nouns are capit
 
 It is typically easier to write the solution code then delete portions to create the sample code (rather than writing the sample code first then completing it to create the solution).
 
-## Match comments to instructions
+### Match comments to instructions
 
 Usually there should be exactly one code comment per instruction.
 
-## Use human-readable variable names
+### Use human-readable variable names
 
 Clarity is more important than brevity. Descriptive variable names are the easiest way to make the code more human-readable.
 
