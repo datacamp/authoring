@@ -12,6 +12,7 @@ The table below lists out all of the utlity packages used to write SCTs. If you'
 | Python | Python | [pythonwhat](https://github.com/datacamp/pythonwhat) | [link](http://pythonwhat.readthedocs.io/en/latest/) | [![Build Status](https://travis-ci.org/datacamp/pythonwhat.svg?branch=master)](https://travis-ci.org/datacamp/pythonwhat) |
 | SQL | Python | [sqlwhat](https://github.com/datacamp/sqlwhat) | [link](http://sqlwhat.readthedocs.io/en/latest/) | [![Build Status](https://travis-ci.org/datacamp/sqlwhat.svg?branch=master)](https://travis-ci.org/datacamp/sqlwhat) |
 | Shell | Python | [shellwhat](https://github.com/datacamp/shellwhat) | [link](https://shellwhat.readthedocs.io) | [![Build Status](https://travis-ci.org/datacamp/shellwhat.svg?branch=master)](https://travis-ci.org/datacamp/shellwhat) |
+| Spreadsheets | Python | [sheetwhat](https://github.com/datacamp/sheetwhat) | [link](https://sheetwhat.readthedocs.io) | [![Build Status](https://travis-ci.org/datacamp/sheetwhat.svg?branch=master)](https://travis-ci.org/datacamp/shellwhat) |
 
 _In the remainder of this article, when `xwhat` is used, this means that the information applies to all of the SCT packages listed above._
 
