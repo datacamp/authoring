@@ -48,7 +48,8 @@ This is an example taken from DataCamp's [Introduction to Python for Data Scienc
     msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
     msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
     msg4 = "Correct! Python is an extremely versatile language."
-    test_mc(4, [msg1, msg2, msg3, msg4])
+    Ex().has_chosen(4, [msg1, msg2, msg3, msg4])
+    ```
 
 #### Context
 
@@ -92,13 +93,12 @@ A `MultipleChoiceExercise` starts with `## Title`, followed by a `metadata` bloc
     msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
     msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
     msg4 = "Correct! Python is an extremely versatile language."
-    test_mc(4, [msg1, msg2, msg3, msg4])
+    Ex().has_chosen(4, [msg1, msg2, msg3, msg4])
     ```
     
-The `test_mc()` function is used to provide tailored feedback in a `MultipleChoiceExercise`. It varies slightly  depending on the technology. The same test for an R course would be `test_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))`, and for a Shell course, would be `Ex() >> test_mc(4, [msg1, msg2, msg3, msg4])`.
+The `Ex().has_chosen()` function is used to provide tailored feedback in a `MultipleChoiceExercise`. It varies slightly  depending on the technology. The same test for an R course would be `ex() %>% check_mc(4, feedback_msgs = c(msg1, msg2, msg3, msg4))`.
     
-Regardless of technology, the `test_mc()` function takes in two required arguments. The first encodes the correct response (option 4 in the above example), while the second required argument is a list of strings (or _vector_ of strings, in R exercises) of length equal to the number of possible options. Each string corresponds to the feedback message that learners would see if they were to select that option. It is encouraged to write informative feedback messages, as these provide an opportunity for you to correct any mistaken mental models learners may have and guide them towards the solution.
-    
+Regardless of technology, the function takes in two required arguments. The first encodes the correct response (option 4 in the above example), while the second required argument is a list of strings (or _vector_ of strings, in R exercises) of length equal to the number of possible options. Each string corresponds to the feedback message that learners would see if they were to select that option. It is encouraged to write informative feedback messages, as these provide an opportunity for you to correct any mistaken mental models learners may have and guide them towards the solution.
 
 See also:
 - [Exercises](/courses/exercises/README.md#exercise-blocks)  
@@ -108,7 +108,7 @@ See also:
 
 ![Pure Multiple Choice Exercise](/images/PlainMultipleChoiceExerciseR.png)
 
-A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question that does not display a console, i.e., does not have any coding.  Instead of using `test_mc` inside an `sct` block, you use a `feedback` block.
+A `PureMultipleChoiceExercise` is a `MultipleChoiceExercise` question that does not display a console, i.e., does not have any coding.  Instead of using the R/Python-coded SCT inside an `sct` block, you use a `feedback` block.
 
 ### Example
 

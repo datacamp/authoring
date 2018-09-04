@@ -93,9 +93,9 @@ A good SCT allows for different ways of solving the problem but gives targeted a
   Verify the output of the student rather than the code that generated that printout.
   Verify the result of calling a function rather than the arguments used to call that function.
 
-- _Use `test_correct()` whenever it makes sense._
+- _Use `check_correct()` whenever it makes sense._
 
-  The seemingly opposite requirements of robustness to different solutions vs. targeted feedback can be satisfied by using `test_correct()`.
+  The seemingly opposite requirements of robustness to different solutions vs. targeted feedback can be satisfied by using `check_correct()`.
   This function takes two sets of tests: 'checking' tests, and 'diagnosing' tests.
   Checking tests verify the end result, while diagnosting tests dive deeper to look at the mistakes a student made.
   If the checking tests pass, the typically more restrictive diagnosing tests are not executed.

@@ -61,21 +61,7 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
-
-    country = test_column('country', msg='Did you select the `country` column?')
-
-    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        distinct,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```
 
     ***
@@ -106,22 +92,7 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
-
-    certification = test_column('certification', msg='Did you select the `certification` column?')
-
-    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        certification,
-        distinct,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```
 
     ***
@@ -152,20 +123,5 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    distinct = sel.check_field('pref').has_equal_ast("Don't forget to use the `DISTINCT` keyword!")
-
-    role = test_column('role', msg='Did you select the `role` column?')
-
-    from_clause = sel.check_field('from_clause').has_equal_ast('Is your `FROM` clause correct?')
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        distinct,
-        role,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```

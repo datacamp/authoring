@@ -45,6 +45,6 @@ Just add a line of R code that calculates the sum of 6 and 12, just like the exa
 `@sct`
 
 ```{r}
-test_output_contains("18", incorrect_msg = "Make sure to add `6 + 12` on a new line. Do not start the line with a `#`, otherwise your R code is not executed!")
-success_msg("Awesome! See how the console shows the result of the R code you submitted? Now that you're familiar with the interface, let's get down to R business!")
+ex() %>% check_output_expr("6 + 12")
+success_msg("Awesome!")
 ```

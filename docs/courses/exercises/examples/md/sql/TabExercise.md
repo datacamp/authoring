@@ -68,30 +68,7 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    title = test_column('title', msg='Did you select the `title` column?')
-
-    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
-
-    from_clause = sel.check_field('from_clause')
-
-    where_clause = sel.check_field('where_clause')
-
-    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
-
-    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        where_release_year1,
-        where_release_year2,
-        title,
-        release_year,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```
 
     ***
@@ -126,37 +103,7 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    title = test_column('title', msg='Did you select the `title` column?')
-
-    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
-
-    from_clause = sel.check_field('from_clause')
-
-    where_clause = sel.check_field('where_clause')
-
-    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
-
-    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
-
-    where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
-
-    where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
-
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        where_release_year1,
-        where_release_year2,
-        where_language1,
-        where_language2,
-        title,
-        release_year,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```
 
     ***
@@ -193,37 +140,5 @@
     `@sct`
 
     ```{python}
-    sel = check_node('SelectStmt')
-
-    title = test_column('title', msg='Did you select the `title` column?')
-
-    release_year = test_column('release_year', msg='Did you select the `release_year` column?')
-
-    from_clause = sel.check_field('from_clause')
-
-    where_clause = sel.check_field('where_clause')
-
-    where_release_year1 = where_clause.has_equal_ast(sql='release_year >= 1990', start='expression', exact=False, msg='Did you check the `release_year` correctly?')
-
-    where_release_year2 = where_clause.has_equal_ast(sql='release_year < 2000', start='expression', exact=False, msg='Did you check the `release_year` correctly in your `WHERE` clause?')
-
-    where_language1 = where_clause.has_equal_ast(sql="language = 'French'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
-
-    where_language2 = where_clause.has_equal_ast(sql="language = 'Spanish'", start='expression', exact=False, msg='Did you check the `language` correctly in your `WHERE` clause?')
-
-    where_gross = where_clause.has_equal_ast(sql='gross > 2000000', start='expression', exact=False, msg='Did you check the `gross` correctly in your `WHERE` clause?')
-
-    Ex().test_correct(check_result(), [
-        from_clause,
-        where_release_year1,
-        where_release_year2,
-        where_language1,
-        where_language2,
-        where_gross,
-        title,
-        release_year,
-        test_has_columns(),
-        test_ncols(),
-        test_error()
-    ])
+    # SCT comes here, see sqlwhat.readthedocs.io
     ```

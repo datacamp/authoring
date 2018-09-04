@@ -226,19 +226,20 @@ Following is an example on how to author this type of exercise:
     ```{r}
     #' @step
     # Sct for first Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for second Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for third Normal Exercise
-    test_correct(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for fourth Normal Exercise
-    test_function(...)
+    ex() %>% check_function(...)
+
     success_msg("Good job!")
     ```
 
@@ -353,19 +354,20 @@ SCT for each of the Normal Exercises being created, where the each `NormalExerci
     ```{r}
     #' @step
     # Sct for first Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for second Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for third Normal Exercise
-    test_correct(...)
+    ex() %>% check_object(...)
 
     #' @step
     # Sct for fourth Normal Exercise
-    test_function(...)
+    ex() %>% check_function(...)
+
     success_msg("Good job!")
     ```
 
@@ -375,24 +377,26 @@ In this example first `NormalExercise` SCT would be:
 
     ```{r}
     # Sct for first Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
     ```
+
 while last `NormalExercise` SCT would be:
 
     `@sct`
 
     ```{r}
     # Sct for first Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     # Sct for second Normal Exercise
-    test_object(...)
+    ex() %>% check_object(...)
 
     # Sct for third Normal Exercise
-    test_correct(...)
+    ex() %>% check_object(...)
 
     # Sct for fourth Normal Exercise
-    test_function(...)
+    ex() %>% check_function(...)
+
     success_msg("Good job!")
     ```
 

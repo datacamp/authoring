@@ -34,6 +34,6 @@ A `ConsoleExercise` only features a console. Typing a command in the console and
     `@sct`
 
     ```{python}
-    Ex().test_expr_error('[ -d "test" ]')
+
     Ex().success_msg("Great!")
     ```
