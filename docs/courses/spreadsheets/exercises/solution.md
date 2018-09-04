@@ -26,7 +26,8 @@ recorded in solution/sample data of exercises.
 * **Golden Copy**: all data is recorded. The user will see this sheet as you see it.
 * **Solution/Sample data**: the content in the sample or solution sheets is _serialized_. This is a
   technical term, and the exact meaning is not really important. There is an important consequence
-  though. The only data that will be recorded from the sample or solution sheets is:
+  though. The data that will be recorded will be controlled by the previously mentioned
+  [`data_selectors` field in the Meta sheet](meta.md). By default, the following data is recorded:
 
   * differences in values
   * differences in formulas
@@ -34,9 +35,15 @@ recorded in solution/sample data of exercises.
   * pivot tables
   * charts
 
-This means that font or border styles, for example, need to be in the **Golden Copy** for the user
-to be able to see it. If you change the style in a sample or solution sheet, and it's not reflected
-in the **Golden Copy**, the user won't see a difference in style.
+Note that `styles` can also be recorded, but only if you put it in the `data_selectors` attribute.
+Some things always have to be in the golden copy, for now. Some examples:
+
+- Conditional formatting
+- Merging cells
+- Dropdown menus in cells
+
+To change these, you will need change the **Golden Copy** and hit **Reset Workbook** in the preview
+to see the changes.
 
 This is necessary to do optimzations that improve user experience going through spreadsheet
 exercises.

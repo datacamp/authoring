@@ -1,14 +1,18 @@
 # General
 
 Exercises are built inside the [**workbook
-source**](../workbooks.md) of a workbook. Each exercise consists of 4 separate sheets: **Meta**,
-**Sample**, **Solution** and **SCT**. More details on each of these is provided in this section.
+source**](../workbooks.md) of a workbook. Each normal exercise consists of 4 separate sheets:
+**Meta**, **Sample**, **Solution** and **SCT**. More details on each of these is provided in
+this section.
 
 The exercise sheets must follow a strict naming convention, sensitive to caps and spaces:
 
 ```
 Exercise <exercise_number> - <Meta|Sample|Solution|SCT>
 ```
+
+The exercise numbers must be adding up starting with `Exercise 1 - ...`, then `Exercise
+2 - ...`, and so on.
 
 As an example, here is a workbook source that has 2 exercises:
 
