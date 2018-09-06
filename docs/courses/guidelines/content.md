@@ -6,7 +6,7 @@ We designed our learning platform and product to [realize a vision](https://medi
 
 Shorter courses are more digestible and have higher completion rates. We aim for courses to be completable within 4 hours. The following guidelines are in place to ensure that courses enable learners to apply their learning as quickly as possible.
 
-- A course should should consist of 4 chapters.
+- A course should consist of 4 chapters.
 - A chapter should consist of 3-4 lessons.
 - A course should consist of 44 - 60 exercises.
 
