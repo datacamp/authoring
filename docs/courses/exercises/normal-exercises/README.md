@@ -58,10 +58,8 @@ This chapter contains one `NormalExercise` for R.  Each block is described in de
 
     `@sct`
     ```{r}
-    test_error()
-    test_object("x",
-                undefined_msg = "Make sure to define `x`!",
-                incorrect_msg = "Have you correctly assigned 5 to `x`!")
+    ex() %>% check_error()
+    ex() %>% check_object("x") %>% check_equal()
     success_msg("Awesome! It's considered good style to write spaces either side of the assignment arrow.")
     ```
 
@@ -115,10 +113,8 @@ A `NormalExercise` starts with `## Title`, followed by a `metadata` block and a 
 
     `@sct`
     ```{r}
-    test_error()
-    test_object("x",
-                undefined_msg = "Make sure to define `x`!",
-                incorrect_msg = "Have you correctly assigned 5 to `x`!")
+    ex() %>% check_error()
+    ex() %>% check_object("x") %>% check_equal()
     success_msg("Awesome! It's considered good style to write spaces either side of the assignment arrow.")
     ```
 

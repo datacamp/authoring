@@ -44,7 +44,6 @@ mkdir films;
 `@sct`
 
 ```{python}
-Ex().test_expr_error('ls films', output = "0")
 Ex().success_msg("Great!")
 ```
 
@@ -80,8 +79,6 @@ ls;
 `@sct`
 
 ```{python}
-# MC-NOTE: if these exercises aren't stateful, won't have anything in cwd, so SCT will fail
-Ex().test_output_contains('films', "Does the output of your command include the `films`?")
 Ex().success_msg("Great!")
 ```
 
@@ -117,6 +114,5 @@ ls -la;
 `@sct`
 
 ```{python}
-Ex().test_expr_output('ls -la')
 Ex().success_msg("Great!")
 ```

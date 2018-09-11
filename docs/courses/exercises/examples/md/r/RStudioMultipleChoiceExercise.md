@@ -30,5 +30,5 @@ Remember, you can view interactive output within the viewer tab.
 msg1 <- "Correct!"
 msg2 <- "Incorrect, rewatch the video and see what Garrett says about the viewer pane."
 
-test_mc(1, feedback_msgs = c(msg1, msg2))
+ex() %>% check_mc(1, feedback_msgs = c(msg1, msg2))
 ```

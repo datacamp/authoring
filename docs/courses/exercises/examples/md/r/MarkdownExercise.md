@@ -145,14 +145,7 @@ ul {
 `@sct`
 
 ```{r}
-test_error()
-test_rmd_file({
-  test_yaml_header(options = "title",
-                   not_called_msg = "Make sure to define the title on top of the R Markdown document in the editor.",
-                   incorrect_msg = "Set the title of the document to \"Hello R Markdown\". Beware of typos and caps!")
-  test_yaml_header(options = "output.html_document.css",
-                   not_called_msg = "Don't change anything in the title apart from the document title!",
-                   incorrect_msg = "Don't change anything in the title apart from the document title!")
-})
+Ex() %>% check_error()
+# SCT comes here
 success_msg("Nice job! Cool, right? Continue to the next exercise to get introduced to the basics of R Markdown.")
 ```

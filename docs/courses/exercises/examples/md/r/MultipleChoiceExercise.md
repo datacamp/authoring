@@ -58,5 +58,5 @@ dice1 + dice2
 msg1 <- "Calling `two_dice()` doesn't throw an error; feel free to try it out in the console. Try again."
 msg2 <- "Assigning the result of a function to a variable does not change anything about the scoping of the variables inside that function. Have another go at it."
 msg3 <- "Great! If you're familiar with other programming languages, you might wonder whether R passes arguments <i>by value</i> or <i>by reference</i>. Find out in the next exercise!"
-test_mc(3, feedback_msgs = c(msg1, msg2, msg3))
+ex() %>% check_mc(3, feedback_msgs = c(msg1, msg2, msg3))
 ```

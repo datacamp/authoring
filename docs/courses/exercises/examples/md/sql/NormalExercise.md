@@ -55,7 +55,6 @@ AS result;
 `@sct`
 
 ```{sql}
-Ex().test_student_typed('SELECT|select', msg='You need to add `SELECT` at the start of line 2!')
-Ex().test_has_columns()
-Ex().test_error()
+Ex().has_code('SELECT|select', msg='You need to add `SELECT` at the start of line 2!')
+Ex().success_msg("Well done!")
 ```

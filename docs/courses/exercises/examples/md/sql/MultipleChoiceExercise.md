@@ -42,6 +42,5 @@ Run the code in the editor and look at the query result tab under the editor!
 ```{python}
 msg1 = 'Nope, look at the query result tab!'
 correct = 'Correct!'
-
-Ex().test_mc(2, [msg1, correct, msg1, msg1])
+Ex().has_chosen(2, [msg1, correct, msg1, msg1])
 ```
