@@ -61,15 +61,15 @@ ID,VendorID,PickupDate,DropoffDate,PassengerCount
 1709,1,1/1/17 7:00 AM,1/1/17 7:11 AM,2
 ```
 
+> #### info::Note
+> Your file should be utf8 encoded.
+
 Do the same with a SQL script named `script.sql` in charge of seeding the database:
 
 ```sql
 CREATE DATABASE tripdata;
-GO
 USE tripdata;
-GO
 CREATE TABLE YellowTripData (ID INT, VendorID INT, PickupDate DATETIME2, DropoffDate DATETIME2, PassengerCount INT);
-GO
 BULK INSERT YellowTripData FROM '/home/repl/data.csv' WITH(FIELDTERMINATOR =',', ROWTERMINATOR = '\n', FIRSTROW = 2);
 GO
 ```
